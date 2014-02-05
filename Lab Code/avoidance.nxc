@@ -1,0 +1,38 @@
+#define NEAR 20
+#define TURN_TIME 360
+#define MOVE_TIME 2200
+#define MOVE_SPEED 75
+
+task main(){
+SetSensorLowspeed(IN_4);
+int x = 1;
+
+while(true && x == 1){
+
+TextOut(5,LCD_LINE2, NumToStr(Sensor(IN_4)));
+OnFwd(OUT_AC,MOVE_SPEED);
+
+// turn if sensor detects nearby, move then turn back
+if(SensorUS(IN_4)<NEAR){
+
+//turn initial
+OnRev(OUT_C,MOVE_SPEED);
+Wait(TURN_TIME);
+
+// move forward
+OnFwd(OUT_AC,MOVE_SPEED);
+Wait(MOVE_TIME);
+
+//turn back
+OnRev(OUT_A, MOVE_SPEED);
+Wait(TURN_TIME * 1.5);
+OnFwd(OUT_AC,MOVE_SPEED);
+Wait(MOVE_TIME);
+
+x = 0;
+}
+
+}  // end while
+
+
+} // end main
