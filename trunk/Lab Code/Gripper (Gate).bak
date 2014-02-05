@@ -27,7 +27,7 @@ task main(){
 
 
 
-             while (true && x == 1) {
+          while (true && x == 1) {
                   if (SENSOR_2 == 1) { // if sensor hits object
 
                           // Stop moving and grip
@@ -36,8 +36,8 @@ task main(){
                           x = 0 ;
 
                   }
-             }
-      }
+                   }
+                   }
 
           }        // end while
 
