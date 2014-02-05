@@ -1,0 +1,38 @@
+//Competition code
+
+//Motor ports
+#define RIGHT_MOTOR OUT_A
+#define LEFT_MOTOR OUT_C
+#define BOTH_MOTORS OUT_AC
+#define GATE_MOTOR OUT_B
+
+//Motor speeds
+#define MOVE_SPEED 75
+#define GATE_SPEED 30
+
+//Sensor ports
+#define ULTRASONIC IN_1
+#define TOUCH IN_2
+#define MAGNETIC IN_3
+#define LIGHT IN_4
+
+//Sensor read macros
+#define READ_ULTRASONIC SENSOR_1
+#define READ_TOUCH SENSOR_2
+#define READ_MAGNETIC SENSOR_3
+#define READ_LIGHT SENSOR_4
+
+void testMagnetic(){
+     while(true){
+          TextOut(5,LCD_LINE2,NumToStr(READ_MAGNETIC));
+     }
+}
+
+task main(){
+     SetSensor(ULTRASONIC, SENSOR_TYPE_LOWSPEED);
+     SetSensor(TOUCH,SENSOR_TYPE_TOUCH);
+     SetSensorHTMagnet(MAGNETIC);
+     SetSensor(LIGHT,SENSOR_TYPE_LIGHT);
+     
+     
+}
