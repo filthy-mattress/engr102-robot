@@ -1,0 +1,23 @@
+#define THRESHOLD 64
+
+task main()
+{
+SetSensorType(IN_3,IN_TYPE_LIGHT_INACTIVE);
+  SetSensorMode(IN_3,IN_MODE_PCTFULLSCALE);
+  ResetSensor(IN_3);
+
+while (true){
+// start turning
+OnFwd(OUT_A, 75);
+ TextOut(5,LCD_LINE2, NumToStr(Sensor(IN_3)));
+
+// if the light sensor exceeds threshold, go forward
+   if (Sensor(IN_3) > THRESHOLD){
+    OnFwd(OUT_C, 75);
+    Wait(1500);
+    TextOut(5,LCD_LINE2,"Error");
+   }
+
+} // end while
+
+} // end main

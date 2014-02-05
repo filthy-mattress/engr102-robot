@@ -1,0 +1,56 @@
+#define NEAR 20
+#define TURN_TIME 720
+#define MOVE_TIME 500
+#define MOVE_SPEED 75
+
+#define GRIP_MOTOR OUT_B
+#define LEFT_MOTOR OUT_A
+#define RIGHT_MOTOR OUT_C
+#define BOTH_MOTOR OUT_AC
+
+sub close();
+
+task main(){
+
+      // Set sensor, start moving forward
+      SetSensorTouch(IN_2);
+      OnFwd(BOTH_MOTOR, MOVE_SPEED);
+      int x = 1;
+
+          while (true && x == 1) {
+                  if (SENSOR_2 == 1) { // if sensor hits object
+
+                          // Stop moving and grip
+                          Off(BOTH_MOTOR);
+                          close();
+                          x = 0 ;
+
+                  }
+                  
+
+          }        // end while
+          
+          // Turn around
+                          OnFwd(LEFT_MOTOR, MOVE_SPEED*1.5);
+                          Wait(TURN_TIME*6);
+                          Off(BOTH_MOTOR);
+
+                          // Move back to start location
+                          OnFwd(BOTH_MOTOR, MOVE_SPEED);
+                          Wait(MOVE_TIME*2);
+                          Off(BOTH_MOTOR);
+
+
+} // end main
+
+
+sub close(){
+
+    // Grip logic
+    OnRev(GRIP_MOTOR,30);
+    Wait(500);
+    Off(GRIP_MOTOR);
+
+}
+
+
