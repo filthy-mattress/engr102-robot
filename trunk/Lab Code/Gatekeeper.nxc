@@ -22,33 +22,77 @@
 #define READ_MAGNETIC SENSOR_3
 #define READ_LIGHT SENSOR_4
 
+//Motor macros
+#define motors(lspd,rspd) {OnFwd(LEFT_MOTOR,lspd);OnFwd(RIGHT_MOTOR,rspd);}
+#define zp_turn_l(spd) motors(-(spd),spd);
+#define zp_turn_r(spd) motors(spd,-(spd));
+
 void testMagnetic(){
      while(true){
           TextOut(5,LCD_LINE2,NumToStr(READ_MAGNETIC));
      }
 }
 
-void motorGoTo(byte read,long tick){//TODO Fix me!!!!
-     long curr_tick= MotorTachoCount(read);
-     while(curr_tick!=tick){
-          if(curr_tick>tick){
-               OnRev(output,MOVE_SPEED);
-          }
-          if(curr_tick<tick){
-               OnFwd(output,MOVE_SPEED);
-          }
-          curr_tick= MotorTachoCount(read);
+void motorGoTo(byte read,long tick){
+     //Figure out which way to go
+     long start_tick= MotorTachoCount(read);
+     zp_turn_l(MOVE_SPEED);
+     Wait(10);
+     Off(BOTH_MOTORS);
+     //Test to see if closer
+     if(abs(MotorTachoCount(read)-tick)<abs(start_tick-tick)){
+          zp_turn_l(MOVE_SPEED);//Continue
+     }else{
+          zp_turn_r(MOVE_SPEED);//turn around
      }
+     until(MotorTachoCount(read)==tick);
+     Off(BOTH_MOTORS);
 }
 
-int readings[];
-int positions[];
+//Scan variables
+struct scanPoint{
+     int read;
+     int pos;
+};
+scanPoint points[]={};
+int reading_count=0;
+bool run_scan=false;//True while loop is running. Set to false to exit loop.
+bool scan_done=true;//True while not scanning. Use to avoid access collisions
+byte scan_sensor=LIGHT;
+byte scan_motor=RIGHT_MOTOR;
+
+task scan(){//This loop will record sensor values and motor positions
+     run_scan=true;
+     scan_done=false;
+     //reset reading
+     reading_count=0;
+     scanPoint tmp[];
+     while(run_scan){
+          scanPoint pt;
+          pt.read=Sensor(scan_sensor);
+          pt.pos=MotorTachoCount(scan_motor);
+          tmp[reading_count]=pt;
+          reading_count++;
+     }
+     points=tmp;
+     scan_done=true;
+}
+//Macros to manage scan process
+#define start_scan(s,m) {scan_sensor=s;scan_motor=m;StartTask(scan);}
+#define end_scan() {run_scan=false;until(scan_done);}
+
+void scan360(byte sensor, byte motor){
+     start_scan(sensor,motor);
+     zp_turn_l(MOVE_SPEED);
+     Wait(1000);//TESTING REQUIRED!!
+     Off(BOTH_MOTORS);
+     end_scan();
+}
 
 task main(){
      SetSensor(ULTRASONIC, SENSOR_TYPE_LOWSPEED);
      SetSensor(TOUCH,SENSOR_TYPE_TOUCH);
      SetSensorHTMagnet(MAGNETIC);
      SetSensor(LIGHT,SENSOR_TYPE_LIGHT);
-     
-     
+     //TODO
 }
