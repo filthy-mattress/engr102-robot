@@ -22,10 +22,70 @@
 #define READ_MAGNETIC SENSOR_3
 #define READ_LIGHT SENSOR_4
 
+//Motor macros
+#define motors(lspd,rspd) {OnFwd(LEFT_MOTOR,lspd);OnFwd(RIGHT_MOTOR,rspd);}
+#define zp_turn_l(spd) motors(-(spd),spd);
+#define zp_turn_r(spd) motors(spd,-(spd));
+
 void testMagnetic(){
      while(true){
           TextOut(5,LCD_LINE2,NumToStr(READ_MAGNETIC));
      }
+}
+
+void motorGoTo(byte read,long tick){
+     //Figure out which way to go
+     long start_tick= MotorTachoCount(read);
+     zp_turn_l(MOVE_SPEED);
+     Wait(10);
+     Off(BOTH_MOTORS);
+     //Test to see if closer
+     if(abs(MotorTachoCount(read)-tick)<abs(start_tick-tick)){
+          zp_turn_l(MOVE_SPEED);//Continue
+     }else{
+          zp_turn_r(MOVE_SPEED);//turn around
+     }
+     until(MotorTachoCount(read)==tick);
+     Off(BOTH_MOTORS);
+}
+
+//Scan variables
+struct scanPoint{
+     int read;
+     int pos;
+};
+scanPoint points[]={};
+int reading_count=0;
+bool run_scan=false;
+bool scan_done=true;
+byte scan_sensor=LIGHT;
+byte scan_motor=RIGHT_MOTOR;
+
+task scan(){
+     run_scan=true;
+     scan_done=false;
+     //reset reading
+     reading_count=0;
+     scanPoint tmp[];
+     while(run_scan){
+          scanPoint pt;
+          pt.read=Sensor(scan_sensor);
+          pt.pos=MotorTachoCount(scan_motor);
+          tmp[reading_count]=pt;
+          reading_count++;
+     }
+     points=tmp;
+     scan_done=true;
+}
+#define start_scan(s,m) {scan_sensor=s;scan_motor=m;StartTask(scan);}
+
+void scan360(byte sensor, byte motor){
+     start_scan(sensor,motor);
+     zp_turn_l(MOVE_SPEED);
+     Wait(1000);//TESTING REQUIRED!!
+     Off(BOTH_MOTORS);
+     run_scan=false;
+     until(scan_done);
 }
 
 task main(){
@@ -33,6 +93,5 @@ task main(){
      SetSensor(TOUCH,SENSOR_TYPE_TOUCH);
      SetSensorHTMagnet(MAGNETIC);
      SetSensor(LIGHT,SENSOR_TYPE_LIGHT);
-     
-     
+     //TODO
 }

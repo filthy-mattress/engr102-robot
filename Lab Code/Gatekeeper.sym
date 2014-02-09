@@ -1,79 +1,109 @@
 #SYMBOLS
 Index	Identifier	Type	Flag	Data	Size	RefCount
-0	__SetSensorHTMagnet_7qG2_port_7qG2_000_inline_main	1	1	0	1	4
-1	__SetSensor_7qG2_port_7qG2_000_inline_main	1	1	1	1	4
-2	____initialize_global_data_return	1	1	2	1	3
-3	__SetSensorType_7qG2_port_7qG2_000_inline_SetSensorHTMagnet_inline_main	1	1	3	1	2
-4	__SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorHTMagnet_inline_main	1	1	4	1	2
-5	__SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorHTMagnet_inline_main	1	1	5	1	2
-6	__SetSensorType_7qG2_type_7qG2_000_inline_SetSensorHTMagnet_inline_main	1	1	6	1	2
-7	__ResetSensorPort	1	1	7	1	4
-8	__constVal0	2	1	8	1	1
-9	__constVal1	2	0	9	1	1
-10	__ResetSensorTmp	1	1	10	1	2
-11	__PFTmp	1	1	11	1	1
-12	__constVal10	2	0	12	1	1
-13	____ResetSensorSubroutine_return	1	1	13	1	4
+0	__SetSensor_7qG2_config_7qG2_000_inline_main	3	1	0	2	3
+1	__SetSensorHTMagnet_7qG2_port_7qG2_000_inline_main	1	1	2	1	4
+2	__SetSensor_7qG2_port_7qG2_000_inline_main	1	1	3	1	12
+3	__SetSensorType_7qG2_port_7qG2_000_inline_SetSensorHTMagnet_inline_main	1	1	4	1	2
+4	__SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorHTMagnet_inline_main	1	1	5	1	2
+5	__SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorHTMagnet_inline_main	1	1	6	1	2
+6	__SetSensorType_7qG2_type_7qG2_000_inline_SetSensorHTMagnet_inline_main	1	1	7	1	2
+7	____initialize_global_data_return	1	1	8	1	3
+8	__constVal3	2	0	9	1	2
+9	__constVal0	2	1	10	1	3
+10	__constVal1	2	0	11	1	3
+11	__ResetSensorPort	1	1	12	1	6
+12	__constVal10	2	0	13	1	2
+13	____ResetSensorSubroutine_return	1	1	14	1	6
+14	__ResetSensorTmp	1	1	15	1	2
 #SOURCES
 Clump	Line	PC	Source
-0	31	0	#line 31 "C:\Users\HARRYK~1\AppData\Local\Temp\temp.nxc"
-0	32	0		subcall __initialize_global_data, ____initialize_global_data_return
-0	31	2	#line 31 "C:\Users\HARRYK~1\AppData\Local\Temp\temp.nxc"
-0	31	2	#line 31 "C:\Users\HARRYK~1\AppData\Local\Temp\temp.nxc"
-0	32	2		set __SetSensor_7qG2_port_7qG2_000_inline_main, 0
-0	31	5	#line 31 "C:\Users\HARRYK~1\AppData\Local\Temp\temp.nxc"
-0	31	5	#line 31 "C:\Users\HARRYK~1\AppData\Local\Temp\temp.nxc"
-0	4291	5	#line 4291 "NXCDefs.h"
-0	4292	5		setin __constVal0, __SetSensor_7qG2_port_7qG2_000_inline_main, 0
-0	4293	9		setin __constVal10, __SetSensor_7qG2_port_7qG2_000_inline_main, 1
-0	4294	13	#pragma macro 4
-0	4294	13		mov __ResetSensorPort, __SetSensor_7qG2_port_7qG2_000_inline_main
-0	4294	15		subcall __ResetSensorSubroutine, ____ResetSensorSubroutine_return
-0	3682	17	#line 3682 "NXCDefs.h"
-0	4295	17	#line 4295 "NXCDefs.h"
-0	32	17	#line 32 "C:\Users\HARRYK~1\AppData\Local\Temp\temp.nxc"
-0	32	17	#line 32 "C:\Users\HARRYK~1\AppData\Local\Temp\temp.nxc"
-0	33	17		set __SetSensorHTMagnet_7qG2_port_7qG2_000_inline_main, 2
-0	32	20	#line 32 "C:\Users\HARRYK~1\AppData\Local\Temp\temp.nxc"
-0	13790	20	#line 13790 "NXCDefs.h"
-0	13791	20		mov __SetSensorType_7qG2_port_7qG2_000_inline_SetSensorHTMagnet_inline_main, __SetSensorHTMagnet_7qG2_port_7qG2_000_inline_main
-0	13790	22	#line 13790 "NXCDefs.h"
-0	13790	22	#line 13790 "NXCDefs.h"
-0	13791	22		set __SetSensorType_7qG2_type_7qG2_000_inline_SetSensorHTMagnet_inline_main, 6
-0	13790	25	#line 13790 "NXCDefs.h"
-0	4247	25	#line 4247 "NXCDefs.h"
-0	4248	25		setin __SetSensorType_7qG2_type_7qG2_000_inline_SetSensorHTMagnet_inline_main, __SetSensorType_7qG2_port_7qG2_000_inline_SetSensorHTMagnet_inline_main, 0
-0	4247	29	#line 4247 "NXCDefs.h"
-0	13791	29	#line 13791 "NXCDefs.h"
-0	13791	29	#line 13791 "NXCDefs.h"
-0	13792	29		mov __SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorHTMagnet_inline_main, __SetSensorHTMagnet_7qG2_port_7qG2_000_inline_main
-0	13791	31	#line 13791 "NXCDefs.h"
-0	13791	31	#line 13791 "NXCDefs.h"
-0	13792	31		set __SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorHTMagnet_inline_main, 0
-0	13791	34	#line 13791 "NXCDefs.h"
-0	4260	34	#line 4260 "NXCDefs.h"
-0	4261	34		setin __SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorHTMagnet_inline_main, __SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorHTMagnet_inline_main, 1
-0	4260	38	#line 4260 "NXCDefs.h"
-0	13792	38	#line 13792 "NXCDefs.h"
-0	13792	38	#line 13792 "NXCDefs.h"
-0	13792	38	#line 13792 "NXCDefs.h"
-0	4278	38	#line 4278 "NXCDefs.h"
-0	4279	38	#pragma macro 4
-0	4279	38		mov __ResetSensorPort, __SetSensorHTMagnet_7qG2_port_7qG2_000_inline_main
-0	4279	40		subcall __ResetSensorSubroutine, ____ResetSensorSubroutine_return
-0	3748	42	#line 3748 "NXCDefs.h"
-0	4278	42	#line 4278 "NXCDefs.h"
-0	13793	42	#line 13793 "NXCDefs.h"
-0	33	42	#line 33 "C:\Users\HARRYK~1\AppData\Local\Temp\temp.nxc"
-0	34	42		exit -1, -1
+0	92	0	#line 92 "C:\Users\MATTRE~1.EUG\AppData\Local\Temp\temp.nxc"
+0	93	0		subcall __initialize_global_data, ____initialize_global_data_return
+0	92	2	#line 92 "C:\Users\MATTRE~1.EUG\AppData\Local\Temp\temp.nxc"
+0	92	2	#line 92 "C:\Users\MATTRE~1.EUG\AppData\Local\Temp\temp.nxc"
+0	93	2		set __SetSensor_7qG2_port_7qG2_000_inline_main, 0
+0	92	5	#line 92 "C:\Users\MATTRE~1.EUG\AppData\Local\Temp\temp.nxc"
+0	92	5	#line 92 "C:\Users\MATTRE~1.EUG\AppData\Local\Temp\temp.nxc"
+0	93	5		mov __SetSensor_7qG2_config_7qG2_000_inline_main, __constVal10
+0	4291	7	#line 4291 "NXCDefs.h"
+0	4292	7		setin __constVal0, __SetSensor_7qG2_port_7qG2_000_inline_main, 0
+0	4293	11		setin __constVal10, __SetSensor_7qG2_port_7qG2_000_inline_main, 1
+0	4294	15	#pragma macro 4
+0	4294	15		mov __ResetSensorPort, __SetSensor_7qG2_port_7qG2_000_inline_main
+0	4294	17		subcall __ResetSensorSubroutine, ____ResetSensorSubroutine_return
+0	6791	19	#line 6791 "NXCDefs.h"
+0	4295	19	#line 4295 "NXCDefs.h"
+0	93	19	#line 93 "C:\Users\MATTRE~1.EUG\AppData\Local\Temp\temp.nxc"
+0	93	19	#line 93 "C:\Users\MATTRE~1.EUG\AppData\Local\Temp\temp.nxc"
+0	94	19		set __SetSensor_7qG2_port_7qG2_000_inline_main, 1
+0	93	22	#line 93 "C:\Users\MATTRE~1.EUG\AppData\Local\Temp\temp.nxc"
+0	93	22	#line 93 "C:\Users\MATTRE~1.EUG\AppData\Local\Temp\temp.nxc"
+0	94	22		mov __SetSensor_7qG2_config_7qG2_000_inline_main, __constVal1
+0	4291	24	#line 4291 "NXCDefs.h"
+0	4292	24		setin __constVal0, __SetSensor_7qG2_port_7qG2_000_inline_main, 0
+0	4293	28		setin __constVal1, __SetSensor_7qG2_port_7qG2_000_inline_main, 1
+0	4294	32	#pragma macro 4
+0	4294	32		mov __ResetSensorPort, __SetSensor_7qG2_port_7qG2_000_inline_main
+0	4294	34		subcall __ResetSensorSubroutine, ____ResetSensorSubroutine_return
+0	6803	36	#line 6803 "NXCDefs.h"
+0	4295	36	#line 4295 "NXCDefs.h"
+0	94	36	#line 94 "C:\Users\MATTRE~1.EUG\AppData\Local\Temp\temp.nxc"
+0	94	36	#line 94 "C:\Users\MATTRE~1.EUG\AppData\Local\Temp\temp.nxc"
+0	95	36		set __SetSensorHTMagnet_7qG2_port_7qG2_000_inline_main, 2
+0	94	39	#line 94 "C:\Users\MATTRE~1.EUG\AppData\Local\Temp\temp.nxc"
+0	13790	39	#line 13790 "NXCDefs.h"
+0	13791	39		mov __SetSensorType_7qG2_port_7qG2_000_inline_SetSensorHTMagnet_inline_main, __SetSensorHTMagnet_7qG2_port_7qG2_000_inline_main
+0	13790	41	#line 13790 "NXCDefs.h"
+0	13790	41	#line 13790 "NXCDefs.h"
+0	13791	41		set __SetSensorType_7qG2_type_7qG2_000_inline_SetSensorHTMagnet_inline_main, 6
+0	13790	44	#line 13790 "NXCDefs.h"
+0	4247	44	#line 4247 "NXCDefs.h"
+0	4248	44		setin __SetSensorType_7qG2_type_7qG2_000_inline_SetSensorHTMagnet_inline_main, __SetSensorType_7qG2_port_7qG2_000_inline_SetSensorHTMagnet_inline_main, 0
+0	4247	48	#line 4247 "NXCDefs.h"
+0	13791	48	#line 13791 "NXCDefs.h"
+0	13791	48	#line 13791 "NXCDefs.h"
+0	13792	48		mov __SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorHTMagnet_inline_main, __SetSensorHTMagnet_7qG2_port_7qG2_000_inline_main
+0	13791	50	#line 13791 "NXCDefs.h"
+0	13791	50	#line 13791 "NXCDefs.h"
+0	13792	50		set __SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorHTMagnet_inline_main, 0
+0	13791	53	#line 13791 "NXCDefs.h"
+0	4260	53	#line 4260 "NXCDefs.h"
+0	4261	53		setin __SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorHTMagnet_inline_main, __SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorHTMagnet_inline_main, 1
+0	4260	57	#line 4260 "NXCDefs.h"
+0	13792	57	#line 13792 "NXCDefs.h"
+0	13792	57	#line 13792 "NXCDefs.h"
+0	13792	57	#line 13792 "NXCDefs.h"
+0	4278	57	#line 4278 "NXCDefs.h"
+0	4279	57	#pragma macro 4
+0	4279	57		mov __ResetSensorPort, __SetSensorHTMagnet_7qG2_port_7qG2_000_inline_main
+0	4279	59		subcall __ResetSensorSubroutine, ____ResetSensorSubroutine_return
+0	6869	61	#line 6869 "NXCDefs.h"
+0	4278	61	#line 4278 "NXCDefs.h"
+0	13793	61	#line 13793 "NXCDefs.h"
+0	95	61	#line 95 "C:\Users\MATTRE~1.EUG\AppData\Local\Temp\temp.nxc"
+0	95	61	#line 95 "C:\Users\MATTRE~1.EUG\AppData\Local\Temp\temp.nxc"
+0	96	61		set __SetSensor_7qG2_port_7qG2_000_inline_main, 3
+0	95	64	#line 95 "C:\Users\MATTRE~1.EUG\AppData\Local\Temp\temp.nxc"
+0	95	64	#line 95 "C:\Users\MATTRE~1.EUG\AppData\Local\Temp\temp.nxc"
+0	96	64		mov __SetSensor_7qG2_config_7qG2_000_inline_main, __constVal3
+0	4291	66	#line 4291 "NXCDefs.h"
+0	4292	66		setin __constVal0, __SetSensor_7qG2_port_7qG2_000_inline_main, 0
+0	4293	70		setin __constVal3, __SetSensor_7qG2_port_7qG2_000_inline_main, 1
+0	4294	74	#pragma macro 4
+0	4294	74		mov __ResetSensorPort, __SetSensor_7qG2_port_7qG2_000_inline_main
+0	4294	76		subcall __ResetSensorSubroutine, ____ResetSensorSubroutine_return
+0	6882	78	#line 6882 "NXCDefs.h"
+0	4295	78	#line 4295 "NXCDefs.h"
+0	97	78	#line 97 "C:\Users\MATTRE~1.EUG\AppData\Local\Temp\temp.nxc"
+0	98	78		exit -1, -1
 1	5476	0		setin __constVal1, __ResetSensorPort, 5
 1	5478	4		getin __ResetSensorTmp, __ResetSensorPort, 5
 1	5479	8		brtst 5, __SensorStillInvalid, __ResetSensorTmp
 1	5480	11		subret ____ResetSensorSubroutine_return
-2	36	0	#line 36 "C:\Users\HARRYK~1\AppData\Local\Temp\temp.nxc"
-2	37	0		subret ____initialize_global_data_return
+2	100	0	#line 100 "C:\Users\MATTRE~1.EUG\AppData\Local\Temp\temp.nxc"
+2	101	0		subret ____initialize_global_data_return
 #CLUMPS
 Clump	Name	Offset	File
-0	main	0	C:\Users\HARRYK~1\AppData\Local\Temp\temp.nxc
-1	__ResetSensorSubroutine	45	NXTDefs.h
-2	__initialize_global_data	58	C:\Users\HARRYK~1\AppData\Local\Temp\temp.nxc
+0	main	0	C:\Users\MATTRE~1.EUG\AppData\Local\Temp\temp.nxc
+1	__ResetSensorSubroutine	81	NXTDefs.h
+2	__initialize_global_data	94	C:\Users\MATTRE~1.EUG\AppData\Local\Temp\temp.nxc
