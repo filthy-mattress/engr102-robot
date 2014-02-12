@@ -1,109 +1,456 @@
 #SYMBOLS
 Index	Identifier	Type	Flag	Data	Size	RefCount
-0	__SetSensor_7qG2_config_7qG2_000_inline_main	3	1	0	2	3
-1	__SetSensorHTMagnet_7qG2_port_7qG2_000_inline_main	1	1	2	1	4
-2	__SetSensor_7qG2_port_7qG2_000_inline_main	1	1	3	1	12
-3	__SetSensorType_7qG2_port_7qG2_000_inline_SetSensorHTMagnet_inline_main	1	1	4	1	2
-4	__SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorHTMagnet_inline_main	1	1	5	1	2
-5	__SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorHTMagnet_inline_main	1	1	6	1	2
-6	__SetSensorType_7qG2_type_7qG2_000_inline_SetSensorHTMagnet_inline_main	1	1	7	1	2
-7	____initialize_global_data_return	1	1	8	1	3
-8	__constVal3	2	0	9	1	2
-9	__constVal0	2	1	10	1	3
-10	__constVal1	2	0	11	1	3
-11	__ResetSensorPort	1	1	12	1	6
-12	__constVal10	2	0	13	1	2
-13	____ResetSensorSubroutine_return	1	1	14	1	6
-14	__ResetSensorTmp	1	1	15	1	2
+0	__DU0scan360	5	1	0	4	4
+1	__D0test_spin	6	1	4	4	16
+2	__D0scan360	6	1	8	4	8
+3	__D0scan	6	1	12	4	14
+4	__DU0scan	5	1	16	4	2
+5	__Wait_7qG2_ms_7qG2_000_inline_scan360	5	1	20	4	2
+6	__signed_stack_002test_spin	6	1	24	4	8
+7	__scan_7qG2_pos_7qG2_001	6	1	28	4	3
+8	__signed_stack_001test_spin	6	1	32	4	8
+9	__signed_stack_001scan	6	1	36	4	6
+10	__signed_stack_001scan360	6	1	40	4	2
+11	__TextOutMutex	9	0	44	4	8
+12	__scan_7qG2_read_7qG2_001	4	1	48	2	6
+13	__scan360_return	1	1	50	1	3
+14	__SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorHTMagnet_inline_main	1	1	51	1	2
+15	__SetSensorMode_7qG2_port_7qG2_000_inline_main	1	1	52	1	2
+16	__scan360_7qG2_motor_7qG2_000	1	1	53	1	2
+17	scan_motor	1	1	54	1	4
+18	__SetSensorMode_7qG2_mode_7qG2_000_inline_main	1	1	55	1	2
+19	__scan360_7qG2_sensor_7qG2_000	1	1	56	1	2
+20	__SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorHTMagnet_inline_main	1	1	57	1	2
+21	__SetSensorType_7qG2_port_7qG2_000_inline_main	1	1	58	1	6
+22	__SetSensorType_7qG2_type_7qG2_000_inline_main	1	1	59	1	6
+23	__test_spin_return	1	1	60	1	3
+24	____initialize_global_data_return	1	1	61	1	3
+25	__scan_Spawner_return	1	1	62	1	1
+26	__SetSensorType_7qG2_type_7qG2_000_inline_SetSensorHTMagnet_inline_main	1	1	63	1	2
+27	__SetSensorHTMagnet_7qG2_port_7qG2_000_inline_main	1	1	64	1	4
+28	__SetSensorType_7qG2_port_7qG2_000_inline_SetSensorHTMagnet_inline_main	1	1	65	1	2
+29	scan_sensor	1	0	66	1	3
+30	__ResetSensorTmp	1	1	67	1	2
+31	__ResetSensorPort	1	1	68	1	3
+32	__constVal2	2	0	69	1	1
+33	____ResetSensorSubroutine_return	1	1	70	1	3
+34	__constVal1	2	0	71	1	1
+35	__constVal32	2	0	72	1	9
+36	__constVal3	2	0	73	1	3
+37	__constVal0	2	1	74	1	11
+38	__PFTmp	1	1	75	1	1
+39	__constVal63	2	0	76	1	3
+40	run_scan	1	1	77	1	3
+41	scan_done	1	0	78	1	3
+42	__constVal96	2	0	79	1	3
+43	minPoint	8	0	2	8	7
+44	minPoint.read	4	1	80	2	7
+45	minPoint.pos	6	1	84	4	7
+46	__TextOutArgs	8	0	4	16	24
+47	__TextOutArgs.Result	2	1	88	1	24
+48	__TextOutArgs.Location	8	0	2	4	24
+49	__TextOutArgs.Location.X	4	1	92	2	24
+50	__TextOutArgs.Location.Y	4	1	94	2	24
+51	__TextOutArgs.Text	7	0	96	4	24
+52	__TextOutArgs.Text.Text_type	1	0	0	1	0
+53	__TextOutArgs.Options	5	1	100	4	24
+54	maxPoint	8	0	2	8	7
+55	maxPoint.read	4	1	104	2	7
+56	maxPoint.pos	6	1	108	4	7
+57	__OUT_AC	7	0	112	4	1
+58	__OUT_AC.__OUT_AC_type	1	0	0	1	0
+59	__strbuftest_spin	7	0	114	4	8
+60	__strbuftest_spin.__strbuftest_spin_type	1	0	0	1	0
+61	__strretvaltest_spin	7	0	116	4	8
+62	__strretvaltest_spin.__strretvaltest_spin_type	1	0	0	1	0
 #SOURCES
 Clump	Line	PC	Source
-0	92	0	#line 92 "C:\Users\MATTRE~1.EUG\AppData\Local\Temp\temp.nxc"
-0	93	0		subcall __initialize_global_data, ____initialize_global_data_return
-0	92	2	#line 92 "C:\Users\MATTRE~1.EUG\AppData\Local\Temp\temp.nxc"
-0	92	2	#line 92 "C:\Users\MATTRE~1.EUG\AppData\Local\Temp\temp.nxc"
-0	93	2		set __SetSensor_7qG2_port_7qG2_000_inline_main, 0
-0	92	5	#line 92 "C:\Users\MATTRE~1.EUG\AppData\Local\Temp\temp.nxc"
-0	92	5	#line 92 "C:\Users\MATTRE~1.EUG\AppData\Local\Temp\temp.nxc"
-0	93	5		mov __SetSensor_7qG2_config_7qG2_000_inline_main, __constVal10
-0	4291	7	#line 4291 "NXCDefs.h"
-0	4292	7		setin __constVal0, __SetSensor_7qG2_port_7qG2_000_inline_main, 0
-0	4293	11		setin __constVal10, __SetSensor_7qG2_port_7qG2_000_inline_main, 1
-0	4294	15	#pragma macro 4
-0	4294	15		mov __ResetSensorPort, __SetSensor_7qG2_port_7qG2_000_inline_main
-0	4294	17		subcall __ResetSensorSubroutine, ____ResetSensorSubroutine_return
-0	6791	19	#line 6791 "NXCDefs.h"
-0	4295	19	#line 4295 "NXCDefs.h"
-0	93	19	#line 93 "C:\Users\MATTRE~1.EUG\AppData\Local\Temp\temp.nxc"
-0	93	19	#line 93 "C:\Users\MATTRE~1.EUG\AppData\Local\Temp\temp.nxc"
-0	94	19		set __SetSensor_7qG2_port_7qG2_000_inline_main, 1
-0	93	22	#line 93 "C:\Users\MATTRE~1.EUG\AppData\Local\Temp\temp.nxc"
-0	93	22	#line 93 "C:\Users\MATTRE~1.EUG\AppData\Local\Temp\temp.nxc"
-0	94	22		mov __SetSensor_7qG2_config_7qG2_000_inline_main, __constVal1
-0	4291	24	#line 4291 "NXCDefs.h"
-0	4292	24		setin __constVal0, __SetSensor_7qG2_port_7qG2_000_inline_main, 0
-0	4293	28		setin __constVal1, __SetSensor_7qG2_port_7qG2_000_inline_main, 1
-0	4294	32	#pragma macro 4
-0	4294	32		mov __ResetSensorPort, __SetSensor_7qG2_port_7qG2_000_inline_main
-0	4294	34		subcall __ResetSensorSubroutine, ____ResetSensorSubroutine_return
-0	6803	36	#line 6803 "NXCDefs.h"
-0	4295	36	#line 4295 "NXCDefs.h"
-0	94	36	#line 94 "C:\Users\MATTRE~1.EUG\AppData\Local\Temp\temp.nxc"
-0	94	36	#line 94 "C:\Users\MATTRE~1.EUG\AppData\Local\Temp\temp.nxc"
-0	95	36		set __SetSensorHTMagnet_7qG2_port_7qG2_000_inline_main, 2
-0	94	39	#line 94 "C:\Users\MATTRE~1.EUG\AppData\Local\Temp\temp.nxc"
-0	13790	39	#line 13790 "NXCDefs.h"
-0	13791	39		mov __SetSensorType_7qG2_port_7qG2_000_inline_SetSensorHTMagnet_inline_main, __SetSensorHTMagnet_7qG2_port_7qG2_000_inline_main
-0	13790	41	#line 13790 "NXCDefs.h"
-0	13790	41	#line 13790 "NXCDefs.h"
-0	13791	41		set __SetSensorType_7qG2_type_7qG2_000_inline_SetSensorHTMagnet_inline_main, 6
-0	13790	44	#line 13790 "NXCDefs.h"
-0	4247	44	#line 4247 "NXCDefs.h"
-0	4248	44		setin __SetSensorType_7qG2_type_7qG2_000_inline_SetSensorHTMagnet_inline_main, __SetSensorType_7qG2_port_7qG2_000_inline_SetSensorHTMagnet_inline_main, 0
-0	4247	48	#line 4247 "NXCDefs.h"
-0	13791	48	#line 13791 "NXCDefs.h"
-0	13791	48	#line 13791 "NXCDefs.h"
-0	13792	48		mov __SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorHTMagnet_inline_main, __SetSensorHTMagnet_7qG2_port_7qG2_000_inline_main
-0	13791	50	#line 13791 "NXCDefs.h"
-0	13791	50	#line 13791 "NXCDefs.h"
-0	13792	50		set __SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorHTMagnet_inline_main, 0
-0	13791	53	#line 13791 "NXCDefs.h"
-0	4260	53	#line 4260 "NXCDefs.h"
-0	4261	53		setin __SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorHTMagnet_inline_main, __SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorHTMagnet_inline_main, 1
-0	4260	57	#line 4260 "NXCDefs.h"
-0	13792	57	#line 13792 "NXCDefs.h"
-0	13792	57	#line 13792 "NXCDefs.h"
-0	13792	57	#line 13792 "NXCDefs.h"
-0	4278	57	#line 4278 "NXCDefs.h"
-0	4279	57	#pragma macro 4
-0	4279	57		mov __ResetSensorPort, __SetSensorHTMagnet_7qG2_port_7qG2_000_inline_main
-0	4279	59		subcall __ResetSensorSubroutine, ____ResetSensorSubroutine_return
-0	6869	61	#line 6869 "NXCDefs.h"
-0	4278	61	#line 4278 "NXCDefs.h"
-0	13793	61	#line 13793 "NXCDefs.h"
-0	95	61	#line 95 "C:\Users\MATTRE~1.EUG\AppData\Local\Temp\temp.nxc"
-0	95	61	#line 95 "C:\Users\MATTRE~1.EUG\AppData\Local\Temp\temp.nxc"
-0	96	61		set __SetSensor_7qG2_port_7qG2_000_inline_main, 3
-0	95	64	#line 95 "C:\Users\MATTRE~1.EUG\AppData\Local\Temp\temp.nxc"
-0	95	64	#line 95 "C:\Users\MATTRE~1.EUG\AppData\Local\Temp\temp.nxc"
-0	96	64		mov __SetSensor_7qG2_config_7qG2_000_inline_main, __constVal3
-0	4291	66	#line 4291 "NXCDefs.h"
-0	4292	66		setin __constVal0, __SetSensor_7qG2_port_7qG2_000_inline_main, 0
-0	4293	70		setin __constVal3, __SetSensor_7qG2_port_7qG2_000_inline_main, 1
-0	4294	74	#pragma macro 4
-0	4294	74		mov __ResetSensorPort, __SetSensor_7qG2_port_7qG2_000_inline_main
-0	4294	76		subcall __ResetSensorSubroutine, ____ResetSensorSubroutine_return
-0	6882	78	#line 6882 "NXCDefs.h"
-0	4295	78	#line 4295 "NXCDefs.h"
-0	97	78	#line 97 "C:\Users\MATTRE~1.EUG\AppData\Local\Temp\temp.nxc"
-0	98	78		exit -1, -1
+0	109	0	#line 109 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Gatekeeper.nxc"
+0	110	0		subcall __initialize_global_data, ____initialize_global_data_return
+0	109	2	#line 109 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Gatekeeper.nxc"
+0	109	2	#line 109 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Gatekeeper.nxc"
+0	110	2		set __SetSensorType_7qG2_port_7qG2_000_inline_main, 0
+0	109	5	#line 109 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Gatekeeper.nxc"
+0	109	5	#line 109 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Gatekeeper.nxc"
+0	110	5		set __SetSensorType_7qG2_type_7qG2_000_inline_main, 10
+0	109	8	#line 109 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Gatekeeper.nxc"
+0	4247	8	#line 4247 "NXCDefs.h"
+0	4248	8		setin __SetSensorType_7qG2_type_7qG2_000_inline_main, __SetSensorType_7qG2_port_7qG2_000_inline_main, 0
+0	4247	12	#line 4247 "NXCDefs.h"
+0	110	12	#line 110 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Gatekeeper.nxc"
+0	110	12	#line 110 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Gatekeeper.nxc"
+0	111	12		set __SetSensorType_7qG2_port_7qG2_000_inline_main, 1
+0	110	15	#line 110 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Gatekeeper.nxc"
+0	110	15	#line 110 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Gatekeeper.nxc"
+0	111	15		set __SetSensorType_7qG2_type_7qG2_000_inline_main, 1
+0	110	18	#line 110 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Gatekeeper.nxc"
+0	4247	18	#line 4247 "NXCDefs.h"
+0	4248	18		setin __SetSensorType_7qG2_type_7qG2_000_inline_main, __SetSensorType_7qG2_port_7qG2_000_inline_main, 0
+0	4247	22	#line 4247 "NXCDefs.h"
+0	111	22	#line 111 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Gatekeeper.nxc"
+0	111	22	#line 111 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Gatekeeper.nxc"
+0	112	22		set __SetSensorHTMagnet_7qG2_port_7qG2_000_inline_main, 2
+0	111	25	#line 111 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Gatekeeper.nxc"
+0	13790	25	#line 13790 "NXCDefs.h"
+0	13791	25		mov __SetSensorType_7qG2_port_7qG2_000_inline_SetSensorHTMagnet_inline_main, __SetSensorHTMagnet_7qG2_port_7qG2_000_inline_main
+0	13790	27	#line 13790 "NXCDefs.h"
+0	13790	27	#line 13790 "NXCDefs.h"
+0	13791	27		set __SetSensorType_7qG2_type_7qG2_000_inline_SetSensorHTMagnet_inline_main, 6
+0	13790	30	#line 13790 "NXCDefs.h"
+0	4247	30	#line 4247 "NXCDefs.h"
+0	4248	30		setin __SetSensorType_7qG2_type_7qG2_000_inline_SetSensorHTMagnet_inline_main, __SetSensorType_7qG2_port_7qG2_000_inline_SetSensorHTMagnet_inline_main, 0
+0	4247	34	#line 4247 "NXCDefs.h"
+0	13791	34	#line 13791 "NXCDefs.h"
+0	13791	34	#line 13791 "NXCDefs.h"
+0	13792	34		mov __SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorHTMagnet_inline_main, __SetSensorHTMagnet_7qG2_port_7qG2_000_inline_main
+0	13791	36	#line 13791 "NXCDefs.h"
+0	13791	36	#line 13791 "NXCDefs.h"
+0	13792	36		set __SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorHTMagnet_inline_main, 0
+0	13791	39	#line 13791 "NXCDefs.h"
+0	4260	39	#line 4260 "NXCDefs.h"
+0	4261	39		setin __SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorHTMagnet_inline_main, __SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorHTMagnet_inline_main, 1
+0	4260	43	#line 4260 "NXCDefs.h"
+0	13792	43	#line 13792 "NXCDefs.h"
+0	13792	43	#line 13792 "NXCDefs.h"
+0	13792	43	#line 13792 "NXCDefs.h"
+0	4278	43	#line 4278 "NXCDefs.h"
+0	4279	43	#pragma macro 4
+0	4279	43		mov __ResetSensorPort, __SetSensorHTMagnet_7qG2_port_7qG2_000_inline_main
+0	4279	45		subcall __ResetSensorSubroutine, ____ResetSensorSubroutine_return
+0	4681	47	#line 4681 "NXCDefs.h"
+0	4278	47	#line 4278 "NXCDefs.h"
+0	13793	47	#line 13793 "NXCDefs.h"
+0	112	47	#line 112 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Gatekeeper.nxc"
+0	112	47	#line 112 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Gatekeeper.nxc"
+0	113	47		set __SetSensorType_7qG2_port_7qG2_000_inline_main, 3
+0	112	50	#line 112 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Gatekeeper.nxc"
+0	112	50	#line 112 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Gatekeeper.nxc"
+0	113	50		set __SetSensorType_7qG2_type_7qG2_000_inline_main, 6
+0	112	53	#line 112 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Gatekeeper.nxc"
+0	4247	53	#line 4247 "NXCDefs.h"
+0	4248	53		setin __SetSensorType_7qG2_type_7qG2_000_inline_main, __SetSensorType_7qG2_port_7qG2_000_inline_main, 0
+0	4247	57	#line 4247 "NXCDefs.h"
+0	113	57	#line 113 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Gatekeeper.nxc"
+0	113	57	#line 113 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Gatekeeper.nxc"
+0	114	57		set __SetSensorMode_7qG2_port_7qG2_000_inline_main, 3
+0	113	60	#line 113 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Gatekeeper.nxc"
+0	113	60	#line 113 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Gatekeeper.nxc"
+0	114	60		set __SetSensorMode_7qG2_mode_7qG2_000_inline_main, 128
+0	113	63	#line 113 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Gatekeeper.nxc"
+0	4260	63	#line 4260 "NXCDefs.h"
+0	4261	63		setin __SetSensorMode_7qG2_mode_7qG2_000_inline_main, __SetSensorMode_7qG2_port_7qG2_000_inline_main, 1
+0	4260	67	#line 4260 "NXCDefs.h"
+0	114	67	#line 114 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Gatekeeper.nxc"
+0	115	67	#line 115 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Gatekeeper.nxc"
+0	116	67		subcall test_spin, __test_spin_return
+0	115	69	#line 115 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Gatekeeper.nxc"
+0	116	69		exit -1, -1
 1	5476	0		setin __constVal1, __ResetSensorPort, 5
 1	5478	4		getin __ResetSensorTmp, __ResetSensorPort, 5
 1	5479	8		brtst 5, __SensorStillInvalid, __ResetSensorTmp
 1	5480	11		subret ____ResetSensorSubroutine_return
-2	100	0	#line 100 "C:\Users\MATTRE~1.EUG\AppData\Local\Temp\temp.nxc"
-2	101	0		subret ____initialize_global_data_return
+2	65	0	#line 65 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Gatekeeper.nxc"
+2	66	0		set run_scan, 1
+2	65	3	#line 65 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Gatekeeper.nxc"
+2	65	3	#line 65 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Gatekeeper.nxc"
+2	67	3	#line 67 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Gatekeeper.nxc"
+2	68	3		set scan_done, 0
+2	67	6	#line 67 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Gatekeeper.nxc"
+2	67	6	#line 67 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Gatekeeper.nxc"
+2	67	6	#line 67 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Gatekeeper.nxc"
+2	68	6		getin maxPoint.read, scan_sensor, 4
+2	67	10	#line 67 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Gatekeeper.nxc"
+2	67	10	#line 67 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Gatekeeper.nxc"
+2	67	10	#line 67 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Gatekeeper.nxc"
+2	69	10	#line 69 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Gatekeeper.nxc"
+2	70	10		getout maxPoint.pos, scan_motor, 4
+2	69	14	#line 69 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Gatekeeper.nxc"
+2	69	14	#line 69 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Gatekeeper.nxc"
+2	70	14	#line 70 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Gatekeeper.nxc"
+2	71	14		set minPoint.read, 5000
+2	70	17	#line 70 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Gatekeeper.nxc"
+2	70	17	#line 70 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Gatekeeper.nxc"
+2	71	17	#line 71 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Gatekeeper.nxc"
+2	72	17		getout minPoint.pos, scan_motor, 4
+2	71	21	#line 71 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Gatekeeper.nxc"
+2	71	21	#line 71 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Gatekeeper.nxc"
+2	71	21	#line 71 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Gatekeeper.nxc"
+2	72	21		mov __DU0scan, run_scan
+2	72	23	#line 72 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Gatekeeper.nxc"
+2	73	23		tst 5, __D0scan, __DU0scan
+2	72	26	#line 72 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Gatekeeper.nxc"
+2	73	26		brtst 4, __ASM_Label_548, __D0scan
+2	72	29	#line 72 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Gatekeeper.nxc"
+2	73	29		getin __scan_7qG2_read_7qG2_001, scan_sensor, 4
+2	72	33	#line 72 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Gatekeeper.nxc"
+2	74	33	#line 74 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Gatekeeper.nxc"
+2	75	33		getout __scan_7qG2_pos_7qG2_001, scan_motor, 4
+2	74	37	#line 74 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Gatekeeper.nxc"
+2	74	37	#line 74 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Gatekeeper.nxc"
+2	75	37		mov __signed_stack_001scan, __scan_7qG2_read_7qG2_001
+2	74	39	#line 74 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Gatekeeper.nxc"
+2	74	39	#line 74 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Gatekeeper.nxc"
+2	75	39		set __D0scan, 0
+2	74	42	#line 74 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Gatekeeper.nxc"
+2	75	42		cmp 5, __D0scan, __signed_stack_001scan, __D0scan
+2	75	46	#line 75 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Gatekeeper.nxc"
+2	76	46		brtst 4, __ASM_Label_557, __D0scan
+2	75	49	#line 75 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Gatekeeper.nxc"
+2	76	49		mov __signed_stack_001scan, __scan_7qG2_read_7qG2_001
+2	75	51	#line 75 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Gatekeeper.nxc"
+2	75	51	#line 75 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Gatekeeper.nxc"
+2	76	51		mov __D0scan, maxPoint.read
+2	75	53	#line 75 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Gatekeeper.nxc"
+2	76	53		cmp 1, __D0scan, __signed_stack_001scan, __D0scan
+2	76	57	#line 76 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Gatekeeper.nxc"
+2	77	57		brtst 4, __ASM_Label_560, __D0scan
+2	77	60	#line 77 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Gatekeeper.nxc"
+2	78	60		mov maxPoint.read, __scan_7qG2_read_7qG2_001
+2	77	62	#line 77 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Gatekeeper.nxc"
+2	77	62	#line 77 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Gatekeeper.nxc"
+2	78	62	#line 78 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Gatekeeper.nxc"
+2	79	62		mov maxPoint.pos, __scan_7qG2_pos_7qG2_001
+2	78	64	#line 78 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Gatekeeper.nxc"
+2	78	64	#line 78 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Gatekeeper.nxc"
+2	79	64	#line 79 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Gatekeeper.nxc"
+2	79	64	#line 79 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Gatekeeper.nxc"
+2	80	64		mov __signed_stack_001scan, __scan_7qG2_read_7qG2_001
+2	79	66	#line 79 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Gatekeeper.nxc"
+2	79	66	#line 79 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Gatekeeper.nxc"
+2	80	66		mov __D0scan, minPoint.read
+2	79	68	#line 79 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Gatekeeper.nxc"
+2	80	68		cmp 0, __D0scan, __signed_stack_001scan, __D0scan
+2	80	72	#line 80 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Gatekeeper.nxc"
+2	81	72		brtst 4, __ASM_Label_567, __D0scan
+2	81	75	#line 81 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Gatekeeper.nxc"
+2	82	75		mov minPoint.read, __scan_7qG2_read_7qG2_001
+2	81	77	#line 81 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Gatekeeper.nxc"
+2	81	77	#line 81 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Gatekeeper.nxc"
+2	82	77	#line 82 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Gatekeeper.nxc"
+2	83	77		mov minPoint.pos, __scan_7qG2_pos_7qG2_001
+2	82	79	#line 82 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Gatekeeper.nxc"
+2	82	79	#line 82 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Gatekeeper.nxc"
+2	84	79	#line 84 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Gatekeeper.nxc"
+2	85	79	#line 85 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Gatekeeper.nxc"
+2	85	79	#line 85 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Gatekeeper.nxc"
+2	86	79		jmp __ASM_Label_547
+2	85	81	#line 85 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Gatekeeper.nxc"
+2	86	81	#line 86 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Gatekeeper.nxc"
+2	87	81		set scan_done, 1
+2	86	84	#line 86 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Gatekeeper.nxc"
+2	86	84	#line 86 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Gatekeeper.nxc"
+2	87	84		exit -1, -1
+3	92	0	#line 92 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Gatekeeper.nxc"
+3	93	0		mov scan_sensor, __scan360_7qG2_sensor_7qG2_000
+3	92	2	#line 92 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Gatekeeper.nxc"
+3	92	2	#line 92 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Gatekeeper.nxc"
+3	92	2	#line 92 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Gatekeeper.nxc"
+3	93	2		mov scan_motor, __scan360_7qG2_motor_7qG2_000
+3	92	4	#line 92 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Gatekeeper.nxc"
+3	92	4	#line 92 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Gatekeeper.nxc"
+3	92	4	#line 92 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Gatekeeper.nxc"
+3	93	4		subcall __scan_Spawner, __scan_Spawner_return
+3	92	6	#line 92 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Gatekeeper.nxc"
+3	93	6	#line 93 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Gatekeeper.nxc"
+3	93	6	#line 93 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Gatekeeper.nxc"
+3	94	6		set __signed_stack_001scan360, 0
+3	93	9	#line 93 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Gatekeeper.nxc"
+3	93	9	#line 93 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Gatekeeper.nxc"
+3	94	9		set __D0scan360, 30
+3	93	12	#line 93 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Gatekeeper.nxc"
+3	94	12		sub __D0scan360, __signed_stack_001scan360, __D0scan360
+3	93	16	#line 93 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Gatekeeper.nxc"
+3	94	16	#pragma macro 7
+3	94	16		setout __constVal2, 2, __D0scan360, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+3	4354	39	#line 4354 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Gatekeeper.nxc"
+3	93	39	#line 93 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Gatekeeper.nxc"
+3	93	39	#line 93 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Gatekeeper.nxc"
+3	94	39		set __D0scan360, 30
+3	93	42	#line 93 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Gatekeeper.nxc"
+3	94	42	#pragma macro 7
+3	94	42		setout __constVal0, 2, __D0scan360, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+3	4359	65	#line 4359 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Gatekeeper.nxc"
+3	93	65	#line 93 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Gatekeeper.nxc"
+3	93	65	#line 93 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Gatekeeper.nxc"
+3	94	65	#line 94 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Gatekeeper.nxc"
+3	94	65	#line 94 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Gatekeeper.nxc"
+3	95	65		set __Wait_7qG2_ms_7qG2_000_inline_scan360, 5000
+3	94	68	#line 94 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Gatekeeper.nxc"
+3	8551	68	#line 8551 "NXCDefs.h"
+3	8552	68		wait2 NA, __Wait_7qG2_ms_7qG2_000_inline_scan360
+3	8551	71	#line 8551 "NXCDefs.h"
+3	95	71	#line 95 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Gatekeeper.nxc"
+3	96	71	#line 96 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Gatekeeper.nxc"
+3	97	71	#pragma macro 7
+3	97	71		setout __OUT_AC, 2, __constVal0, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+3	4376	94	#line 4376 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Gatekeeper.nxc"
+3	96	94	#line 96 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Gatekeeper.nxc"
+3	96	94	#line 96 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Gatekeeper.nxc"
+3	97	94		set run_scan, 0
+3	96	97	#line 96 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Gatekeeper.nxc"
+3	96	97	#line 96 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Gatekeeper.nxc"
+3	96	97	#line 96 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Gatekeeper.nxc"
+3	97	97		mov __DU0scan360, scan_done
+3	96	99	#line 96 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Gatekeeper.nxc"
+3	97	99		not __DU0scan360, __DU0scan360
+3	96	102	#line 96 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Gatekeeper.nxc"
+3	97	102		tst 5, __D0scan360, __DU0scan360
+3	96	105	#line 96 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Gatekeeper.nxc"
+3	97	105		brtst 4, __ASM_Label_589, __D0scan360
+3	96	108	#line 96 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Gatekeeper.nxc"
+3	96	108	#line 96 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Gatekeeper.nxc"
+3	97	108		jmp __ASM_Label_588
+3	96	110	#line 96 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Gatekeeper.nxc"
+3	97	110	#line 97 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Gatekeeper.nxc"
+3	99	110	#line 99 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Gatekeeper.nxc"
+3	100	110		subret __scan360_return
+4	0	0		subret __scan_Spawner_return
+5	0	0		exit 0, 1
+6	100	0	#line 100 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Gatekeeper.nxc"
+6	101	0		set __scan360_7qG2_sensor_7qG2_000, 3
+6	100	3	#line 100 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Gatekeeper.nxc"
+6	100	3	#line 100 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Gatekeeper.nxc"
+6	101	3		set __scan360_7qG2_motor_7qG2_000, 0
+6	100	6	#line 100 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Gatekeeper.nxc"
+6	101	6	#line 101 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Gatekeeper.nxc"
+6	102	6		subcall scan360, __scan360_return
+6	101	8	#line 101 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Gatekeeper.nxc"
+6	101	8	#line 101 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Gatekeeper.nxc"
+6	102	8		set __signed_stack_001test_spin, 1
+6	101	11	#line 101 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Gatekeeper.nxc"
+6	101	11	#line 101 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Gatekeeper.nxc"
+6	102	11		set __signed_stack_002test_spin, 56
+6	101	14	#line 101 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Gatekeeper.nxc"
+6	101	14	#line 101 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Gatekeeper.nxc"
+6	102	14		mov __D0test_spin, maxPoint.read
+6	101	16	#line 101 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Gatekeeper.nxc"
+6	102	16		numtostr __strretvaltest_spin, __D0test_spin
+6	101	19	#line 101 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Gatekeeper.nxc"
+6	102	19		strcat __strbuftest_spin, __strretvaltest_spin
+6	102	23	#line 102 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Gatekeeper.nxc"
+6	103	23		acquire __TextOutMutex
+6	102	24	#line 102 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Gatekeeper.nxc"
+6	103	24		mov __TextOutArgs.Location.X, __signed_stack_001test_spin
+6	102	26	#line 102 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Gatekeeper.nxc"
+6	103	26		mov __TextOutArgs.Location.Y, __signed_stack_002test_spin
+6	102	28	#line 102 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Gatekeeper.nxc"
+6	103	28		set __TextOutArgs.Options, 0
+6	102	31	#line 102 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Gatekeeper.nxc"
+6	103	31		mov __TextOutArgs.Text, __strbuftest_spin
+6	102	33	#line 102 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Gatekeeper.nxc"
+6	103	33		syscall 13, __TextOutArgs
+6	102	36	#line 102 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Gatekeeper.nxc"
+6	103	36		mov __D0test_spin, __TextOutArgs.Result
+6	102	38	#line 102 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Gatekeeper.nxc"
+6	103	38		release __TextOutMutex
+6	102	39	#line 102 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Gatekeeper.nxc"
+6	102	39	#line 102 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Gatekeeper.nxc"
+6	103	39		set __signed_stack_001test_spin, 1
+6	102	42	#line 102 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Gatekeeper.nxc"
+6	102	42	#line 102 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Gatekeeper.nxc"
+6	103	42		set __signed_stack_002test_spin, 48
+6	102	45	#line 102 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Gatekeeper.nxc"
+6	102	45	#line 102 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Gatekeeper.nxc"
+6	103	45		mov __D0test_spin, maxPoint.pos
+6	102	47	#line 102 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Gatekeeper.nxc"
+6	103	47		numtostr __strretvaltest_spin, __D0test_spin
+6	102	50	#line 102 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Gatekeeper.nxc"
+6	103	50		strcat __strbuftest_spin, __strretvaltest_spin
+6	103	54	#line 103 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Gatekeeper.nxc"
+6	104	54		acquire __TextOutMutex
+6	103	55	#line 103 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Gatekeeper.nxc"
+6	104	55		mov __TextOutArgs.Location.X, __signed_stack_001test_spin
+6	103	57	#line 103 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Gatekeeper.nxc"
+6	104	57		mov __TextOutArgs.Location.Y, __signed_stack_002test_spin
+6	103	59	#line 103 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Gatekeeper.nxc"
+6	104	59		set __TextOutArgs.Options, 0
+6	103	62	#line 103 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Gatekeeper.nxc"
+6	104	62		mov __TextOutArgs.Text, __strbuftest_spin
+6	103	64	#line 103 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Gatekeeper.nxc"
+6	104	64		syscall 13, __TextOutArgs
+6	103	67	#line 103 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Gatekeeper.nxc"
+6	104	67		mov __D0test_spin, __TextOutArgs.Result
+6	103	69	#line 103 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Gatekeeper.nxc"
+6	104	69		release __TextOutMutex
+6	103	70	#line 103 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Gatekeeper.nxc"
+6	103	70	#line 103 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Gatekeeper.nxc"
+6	104	70		set __signed_stack_001test_spin, 1
+6	103	73	#line 103 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Gatekeeper.nxc"
+6	103	73	#line 103 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Gatekeeper.nxc"
+6	104	73		set __signed_stack_002test_spin, 40
+6	103	76	#line 103 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Gatekeeper.nxc"
+6	103	76	#line 103 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Gatekeeper.nxc"
+6	104	76		mov __D0test_spin, minPoint.read
+6	103	78	#line 103 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Gatekeeper.nxc"
+6	104	78		numtostr __strretvaltest_spin, __D0test_spin
+6	103	81	#line 103 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Gatekeeper.nxc"
+6	104	81		strcat __strbuftest_spin, __strretvaltest_spin
+6	104	85	#line 104 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Gatekeeper.nxc"
+6	105	85		acquire __TextOutMutex
+6	104	86	#line 104 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Gatekeeper.nxc"
+6	105	86		mov __TextOutArgs.Location.X, __signed_stack_001test_spin
+6	104	88	#line 104 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Gatekeeper.nxc"
+6	105	88		mov __TextOutArgs.Location.Y, __signed_stack_002test_spin
+6	104	90	#line 104 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Gatekeeper.nxc"
+6	105	90		set __TextOutArgs.Options, 0
+6	104	93	#line 104 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Gatekeeper.nxc"
+6	105	93		mov __TextOutArgs.Text, __strbuftest_spin
+6	104	95	#line 104 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Gatekeeper.nxc"
+6	105	95		syscall 13, __TextOutArgs
+6	104	98	#line 104 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Gatekeeper.nxc"
+6	105	98		mov __D0test_spin, __TextOutArgs.Result
+6	104	100	#line 104 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Gatekeeper.nxc"
+6	105	100		release __TextOutMutex
+6	104	101	#line 104 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Gatekeeper.nxc"
+6	104	101	#line 104 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Gatekeeper.nxc"
+6	105	101		set __signed_stack_001test_spin, 1
+6	104	104	#line 104 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Gatekeeper.nxc"
+6	104	104	#line 104 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Gatekeeper.nxc"
+6	105	104		set __signed_stack_002test_spin, 32
+6	104	107	#line 104 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Gatekeeper.nxc"
+6	104	107	#line 104 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Gatekeeper.nxc"
+6	105	107		mov __D0test_spin, minPoint.pos
+6	104	109	#line 104 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Gatekeeper.nxc"
+6	105	109		numtostr __strretvaltest_spin, __D0test_spin
+6	104	112	#line 104 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Gatekeeper.nxc"
+6	105	112		strcat __strbuftest_spin, __strretvaltest_spin
+6	105	116	#line 105 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Gatekeeper.nxc"
+6	106	116		acquire __TextOutMutex
+6	105	117	#line 105 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Gatekeeper.nxc"
+6	106	117		mov __TextOutArgs.Location.X, __signed_stack_001test_spin
+6	105	119	#line 105 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Gatekeeper.nxc"
+6	106	119		mov __TextOutArgs.Location.Y, __signed_stack_002test_spin
+6	105	121	#line 105 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Gatekeeper.nxc"
+6	106	121		set __TextOutArgs.Options, 0
+6	105	124	#line 105 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Gatekeeper.nxc"
+6	106	124		mov __TextOutArgs.Text, __strbuftest_spin
+6	105	126	#line 105 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Gatekeeper.nxc"
+6	106	126		syscall 13, __TextOutArgs
+6	105	129	#line 105 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Gatekeeper.nxc"
+6	106	129		mov __D0test_spin, __TextOutArgs.Result
+6	105	131	#line 105 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Gatekeeper.nxc"
+6	106	131		release __TextOutMutex
+6	105	132	#line 105 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Gatekeeper.nxc"
+6	105	132	#line 105 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Gatekeeper.nxc"
+6	106	132		set __D0test_spin, 1
+6	105	135	#line 105 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Gatekeeper.nxc"
+6	106	135		tst 5, __D0test_spin, __D0test_spin
+6	105	138	#line 105 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Gatekeeper.nxc"
+6	106	138		brtst 4, __ASM_Label_623, __D0test_spin
+6	108	141	#line 108 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Gatekeeper.nxc"
+6	109	141		jmp __ASM_Label_622
+6	108	143	#line 108 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Gatekeeper.nxc"
+6	108	143	#line 108 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Gatekeeper.nxc"
+6	109	143		subret __test_spin_return
+7	118	0	#line 118 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Gatekeeper.nxc"
+7	119	0		subret ____initialize_global_data_return
 #CLUMPS
 Clump	Name	Offset	File
-0	main	0	C:\Users\MATTRE~1.EUG\AppData\Local\Temp\temp.nxc
-1	__ResetSensorSubroutine	81	NXTDefs.h
-2	__initialize_global_data	94	C:\Users\MATTRE~1.EUG\AppData\Local\Temp\temp.nxc
+0	main	0	C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Gatekeeper.nxc
+1	__ResetSensorSubroutine	72	NXTDefs.h
+2	scan	85	C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Gatekeeper.nxc
+3	scan360	172	C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Gatekeeper.nxc
+4	__scan_Returner	284	C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Gatekeeper.nxc
+5	__scan_Spawner	286	C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Gatekeeper.nxc
+6	test_spin	289	C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Gatekeeper.nxc
+7	__initialize_global_data	434	C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Gatekeeper.nxc
