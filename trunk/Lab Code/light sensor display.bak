@@ -1,0 +1,9 @@
+task main()
+{
+  SetSensorType(IN_3,IN_TYPE_LIGHT_INACTIVE);
+  SetSensorMode(IN_3,IN_MODE_PCTFULLSCALE);
+  ResetSensor(IN_3);
+    while(true){
+    TextOut(5,LCD_LINE2, NumToStr(Sensor(IN_3)));
+    }
+}

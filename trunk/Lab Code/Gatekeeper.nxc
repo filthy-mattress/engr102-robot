@@ -17,10 +17,10 @@
 #define LIGHT IN_4
 
 //Sensor read macros
-#define READ_ULTRASONIC SENSOR_1
-#define READ_TOUCH SENSOR_2
-#define READ_MAGNETIC SENSOR_3
-#define READ_LIGHT SENSOR_4
+#define READ_ULTRASONIC Sensor(ULTRASONIC)
+#define READ_TOUCH Sensor(TOUCH)
+#define READ_MAGNETIC Sensor(MAGNETIC)
+#define READ_LIGHT Sensor(LIGHT)
 
 //Motor macros
 #define motors(lspd,rspd) {OnFwd(LEFT_MOTOR,lspd);OnFwd(RIGHT_MOTOR,rspd);}
@@ -52,10 +52,10 @@ void motorGoTo(byte read,long tick){
 //Scan variables
 struct scanPoint{
      int read;
-     int pos;
+     long pos;
 };
-scanPoint points[]={};
-int reading_count=0;
+scanPoint maxPoint;
+scanPoint minPoint;
 bool run_scan=false;//True while loop is running. Set to false to exit loop.
 bool scan_done=true;//True while not scanning. Use to avoid access collisions
 byte scan_sensor=LIGHT;
@@ -64,17 +64,25 @@ byte scan_motor=RIGHT_MOTOR;
 task scan(){//This loop will record sensor values and motor positions
      run_scan=true;
      scan_done=false;
-     //reset reading
-     reading_count=0;
-     scanPoint tmp[];
+     //reset
+     maxPoint.read=Sensor(scan_sensor);
+     maxPoint.pos=MotorTachoCount(scan_motor);
+     minPoint.read=5000;
+     minPoint.pos=MotorTachoCount(scan_motor);
      while(run_scan){
-          scanPoint pt;
-          pt.read=Sensor(scan_sensor);
-          pt.pos=MotorTachoCount(scan_motor);
-          tmp[reading_count]=pt;
-          reading_count++;
+          int read=Sensor(scan_sensor);
+          long pos=MotorTachoCount(scan_motor);
+          if(read!=0){
+               if(read>maxPoint.read){
+                   maxPoint.read=read;
+                   maxPoint.pos=pos;
+               }
+               if(read<minPoint.read){
+                   minPoint.read=read;
+                   minPoint.pos=pos;
+               }
+          }
      }
-     points=tmp;
      scan_done=true;
 }
 //Macros to manage scan process
@@ -83,16 +91,26 @@ task scan(){//This loop will record sensor values and motor positions
 
 void scan360(byte sensor, byte motor){
      start_scan(sensor,motor);
-     zp_turn_l(MOVE_SPEED);
-     Wait(1000);//TESTING REQUIRED!!
+     zp_turn_l(30);
+     Wait(5000);//TESTING REQUIRED!!
      Off(BOTH_MOTORS);
      end_scan();
 }
 
+void test_spin(){
+     scan360(LIGHT,RIGHT_MOTOR);
+     TextOut(1,LCD_LINE1,NumToStr(maxPoint.read));
+     TextOut(1,LCD_LINE2,NumToStr(maxPoint.pos));
+     TextOut(1,LCD_LINE3,NumToStr(minPoint.read));
+     TextOut(1,LCD_LINE4,NumToStr(minPoint.pos));
+     while(true){}
+}
+
 task main(){
-     SetSensor(ULTRASONIC, SENSOR_TYPE_LOWSPEED);
-     SetSensor(TOUCH,SENSOR_TYPE_TOUCH);
+     SetSensorType(ULTRASONIC, SENSOR_TYPE_LOWSPEED);
+     SetSensorType(TOUCH,SENSOR_TYPE_TOUCH);
      SetSensorHTMagnet(MAGNETIC);
-     SetSensor(LIGHT,SENSOR_TYPE_LIGHT);
-     //TODO
+     SetSensorType(IN_4,IN_TYPE_LIGHT_INACTIVE);
+     SetSensorMode(IN_4,IN_MODE_PCTFULLSCALE);
+     test_spin();
 }
