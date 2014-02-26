@@ -1,0 +1,52 @@
+#ifndef __INCLUDES__
+#define __INCLUDES__
+
+//Motor ports
+#define RIGHT_MOTOR OUT_A
+#define LEFT_MOTOR OUT_C
+#define BOTH_MOTORS OUT_AC
+#define GATE_MOTOR OUT_B
+
+//Motor speeds
+#define MOVE_SPEED 75
+#define GATE_SPEED 30
+
+//Sensor ports
+#define ULTRASONIC IN_1
+#define COLOR IN_2
+#define MAGNETIC IN_3
+#define LIGHT IN_4
+
+//Sensor read macros
+#define READ_ULTRASONIC SensorUS(ULTRASONIC)
+#define READ_COLOR Sensor(COLOR)
+#define READ_MAGNETIC Sensor(MAGNETIC)
+#define READ_LIGHT Sensor(LIGHT)
+
+//Motor macros
+#define motors(lspd,rspd) {OnFwd(LEFT_MOTOR,lspd);OnFwd(RIGHT_MOTOR,rspd);}
+#define zp_turn_l(spd) motors(-(spd),spd);
+#define zp_turn_r(spd) motors(spd,-(spd));
+
+//Define constants
+#define NEAR 30
+#define NEAR2 15
+#define NEARWALL 30
+#define MAGNETISM 500
+#define LIGHT_THRESHOLD 50
+
+void init_sensors(){
+     SetSensorType(ULTRASONIC, SENSOR_TYPE_LOWSPEED);
+     SetSensorColorFull(COLOR);
+     SetSensorHTMagnet(MAGNETIC);
+     SetSensorType(IN_4,IN_TYPE_LIGHT_INACTIVE);
+     SetSensorMode(IN_4,IN_MODE_PCTFULLSCALE);
+}
+
+void test_color(){
+     while(true){
+          NumOut(0,0,READ_COLOR);
+     }
+}
+
+#endif //__INCLUDES__
