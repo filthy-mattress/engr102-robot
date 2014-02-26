@@ -69,7 +69,6 @@ task scan(){//This loop will record sensor values and motor positions
      maxPoint.pos=MotorTachoCount(scan_motor);
      minPoint.read=5000;
      minPoint.pos=MotorTachoCount(scan_motor);
-     Wait(1000);
      while(run_scan){
           int read=Sensor(scan_sensor);
           long pos=MotorTachoCount(scan_motor);
