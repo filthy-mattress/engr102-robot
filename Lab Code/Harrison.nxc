@@ -1,0 +1,183 @@
+#include "includes.nxc"
+
+sub acquire(){
+   // open gate
+      OnFwd(GATE_MOTOR,30);
+      Wait(1000);
+      Off(GATE_MOTOR);
+
+   // go forward
+      OnFwd(BOTH_MOTORS, MOVE_SPEED);
+      Wait(800);
+      Off(BOTH_MOTORS);
+
+   // Grip close gate
+      OnRev(GATE_MOTOR,30);
+      Wait(500);
+      Off(GATE_MOTOR);
+}
+
+task main() {
+     // Init sensors
+     init_sensors();
+     int magnet_initial= Sensor(MAGNETIC);
+
+
+     // Main Loop
+     int MAIN_LOOP = 1;
+     while(true && MAIN_LOOP == 1){
+   
+     // Spin around until object NEAR, then go close to object
+     int SPIN_MODE = 1;
+     zp_turn_l(30);
+     while(true && SPIN_MODE == 1){
+        if(SensorUS(ULTRASONIC)<NEAR){
+           Off(BOTH_MOTORS);
+           // Go to Object
+           while(SensorUS(ULTRASONIC)>NEAR2){
+                OnFwd(BOTH_MOTORS, MOVE_SPEED);
+           }
+           // end loop
+         SPIN_MODE = 0;
+        }
+     }
+     // Check to see if both sides of object are empty
+     int left_empty = 0;
+     int right_empty = 0;
+     // left
+     zp_turn_r(30);
+     Wait(600);
+     Off(BOTH_MOTORS);
+     Wait(500);
+     if (SensorUS(ULTRASONIC)>NEAR){
+        right_empty = 1;
+     }
+     
+     // right
+     zp_turn_l(30);
+     Wait(1200);
+     Off(BOTH_MOTORS);
+     Wait(500);
+     if (SensorUS(ULTRASONIC)>NEAR){
+        left_empty = 1;
+     }
+     // If both were empty then turn back to original facing and proceed
+     if(left_empty == 1 && right_empty == 1) {
+     
+         // turn back other direction
+         zp_turn_r(30);
+         Wait(600);
+         Off(BOTH_MOTORS);
+         
+         // get object
+         acquire();
+         
+         // spin around and find light
+         while (true && Sensor(LIGHT)<LIGHT_THRESHOLD){
+             zp_turn_r(30);
+         }
+         
+         // turn off motors once light found
+         Off(BOTH_MOTORS);
+         
+         // if not magnetic back up 10 second
+         #define IS_MAGNETIC (Sensor(MAGNETIC)>magnet_initial)
+         if (!IS_MAGNETIC){ // change this back
+             OnRev(BOTH_MOTORS, MOVE_SPEED);
+             Wait(10000);
+             Off(BOTH_MOTORS);
+         }
+         // if magnetic, proceed
+         if (IS_MAGNETIC){ // change this back
+             // move forward until object hit
+             int wall_looking = 1;
+             // move to wall, check if wall
+             while(true && wall_looking == 1){
+                  while(SensorUS(ULTRASONIC)>NEARWALL){
+                       OnFwd(BOTH_MOTORS, MOVE_SPEED);
+                  }
+                  
+                 // Check to see if either side of object are empty
+                 left_empty = 0;
+                 right_empty = 0;
+                 int sensor_left = 0;
+                 int sensor_right = 0;
+
+                 // left
+                 zp_turn_l(30);
+                 Wait(600);
+                 Off(BOTH_MOTORS);
+                 if (SensorUS(ULTRASONIC)>NEAR){
+                    left_empty = 1;
+                    Wait(500);
+                    sensor_left = SensorUS(ULTRASONIC);
+                    
+                 }
+
+                 // right
+                 zp_turn_r(30);
+                 Wait(1200);
+                 Off(BOTH_MOTORS);
+                 if (SensorUS(ULTRASONIC)>NEAR){
+                    right_empty = 1;
+                    Wait(500);
+                    sensor_right = SensorUS(ULTRASONIC)
+                 }
+                 
+                 // if wall, stop looking for wall and return to original position
+                 if(left_empty == 0 && right_empty == 0) {
+                     wall_looking = 0;
+                     zp_turn_l(30);
+                     Wait(600);
+                     Off(BOTH_MOTORS);
+                 }
+                 
+                 // Define a placeholder that will always be greater
+                 int x = 10000;
+                 
+                 // Turn to Right to find Perpendicular
+                 if (sensor_left > sensor_right){
+                    zp_turn_r(30);
+                    until(SensorUS(ULTRASONIC) > x){
+                        if (SensorUS(ULTRASONIC) < x){
+                           x = SensorUS(ULTRASONIC);
+                        }
+                    }
+                    //Turn Left 90 Degrees
+                    zp_turn_l(30);
+                    Wait(1500);
+                 }
+                 
+                 //Turn to Left to find Perpendicular
+                 else {
+                    zp_turn_l(30);
+                    until(SensorUS(ULTRASONIC) > x){
+                        if (SensorUS(ULTRASONIC) < x){
+                           x = SensorUS(ULTRASONIC);
+                        }
+                    }
+                    //Turn Right 90 Degrees
+                    zp_turn_r(30);
+                    Wait(1500);
+                 }
+             }
+             //Drive to DropZone
+             while(SensorUS(ULTRASONIC)>NEAR){
+                       OnFwd(BOTH_MOTORS, MOVE_SPEED);
+                }
+                Off(BOTH_MOTORS);
+                MAIN_LOOP = 0;
+
+         
+         }
+     }
+     else {
+          zp_turn_l(30);
+          Wait(1500);
+          OnFwd(BOTH_MOTORS,MOVE_SPEED);
+          Wait(2000);
+     }
+   
+   } // end main loop
+
+} // end main
