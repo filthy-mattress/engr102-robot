@@ -18,7 +18,7 @@
 #define LIGHT IN_4
 
 //Sensor read macros
-#define READ_ULTRASONIC SensorUS(ULTRASONIC)
+#define READ_ULTRASONIC (SensorUS(ULTRASONIC))
 #define READ_COLOR Sensor(COLOR)
 #define READ_MAGNETIC Sensor(MAGNETIC)
 #define READ_LIGHT Sensor(LIGHT)
@@ -37,16 +37,19 @@
 
 void init_sensors(){
      SetSensorType(ULTRASONIC, SENSOR_TYPE_LOWSPEED);
-     SetSensorColorFull(COLOR);
+     SetSensorColorGreen(COLOR);
      SetSensorHTMagnet(MAGNETIC);
-     SetSensorType(IN_4,IN_TYPE_LIGHT_INACTIVE);
-     SetSensorMode(IN_4,IN_MODE_PCTFULLSCALE);
+     SetSensorType(LIGHT,IN_TYPE_LIGHT_INACTIVE);
+     SetSensorMode(LIGHT,IN_MODE_PCTFULLSCALE);
 }
 
-void test_color(){
+task task_test_color(){
      while(true){
           NumOut(0,0,READ_COLOR);
      }
+}
+void test_color(){
+    StartTask(task_test_color);
 }
 
 #endif //__INCLUDES__
