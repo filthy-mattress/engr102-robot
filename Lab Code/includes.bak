@@ -13,13 +13,13 @@
 
 //Sensor ports
 #define ULTRASONIC IN_1
-#define TOUCH IN_2
+#define COLOR IN_2
 #define MAGNETIC IN_3
 #define LIGHT IN_4
 
 //Sensor read macros
-#define READ_ULTRASONIC SensorUS(ULTRASONIC)
-#define READ_TOUCH Sensor(TOUCH)
+#define READ_ULTRASONIC (SensorUS(ULTRASONIC))
+#define READ_COLOR Sensor(COLOR)
 #define READ_MAGNETIC Sensor(MAGNETIC)
 #define READ_LIGHT Sensor(LIGHT)
 
@@ -37,10 +37,19 @@
 
 void init_sensors(){
      SetSensorType(ULTRASONIC, SENSOR_TYPE_LOWSPEED);
-     SetSensorType(TOUCH,SENSOR_TYPE_TOUCH);
+     SetSensorColorGreen(COLOR);
      SetSensorHTMagnet(MAGNETIC);
-     SetSensorType(IN_4,IN_TYPE_LIGHT_INACTIVE);
-     SetSensorMode(IN_4,IN_MODE_PCTFULLSCALE);
+     SetSensorType(LIGHT,IN_TYPE_LIGHT_INACTIVE);
+     SetSensorMode(LIGHT,IN_MODE_PCTFULLSCALE);
+}
+
+task task_test_color(){
+     while(true){
+          NumOut(0,0,READ_COLOR);
+     }
+}
+void test_color(){
+    StartTask(task_test_color);
 }
 
 #endif //__INCLUDES__

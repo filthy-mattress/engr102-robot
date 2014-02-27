@@ -1,45 +1,75 @@
 #SYMBOLS
 Index	Identifier	Type	Flag	Data	Size	RefCount
-0	__signed_stack_001main	6	1	0	4	2
-1	__D0main	6	1	4	4	6
-2	____initialize_global_data_return	1	1	8	1	3
-3	__constVal63	2	0	9	1	2
-4	__constVal96	2	0	10	1	2
-5	__constVal0	2	1	11	1	7
-6	__constVal32	2	0	12	1	6
-7	__constVal3	2	0	13	1	2
-8	__PFTmp	1	1	14	1	1
-9	__constVal2	2	0	15	1	1
+0	__D0task_test_color	6	1	0	4	7
+1	__signed_stack_001task_test_color	6	1	4	4	2
+2	__signed_stack_002task_test_color	6	1	8	4	2
+3	__TextOutMutex	9	0	12	4	2
+4	__test_color_return	1	1	16	1	3
+5	____initialize_global_data_return	1	1	17	1	3
+6	__constVal1	2	0	18	1	1
+7	__TextOutArgs	8	0	4	16	6
+8	__TextOutArgs.Result	2	1	20	1	6
+9	__TextOutArgs.Location	8	0	2	4	6
+10	__TextOutArgs.Location.X	4	1	24	2	6
+11	__TextOutArgs.Location.Y	4	1	26	2	6
+12	__TextOutArgs.Text	7	0	28	4	6
+13	__TextOutArgs.Text.Text_type	1	0	0	1	0
+14	__TextOutArgs.Options	5	1	32	4	6
 #SOURCES
 Clump	Line	PC	Source
 0	3	0	#line 3 "C:\Users\HARRYK~1\AppData\Local\Temp\temp.nxc"
 0	4	0		subcall __initialize_global_data, ____initialize_global_data_return
 0	3	2	#line 3 "C:\Users\HARRYK~1\AppData\Local\Temp\temp.nxc"
-0	3	2	#line 3 "C:\Users\HARRYK~1\AppData\Local\Temp\temp.nxc"
-0	4	2		set __signed_stack_001main, 0
-0	3	5	#line 3 "C:\Users\HARRYK~1\AppData\Local\Temp\temp.nxc"
-0	3	5	#line 3 "C:\Users\HARRYK~1\AppData\Local\Temp\temp.nxc"
-0	4	5		set __D0main, 75
-0	3	8	#line 3 "C:\Users\HARRYK~1\AppData\Local\Temp\temp.nxc"
-0	4	8		sub __D0main, __signed_stack_001main, __D0main
-0	3	12	#line 3 "C:\Users\HARRYK~1\AppData\Local\Temp\temp.nxc"
-0	4	12	#pragma macro 7
-0	4	12		setout __constVal2, 2, __D0main, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
-0	3502	35	#line 3502 "C:\Users\HARRYK~1\AppData\Local\Temp\temp.nxc"
-0	3	35	#line 3 "C:\Users\HARRYK~1\AppData\Local\Temp\temp.nxc"
-0	3	35	#line 3 "C:\Users\HARRYK~1\AppData\Local\Temp\temp.nxc"
-0	4	35		set __D0main, 75
-0	3	38	#line 3 "C:\Users\HARRYK~1\AppData\Local\Temp\temp.nxc"
-0	4	38	#pragma macro 7
-0	4	38		setout __constVal0, 2, __D0main, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
-0	3507	61	#line 3507 "C:\Users\HARRYK~1\AppData\Local\Temp\temp.nxc"
-0	3	61	#line 3 "C:\Users\HARRYK~1\AppData\Local\Temp\temp.nxc"
-0	3	61	#line 3 "C:\Users\HARRYK~1\AppData\Local\Temp\temp.nxc"
-0	4	61	#line 4 "C:\Users\HARRYK~1\AppData\Local\Temp\temp.nxc"
-0	5	61		exit -1, -1
-1	7	0	#line 7 "C:\Users\HARRYK~1\AppData\Local\Temp\temp.nxc"
-1	8	0		subret ____initialize_global_data_return
+0	4	2	#line 4 "C:\Users\HARRYK~1\AppData\Local\Temp\temp.nxc"
+0	5	2		subcall test_color, __test_color_return
+0	4	4	#line 4 "C:\Users\HARRYK~1\AppData\Local\Temp\temp.nxc"
+0	5	4		exit -1, -1
+1	46	0	#line 46 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\includes.nxc"
+1	47	0		set __D0task_test_color, 1
+1	47	3	#line 47 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\includes.nxc"
+1	48	3		tst 5, __D0task_test_color, __D0task_test_color
+1	47	6	#line 47 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\includes.nxc"
+1	48	6		brtst 4, __ASM_Label_621, __D0task_test_color
+1	47	9	#line 47 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\includes.nxc"
+1	48	9		set __signed_stack_001task_test_color, 0
+1	47	12	#line 47 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\includes.nxc"
+1	47	12	#line 47 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\includes.nxc"
+1	48	12		set __signed_stack_002task_test_color, 0
+1	47	15	#line 47 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\includes.nxc"
+1	47	15	#line 47 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\includes.nxc"
+1	48	15		getin __D0task_test_color, __constVal1, 4
+1	48	19	#line 48 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\includes.nxc"
+1	49	19		acquire __TextOutMutex
+1	48	20	#line 48 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\includes.nxc"
+1	49	20		mov __TextOutArgs.Location.X, __signed_stack_001task_test_color
+1	48	22	#line 48 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\includes.nxc"
+1	49	22		mov __TextOutArgs.Location.Y, __signed_stack_002task_test_color
+1	48	24	#line 48 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\includes.nxc"
+1	49	24		set __TextOutArgs.Options, 0
+1	48	27	#line 48 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\includes.nxc"
+1	49	27		numtostr __TextOutArgs.Text, __D0task_test_color
+1	48	30	#line 48 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\includes.nxc"
+1	49	30		syscall 13, __TextOutArgs
+1	48	33	#line 48 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\includes.nxc"
+1	49	33		mov __D0task_test_color, __TextOutArgs.Result
+1	48	35	#line 48 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\includes.nxc"
+1	49	35		release __TextOutMutex
+1	48	36	#line 48 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\includes.nxc"
+1	48	36	#line 48 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\includes.nxc"
+1	50	36	#line 50 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\includes.nxc"
+1	51	36		jmp __ASM_Label_620
+1	50	38	#line 50 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\includes.nxc"
+1	51	38		exit -1, -1
+2	52	0	#line 52 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\includes.nxc"
+2	53	0		start task_test_color
+2	52	2	#line 52 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\includes.nxc"
+2	55	2	#line 55 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\includes.nxc"
+2	56	2		subret __test_color_return
+3	7	0	#line 7 "C:\Users\HARRYK~1\AppData\Local\Temp\temp.nxc"
+3	8	0		subret ____initialize_global_data_return
 #CLUMPS
 Clump	Name	Offset	File
 0	main	0	C:\Users\HARRYK~1\AppData\Local\Temp\temp.nxc
-1	__initialize_global_data	64	C:\Users\HARRYK~1\AppData\Local\Temp\temp.nxc
+1	task_test_color	7	C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\includes.nxc
+2	test_color	48	C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\includes.nxc
+3	__initialize_global_data	52	C:\Users\HARRYK~1\AppData\Local\Temp\temp.nxc
