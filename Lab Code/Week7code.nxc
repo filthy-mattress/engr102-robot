@@ -1,0 +1,35 @@
+                                                                                                                                 //Competition code
+
+//Motor ports
+#define RIGHT_MOTOR OUT_A
+#define LEFT_MOTOR OUT_C
+#define BOTH_MOTORS OUT_AC
+#define GATE_MOTOR OUT_B
+
+//Motor speeds
+#define MOVE_SPEED 75
+#define GATE_SPEED 30
+
+//Sensor ports
+#define ULTRASONIC IN_1
+#define TOUCH IN_2
+#define MAGNETIC IN_3
+#define LIGHT IN_4
+
+task main(){
+     // Set Sensors
+     SetSensorType(ULTRASONIC, SENSOR_TYPE_LOWSPEED);
+     SetSensorType(TOUCH,SENSOR_TYPE_TOUCH);
+     SetSensorHTMagnet(MAGNETIC);
+     SetSensorType(IN_4,IN_TYPE_LIGHT_INACTIVE);
+     SetSensorMode(IN_4,IN_MODE_PCTFULLSCALE);
+     
+     // Move Forward One Second
+     
+     // Spin until OBJECT Near
+     
+     //
+
+}
+
+

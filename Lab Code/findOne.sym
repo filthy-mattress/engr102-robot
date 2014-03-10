@@ -1,0 +1,1276 @@
+#SYMBOLS
+Index	Identifier	Type	Flag	Data	Size	RefCount
+0	__D0search	6	1	0	4	19
+1	__D0task_test_color	6	1	4	4	5
+2	__D0PlaySound	6	1	8	4	48
+3	__D0rev_timed	6	1	12	4	2
+4	__signed_stack_002isEmpty	6	1	16	4	2
+5	__signed_stack_001main	6	1	20	4	4
+6	__signed_stack_001find_light	6	1	24	4	2
+7	__signed_stack_001isEmpty	6	1	28	4	8
+8	__D0find_light	6	1	32	4	7
+9	__D0fwd_timed	6	1	36	4	2
+10	__SPTArgsMutex	9	0	40	4	14
+11	__D0close_gate	6	1	44	4	2
+12	__D0main	6	1	48	4	13
+13	__D0open_gate	6	1	52	4	2
+14	__D0isEmpty	6	1	56	4	26
+15	__DU0isEmpty	5	1	60	4	3
+16	__unsigned_stack_001main	5	1	64	4	2
+17	__Wait_7qG2_ms_7qG2_000_inline_search	5	1	68	4	2
+18	__Wait_7qG2_ms_7qG2_000_inline_open_gate	5	1	72	4	2
+19	__rev_timed_7qG2_time_7qG2_000	5	1	76	4	2
+20	__Wait_7qG2_ms_7qG2_000_inline_rev_timed	5	1	80	4	2
+21	__Wait_7qG2_ms_7qG2_000_inline_isEmpty	5	1	84	4	8
+22	__Wait_7qG2_ms_7qG2_000_inline_main	5	1	88	4	2
+23	__Wait_7qG2_ms_7qG2_000_inline_close_gate	5	1	92	4	2
+24	__isEmpty_7qG2_time_7qG2_000	5	1	96	4	3
+25	__signed_stack_003PlaySound	6	1	100	4	14
+26	__signed_stack_001search	6	1	104	4	6
+27	__signed_stack_001PlaySound	6	1	108	4	38
+28	__signed_stack_002PlaySound	6	1	112	4	14
+29	__fwd_timed_7qG2_time_7qG2_000	5	1	116	4	4
+30	__Wait_7qG2_ms_7qG2_000_inline_fwd_timed	5	1	120	4	2
+31	__signed_stack_001task_test_color	6	1	124	4	2
+32	__signed_stack_002task_test_color	6	1	128	4	2
+33	__CLSCSMutex0	9	0	132	4	2
+34	__OnRevMutex	9	0	136	4	4
+35	__CLSWMutex0	9	0	140	4	2
+36	__RLSBmutex0	9	0	144	4	8
+37	__CLSRMutex0	9	0	148	4	2
+38	__TextOutMutex	9	0	152	4	2
+39	__constVal500	4	0	156	2	1
+40	__PlaySound_7qG2_aCode_7qG2_000	4	1	158	2	8
+41	__search_7qG2_SPIN_MODE_7qG2_000	4	1	160	2	3
+42	__PlaySound_7qG2_i_7qG2_001	4	1	162	2	15
+43	__constVal150	4	0	164	2	1
+44	__isEmpty_7qG2_right_empty_7qG2_000	4	1	166	2	3
+45	__constVal128	4	0	168	2	1
+46	__main_7qG2_MAIN_LOOP_7qG2_000	4	1	170	2	2
+47	__constVal200	4	0	172	2	1
+48	__isEmpty_7qG2_left_empty_7qG2_000	4	1	174	2	3
+49	__constVal523	4	0	176	2	3
+50	__constVal63	2	0	178	1	25
+51	__constVal96	2	0	179	1	25
+52	__constVal4	2	0	180	1	3
+53	__SetSensorMode_7qG2_port_7qG2_000_inline_init_sensors	1	1	181	1	2
+54	__SetSensorMode_7qG2_mode_7qG2_000_inline_init_sensors	1	1	182	1	2
+55	__SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorHTMagnet_inline_init_sensors	1	1	183	1	2
+56	__SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorHTMagnet_inline_init_sensors	1	1	184	1	2
+57	__ResetSensorPort	1	1	185	1	4
+58	__fwd_timed_return	1	1	186	1	5
+59	__test_color_return	1	1	187	1	3
+60	__task_test_color_Spawner_return	1	1	188	1	1
+61	__acquire_return	1	1	189	1	3
+62	__constVal32	2	0	190	1	75
+63	__close_gate_return	1	1	191	1	4
+64	__isEmpty_return	1	1	192	1	5
+65	____initialize_global_data_return	1	1	193	1	3
+66	__find_light_return	1	1	194	1	3
+67	__OnRev_Tmp	2	1	195	1	4
+68	__constVal1	2	0	196	1	11
+69	__constVal50	2	0	197	1	1
+70	__rev_timed_return	1	1	198	1	3
+71	__constVal3	2	0	199	1	26
+72	__search_return	1	1	200	1	3
+73	__open_gate_return	1	1	201	1	4
+74	__constVal0	2	1	202	1	91
+75	__constValNeg30	2	0	203	1	5
+76	__RLSBResult0	2	1	204	1	7
+77	__RLSBytesCount0	1	1	205	1	10
+78	__zfmain	1	1	206	1	9
+79	__zfPlaySound	1	1	207	1	27
+80	__zftask_test_color	1	1	208	1	2
+81	____ReadLSBytes0_return	1	1	209	1	6
+82	__zfsearch	1	1	210	1	9
+83	__zffind_light	1	1	211	1	3
+84	__constVal100	2	0	212	1	2
+85	__PFTmp	1	1	213	1	1
+86	__constVal2	2	0	214	1	7
+87	__RLSBIterations0	1	1	215	1	4
+88	__zfisEmpty	1	1	216	1	13
+89	__constVal15	2	0	217	1	16
+90	__SetSensorType_7qG2_port_7qG2_000_inline_init_sensors	1	1	218	1	4
+91	__SetSensorType_7qG2_type_7qG2_000_inline_init_sensors	1	1	219	1	4
+92	__PlaySound_return	1	1	220	1	4
+93	__init_sensors_return	1	1	221	1	3
+94	__SetSensorType_7qG2_port_7qG2_000_inline_SetSensorHTMagnet_inline_init_sensors	1	1	222	1	2
+95	__SetSensorType_7qG2_type_7qG2_000_inline_SetSensorHTMagnet_inline_init_sensors	1	1	223	1	2
+96	__SetSensorColorGreen_7qG2_port_7qG2_000_inline_init_sensors	1	1	224	1	4
+97	__SetSensorHTMagnet_7qG2_port_7qG2_000_inline_init_sensors	1	1	225	1	3
+98	____ResetSensorSubroutine_return	1	1	226	1	4
+99	__ResetSensorTmp	1	1	227	1	2
+100	__CLSRArgs0	8	0	4	12	5
+101	__CLSRArgs0.Result	2	1	228	1	5
+102	__CLSRArgs0.Port	1	1	229	1	5
+103	__CLSRArgs0.Buffer	7	0	230	4	5
+104	__CLSRArgs0.Buffer.Buffer_type	1	0	0	1	0
+105	__CLSRArgs0.BufferLen	1	1	232	1	5
+106	__TextOutArgs	8	0	4	16	6
+107	__TextOutArgs.Result	2	1	236	1	6
+108	__TextOutArgs.Location	8	0	2	4	6
+109	__TextOutArgs.Location.X	4	1	240	2	6
+110	__TextOutArgs.Location.Y	4	1	242	2	6
+111	__TextOutArgs.Text	7	0	244	4	6
+112	__TextOutArgs.Text.Text_type	1	0	0	1	0
+113	__TextOutArgs.Options	5	1	248	4	6
+114	__SPTArgs	8	0	5	8	42
+115	__SPTArgs.Result	2	1	252	1	42
+116	__SPTArgs.Frequency	3	1	254	2	42
+117	__SPTArgs.Duration	3	1	256	2	42
+118	__SPTArgs.Loop	1	1	258	1	42
+119	__SPTArgs.Volume	1	1	259	1	42
+120	__CLSWArgs0	8	0	4	12	5
+121	__CLSWArgs0.Result	2	1	260	1	5
+122	__CLSWArgs0.Port	1	1	261	1	5
+123	__CLSWArgs0.Buffer	7	0	262	4	5
+124	__CLSWArgs0.Buffer.Buffer_type	1	0	0	1	0
+125	__CLSWArgs0.ReturnLen	1	1	264	1	5
+126	__CLSCSArgs0	8	0	3	4	4
+127	__CLSCSArgs0.Result	2	1	268	1	4
+128	__CLSCSArgs0.Port	1	1	269	1	4
+129	__CLSCSArgs0.BytesReady	1	1	270	1	4
+130	__OUT_AC	7	0	272	4	11
+131	__OUT_AC.__OUT_AC_type	1	0	0	1	0
+132	__RLSBbufLSWrite1	7	0	274	4	4
+133	__RLSBbufLSWrite1.__RLSBbufLSWrite1_type	1	0	0	1	0
+134	__RLSLastGoodRead0	7	0	276	4	2
+135	__RLSLastGoodRead0.__RLSLastGoodRead0_type	1	0	0	1	0
+136	__RLSReadBuf0	7	0	278	4	14
+137	__RLSReadBuf0.__RLSReadBuf0_type	1	0	0	1	0
+#SOURCES
+Clump	Line	PC	Source
+0	174	0	#line 174 "C:\ENGR102\Lab Code\findOne.nxc"
+0	175	0		subcall __initialize_global_data, ____initialize_global_data_return
+0	174	2	#line 174 "C:\ENGR102\Lab Code\findOne.nxc"
+0	175	2	#line 175 "C:\ENGR102\Lab Code\findOne.nxc"
+0	176	2		subcall init_sensors, __init_sensors_return
+0	175	4	#line 175 "C:\ENGR102\Lab Code\findOne.nxc"
+0	177	4	#line 177 "C:\ENGR102\Lab Code\findOne.nxc"
+0	178	4		subcall test_color, __test_color_return
+0	177	6	#line 177 "C:\ENGR102\Lab Code\findOne.nxc"
+0	177	6	#line 177 "C:\ENGR102\Lab Code\findOne.nxc"
+0	178	6		set __fwd_timed_7qG2_time_7qG2_000, 1000
+0	177	9	#line 177 "C:\ENGR102\Lab Code\findOne.nxc"
+0	181	9	#line 181 "C:\ENGR102\Lab Code\findOne.nxc"
+0	182	9		subcall fwd_timed, __fwd_timed_return
+0	181	11	#line 181 "C:\ENGR102\Lab Code\findOne.nxc"
+0	182	11	#line 182 "C:\ENGR102\Lab Code\findOne.nxc"
+0	183	11		set __main_7qG2_MAIN_LOOP_7qG2_000, 1
+0	182	14	#line 182 "C:\ENGR102\Lab Code\findOne.nxc"
+0	182	14	#line 182 "C:\ENGR102\Lab Code\findOne.nxc"
+0	183	14		mov __signed_stack_001main, __main_7qG2_MAIN_LOOP_7qG2_000
+0	182	16	#line 182 "C:\ENGR102\Lab Code\findOne.nxc"
+0	182	16	#line 182 "C:\ENGR102\Lab Code\findOne.nxc"
+0	183	16		set __D0main, 1
+0	182	19	#line 182 "C:\ENGR102\Lab Code\findOne.nxc"
+0	183	19		cmp 4, __zfmain, __signed_stack_001main, __D0main
+0	182	23	#line 182 "C:\ENGR102\Lab Code\findOne.nxc"
+0	183	23		mov __D0main, __zfmain
+0	185	25	#line 185 "C:\ENGR102\Lab Code\findOne.nxc"
+0	186	25		brtst 4, __NXC_Label_720, __zfmain
+0	189	28	#line 189 "C:\ENGR102\Lab Code\findOne.nxc"
+0	190	28		subcall search, __search_return
+0	189	30	#line 189 "C:\ENGR102\Lab Code\findOne.nxc"
+0	189	30	#line 189 "C:\ENGR102\Lab Code\findOne.nxc"
+0	190	30		subcall isEmpty, __isEmpty_return
+0	189	32	#line 189 "C:\ENGR102\Lab Code\findOne.nxc"
+0	190	32		mov __unsigned_stack_001main, __DU0isEmpty
+0	189	34	#line 189 "C:\ENGR102\Lab Code\findOne.nxc"
+0	189	34	#line 189 "C:\ENGR102\Lab Code\findOne.nxc"
+0	190	34		set __D0main, 1
+0	189	37	#line 189 "C:\ENGR102\Lab Code\findOne.nxc"
+0	190	37		cmp 4, __zfmain, __unsigned_stack_001main, __D0main
+0	189	41	#line 189 "C:\ENGR102\Lab Code\findOne.nxc"
+0	190	41		mov __D0main, __zfmain
+0	192	43	#line 192 "C:\ENGR102\Lab Code\findOne.nxc"
+0	193	43		brtst 4, __NXC_Label_725, __zfmain
+0	192	46	#line 192 "C:\ENGR102\Lab Code\findOne.nxc"
+0	193	46		set __D0main, 30
+0	192	49	#line 192 "C:\ENGR102\Lab Code\findOne.nxc"
+0	193	49	#pragma macro 7
+0	193	49		setout __constVal2, 2, __D0main, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+0	5722	72	#line 5722 "C:\ENGR102\Lab Code\findOne.nxc"
+0	192	72	#line 192 "C:\ENGR102\Lab Code\findOne.nxc"
+0	192	72	#line 192 "C:\ENGR102\Lab Code\findOne.nxc"
+0	193	72		mov __D0main, __constValNeg30
+0	192	74	#line 192 "C:\ENGR102\Lab Code\findOne.nxc"
+0	193	74	#pragma macro 7
+0	193	74		setout __constVal0, 2, __D0main, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+0	5729	97	#line 5729 "C:\ENGR102\Lab Code\findOne.nxc"
+0	192	97	#line 192 "C:\ENGR102\Lab Code\findOne.nxc"
+0	192	97	#line 192 "C:\ENGR102\Lab Code\findOne.nxc"
+0	193	97	#line 193 "C:\ENGR102\Lab Code\findOne.nxc"
+0	193	97	#line 193 "C:\ENGR102\Lab Code\findOne.nxc"
+0	194	97		set __Wait_7qG2_ms_7qG2_000_inline_main, 600
+0	193	100	#line 193 "C:\ENGR102\Lab Code\findOne.nxc"
+0	7921	100	#line 7921 "NXCDefs.h"
+0	7922	100		wait2 NA, __Wait_7qG2_ms_7qG2_000_inline_main
+0	7921	103	#line 7921 "NXCDefs.h"
+0	194	103	#line 194 "C:\ENGR102\Lab Code\findOne.nxc"
+0	197	103	#line 197 "C:\ENGR102\Lab Code\findOne.nxc"
+0	198	103	#pragma macro 7
+0	198	103		setout __OUT_AC, 2, __constVal0, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+0	5748	126	#line 5748 "C:\ENGR102\Lab Code\findOne.nxc"
+0	197	126	#line 197 "C:\ENGR102\Lab Code\findOne.nxc"
+0	199	126	#line 199 "C:\ENGR102\Lab Code\findOne.nxc"
+0	200	126		subcall acquire, __acquire_return
+0	199	128	#line 199 "C:\ENGR102\Lab Code\findOne.nxc"
+0	199	128	#line 199 "C:\ENGR102\Lab Code\findOne.nxc"
+0	200	128		getin __signed_stack_001main, __constVal1, 4
+0	199	132	#line 199 "C:\ENGR102\Lab Code\findOne.nxc"
+0	199	132	#line 199 "C:\ENGR102\Lab Code\findOne.nxc"
+0	200	132		set __D0main, 30
+0	199	135	#line 199 "C:\ENGR102\Lab Code\findOne.nxc"
+0	200	135		cmp 0, __zfmain, __signed_stack_001main, __D0main
+0	199	139	#line 199 "C:\ENGR102\Lab Code\findOne.nxc"
+0	200	139		mov __D0main, __zfmain
+0	200	141	#line 200 "C:\ENGR102\Lab Code\findOne.nxc"
+0	201	141		brtst 4, __NXC_Label_735, __zfmain
+0	203	144	#line 203 "C:\ENGR102\Lab Code\findOne.nxc"
+0	204	144		subcall find_light, __find_light_return
+0	203	146	#line 203 "C:\ENGR102\Lab Code\findOne.nxc"
+0	209	146	#line 209 "C:\ENGR102\Lab Code\findOne.nxc"
+0	210	146	#pragma macro 7
+0	210	146		setout __OUT_AC, 2, __constVal0, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+0	5774	169	#line 5774 "C:\ENGR102\Lab Code\findOne.nxc"
+0	209	169	#line 209 "C:\ENGR102\Lab Code\findOne.nxc"
+0	209	169	#line 209 "C:\ENGR102\Lab Code\findOne.nxc"
+0	210	169		set __fwd_timed_7qG2_time_7qG2_000, 1500
+0	209	172	#line 209 "C:\ENGR102\Lab Code\findOne.nxc"
+0	216	172	#line 216 "C:\ENGR102\Lab Code\findOne.nxc"
+0	217	172		subcall fwd_timed, __fwd_timed_return
+0	216	174	#line 216 "C:\ENGR102\Lab Code\findOne.nxc"
+0	217	174	#line 217 "C:\ENGR102\Lab Code\findOne.nxc"
+0	218	174		jmp __NXC_Label_734
+0	217	176	#line 217 "C:\ENGR102\Lab Code\findOne.nxc"
+0	218	176	#line 218 "C:\ENGR102\Lab Code\findOne.nxc"
+0	219	176		subcall open_gate, __open_gate_return
+0	218	178	#line 218 "C:\ENGR102\Lab Code\findOne.nxc"
+0	218	178	#line 218 "C:\ENGR102\Lab Code\findOne.nxc"
+0	219	178		set __rev_timed_7qG2_time_7qG2_000, 3000
+0	218	181	#line 218 "C:\ENGR102\Lab Code\findOne.nxc"
+0	219	181	#line 219 "C:\ENGR102\Lab Code\findOne.nxc"
+0	220	181		subcall rev_timed, __rev_timed_return
+0	219	183	#line 219 "C:\ENGR102\Lab Code\findOne.nxc"
+0	220	183	#line 220 "C:\ENGR102\Lab Code\findOne.nxc"
+0	221	183		subcall close_gate, __close_gate_return
+0	220	185	#line 220 "C:\ENGR102\Lab Code\findOne.nxc"
+0	225	185	#line 225 "C:\ENGR102\Lab Code\findOne.nxc"
+0	227	185	#line 227 "C:\ENGR102\Lab Code\findOne.nxc"
+0	228	185		jmp __NXC_Label_719
+0	227	187	#line 227 "C:\ENGR102\Lab Code\findOne.nxc"
+0	228	187		exit -1, -1
+1	4885	0		setin __constVal1, __ResetSensorPort, 5
+1	4887	4		getin __ResetSensorTmp, __ResetSensorPort, 5
+1	4888	8		brtst 5, __SensorStillInvalid, __ResetSensorTmp
+1	4889	11		subret ____ResetSensorSubroutine_return
+2	5672	0	#pragma macro 25
+2	5672	0		acquire __CLSWMutex0
+2	5672	1		set __CLSWArgs0.Port, 0
+2	5672	4		mov __CLSWArgs0.ReturnLen, __RLSBytesCount0
+2	5672	6		mov __CLSWArgs0.Buffer, __RLSReadBuf0
+2	5672	8		syscall 21, __CLSWArgs0
+2	5672	11		mov __RLSBResult0, __CLSWArgs0.Result
+2	5672	13		release __CLSWMutex0
+2	5673	14	#line 5673 "NXTDefs.h"
+2	5674	14		brtst 4, __RLSBReturn0, __RLSBytesCount0
+2	5675	17		arrinit __RLSReadBuf0, __constVal0, __RLSBytesCount0
+2	5676	21		brtst 5, __RLSBError0, __RLSBResult0
+2	5677	24		set __RLSBIterations0, 4
+2	5679	27	#pragma macro 23
+2	5679	27		acquire __CLSCSMutex0
+2	5679	28		set __CLSCSArgs0.Port, 0
+2	5679	31		syscall 23, __CLSCSArgs0
+2	5679	34		mov __RLSBytesCount0, __CLSCSArgs0.BytesReady
+2	5679	36		mov __RLSBResult0, __CLSCSArgs0.Result
+2	5679	38		release __CLSCSMutex0
+2	5679	39	#line 5679 "NXTDefs.h"
+2	5680	39		sub __RLSBIterations0, __RLSBIterations0, __constVal1
+2	5681	43		brtst 2, __RLSBError0, __RLSBIterations0
+2	5682	46		brtst 0, __RLSBError0, __RLSBResult0
+2	5683	49		brtst 4, __RLSBReadyToRead0, __RLSBResult0
+2	5685	52		wait2 NA, __constVal15
+2	5686	55		jmp __RLSBDoCheckStatus0
+2	5689	57	#pragma macro 25
+2	5689	57		acquire __CLSRMutex0
+2	5689	58		set __CLSRArgs0.Port, 0
+2	5689	61		mov __CLSRArgs0.BufferLen, __RLSBytesCount0
+2	5689	63		syscall 22, __CLSRArgs0
+2	5689	66		mov __RLSReadBuf0, __CLSRArgs0.Buffer
+2	5689	68		mov __RLSBResult0, __CLSRArgs0.Result
+2	5689	70		release __CLSRMutex0
+2	5689	71	#line 5689 "NXTDefs.h"
+2	5690	71		brtst 5, __RLSBError0, __RLSBResult0
+2	5691	74		mov __RLSLastGoodRead0, __RLSReadBuf0
+2	5692	76		jmp __RLSBDone0
+2	5694	78		mov __RLSReadBuf0, __RLSLastGoodRead0
+2	5696	80		arrsize __RLSBytesCount0, __RLSReadBuf0
+2	5698	83		subret ____ReadLSBytes0_return
+3	6518	0	#line 6518 "NXCDefs.h"
+3	6519	0		mov __signed_stack_001PlaySound, __PlaySound_7qG2_aCode_7qG2_000
+3	6518	2	#line 6518 "NXCDefs.h"
+3	6519	2	#line 6519 "NXCDefs.h"
+3	6520	2		set __D0PlaySound, 0
+3	6519	5	#line 6519 "NXCDefs.h"
+3	6520	5		cmp 4, __zfPlaySound, __signed_stack_001PlaySound, __D0PlaySound
+3	6519	9	#line 6519 "NXCDefs.h"
+3	6520	9		mov __D0PlaySound, __zfPlaySound
+3	6519	11	#line 6519 "NXCDefs.h"
+3	6520	11		brtst 4, __NXC_Label_56, __zfPlaySound
+3	6519	14	#line 6519 "NXCDefs.h"
+3	6520	14		set __signed_stack_001PlaySound, 600
+3	6519	17	#line 6519 "NXCDefs.h"
+3	6519	17	#line 6519 "NXCDefs.h"
+3	6520	17		set __signed_stack_002PlaySound, 200
+3	6519	20	#line 6519 "NXCDefs.h"
+3	6519	20	#line 6519 "NXCDefs.h"
+3	6520	20		set __signed_stack_003PlaySound, 4
+3	6519	23	#line 6519 "NXCDefs.h"
+3	6519	23	#line 6519 "NXCDefs.h"
+3	6520	23		set __D0PlaySound, 0
+3	6520	26	#line 6520 "NXCDefs.h"
+3	6521	26		acquire __SPTArgsMutex
+3	6520	27	#line 6520 "NXCDefs.h"
+3	6521	27		mov __SPTArgs.Frequency, __signed_stack_001PlaySound
+3	6520	29	#line 6520 "NXCDefs.h"
+3	6521	29		mov __SPTArgs.Duration, __signed_stack_002PlaySound
+3	6520	31	#line 6520 "NXCDefs.h"
+3	6521	31		mov __SPTArgs.Volume, __signed_stack_003PlaySound
+3	6520	33	#line 6520 "NXCDefs.h"
+3	6521	33		mov __SPTArgs.Loop, __D0PlaySound
+3	6520	35	#line 6520 "NXCDefs.h"
+3	6521	35		syscall 10, __SPTArgs
+3	6520	38	#line 6520 "NXCDefs.h"
+3	6521	38		mov __D0PlaySound, __SPTArgs.Result
+3	6520	40	#line 6520 "NXCDefs.h"
+3	6521	40		release __SPTArgsMutex
+3	6520	41	#line 6520 "NXCDefs.h"
+3	6520	41	#line 6520 "NXCDefs.h"
+3	6521	41		jmp __NXC_Label_65
+3	6520	43	#line 6520 "NXCDefs.h"
+3	6521	43		mov __signed_stack_001PlaySound, __PlaySound_7qG2_aCode_7qG2_000
+3	6520	45	#line 6520 "NXCDefs.h"
+3	6521	45	#line 6521 "NXCDefs.h"
+3	6522	45		set __D0PlaySound, 1
+3	6521	48	#line 6521 "NXCDefs.h"
+3	6522	48		cmp 4, __zfPlaySound, __signed_stack_001PlaySound, __D0PlaySound
+3	6521	52	#line 6521 "NXCDefs.h"
+3	6522	52		mov __D0PlaySound, __zfPlaySound
+3	6522	54	#line 6522 "NXCDefs.h"
+3	6523	54		brtst 4, __NXC_Label_68, __zfPlaySound
+3	6522	57	#line 6522 "NXCDefs.h"
+3	6523	57		set __signed_stack_001PlaySound, 600
+3	6522	60	#line 6522 "NXCDefs.h"
+3	6522	60	#line 6522 "NXCDefs.h"
+3	6523	60		set __signed_stack_002PlaySound, 150
+3	6522	63	#line 6522 "NXCDefs.h"
+3	6522	63	#line 6522 "NXCDefs.h"
+3	6523	63		set __signed_stack_003PlaySound, 4
+3	6522	66	#line 6522 "NXCDefs.h"
+3	6522	66	#line 6522 "NXCDefs.h"
+3	6523	66		set __D0PlaySound, 0
+3	6523	69	#line 6523 "NXCDefs.h"
+3	6524	69		acquire __SPTArgsMutex
+3	6523	70	#line 6523 "NXCDefs.h"
+3	6524	70		mov __SPTArgs.Frequency, __signed_stack_001PlaySound
+3	6523	72	#line 6523 "NXCDefs.h"
+3	6524	72		mov __SPTArgs.Duration, __signed_stack_002PlaySound
+3	6523	74	#line 6523 "NXCDefs.h"
+3	6524	74		mov __SPTArgs.Volume, __signed_stack_003PlaySound
+3	6523	76	#line 6523 "NXCDefs.h"
+3	6524	76		mov __SPTArgs.Loop, __D0PlaySound
+3	6523	78	#line 6523 "NXCDefs.h"
+3	6524	78		syscall 10, __SPTArgs
+3	6523	81	#line 6523 "NXCDefs.h"
+3	6524	81		mov __D0PlaySound, __SPTArgs.Result
+3	6523	83	#line 6523 "NXCDefs.h"
+3	6524	83		release __SPTArgsMutex
+3	6523	84	#line 6523 "NXCDefs.h"
+3	6523	84	#line 6523 "NXCDefs.h"
+3	6524	84		wait2 NA, __constVal200
+3	6523	87	#line 6523 "NXCDefs.h"
+3	6523	87	#line 6523 "NXCDefs.h"
+3	6524	87	#line 6524 "NXCDefs.h"
+3	6525	87		set __signed_stack_001PlaySound, 600
+3	6524	90	#line 6524 "NXCDefs.h"
+3	6524	90	#line 6524 "NXCDefs.h"
+3	6525	90		set __signed_stack_002PlaySound, 150
+3	6524	93	#line 6524 "NXCDefs.h"
+3	6524	93	#line 6524 "NXCDefs.h"
+3	6525	93		set __signed_stack_003PlaySound, 4
+3	6524	96	#line 6524 "NXCDefs.h"
+3	6524	96	#line 6524 "NXCDefs.h"
+3	6525	96		set __D0PlaySound, 0
+3	6525	99	#line 6525 "NXCDefs.h"
+3	6526	99		acquire __SPTArgsMutex
+3	6525	100	#line 6525 "NXCDefs.h"
+3	6526	100		mov __SPTArgs.Frequency, __signed_stack_001PlaySound
+3	6525	102	#line 6525 "NXCDefs.h"
+3	6526	102		mov __SPTArgs.Duration, __signed_stack_002PlaySound
+3	6525	104	#line 6525 "NXCDefs.h"
+3	6526	104		mov __SPTArgs.Volume, __signed_stack_003PlaySound
+3	6525	106	#line 6525 "NXCDefs.h"
+3	6526	106		mov __SPTArgs.Loop, __D0PlaySound
+3	6525	108	#line 6525 "NXCDefs.h"
+3	6526	108		syscall 10, __SPTArgs
+3	6525	111	#line 6525 "NXCDefs.h"
+3	6526	111		mov __D0PlaySound, __SPTArgs.Result
+3	6525	113	#line 6525 "NXCDefs.h"
+3	6526	113		release __SPTArgsMutex
+3	6525	114	#line 6525 "NXCDefs.h"
+3	6525	114	#line 6525 "NXCDefs.h"
+3	6526	114		wait2 NA, __constVal150
+3	6525	117	#line 6525 "NXCDefs.h"
+3	6525	117	#line 6525 "NXCDefs.h"
+3	6527	117	#line 6527 "NXCDefs.h"
+3	6528	117		jmp __NXC_Label_85
+3	6527	119	#line 6527 "NXCDefs.h"
+3	6528	119		mov __signed_stack_001PlaySound, __PlaySound_7qG2_aCode_7qG2_000
+3	6527	121	#line 6527 "NXCDefs.h"
+3	6528	121	#line 6528 "NXCDefs.h"
+3	6529	121		set __D0PlaySound, 3
+3	6528	124	#line 6528 "NXCDefs.h"
+3	6529	124		cmp 4, __zfPlaySound, __signed_stack_001PlaySound, __D0PlaySound
+3	6528	128	#line 6528 "NXCDefs.h"
+3	6529	128		mov __D0PlaySound, __zfPlaySound
+3	6528	130	#line 6528 "NXCDefs.h"
+3	6529	130		brtst 4, __NXC_Label_88, __zfPlaySound
+3	6528	133	#line 6528 "NXCDefs.h"
+3	6529	133		set __PlaySound_7qG2_i_7qG2_001, 4
+3	6528	136	#line 6528 "NXCDefs.h"
+3	6528	136	#line 6528 "NXCDefs.h"
+3	6529	136		mov __signed_stack_001PlaySound, __PlaySound_7qG2_i_7qG2_001
+3	6528	138	#line 6528 "NXCDefs.h"
+3	6528	138	#line 6528 "NXCDefs.h"
+3	6529	138		set __D0PlaySound, 8
+3	6528	141	#line 6528 "NXCDefs.h"
+3	6529	141		cmp 0, __zfPlaySound, __signed_stack_001PlaySound, __D0PlaySound
+3	6528	145	#line 6528 "NXCDefs.h"
+3	6529	145		mov __D0PlaySound, __zfPlaySound
+3	6528	147	#line 6528 "NXCDefs.h"
+3	6529	147		brtst 4, __NXC_Label_90, __zfPlaySound
+3	6528	150	#line 6528 "NXCDefs.h"
+3	6529	150		jmp __NXC_Label_91
+3	6529	152	#line 6529 "NXCDefs.h"
+3	6530	152		add __PlaySound_7qG2_i_7qG2_001, __PlaySound_7qG2_i_7qG2_001, __constVal1
+3	6530	156	#line 6530 "NXCDefs.h"
+3	6531	156		jmp __NXC_Label_89
+3	6530	158	#line 6530 "NXCDefs.h"
+3	6530	158	#line 6530 "NXCDefs.h"
+3	6530	158	#line 6530 "NXCDefs.h"
+3	6530	158	#line 6530 "NXCDefs.h"
+3	6531	158		mul __signed_stack_001PlaySound, __constVal523, __PlaySound_7qG2_i_7qG2_001
+3	6530	162	#line 6530 "NXCDefs.h"
+3	6530	162	#line 6530 "NXCDefs.h"
+3	6530	162	#line 6530 "NXCDefs.h"
+3	6531	162		div __signed_stack_001PlaySound, __signed_stack_001PlaySound, __constVal4
+3	6530	166	#line 6530 "NXCDefs.h"
+3	6530	166	#line 6530 "NXCDefs.h"
+3	6531	166		set __signed_stack_002PlaySound, 100
+3	6530	169	#line 6530 "NXCDefs.h"
+3	6530	169	#line 6530 "NXCDefs.h"
+3	6531	169		set __signed_stack_003PlaySound, 4
+3	6530	172	#line 6530 "NXCDefs.h"
+3	6530	172	#line 6530 "NXCDefs.h"
+3	6531	172		set __D0PlaySound, 0
+3	6531	175	#line 6531 "NXCDefs.h"
+3	6532	175		acquire __SPTArgsMutex
+3	6531	176	#line 6531 "NXCDefs.h"
+3	6532	176		mov __SPTArgs.Frequency, __signed_stack_001PlaySound
+3	6531	178	#line 6531 "NXCDefs.h"
+3	6532	178		mov __SPTArgs.Duration, __signed_stack_002PlaySound
+3	6531	180	#line 6531 "NXCDefs.h"
+3	6532	180		mov __SPTArgs.Volume, __signed_stack_003PlaySound
+3	6531	182	#line 6531 "NXCDefs.h"
+3	6532	182		mov __SPTArgs.Loop, __D0PlaySound
+3	6531	184	#line 6531 "NXCDefs.h"
+3	6532	184		syscall 10, __SPTArgs
+3	6531	187	#line 6531 "NXCDefs.h"
+3	6532	187		mov __D0PlaySound, __SPTArgs.Result
+3	6531	189	#line 6531 "NXCDefs.h"
+3	6532	189		release __SPTArgsMutex
+3	6531	190	#line 6531 "NXCDefs.h"
+3	6531	190	#line 6531 "NXCDefs.h"
+3	6532	190		wait2 NA, __constVal100
+3	6531	193	#line 6531 "NXCDefs.h"
+3	6531	193	#line 6531 "NXCDefs.h"
+3	6533	193	#line 6533 "NXCDefs.h"
+3	6534	193		jmp __NXC_Label_92
+3	6533	195	#line 6533 "NXCDefs.h"
+3	6533	195	#line 6533 "NXCDefs.h"
+3	6534	195		jmp __NXC_Label_105
+3	6533	197	#line 6533 "NXCDefs.h"
+3	6534	197		mov __signed_stack_001PlaySound, __PlaySound_7qG2_aCode_7qG2_000
+3	6533	199	#line 6533 "NXCDefs.h"
+3	6534	199	#line 6534 "NXCDefs.h"
+3	6535	199		set __D0PlaySound, 2
+3	6534	202	#line 6534 "NXCDefs.h"
+3	6535	202		cmp 4, __zfPlaySound, __signed_stack_001PlaySound, __D0PlaySound
+3	6534	206	#line 6534 "NXCDefs.h"
+3	6535	206		mov __D0PlaySound, __zfPlaySound
+3	6534	208	#line 6534 "NXCDefs.h"
+3	6535	208		brtst 4, __NXC_Label_108, __zfPlaySound
+3	6534	211	#line 6534 "NXCDefs.h"
+3	6535	211		set __PlaySound_7qG2_i_7qG2_001, 7
+3	6534	214	#line 6534 "NXCDefs.h"
+3	6534	214	#line 6534 "NXCDefs.h"
+3	6535	214		mov __signed_stack_001PlaySound, __PlaySound_7qG2_i_7qG2_001
+3	6534	216	#line 6534 "NXCDefs.h"
+3	6534	216	#line 6534 "NXCDefs.h"
+3	6535	216		set __D0PlaySound, 3
+3	6534	219	#line 6534 "NXCDefs.h"
+3	6535	219		cmp 1, __zfPlaySound, __signed_stack_001PlaySound, __D0PlaySound
+3	6534	223	#line 6534 "NXCDefs.h"
+3	6535	223		mov __D0PlaySound, __zfPlaySound
+3	6534	225	#line 6534 "NXCDefs.h"
+3	6535	225		brtst 4, __NXC_Label_110, __zfPlaySound
+3	6534	228	#line 6534 "NXCDefs.h"
+3	6535	228		jmp __NXC_Label_111
+3	6535	230	#line 6535 "NXCDefs.h"
+3	6536	230		sub __PlaySound_7qG2_i_7qG2_001, __PlaySound_7qG2_i_7qG2_001, __constVal1
+3	6536	234	#line 6536 "NXCDefs.h"
+3	6537	234		jmp __NXC_Label_109
+3	6536	236	#line 6536 "NXCDefs.h"
+3	6536	236	#line 6536 "NXCDefs.h"
+3	6536	236	#line 6536 "NXCDefs.h"
+3	6536	236	#line 6536 "NXCDefs.h"
+3	6537	236		mul __signed_stack_001PlaySound, __constVal523, __PlaySound_7qG2_i_7qG2_001
+3	6536	240	#line 6536 "NXCDefs.h"
+3	6536	240	#line 6536 "NXCDefs.h"
+3	6536	240	#line 6536 "NXCDefs.h"
+3	6537	240		div __signed_stack_001PlaySound, __signed_stack_001PlaySound, __constVal4
+3	6536	244	#line 6536 "NXCDefs.h"
+3	6536	244	#line 6536 "NXCDefs.h"
+3	6537	244		set __signed_stack_002PlaySound, 100
+3	6536	247	#line 6536 "NXCDefs.h"
+3	6536	247	#line 6536 "NXCDefs.h"
+3	6537	247		set __signed_stack_003PlaySound, 4
+3	6536	250	#line 6536 "NXCDefs.h"
+3	6536	250	#line 6536 "NXCDefs.h"
+3	6537	250		set __D0PlaySound, 0
+3	6537	253	#line 6537 "NXCDefs.h"
+3	6538	253		acquire __SPTArgsMutex
+3	6537	254	#line 6537 "NXCDefs.h"
+3	6538	254		mov __SPTArgs.Frequency, __signed_stack_001PlaySound
+3	6537	256	#line 6537 "NXCDefs.h"
+3	6538	256		mov __SPTArgs.Duration, __signed_stack_002PlaySound
+3	6537	258	#line 6537 "NXCDefs.h"
+3	6538	258		mov __SPTArgs.Volume, __signed_stack_003PlaySound
+3	6537	260	#line 6537 "NXCDefs.h"
+3	6538	260		mov __SPTArgs.Loop, __D0PlaySound
+3	6537	262	#line 6537 "NXCDefs.h"
+3	6538	262		syscall 10, __SPTArgs
+3	6537	265	#line 6537 "NXCDefs.h"
+3	6538	265		mov __D0PlaySound, __SPTArgs.Result
+3	6537	267	#line 6537 "NXCDefs.h"
+3	6538	267		release __SPTArgsMutex
+3	6537	268	#line 6537 "NXCDefs.h"
+3	6537	268	#line 6537 "NXCDefs.h"
+3	6538	268		wait2 NA, __constVal100
+3	6537	271	#line 6537 "NXCDefs.h"
+3	6537	271	#line 6537 "NXCDefs.h"
+3	6539	271	#line 6539 "NXCDefs.h"
+3	6540	271		jmp __NXC_Label_112
+3	6539	273	#line 6539 "NXCDefs.h"
+3	6539	273	#line 6539 "NXCDefs.h"
+3	6540	273		jmp __NXC_Label_125
+3	6539	275	#line 6539 "NXCDefs.h"
+3	6540	275		mov __signed_stack_001PlaySound, __PlaySound_7qG2_aCode_7qG2_000
+3	6539	277	#line 6539 "NXCDefs.h"
+3	6540	277	#line 6540 "NXCDefs.h"
+3	6541	277		set __D0PlaySound, 4
+3	6540	280	#line 6540 "NXCDefs.h"
+3	6541	280		cmp 4, __zfPlaySound, __signed_stack_001PlaySound, __D0PlaySound
+3	6540	284	#line 6540 "NXCDefs.h"
+3	6541	284		mov __D0PlaySound, __zfPlaySound
+3	6541	286	#line 6541 "NXCDefs.h"
+3	6542	286		brtst 4, __NXC_Label_128, __zfPlaySound
+3	6541	289	#line 6541 "NXCDefs.h"
+3	6542	289		set __signed_stack_001PlaySound, 100
+3	6541	292	#line 6541 "NXCDefs.h"
+3	6541	292	#line 6541 "NXCDefs.h"
+3	6542	292		set __signed_stack_002PlaySound, 500
+3	6541	295	#line 6541 "NXCDefs.h"
+3	6541	295	#line 6541 "NXCDefs.h"
+3	6542	295		set __signed_stack_003PlaySound, 4
+3	6541	298	#line 6541 "NXCDefs.h"
+3	6541	298	#line 6541 "NXCDefs.h"
+3	6542	298		set __D0PlaySound, 0
+3	6542	301	#line 6542 "NXCDefs.h"
+3	6543	301		acquire __SPTArgsMutex
+3	6542	302	#line 6542 "NXCDefs.h"
+3	6543	302		mov __SPTArgs.Frequency, __signed_stack_001PlaySound
+3	6542	304	#line 6542 "NXCDefs.h"
+3	6543	304		mov __SPTArgs.Duration, __signed_stack_002PlaySound
+3	6542	306	#line 6542 "NXCDefs.h"
+3	6543	306		mov __SPTArgs.Volume, __signed_stack_003PlaySound
+3	6542	308	#line 6542 "NXCDefs.h"
+3	6543	308		mov __SPTArgs.Loop, __D0PlaySound
+3	6542	310	#line 6542 "NXCDefs.h"
+3	6543	310		syscall 10, __SPTArgs
+3	6542	313	#line 6542 "NXCDefs.h"
+3	6543	313		mov __D0PlaySound, __SPTArgs.Result
+3	6542	315	#line 6542 "NXCDefs.h"
+3	6543	315		release __SPTArgsMutex
+3	6542	316	#line 6542 "NXCDefs.h"
+3	6542	316	#line 6542 "NXCDefs.h"
+3	6543	316		wait2 NA, __constVal500
+3	6542	319	#line 6542 "NXCDefs.h"
+3	6542	319	#line 6542 "NXCDefs.h"
+3	6544	319	#line 6544 "NXCDefs.h"
+3	6545	319		jmp __NXC_Label_137
+3	6544	321	#line 6544 "NXCDefs.h"
+3	6545	321		mov __signed_stack_001PlaySound, __PlaySound_7qG2_aCode_7qG2_000
+3	6544	323	#line 6544 "NXCDefs.h"
+3	6545	323	#line 6545 "NXCDefs.h"
+3	6546	323		set __D0PlaySound, 5
+3	6545	326	#line 6545 "NXCDefs.h"
+3	6546	326		cmp 4, __zfPlaySound, __signed_stack_001PlaySound, __D0PlaySound
+3	6545	330	#line 6545 "NXCDefs.h"
+3	6546	330		mov __D0PlaySound, __zfPlaySound
+3	6545	332	#line 6545 "NXCDefs.h"
+3	6546	332		brtst 4, __NXC_Label_140, __zfPlaySound
+3	6545	335	#line 6545 "NXCDefs.h"
+3	6546	335		set __PlaySound_7qG2_i_7qG2_001, 4
+3	6545	338	#line 6545 "NXCDefs.h"
+3	6545	338	#line 6545 "NXCDefs.h"
+3	6546	338		mov __signed_stack_001PlaySound, __PlaySound_7qG2_i_7qG2_001
+3	6545	340	#line 6545 "NXCDefs.h"
+3	6545	340	#line 6545 "NXCDefs.h"
+3	6546	340		set __D0PlaySound, 8
+3	6545	343	#line 6545 "NXCDefs.h"
+3	6546	343		cmp 0, __zfPlaySound, __signed_stack_001PlaySound, __D0PlaySound
+3	6545	347	#line 6545 "NXCDefs.h"
+3	6546	347		mov __D0PlaySound, __zfPlaySound
+3	6545	349	#line 6545 "NXCDefs.h"
+3	6546	349		brtst 4, __NXC_Label_142, __zfPlaySound
+3	6545	352	#line 6545 "NXCDefs.h"
+3	6546	352		jmp __NXC_Label_143
+3	6546	354	#line 6546 "NXCDefs.h"
+3	6547	354		add __PlaySound_7qG2_i_7qG2_001, __PlaySound_7qG2_i_7qG2_001, __constVal1
+3	6547	358	#line 6547 "NXCDefs.h"
+3	6548	358		jmp __NXC_Label_141
+3	6547	360	#line 6547 "NXCDefs.h"
+3	6547	360	#line 6547 "NXCDefs.h"
+3	6547	360	#line 6547 "NXCDefs.h"
+3	6547	360	#line 6547 "NXCDefs.h"
+3	6548	360		mul __signed_stack_001PlaySound, __constVal523, __PlaySound_7qG2_i_7qG2_001
+3	6547	364	#line 6547 "NXCDefs.h"
+3	6547	364	#line 6547 "NXCDefs.h"
+3	6547	364	#line 6547 "NXCDefs.h"
+3	6548	364		div __signed_stack_001PlaySound, __signed_stack_001PlaySound, __constVal4
+3	6547	368	#line 6547 "NXCDefs.h"
+3	6547	368	#line 6547 "NXCDefs.h"
+3	6548	368		set __signed_stack_002PlaySound, 50
+3	6547	371	#line 6547 "NXCDefs.h"
+3	6547	371	#line 6547 "NXCDefs.h"
+3	6548	371		set __signed_stack_003PlaySound, 4
+3	6547	374	#line 6547 "NXCDefs.h"
+3	6547	374	#line 6547 "NXCDefs.h"
+3	6548	374		set __D0PlaySound, 0
+3	6548	377	#line 6548 "NXCDefs.h"
+3	6549	377		acquire __SPTArgsMutex
+3	6548	378	#line 6548 "NXCDefs.h"
+3	6549	378		mov __SPTArgs.Frequency, __signed_stack_001PlaySound
+3	6548	380	#line 6548 "NXCDefs.h"
+3	6549	380		mov __SPTArgs.Duration, __signed_stack_002PlaySound
+3	6548	382	#line 6548 "NXCDefs.h"
+3	6549	382		mov __SPTArgs.Volume, __signed_stack_003PlaySound
+3	6548	384	#line 6548 "NXCDefs.h"
+3	6549	384		mov __SPTArgs.Loop, __D0PlaySound
+3	6548	386	#line 6548 "NXCDefs.h"
+3	6549	386		syscall 10, __SPTArgs
+3	6548	389	#line 6548 "NXCDefs.h"
+3	6549	389		mov __D0PlaySound, __SPTArgs.Result
+3	6548	391	#line 6548 "NXCDefs.h"
+3	6549	391		release __SPTArgsMutex
+3	6548	392	#line 6548 "NXCDefs.h"
+3	6548	392	#line 6548 "NXCDefs.h"
+3	6549	392		wait2 NA, __constVal50
+3	6548	395	#line 6548 "NXCDefs.h"
+3	6548	395	#line 6548 "NXCDefs.h"
+3	6560	395	#line 6560 "NXCDefs.h"
+3	6561	395		jmp __NXC_Label_144
+3	6560	397	#line 6560 "NXCDefs.h"
+3	6560	397	#line 6560 "NXCDefs.h"
+3	6560	397	#line 6560 "NXCDefs.h"
+3	6560	397	#line 6560 "NXCDefs.h"
+3	6560	397	#line 6560 "NXCDefs.h"
+3	6560	397	#line 6560 "NXCDefs.h"
+3	6560	397	#line 6560 "NXCDefs.h"
+3	6560	397	#line 6560 "NXCDefs.h"
+3	6561	397		subret __PlaySound_return
+4	39	0	#line 39 "C:\ENGR102\Lab Code\.\includes.nxc"
+4	40	0		set __SetSensorType_7qG2_port_7qG2_000_inline_init_sensors, 0
+4	39	3	#line 39 "C:\ENGR102\Lab Code\.\includes.nxc"
+4	39	3	#line 39 "C:\ENGR102\Lab Code\.\includes.nxc"
+4	40	3		set __SetSensorType_7qG2_type_7qG2_000_inline_init_sensors, 10
+4	39	6	#line 39 "C:\ENGR102\Lab Code\.\includes.nxc"
+4	3663	6	#line 3663 "NXCDefs.h"
+4	3664	6		setin __SetSensorType_7qG2_type_7qG2_000_inline_init_sensors, __SetSensorType_7qG2_port_7qG2_000_inline_init_sensors, 0
+4	3663	10	#line 3663 "NXCDefs.h"
+4	40	10	#line 40 "C:\ENGR102\Lab Code\.\includes.nxc"
+4	40	10	#line 40 "C:\ENGR102\Lab Code\.\includes.nxc"
+4	41	10		set __SetSensorColorGreen_7qG2_port_7qG2_000_inline_init_sensors, 1
+4	40	13	#line 40 "C:\ENGR102\Lab Code\.\includes.nxc"
+4	3822	13	#line 3822 "NXCDefs.h"
+4	3823	13	#pragma macro 6
+4	3823	13		setin __constVal15, __SetSensorColorGreen_7qG2_port_7qG2_000_inline_init_sensors, 0
+4	3823	17		setin __constVal128, __SetSensorColorGreen_7qG2_port_7qG2_000_inline_init_sensors, 1
+4	3823	21		mov __ResetSensorPort, __SetSensorColorGreen_7qG2_port_7qG2_000_inline_init_sensors
+4	3823	23		subcall __ResetSensorSubroutine, ____ResetSensorSubroutine_return
+4	4521	25	#line 4521 "NXCDefs.h"
+4	3822	25	#line 3822 "NXCDefs.h"
+4	41	25	#line 41 "C:\ENGR102\Lab Code\.\includes.nxc"
+4	41	25	#line 41 "C:\ENGR102\Lab Code\.\includes.nxc"
+4	42	25		set __SetSensorHTMagnet_7qG2_port_7qG2_000_inline_init_sensors, 2
+4	41	28	#line 41 "C:\ENGR102\Lab Code\.\includes.nxc"
+4	12989	28	#line 12989 "NXCDefs.h"
+4	12990	28		mov __SetSensorType_7qG2_port_7qG2_000_inline_SetSensorHTMagnet_inline_init_sensors, __constVal2
+4	12989	30	#line 12989 "NXCDefs.h"
+4	12989	30	#line 12989 "NXCDefs.h"
+4	12990	30		set __SetSensorType_7qG2_type_7qG2_000_inline_SetSensorHTMagnet_inline_init_sensors, 6
+4	12989	33	#line 12989 "NXCDefs.h"
+4	3663	33	#line 3663 "NXCDefs.h"
+4	3664	33		setin __SetSensorType_7qG2_type_7qG2_000_inline_SetSensorHTMagnet_inline_init_sensors, __SetSensorType_7qG2_port_7qG2_000_inline_SetSensorHTMagnet_inline_init_sensors, 0
+4	3663	37	#line 3663 "NXCDefs.h"
+4	12990	37	#line 12990 "NXCDefs.h"
+4	12990	37	#line 12990 "NXCDefs.h"
+4	12991	37		mov __SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorHTMagnet_inline_init_sensors, __SetSensorHTMagnet_7qG2_port_7qG2_000_inline_init_sensors
+4	12990	39	#line 12990 "NXCDefs.h"
+4	12990	39	#line 12990 "NXCDefs.h"
+4	12991	39		set __SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorHTMagnet_inline_init_sensors, 0
+4	12990	42	#line 12990 "NXCDefs.h"
+4	3676	42	#line 3676 "NXCDefs.h"
+4	3677	42		setin __SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorHTMagnet_inline_init_sensors, __SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorHTMagnet_inline_init_sensors, 1
+4	3676	46	#line 3676 "NXCDefs.h"
+4	12991	46	#line 12991 "NXCDefs.h"
+4	12991	46	#line 12991 "NXCDefs.h"
+4	12991	46	#line 12991 "NXCDefs.h"
+4	3694	46	#line 3694 "NXCDefs.h"
+4	3695	46	#pragma macro 4
+4	3695	46		mov __ResetSensorPort, __SetSensorHTMagnet_7qG2_port_7qG2_000_inline_init_sensors
+4	3695	48		subcall __ResetSensorSubroutine, ____ResetSensorSubroutine_return
+4	4593	50	#line 4593 "NXCDefs.h"
+4	3694	50	#line 3694 "NXCDefs.h"
+4	12992	50	#line 12992 "NXCDefs.h"
+4	42	50	#line 42 "C:\ENGR102\Lab Code\.\includes.nxc"
+4	42	50	#line 42 "C:\ENGR102\Lab Code\.\includes.nxc"
+4	43	50		set __SetSensorType_7qG2_port_7qG2_000_inline_init_sensors, 3
+4	42	53	#line 42 "C:\ENGR102\Lab Code\.\includes.nxc"
+4	42	53	#line 42 "C:\ENGR102\Lab Code\.\includes.nxc"
+4	43	53		set __SetSensorType_7qG2_type_7qG2_000_inline_init_sensors, 6
+4	42	56	#line 42 "C:\ENGR102\Lab Code\.\includes.nxc"
+4	3663	56	#line 3663 "NXCDefs.h"
+4	3664	56		setin __SetSensorType_7qG2_type_7qG2_000_inline_init_sensors, __SetSensorType_7qG2_port_7qG2_000_inline_init_sensors, 0
+4	3663	60	#line 3663 "NXCDefs.h"
+4	43	60	#line 43 "C:\ENGR102\Lab Code\.\includes.nxc"
+4	43	60	#line 43 "C:\ENGR102\Lab Code\.\includes.nxc"
+4	44	60		set __SetSensorMode_7qG2_port_7qG2_000_inline_init_sensors, 3
+4	43	63	#line 43 "C:\ENGR102\Lab Code\.\includes.nxc"
+4	43	63	#line 43 "C:\ENGR102\Lab Code\.\includes.nxc"
+4	44	63		set __SetSensorMode_7qG2_mode_7qG2_000_inline_init_sensors, 128
+4	43	66	#line 43 "C:\ENGR102\Lab Code\.\includes.nxc"
+4	3676	66	#line 3676 "NXCDefs.h"
+4	3677	66		setin __SetSensorMode_7qG2_mode_7qG2_000_inline_init_sensors, __SetSensorMode_7qG2_port_7qG2_000_inline_init_sensors, 1
+4	3676	70	#line 3676 "NXCDefs.h"
+4	44	70	#line 44 "C:\ENGR102\Lab Code\.\includes.nxc"
+4	46	70	#line 46 "C:\ENGR102\Lab Code\.\includes.nxc"
+4	47	70		subret __init_sensors_return
+5	47	0	#line 47 "C:\ENGR102\Lab Code\.\includes.nxc"
+5	48	0		set __D0task_test_color, 1
+5	48	3	#line 48 "C:\ENGR102\Lab Code\.\includes.nxc"
+5	49	3		tst 5, __zftask_test_color, __D0task_test_color
+5	48	6	#line 48 "C:\ENGR102\Lab Code\.\includes.nxc"
+5	49	6		brtst 4, __NXC_Label_506, __zftask_test_color
+5	48	9	#line 48 "C:\ENGR102\Lab Code\.\includes.nxc"
+5	49	9		set __signed_stack_001task_test_color, 0
+5	48	12	#line 48 "C:\ENGR102\Lab Code\.\includes.nxc"
+5	48	12	#line 48 "C:\ENGR102\Lab Code\.\includes.nxc"
+5	49	12		set __signed_stack_002task_test_color, 0
+5	48	15	#line 48 "C:\ENGR102\Lab Code\.\includes.nxc"
+5	48	15	#line 48 "C:\ENGR102\Lab Code\.\includes.nxc"
+5	49	15		getin __D0task_test_color, __constVal1, 4
+5	49	19	#line 49 "C:\ENGR102\Lab Code\.\includes.nxc"
+5	50	19		acquire __TextOutMutex
+5	49	20	#line 49 "C:\ENGR102\Lab Code\.\includes.nxc"
+5	50	20		mov __TextOutArgs.Location.X, __signed_stack_001task_test_color
+5	49	22	#line 49 "C:\ENGR102\Lab Code\.\includes.nxc"
+5	50	22		mov __TextOutArgs.Location.Y, __signed_stack_002task_test_color
+5	49	24	#line 49 "C:\ENGR102\Lab Code\.\includes.nxc"
+5	50	24		set __TextOutArgs.Options, 0
+5	49	27	#line 49 "C:\ENGR102\Lab Code\.\includes.nxc"
+5	50	27		numtostr __TextOutArgs.Text, __D0task_test_color
+5	49	30	#line 49 "C:\ENGR102\Lab Code\.\includes.nxc"
+5	50	30		syscall 13, __TextOutArgs
+5	49	33	#line 49 "C:\ENGR102\Lab Code\.\includes.nxc"
+5	50	33		mov __D0task_test_color, __TextOutArgs.Result
+5	49	35	#line 49 "C:\ENGR102\Lab Code\.\includes.nxc"
+5	50	35		release __TextOutMutex
+5	49	36	#line 49 "C:\ENGR102\Lab Code\.\includes.nxc"
+5	49	36	#line 49 "C:\ENGR102\Lab Code\.\includes.nxc"
+5	51	36	#line 51 "C:\ENGR102\Lab Code\.\includes.nxc"
+5	52	36		jmp __NXC_Label_505
+5	51	38	#line 51 "C:\ENGR102\Lab Code\.\includes.nxc"
+5	52	38		exit -1, -1
+6	53	0	#line 53 "C:\ENGR102\Lab Code\.\includes.nxc"
+6	54	0		subcall __task_test_color_Spawner, __task_test_color_Spawner_return
+6	53	2	#line 53 "C:\ENGR102\Lab Code\.\includes.nxc"
+6	56	2	#line 56 "C:\ENGR102\Lab Code\.\includes.nxc"
+6	57	2		subret __test_color_return
+7	0	0		subret __task_test_color_Spawner_return
+8	0	0		exit 0, 1
+9	3	0	#line 3 "C:\ENGR102\Lab Code\findOne.nxc"
+9	4	0		set __PlaySound_7qG2_aCode_7qG2_000, 3
+9	3	3	#line 3 "C:\ENGR102\Lab Code\findOne.nxc"
+9	4	3	#line 4 "C:\ENGR102\Lab Code\findOne.nxc"
+9	5	3		subcall PlaySound, __PlaySound_return
+9	4	5	#line 4 "C:\ENGR102\Lab Code\findOne.nxc"
+9	4	5	#line 4 "C:\ENGR102\Lab Code\findOne.nxc"
+9	5	5		set __D0fwd_timed, 75
+9	5	8	#line 5 "C:\ENGR102\Lab Code\findOne.nxc"
+9	6	8	#pragma macro 7
+9	6	8		setout __OUT_AC, 2, __D0fwd_timed, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+9	4722	31	#line 4722 "C:\ENGR102\Lab Code\findOne.nxc"
+9	5	31	#line 5 "C:\ENGR102\Lab Code\findOne.nxc"
+9	5	31	#line 5 "C:\ENGR102\Lab Code\findOne.nxc"
+9	6	31		mov __Wait_7qG2_ms_7qG2_000_inline_fwd_timed, __fwd_timed_7qG2_time_7qG2_000
+9	5	33	#line 5 "C:\ENGR102\Lab Code\findOne.nxc"
+9	7921	33	#line 7921 "NXCDefs.h"
+9	7922	33		wait2 NA, __Wait_7qG2_ms_7qG2_000_inline_fwd_timed
+9	7921	36	#line 7921 "NXCDefs.h"
+9	6	36	#line 6 "C:\ENGR102\Lab Code\findOne.nxc"
+9	7	36	#line 7 "C:\ENGR102\Lab Code\findOne.nxc"
+9	8	36	#pragma macro 7
+9	8	36		setout __OUT_AC, 2, __constVal0, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+9	4739	59	#line 4739 "C:\ENGR102\Lab Code\findOne.nxc"
+9	7	59	#line 7 "C:\ENGR102\Lab Code\findOne.nxc"
+9	8	59	#line 8 "C:\ENGR102\Lab Code\findOne.nxc"
+9	9	59		subret __fwd_timed_return
+10	9	0	#line 9 "C:\ENGR102\Lab Code\findOne.nxc"
+10	10	0		set __PlaySound_7qG2_aCode_7qG2_000, 2
+10	9	3	#line 9 "C:\ENGR102\Lab Code\findOne.nxc"
+10	10	3	#line 10 "C:\ENGR102\Lab Code\findOne.nxc"
+10	11	3		subcall PlaySound, __PlaySound_return
+10	10	5	#line 10 "C:\ENGR102\Lab Code\findOne.nxc"
+10	10	5	#line 10 "C:\ENGR102\Lab Code\findOne.nxc"
+10	11	5		set __D0rev_timed, 75
+10	11	8	#line 11 "C:\ENGR102\Lab Code\findOne.nxc"
+10	12	8	#pragma macro 10
+10	12	8		acquire __OnRevMutex
+10	12	9		neg __OnRev_Tmp, __D0rev_timed
+10	12	12		setout __OUT_AC, 2, __OnRev_Tmp, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+10	12	35		release __OnRevMutex
+10	4764	36	#line 4764 "C:\ENGR102\Lab Code\findOne.nxc"
+10	11	36	#line 11 "C:\ENGR102\Lab Code\findOne.nxc"
+10	11	36	#line 11 "C:\ENGR102\Lab Code\findOne.nxc"
+10	12	36		mov __Wait_7qG2_ms_7qG2_000_inline_rev_timed, __rev_timed_7qG2_time_7qG2_000
+10	11	38	#line 11 "C:\ENGR102\Lab Code\findOne.nxc"
+10	7921	38	#line 7921 "NXCDefs.h"
+10	7922	38		wait2 NA, __Wait_7qG2_ms_7qG2_000_inline_rev_timed
+10	7921	41	#line 7921 "NXCDefs.h"
+10	12	41	#line 12 "C:\ENGR102\Lab Code\findOne.nxc"
+10	13	41	#line 13 "C:\ENGR102\Lab Code\findOne.nxc"
+10	14	41	#pragma macro 7
+10	14	41		setout __OUT_AC, 2, __constVal0, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+10	4781	64	#line 4781 "C:\ENGR102\Lab Code\findOne.nxc"
+10	13	64	#line 13 "C:\ENGR102\Lab Code\findOne.nxc"
+10	14	64	#line 14 "C:\ENGR102\Lab Code\findOne.nxc"
+10	15	64		subret __rev_timed_return
+11	17	0	#line 17 "C:\ENGR102\Lab Code\findOne.nxc"
+11	18	0		set __search_7qG2_SPIN_MODE_7qG2_000, 1
+11	17	3	#line 17 "C:\ENGR102\Lab Code\findOne.nxc"
+11	17	3	#line 17 "C:\ENGR102\Lab Code\findOne.nxc"
+11	18	3		mov __D0search, __constValNeg30
+11	17	5	#line 17 "C:\ENGR102\Lab Code\findOne.nxc"
+11	18	5	#pragma macro 7
+11	18	5		setout __constVal2, 2, __D0search, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+11	4803	28	#line 4803 "C:\ENGR102\Lab Code\findOne.nxc"
+11	17	28	#line 17 "C:\ENGR102\Lab Code\findOne.nxc"
+11	17	28	#line 17 "C:\ENGR102\Lab Code\findOne.nxc"
+11	18	28		set __D0search, 30
+11	17	31	#line 17 "C:\ENGR102\Lab Code\findOne.nxc"
+11	18	31	#pragma macro 7
+11	18	31		setout __constVal0, 2, __D0search, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+11	4810	54	#line 4810 "C:\ENGR102\Lab Code\findOne.nxc"
+11	17	54	#line 17 "C:\ENGR102\Lab Code\findOne.nxc"
+11	17	54	#line 17 "C:\ENGR102\Lab Code\findOne.nxc"
+11	18	54	#line 18 "C:\ENGR102\Lab Code\findOne.nxc"
+11	18	54	#line 18 "C:\ENGR102\Lab Code\findOne.nxc"
+11	19	54		mov __signed_stack_001search, __search_7qG2_SPIN_MODE_7qG2_000
+11	18	56	#line 18 "C:\ENGR102\Lab Code\findOne.nxc"
+11	18	56	#line 18 "C:\ENGR102\Lab Code\findOne.nxc"
+11	19	56		set __D0search, 1
+11	18	59	#line 18 "C:\ENGR102\Lab Code\findOne.nxc"
+11	19	59		cmp 4, __zfsearch, __signed_stack_001search, __D0search
+11	18	63	#line 18 "C:\ENGR102\Lab Code\findOne.nxc"
+11	19	63		mov __D0search, __zfsearch
+11	19	65	#line 19 "C:\ENGR102\Lab Code\findOne.nxc"
+11	20	65		brtst 4, __NXC_Label_538, __zfsearch
+11	19	68	#line 19 "C:\ENGR102\Lab Code\findOne.nxc"
+11	20	68	#pragma macro 26
+11	20	68		acquire __RLSBmutex0
+11	20	69		mov __RLSReadBuf0, __RLSBbufLSWrite1
+11	20	71		set __RLSBytesCount0, 1
+11	20	74		wait2 NA, __constVal15
+11	20	77		subcall __ReadLSBytes0, ____ReadLSBytes0_return
+11	20	79		index __D0search, __RLSReadBuf0, 65535
+11	20	83		release __RLSBmutex0
+11	4830	84	#line 4830 "C:\ENGR102\Lab Code\findOne.nxc"
+11	19	84	#line 19 "C:\ENGR102\Lab Code\findOne.nxc"
+11	20	84		mov __signed_stack_001search, __D0search
+11	19	86	#line 19 "C:\ENGR102\Lab Code\findOne.nxc"
+11	20	86		set __D0search, 45
+11	19	89	#line 19 "C:\ENGR102\Lab Code\findOne.nxc"
+11	20	89		cmp 0, __zfsearch, __signed_stack_001search, __D0search
+11	19	93	#line 19 "C:\ENGR102\Lab Code\findOne.nxc"
+11	20	93		mov __D0search, __zfsearch
+11	20	95	#line 20 "C:\ENGR102\Lab Code\findOne.nxc"
+11	21	95		brtst 4, __NXC_Label_543, __zfsearch
+11	20	98	#line 20 "C:\ENGR102\Lab Code\findOne.nxc"
+11	21	98		set __Wait_7qG2_ms_7qG2_000_inline_search, 200
+11	20	101	#line 20 "C:\ENGR102\Lab Code\findOne.nxc"
+11	7921	101	#line 7921 "NXCDefs.h"
+11	7922	101		wait2 NA, __Wait_7qG2_ms_7qG2_000_inline_search
+11	7921	104	#line 7921 "NXCDefs.h"
+11	21	104	#line 21 "C:\ENGR102\Lab Code\findOne.nxc"
+11	24	104	#line 24 "C:\ENGR102\Lab Code\findOne.nxc"
+11	25	104	#pragma macro 7
+11	25	104		setout __OUT_AC, 2, __constVal0, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+11	4858	127	#line 4858 "C:\ENGR102\Lab Code\findOne.nxc"
+11	24	127	#line 24 "C:\ENGR102\Lab Code\findOne.nxc"
+11	24	127	#line 24 "C:\ENGR102\Lab Code\findOne.nxc"
+11	25	127	#pragma macro 26
+11	25	127		acquire __RLSBmutex0
+11	25	128		mov __RLSReadBuf0, __RLSBbufLSWrite1
+11	25	130		set __RLSBytesCount0, 1
+11	25	133		wait2 NA, __constVal15
+11	25	136		subcall __ReadLSBytes0, ____ReadLSBytes0_return
+11	25	138		index __D0search, __RLSReadBuf0, 65535
+11	25	142		release __RLSBmutex0
+11	4862	143	#line 4862 "C:\ENGR102\Lab Code\findOne.nxc"
+11	24	143	#line 24 "C:\ENGR102\Lab Code\findOne.nxc"
+11	25	143		mov __signed_stack_001search, __D0search
+11	24	145	#line 24 "C:\ENGR102\Lab Code\findOne.nxc"
+11	25	145		set __D0search, 8
+11	24	148	#line 24 "C:\ENGR102\Lab Code\findOne.nxc"
+11	25	148		cmp 1, __zfsearch, __signed_stack_001search, __D0search
+11	24	152	#line 24 "C:\ENGR102\Lab Code\findOne.nxc"
+11	25	152		mov __D0search, __zfsearch
+11	25	154	#line 25 "C:\ENGR102\Lab Code\findOne.nxc"
+11	26	154		brtst 4, __NXC_Label_547, __zfsearch
+11	25	157	#line 25 "C:\ENGR102\Lab Code\findOne.nxc"
+11	26	157		set __D0search, 75
+11	26	160	#line 26 "C:\ENGR102\Lab Code\findOne.nxc"
+11	27	160	#pragma macro 7
+11	27	160		setout __OUT_AC, 2, __D0search, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+11	4880	183	#line 4880 "C:\ENGR102\Lab Code\findOne.nxc"
+11	26	183	#line 26 "C:\ENGR102\Lab Code\findOne.nxc"
+11	28	183	#line 28 "C:\ENGR102\Lab Code\findOne.nxc"
+11	29	183		jmp __NXC_Label_546
+11	28	185	#line 28 "C:\ENGR102\Lab Code\findOne.nxc"
+11	29	185	#line 29 "C:\ENGR102\Lab Code\findOne.nxc"
+11	30	185		set __search_7qG2_SPIN_MODE_7qG2_000, 0
+11	29	188	#line 29 "C:\ENGR102\Lab Code\findOne.nxc"
+11	29	188	#line 29 "C:\ENGR102\Lab Code\findOne.nxc"
+11	31	188	#line 31 "C:\ENGR102\Lab Code\findOne.nxc"
+11	32	188	#line 32 "C:\ENGR102\Lab Code\findOne.nxc"
+11	33	188		jmp __NXC_Label_537
+11	32	190	#line 32 "C:\ENGR102\Lab Code\findOne.nxc"
+11	32	190	#line 32 "C:\ENGR102\Lab Code\findOne.nxc"
+11	33	190		subret __search_return
+12	33	0	#line 33 "C:\ENGR102\Lab Code\findOne.nxc"
+12	34	0		set __D0open_gate, 30
+12	34	3	#line 34 "C:\ENGR102\Lab Code\findOne.nxc"
+12	35	3	#pragma macro 7
+12	35	3		setout __constVal1, 2, __D0open_gate, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+12	4909	26	#line 4909 "C:\ENGR102\Lab Code\findOne.nxc"
+12	34	26	#line 34 "C:\ENGR102\Lab Code\findOne.nxc"
+12	34	26	#line 34 "C:\ENGR102\Lab Code\findOne.nxc"
+12	35	26		set __Wait_7qG2_ms_7qG2_000_inline_open_gate, 1000
+12	34	29	#line 34 "C:\ENGR102\Lab Code\findOne.nxc"
+12	7921	29	#line 7921 "NXCDefs.h"
+12	7922	29		wait2 NA, __Wait_7qG2_ms_7qG2_000_inline_open_gate
+12	7921	32	#line 7921 "NXCDefs.h"
+12	35	32	#line 35 "C:\ENGR102\Lab Code\findOne.nxc"
+12	36	32	#line 36 "C:\ENGR102\Lab Code\findOne.nxc"
+12	37	32	#pragma macro 7
+12	37	32		setout __constVal1, 2, __constVal0, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+12	4926	55	#line 4926 "C:\ENGR102\Lab Code\findOne.nxc"
+12	36	55	#line 36 "C:\ENGR102\Lab Code\findOne.nxc"
+12	38	55	#line 38 "C:\ENGR102\Lab Code\findOne.nxc"
+12	39	55		subret __open_gate_return
+13	39	0	#line 39 "C:\ENGR102\Lab Code\findOne.nxc"
+13	40	0		set __D0close_gate, 30
+13	40	3	#line 40 "C:\ENGR102\Lab Code\findOne.nxc"
+13	41	3	#pragma macro 10
+13	41	3		acquire __OnRevMutex
+13	41	4		neg __OnRev_Tmp, __D0close_gate
+13	41	7		setout __constVal1, 2, __OnRev_Tmp, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+13	41	30		release __OnRevMutex
+13	4938	31	#line 4938 "C:\ENGR102\Lab Code\findOne.nxc"
+13	40	31	#line 40 "C:\ENGR102\Lab Code\findOne.nxc"
+13	40	31	#line 40 "C:\ENGR102\Lab Code\findOne.nxc"
+13	41	31		set __Wait_7qG2_ms_7qG2_000_inline_close_gate, 500
+13	40	34	#line 40 "C:\ENGR102\Lab Code\findOne.nxc"
+13	7921	34	#line 7921 "NXCDefs.h"
+13	7922	34		wait2 NA, __Wait_7qG2_ms_7qG2_000_inline_close_gate
+13	7921	37	#line 7921 "NXCDefs.h"
+13	41	37	#line 41 "C:\ENGR102\Lab Code\findOne.nxc"
+13	43	37	#line 43 "C:\ENGR102\Lab Code\findOne.nxc"
+13	44	37	#pragma macro 7
+13	44	37		setout __constVal1, 2, __constVal0, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+13	4955	60	#line 4955 "C:\ENGR102\Lab Code\findOne.nxc"
+13	43	60	#line 43 "C:\ENGR102\Lab Code\findOne.nxc"
+13	44	60	#line 44 "C:\ENGR102\Lab Code\findOne.nxc"
+13	45	60		subret __close_gate_return
+14	49	0	#line 49 "C:\ENGR102\Lab Code\findOne.nxc"
+14	50	0		subcall open_gate, __open_gate_return
+14	49	2	#line 49 "C:\ENGR102\Lab Code\findOne.nxc"
+14	49	2	#line 49 "C:\ENGR102\Lab Code\findOne.nxc"
+14	50	2		set __fwd_timed_7qG2_time_7qG2_000, 1300
+14	49	5	#line 49 "C:\ENGR102\Lab Code\findOne.nxc"
+14	52	5	#line 52 "C:\ENGR102\Lab Code\findOne.nxc"
+14	53	5		subcall fwd_timed, __fwd_timed_return
+14	52	7	#line 52 "C:\ENGR102\Lab Code\findOne.nxc"
+14	53	7	#line 53 "C:\ENGR102\Lab Code\findOne.nxc"
+14	54	7		subcall close_gate, __close_gate_return
+14	53	9	#line 53 "C:\ENGR102\Lab Code\findOne.nxc"
+14	55	9	#line 55 "C:\ENGR102\Lab Code\findOne.nxc"
+14	56	9		subret __acquire_return
+15	58	0	#line 58 "C:\ENGR102\Lab Code\findOne.nxc"
+15	59	0		set __isEmpty_7qG2_left_empty_7qG2_000, 0
+15	58	3	#line 58 "C:\ENGR102\Lab Code\findOne.nxc"
+15	59	3	#line 59 "C:\ENGR102\Lab Code\findOne.nxc"
+15	60	3		set __isEmpty_7qG2_right_empty_7qG2_000, 0
+15	59	6	#line 59 "C:\ENGR102\Lab Code\findOne.nxc"
+15	61	6	#line 61 "C:\ENGR102\Lab Code\findOne.nxc"
+15	62	6		set __isEmpty_7qG2_time_7qG2_000, 700
+15	61	9	#line 61 "C:\ENGR102\Lab Code\findOne.nxc"
+15	61	9	#line 61 "C:\ENGR102\Lab Code\findOne.nxc"
+15	62	9		set __D0isEmpty, 30
+15	61	12	#line 61 "C:\ENGR102\Lab Code\findOne.nxc"
+15	62	12	#pragma macro 7
+15	62	12		setout __constVal2, 2, __D0isEmpty, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+15	5017	35	#line 5017 "C:\ENGR102\Lab Code\findOne.nxc"
+15	61	35	#line 61 "C:\ENGR102\Lab Code\findOne.nxc"
+15	61	35	#line 61 "C:\ENGR102\Lab Code\findOne.nxc"
+15	62	35		mov __D0isEmpty, __constValNeg30
+15	61	37	#line 61 "C:\ENGR102\Lab Code\findOne.nxc"
+15	62	37	#pragma macro 7
+15	62	37		setout __constVal0, 2, __D0isEmpty, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+15	5024	60	#line 5024 "C:\ENGR102\Lab Code\findOne.nxc"
+15	61	60	#line 61 "C:\ENGR102\Lab Code\findOne.nxc"
+15	61	60	#line 61 "C:\ENGR102\Lab Code\findOne.nxc"
+15	62	60	#line 62 "C:\ENGR102\Lab Code\findOne.nxc"
+15	62	60	#line 62 "C:\ENGR102\Lab Code\findOne.nxc"
+15	63	60		mov __Wait_7qG2_ms_7qG2_000_inline_isEmpty, __isEmpty_7qG2_time_7qG2_000
+15	62	62	#line 62 "C:\ENGR102\Lab Code\findOne.nxc"
+15	7921	62	#line 7921 "NXCDefs.h"
+15	7922	62		wait2 NA, __Wait_7qG2_ms_7qG2_000_inline_isEmpty
+15	7921	65	#line 7921 "NXCDefs.h"
+15	63	65	#line 63 "C:\ENGR102\Lab Code\findOne.nxc"
+15	64	65	#line 64 "C:\ENGR102\Lab Code\findOne.nxc"
+15	65	65	#pragma macro 7
+15	65	65		setout __OUT_AC, 2, __constVal0, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+15	5043	88	#line 5043 "C:\ENGR102\Lab Code\findOne.nxc"
+15	64	88	#line 64 "C:\ENGR102\Lab Code\findOne.nxc"
+15	64	88	#line 64 "C:\ENGR102\Lab Code\findOne.nxc"
+15	65	88		set __Wait_7qG2_ms_7qG2_000_inline_isEmpty, 500
+15	64	91	#line 64 "C:\ENGR102\Lab Code\findOne.nxc"
+15	7921	91	#line 7921 "NXCDefs.h"
+15	7922	91		wait2 NA, __Wait_7qG2_ms_7qG2_000_inline_isEmpty
+15	7921	94	#line 7921 "NXCDefs.h"
+15	65	94	#line 65 "C:\ENGR102\Lab Code\findOne.nxc"
+15	65	94	#line 65 "C:\ENGR102\Lab Code\findOne.nxc"
+15	66	94	#pragma macro 26
+15	66	94		acquire __RLSBmutex0
+15	66	95		mov __RLSReadBuf0, __RLSBbufLSWrite1
+15	66	97		set __RLSBytesCount0, 1
+15	66	100		wait2 NA, __constVal15
+15	66	103		subcall __ReadLSBytes0, ____ReadLSBytes0_return
+15	66	105		index __D0isEmpty, __RLSReadBuf0, 65535
+15	66	109		release __RLSBmutex0
+15	5056	110	#line 5056 "C:\ENGR102\Lab Code\findOne.nxc"
+15	65	110	#line 65 "C:\ENGR102\Lab Code\findOne.nxc"
+15	66	110		mov __signed_stack_001isEmpty, __D0isEmpty
+15	65	112	#line 65 "C:\ENGR102\Lab Code\findOne.nxc"
+15	66	112		set __D0isEmpty, 45
+15	65	115	#line 65 "C:\ENGR102\Lab Code\findOne.nxc"
+15	66	115		cmp 1, __zfisEmpty, __signed_stack_001isEmpty, __D0isEmpty
+15	65	119	#line 65 "C:\ENGR102\Lab Code\findOne.nxc"
+15	66	119		mov __D0isEmpty, __zfisEmpty
+15	66	121	#line 66 "C:\ENGR102\Lab Code\findOne.nxc"
+15	67	121		brtst 4, __NXC_Label_582, __zfisEmpty
+15	67	124	#line 67 "C:\ENGR102\Lab Code\findOne.nxc"
+15	68	124		set __isEmpty_7qG2_right_empty_7qG2_000, 1
+15	67	127	#line 67 "C:\ENGR102\Lab Code\findOne.nxc"
+15	67	127	#line 67 "C:\ENGR102\Lab Code\findOne.nxc"
+15	70	127	#line 70 "C:\ENGR102\Lab Code\findOne.nxc"
+15	70	127	#line 70 "C:\ENGR102\Lab Code\findOne.nxc"
+15	71	127		mov __D0isEmpty, __constValNeg30
+15	70	129	#line 70 "C:\ENGR102\Lab Code\findOne.nxc"
+15	71	129	#pragma macro 7
+15	71	129		setout __constVal2, 2, __D0isEmpty, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+15	5083	152	#line 5083 "C:\ENGR102\Lab Code\findOne.nxc"
+15	70	152	#line 70 "C:\ENGR102\Lab Code\findOne.nxc"
+15	70	152	#line 70 "C:\ENGR102\Lab Code\findOne.nxc"
+15	71	152		set __D0isEmpty, 30
+15	70	155	#line 70 "C:\ENGR102\Lab Code\findOne.nxc"
+15	71	155	#pragma macro 7
+15	71	155		setout __constVal0, 2, __D0isEmpty, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+15	5090	178	#line 5090 "C:\ENGR102\Lab Code\findOne.nxc"
+15	70	178	#line 70 "C:\ENGR102\Lab Code\findOne.nxc"
+15	70	178	#line 70 "C:\ENGR102\Lab Code\findOne.nxc"
+15	71	178	#line 71 "C:\ENGR102\Lab Code\findOne.nxc"
+15	71	178	#line 71 "C:\ENGR102\Lab Code\findOne.nxc"
+15	71	178	#line 71 "C:\ENGR102\Lab Code\findOne.nxc"
+15	71	178	#line 71 "C:\ENGR102\Lab Code\findOne.nxc"
+15	71	178	#line 71 "C:\ENGR102\Lab Code\findOne.nxc"
+15	72	178		mul __Wait_7qG2_ms_7qG2_000_inline_isEmpty, __isEmpty_7qG2_time_7qG2_000, __constVal2
+15	71	182	#line 71 "C:\ENGR102\Lab Code\findOne.nxc"
+15	7921	182	#line 7921 "NXCDefs.h"
+15	7922	182		wait2 NA, __Wait_7qG2_ms_7qG2_000_inline_isEmpty
+15	7921	185	#line 7921 "NXCDefs.h"
+15	72	185	#line 72 "C:\ENGR102\Lab Code\findOne.nxc"
+15	73	185	#line 73 "C:\ENGR102\Lab Code\findOne.nxc"
+15	74	185	#pragma macro 7
+15	74	185		setout __OUT_AC, 2, __constVal0, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+15	5111	208	#line 5111 "C:\ENGR102\Lab Code\findOne.nxc"
+15	73	208	#line 73 "C:\ENGR102\Lab Code\findOne.nxc"
+15	73	208	#line 73 "C:\ENGR102\Lab Code\findOne.nxc"
+15	74	208		set __Wait_7qG2_ms_7qG2_000_inline_isEmpty, 500
+15	73	211	#line 73 "C:\ENGR102\Lab Code\findOne.nxc"
+15	7921	211	#line 7921 "NXCDefs.h"
+15	7922	211		wait2 NA, __Wait_7qG2_ms_7qG2_000_inline_isEmpty
+15	7921	214	#line 7921 "NXCDefs.h"
+15	74	214	#line 74 "C:\ENGR102\Lab Code\findOne.nxc"
+15	74	214	#line 74 "C:\ENGR102\Lab Code\findOne.nxc"
+15	75	214	#pragma macro 26
+15	75	214		acquire __RLSBmutex0
+15	75	215		mov __RLSReadBuf0, __RLSBbufLSWrite1
+15	75	217		set __RLSBytesCount0, 1
+15	75	220		wait2 NA, __constVal15
+15	75	223		subcall __ReadLSBytes0, ____ReadLSBytes0_return
+15	75	225		index __D0isEmpty, __RLSReadBuf0, 65535
+15	75	229		release __RLSBmutex0
+15	5124	230	#line 5124 "C:\ENGR102\Lab Code\findOne.nxc"
+15	74	230	#line 74 "C:\ENGR102\Lab Code\findOne.nxc"
+15	75	230		mov __signed_stack_001isEmpty, __D0isEmpty
+15	74	232	#line 74 "C:\ENGR102\Lab Code\findOne.nxc"
+15	75	232		set __D0isEmpty, 45
+15	74	235	#line 74 "C:\ENGR102\Lab Code\findOne.nxc"
+15	75	235		cmp 1, __zfisEmpty, __signed_stack_001isEmpty, __D0isEmpty
+15	74	239	#line 74 "C:\ENGR102\Lab Code\findOne.nxc"
+15	75	239		mov __D0isEmpty, __zfisEmpty
+15	75	241	#line 75 "C:\ENGR102\Lab Code\findOne.nxc"
+15	76	241		brtst 4, __NXC_Label_597, __zfisEmpty
+15	76	244	#line 76 "C:\ENGR102\Lab Code\findOne.nxc"
+15	77	244		set __isEmpty_7qG2_left_empty_7qG2_000, 1
+15	76	247	#line 76 "C:\ENGR102\Lab Code\findOne.nxc"
+15	76	247	#line 76 "C:\ENGR102\Lab Code\findOne.nxc"
+15	79	247	#line 79 "C:\ENGR102\Lab Code\findOne.nxc"
+15	79	247	#line 79 "C:\ENGR102\Lab Code\findOne.nxc"
+15	80	247		mov __signed_stack_001isEmpty, __isEmpty_7qG2_left_empty_7qG2_000
+15	79	249	#line 79 "C:\ENGR102\Lab Code\findOne.nxc"
+15	79	249	#line 79 "C:\ENGR102\Lab Code\findOne.nxc"
+15	80	249		set __D0isEmpty, 1
+15	79	252	#line 79 "C:\ENGR102\Lab Code\findOne.nxc"
+15	80	252		cmp 4, __zfisEmpty, __signed_stack_001isEmpty, __D0isEmpty
+15	79	256	#line 79 "C:\ENGR102\Lab Code\findOne.nxc"
+15	80	256		mov __D0isEmpty, __zfisEmpty
+15	79	258	#line 79 "C:\ENGR102\Lab Code\findOne.nxc"
+15	80	258		brtst 4, __NXC_Label_601, __zfisEmpty
+15	79	261	#line 79 "C:\ENGR102\Lab Code\findOne.nxc"
+15	80	261		mov __signed_stack_001isEmpty, __D0isEmpty
+15	79	263	#line 79 "C:\ENGR102\Lab Code\findOne.nxc"
+15	80	263		mov __signed_stack_002isEmpty, __isEmpty_7qG2_right_empty_7qG2_000
+15	79	265	#line 79 "C:\ENGR102\Lab Code\findOne.nxc"
+15	79	265	#line 79 "C:\ENGR102\Lab Code\findOne.nxc"
+15	80	265		set __D0isEmpty, 1
+15	79	268	#line 79 "C:\ENGR102\Lab Code\findOne.nxc"
+15	80	268		cmp 4, __zfisEmpty, __signed_stack_002isEmpty, __D0isEmpty
+15	79	272	#line 79 "C:\ENGR102\Lab Code\findOne.nxc"
+15	79	272	#line 79 "C:\ENGR102\Lab Code\findOne.nxc"
+15	80	272		and __D0isEmpty, __signed_stack_001isEmpty, __zfisEmpty
+15	80	276	#line 80 "C:\ENGR102\Lab Code\findOne.nxc"
+15	81	276		tst 5, __zfisEmpty, __D0isEmpty
+15	80	279	#line 80 "C:\ENGR102\Lab Code\findOne.nxc"
+15	81	279		brtst 4, __NXC_Label_602, __zfisEmpty
+15	81	282	#line 81 "C:\ENGR102\Lab Code\findOne.nxc"
+15	82	282		set __DU0isEmpty, 1
+15	81	285	#line 81 "C:\ENGR102\Lab Code\findOne.nxc"
+15	81	285	#line 81 "C:\ENGR102\Lab Code\findOne.nxc"
+15	82	285		subret __isEmpty_return
+15	81	287	#line 81 "C:\ENGR102\Lab Code\findOne.nxc"
+15	82	287	#line 82 "C:\ENGR102\Lab Code\findOne.nxc"
+15	83	287		jmp __NXC_Label_605
+15	82	289	#line 82 "C:\ENGR102\Lab Code\findOne.nxc"
+15	83	289		set __DU0isEmpty, 0
+15	82	292	#line 82 "C:\ENGR102\Lab Code\findOne.nxc"
+15	82	292	#line 82 "C:\ENGR102\Lab Code\findOne.nxc"
+15	83	292		subret __isEmpty_return
+15	82	294	#line 82 "C:\ENGR102\Lab Code\findOne.nxc"
+15	86	294	#line 86 "C:\ENGR102\Lab Code\findOne.nxc"
+15	86	294	#line 86 "C:\ENGR102\Lab Code\findOne.nxc"
+15	87	294		subret __isEmpty_return
+16	88	0	#line 88 "C:\ENGR102\Lab Code\findOne.nxc"
+16	89	0		getin __signed_stack_001find_light, __constVal3, 4
+16	88	4	#line 88 "C:\ENGR102\Lab Code\findOne.nxc"
+16	88	4	#line 88 "C:\ENGR102\Lab Code\findOne.nxc"
+16	89	4		set __D0find_light, 40
+16	88	7	#line 88 "C:\ENGR102\Lab Code\findOne.nxc"
+16	89	7		cmp 0, __zffind_light, __signed_stack_001find_light, __D0find_light
+16	88	11	#line 88 "C:\ENGR102\Lab Code\findOne.nxc"
+16	89	11		mov __D0find_light, __zffind_light
+16	89	13	#line 89 "C:\ENGR102\Lab Code\findOne.nxc"
+16	90	13		brtst 4, __NXC_Label_609, __zffind_light
+16	89	16	#line 89 "C:\ENGR102\Lab Code\findOne.nxc"
+16	90	16		set __D0find_light, 30
+16	89	19	#line 89 "C:\ENGR102\Lab Code\findOne.nxc"
+16	90	19	#pragma macro 7
+16	90	19		setout __constVal2, 2, __D0find_light, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+16	5228	42	#line 5228 "C:\ENGR102\Lab Code\findOne.nxc"
+16	89	42	#line 89 "C:\ENGR102\Lab Code\findOne.nxc"
+16	89	42	#line 89 "C:\ENGR102\Lab Code\findOne.nxc"
+16	90	42		mov __D0find_light, __constValNeg30
+16	89	44	#line 89 "C:\ENGR102\Lab Code\findOne.nxc"
+16	90	44	#pragma macro 7
+16	90	44		setout __constVal0, 2, __D0find_light, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+16	5235	67	#line 5235 "C:\ENGR102\Lab Code\findOne.nxc"
+16	89	67	#line 89 "C:\ENGR102\Lab Code\findOne.nxc"
+16	89	67	#line 89 "C:\ENGR102\Lab Code\findOne.nxc"
+16	90	67	#line 90 "C:\ENGR102\Lab Code\findOne.nxc"
+16	91	67	#line 91 "C:\ENGR102\Lab Code\findOne.nxc"
+16	92	67		jmp __NXC_Label_608
+16	91	69	#line 91 "C:\ENGR102\Lab Code\findOne.nxc"
+16	92	69	#line 92 "C:\ENGR102\Lab Code\findOne.nxc"
+16	93	69	#pragma macro 7
+16	93	69		setout __OUT_AC, 2, __constVal0, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+16	5244	92	#line 5244 "C:\ENGR102\Lab Code\findOne.nxc"
+16	92	92	#line 92 "C:\ENGR102\Lab Code\findOne.nxc"
+16	94	92	#line 94 "C:\ENGR102\Lab Code\findOne.nxc"
+16	95	92		subret __find_light_return
+17	228	0	#line 228 "C:\ENGR102\Lab Code\findOne.nxc"
+17	229	0		subret ____initialize_global_data_return
+#CLUMPS
+Clump	Name	Offset	File
+0	main	0	C:\ENGR102\Lab Code\findOne.nxc
+1	__ResetSensorSubroutine	190	NXTDefs.h
+2	__ReadLSBytes0	203	NXTDefs.h
+3	PlaySound	288	NXCDefs.h
+4	init_sensors	687	C:\ENGR102\Lab Code\.\includes.nxc
+5	task_test_color	759	C:\ENGR102\Lab Code\.\includes.nxc
+6	test_color	800	C:\ENGR102\Lab Code\.\includes.nxc
+7	__task_test_color_Returner	804	C:\ENGR102\Lab Code\.\includes.nxc
+8	__task_test_color_Spawner	806	C:\ENGR102\Lab Code\.\includes.nxc
+9	fwd_timed	809	C:\ENGR102\Lab Code\findOne.nxc
+10	rev_timed	870	C:\ENGR102\Lab Code\findOne.nxc
+11	search	936	C:\ENGR102\Lab Code\findOne.nxc
+12	open_gate	1128	C:\ENGR102\Lab Code\findOne.nxc
+13	close_gate	1185	C:\ENGR102\Lab Code\findOne.nxc
+14	acquire	1247	C:\ENGR102\Lab Code\findOne.nxc
+15	isEmpty	1258	C:\ENGR102\Lab Code\findOne.nxc
+16	find_light	1554	C:\ENGR102\Lab Code\findOne.nxc
+17	__initialize_global_data	1648	C:\ENGR102\Lab Code\findOne.nxc

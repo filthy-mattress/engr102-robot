@@ -1,0 +1,213 @@
+#include "includes.nxc"
+
+sub search(){
+    // Spin around until object NEAR, then go close to object
+     int SPIN_MODE = 1;
+     zp_turn_l(30);
+     while(true && SPIN_MODE == 1){
+        if(SensorUS(ULTRASONIC)<NEAR){
+           Wait(200);// correct for sensor width
+           Off(BOTH_MOTORS);
+
+           // Go to Object
+           while(SensorUS(ULTRASONIC)>NEAR2){
+                OnFwd(BOTH_MOTORS, MOVE_SPEED);
+           }
+           // end loop
+         SPIN_MODE = 0;
+        }
+     }
+}
+
+sub acquire(){
+   // open gate
+      OnFwd(GATE_MOTOR,30);
+      Wait(1000);
+      Off(GATE_MOTOR);
+
+   // go forward
+      OnFwd(BOTH_MOTORS, MOVE_SPEED);
+      Wait(800);
+      Off(BOTH_MOTORS);
+
+   // Grip close gate
+      OnRev(GATE_MOTOR,30);
+      Wait(500);
+      Off(GATE_MOTOR);
+}
+
+bool isEmpty(){
+ // Check to see if both sides of object are empty
+     int left_empty = 0;
+     int right_empty = 0;
+
+     // right
+     zp_turn_r(30);
+     Wait(600);
+     Off(BOTH_MOTORS);
+     Wait(500);
+     if (SensorUS(ULTRASONIC)>NEAR){
+        right_empty = 1;
+     }
+
+     // left
+     zp_turn_l(30);
+     Wait(1000);
+     Off(BOTH_MOTORS);
+     Wait(500);
+     if (SensorUS(ULTRASONIC)>NEAR){
+        left_empty = 1;
+     }
+
+     // return true if both empty
+     if(left_empty == 1 && right_empty == 1) {
+          return true;
+     }
+     else{return false;}
+
+}
+
+void find_light(){
+      // spin around and find light
+         while (Sensor(LIGHT)<LIGHT_THRESHOLD){
+             zp_turn_r(30);
+         }
+}
+
+int magnet_move_running=0;
+int magnet_move_done=1;
+task magnet_move(){
+     magnet_move_running=1;
+     magnet_move_done=0;
+     while(magnet_move_running){
+          // move forward until object hit
+             int wall_looking = 1;
+             find_light();
+         // move to wall, check if wall
+             while(wall_looking == 1){
+                  while(SensorUS(ULTRASONIC)>NEARWALL){
+                       OnFwd(BOTH_MOTORS, MOVE_SPEED);
+                  }
+
+             // Check to see if either side of object are empty
+                 int left_empty = 0;
+                 int right_empty = 0;
+
+                 // left
+                 zp_turn_r(MAGNET_TURN_STRENGTH);
+                 Wait(200);
+                 Off(BOTH_MOTORS);
+                 if (SensorUS(ULTRASONIC)>NEAR){
+                    left_empty = 1;
+                 }
+
+                 // right
+                 zp_turn_l(MAGNET_TURN_STRENGTH);
+                 Wait(400);
+                 Off(BOTH_MOTORS);
+                 if (SensorUS(ULTRASONIC)>NEAR){
+                    right_empty = 1;
+                 }
+
+                 // if wall, stop looking for wall
+                 if(left_empty == 0 && right_empty == 0) {
+                     wall_looking = 0;
+                 }
+             }
+
+         // Turn Left, see if ultrasonic value is increasing or decreasing
+            int initial = SensorUS(ULTRASONIC);
+            zp_turn_l(MAGNET_TURN_STRENGTH);
+            Wait(600);
+            Off(BOTH_MOTORS);
+            int final = SensorUS(ULTRASONIC);
+
+
+         // if increasing, then that's towards dropoff zone
+            if(initial < final){
+                // turn back until it increases again
+                while(SensorUS(ULTRASONIC) < final){
+                     zp_turn_r(MAGNET_TURN_STRENGTH);
+                }
+
+                // stop turning
+                Off(BOTH_MOTORS);
+
+                // turn 90 degrees back in original direction
+                zp_turn_l(MAGNET_TURN_STRENGTH);
+                Wait(800);
+                Off(BOTH_MOTORS);
+
+                // go forward until near again
+                while(SensorUS(ULTRASONIC)>NEAR){
+                       OnFwd(BOTH_MOTORS, MOVE_SPEED);
+                }
+                Off(BOTH_MOTORS);
+
+            }
+
+            // if decreasing, then keep turning until it starts increasing, then turn away 90 degrees
+            if(initial > final){
+               while(SensorUS(ULTRASONIC) < initial){
+                     zp_turn_l(MAGNET_TURN_STRENGTH);
+               }
+
+               // stop turning
+               Off(BOTH_MOTORS);
+
+               // turn 90 degrees
+               zp_turn_r(MAGNET_TURN_STRENGTH);
+               Wait(800);
+               Off(BOTH_MOTORS);
+
+               // go forward until near again
+               while(SensorUS(ULTRASONIC)>NEAR){
+                     OnFwd(BOTH_MOTORS, MOVE_SPEED);
+               }
+               Off(BOTH_MOTORS);
+
+            }
+     }
+     magnet_move_done=1;
+}
+#define magnet_turn_start {StartTask(magnet_move);}
+#define magnet_turn_stop {magnet_move_running=0;until(magnet_move_done);}
+
+task main() {
+
+// Init sensors
+   init_sensors() ;
+
+// Move forward initially
+   OnFwd(BOTH_MOTORS, MOVE_SPEED);
+   Wait(1000);
+   Off(BOTH_MOTORS);
+
+
+// Main Loop
+int MAIN_LOOP = 1;
+while(true && MAIN_LOOP == 1){
+
+// Spin around until object NEAR, then go close to object
+  search();
+
+// Check to see if both sides of object are empty
+// If both were empty then turn back to original facing and proceed
+     if(isEmpty() == true) {
+
+         // turn back other direction
+         zp_turn_r(30);
+         Wait(600);
+         Off(BOTH_MOTORS);
+
+         // get object
+         acquire();
+
+         find_light();
+         long x = MotorRotationCount(BOTH_MOTORS/2);
+     }
+
+
+} // end main loop
+
+} // end main

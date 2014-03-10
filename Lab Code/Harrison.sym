@@ -1,1258 +1,1380 @@
 #SYMBOLS
 Index	Identifier	Type	Flag	Data	Size	RefCount
-0	__Wait_7qG2_ms_7qG2_000_inline_acquire	5	1	0	4	6
-1	__CLSRMutex0	9	0	4	4	2
-2	__CLSCSMutex0	9	0	8	4	2
-3	__CLSWMutex0	9	0	12	4	2
-4	__D0main	6	1	16	4	240
-5	__signed_stack_001main	6	1	20	4	72
-6	__RLSBmutex0	9	0	24	4	32
-7	__D0acquire	6	1	28	4	6
-8	__OnRevMutex	9	0	32	4	4
-9	__Wait_7qG2_ms_7qG2_000_inline_main	5	1	36	4	30
-10	__main_7qG2_wall_looking_7qG2_003	4	1	40	2	3
-11	__main_7qG2_x_7qG2_004	4	1	42	2	7
-12	__main_7qG2_sensor_right_7qG2_004	4	1	44	2	3
-13	__main_7qG2_sensor_left_7qG2_004	4	1	46	2	3
-14	__main_7qG2_MAIN_LOOP_7qG2_000	4	1	48	2	3
-15	__main_7qG2_magnet_initial_7qG2_000	4	1	50	2	3
-16	__main_7qG2_left_empty_7qG2_001	4	1	52	2	6
-17	__main_7qG2_right_empty_7qG2_001	4	1	54	2	6
-18	__main_7qG2_SPIN_MODE_7qG2_001	4	1	56	2	3
-19	__SetSensorType_7qG2_port_7qG2_000_inline_SetSensorHTMagnet_inline_init_sensors	1	1	58	1	2
-20	__SetSensorType_7qG2_type_7qG2_000_inline_SetSensorHTMagnet_inline_init_sensors	1	1	59	1	2
-21	__SetSensorHTMagnet_7qG2_port_7qG2_000_inline_init_sensors	1	1	60	1	4
-22	__SetSensorType_7qG2_port_7qG2_000_inline_init_sensors	1	1	61	1	6
-23	__SetSensorType_7qG2_type_7qG2_000_inline_init_sensors	1	1	62	1	6
-24	__constVal96	2	0	63	1	47
-25	__acquire_return	1	1	64	1	3
-26	____initialize_global_data_return	1	1	65	1	3
-27	__constVal63	2	0	66	1	47
-28	__SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorHTMagnet_inline_init_sensors	1	1	67	1	2
-29	__SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorHTMagnet_inline_init_sensors	1	1	68	1	2
-30	__SetSensorMode_7qG2_mode_7qG2_000_inline_init_sensors	1	1	69	1	2
-31	__SetSensorMode_7qG2_port_7qG2_000_inline_init_sensors	1	1	70	1	2
-32	__ResetSensorTmp	1	1	71	1	2
-33	__ResetSensorPort	1	1	72	1	3
-34	__LSWriteOptions0	1	1	73	1	1
-35	____ResetSensorSubroutine_return	1	1	74	1	3
-36	__constVal3	2	0	75	1	48
-37	__constVal32	2	0	76	1	141
-38	__OnRev_Tmp	2	1	77	1	4
-39	__constVal0	2	1	78	1	169
-40	__constVal1	2	0	79	1	7
-41	____ReadLSBytes0_return	1	1	80	1	18
-42	__constVal2	2	0	81	1	16
-43	__RLSBIterations0	1	1	82	1	4
-44	__RLSBytesCount0	1	1	83	1	22
-45	__init_sensors_return	1	1	84	1	3
-46	__constVal15	2	0	85	1	32
-47	__PFTmp	1	1	86	1	1
-48	__RLSBResult0	2	1	87	1	7
-49	__CLSWArgs0	8	0	4	12	5
-50	__CLSWArgs0.Result	2	1	88	1	5
-51	__CLSWArgs0.Port	1	1	89	1	5
-52	__CLSWArgs0.Buffer	7	0	90	4	5
-53	__CLSWArgs0.Buffer.Buffer_type	1	0	0	1	0
-54	__CLSWArgs0.ReturnLen	1	1	92	1	5
-55	__CLSRArgs0	8	0	4	12	5
-56	__CLSRArgs0.Result	2	1	96	1	5
-57	__CLSRArgs0.Port	1	1	97	1	5
-58	__CLSRArgs0.Buffer	7	0	98	4	5
-59	__CLSRArgs0.Buffer.Buffer_type	1	0	0	1	0
-60	__CLSRArgs0.BufferLen	1	1	100	1	5
-61	__CLSCSArgs0	8	0	3	4	4
-62	__CLSCSArgs0.Result	2	1	104	1	4
-63	__CLSCSArgs0.Port	1	1	105	1	4
-64	__CLSCSArgs0.BytesReady	1	1	106	1	4
-65	__RLSBbufLSWrite1	7	0	108	4	16
-66	__RLSBbufLSWrite1.__RLSBbufLSWrite1_type	1	0	0	1	0
-67	__OUT_AC	7	0	110	4	17
-68	__OUT_AC.__OUT_AC_type	1	0	0	1	0
-69	__RLSReadBuf0	7	0	112	4	38
-70	__RLSReadBuf0.__RLSReadBuf0_type	1	0	0	1	0
-71	__RLSLastGoodRead0	7	0	114	4	2
-72	__RLSLastGoodRead0.__RLSLastGoodRead0_type	1	0	0	1	0
+0	__D0search	6	1	0	4	24
+1	__D0main	6	1	4	4	116
+2	__signed_stack_001isEmpty	6	1	8	4	8
+3	__signed_stack_001isWall	6	1	12	4	8
+4	__signed_stack_002isEmpty	6	1	16	4	2
+5	__D0isEmpty	6	1	20	4	26
+6	__D0acquire	6	1	24	4	6
+7	__DU0isEmpty	5	1	28	4	3
+8	__DU0isWall	5	1	32	4	3
+9	__D0isWall	6	1	36	4	30
+10	__Wait_7qG2_ms_7qG2_000_inline_acquire	5	1	40	4	3
+11	__signed_stack_002search	6	1	44	4	2
+12	__Wait_7qG2_ms_7qG2_000_inline_isEmpty	5	1	48	4	4
+13	__Wait_7qG2_ms_7qG2_000_inline_main	5	1	52	4	7
+14	__Wait_7qG2_ms_7qG2_000_inline_isWall	5	1	56	4	4
+15	__signed_stack_001main	6	1	60	4	24
+16	__signed_stack_002isWall	6	1	64	4	2
+17	__signed_stack_002main	6	1	68	4	6
+18	__signed_stack_001search	6	1	72	4	6
+19	__unsigned_stack_001main	5	1	76	4	4
+20	__CLSRMutex0	9	0	80	4	2
+21	__RLSBmutex0	9	0	84	4	32
+22	__CLSWMutex0	9	0	88	4	2
+23	__CLSCSMutex0	9	0	92	4	2
+24	__OnRevMutex	9	0	96	4	4
+25	__main_7qG2_x_7qG2_004	4	1	100	2	7
+26	__main_7qG2_sensor_left_7qG2_004	4	1	102	2	2
+27	__isWall_7qG2_right_empty_7qG2_000	4	1	104	2	3
+28	__isWall_7qG2_left_empty_7qG2_000	4	1	106	2	3
+29	__isEmpty_7qG2_left_empty_7qG2_000	4	1	108	2	3
+30	__search_7qG2_SPIN_MODE_7qG2_000	4	1	110	2	3
+31	__isEmpty_7qG2_right_empty_7qG2_000	4	1	112	2	3
+32	__main_7qG2_sensor_right_7qG2_004	4	1	114	2	2
+33	__main_7qG2_MAIN_LOOP_7qG2_000	4	1	116	2	3
+34	__constVal128	4	0	118	2	1
+35	__main_7qG2_magnet_initial_7qG2_000	4	1	120	2	3
+36	__isWall_7qG2_sensor_right_7qG2_000	4	1	122	2	2
+37	__isWall_7qG2_sensor_left_7qG2_000	4	1	124	2	2
+38	__main_7qG2_wall_looking_7qG2_003	4	1	126	2	3
+39	__SetSensorMode_7qG2_mode_7qG2_000_inline_init_sensors	1	1	128	1	2
+40	__search_return	1	1	129	1	3
+41	__SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorHTMagnet_inline_init_sensors	1	1	130	1	2
+42	__SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorHTMagnet_inline_init_sensors	1	1	131	1	2
+43	__SetSensorType_7qG2_type_7qG2_000_inline_SetSensorHTMagnet_inline_init_sensors	1	1	132	1	2
+44	__SetSensorMode_7qG2_port_7qG2_000_inline_init_sensors	1	1	133	1	2
+45	__constVal96	2	0	134	1	47
+46	____initialize_global_data_return	1	1	135	1	3
+47	__OnRev_Tmp	2	1	136	1	4
+48	__isWall_return	1	1	137	1	5
+49	__isEmpty_return	1	1	138	1	5
+50	__constVal63	2	0	139	1	47
+51	__acquire_return	1	1	140	1	3
+52	__constVal32	2	0	141	1	141
+53	__zfisWall	1	1	142	1	13
+54	__zfisEmpty	1	1	143	1	13
+55	__zfmain	1	1	144	1	60
+56	____ResetSensorSubroutine_return	1	1	145	1	4
+57	__zfsearch	1	1	146	1	13
+58	____ReadLSBytes0_return	1	1	147	1	18
+59	__RLSBytesCount0	1	1	148	1	22
+60	__RLSBResult0	2	1	149	1	7
+61	__RLSBIterations0	1	1	150	1	4
+62	__constVal15	2	0	151	1	1
+63	__constVal2	2	0	152	1	17
+64	__SetSensorType_7qG2_port_7qG2_000_inline_init_sensors	1	1	153	1	4
+65	__init_sensors_return	1	1	154	1	3
+66	__constVal1	2	0	155	1	6
+67	__SetSensorType_7qG2_type_7qG2_000_inline_init_sensors	1	1	156	1	4
+68	__SetSensorType_7qG2_port_7qG2_000_inline_SetSensorHTMagnet_inline_init_sensors	1	1	157	1	2
+69	__SetSensorHTMagnet_7qG2_port_7qG2_000_inline_init_sensors	1	1	158	1	3
+70	__SetSensorColorGreen_7qG2_port_7qG2_000_inline_init_sensors	1	1	159	1	4
+71	__constVal3	2	0	160	1	48
+72	__ResetSensorPort	1	1	161	1	4
+73	__ResetSensorTmp	1	1	162	1	2
+74	__constVal0	2	1	163	1	168
+75	__CLSCSArgs0	8	0	3	4	4
+76	__CLSCSArgs0.Result	2	1	164	1	4
+77	__CLSCSArgs0.Port	1	1	165	1	4
+78	__CLSCSArgs0.BytesReady	1	1	166	1	4
+79	__CLSWArgs0	8	0	4	12	5
+80	__CLSWArgs0.Result	2	1	168	1	5
+81	__CLSWArgs0.Port	1	1	169	1	5
+82	__CLSWArgs0.Buffer	7	0	170	4	5
+83	__CLSWArgs0.Buffer.Buffer_type	1	0	0	1	0
+84	__CLSWArgs0.ReturnLen	1	1	172	1	5
+85	__CLSRArgs0	8	0	4	12	5
+86	__CLSRArgs0.Result	2	1	176	1	5
+87	__CLSRArgs0.Port	1	1	177	1	5
+88	__CLSRArgs0.Buffer	7	0	178	4	5
+89	__CLSRArgs0.Buffer.Buffer_type	1	0	0	1	0
+90	__CLSRArgs0.BufferLen	1	1	180	1	5
+91	__RLSBbufLSWrite1	7	0	182	4	16
+92	__RLSBbufLSWrite1.__RLSBbufLSWrite1_type	1	0	0	1	0
+93	__RLSLastGoodRead0	7	0	184	4	2
+94	__RLSLastGoodRead0.__RLSLastGoodRead0_type	1	0	0	1	0
+95	__OUT_AC	7	0	186	4	17
+96	__OUT_AC.__OUT_AC_type	1	0	0	1	0
+97	__RLSReadBuf0	7	0	188	4	38
+98	__RLSReadBuf0.__RLSReadBuf0_type	1	0	0	1	0
 #SOURCES
 Clump	Line	PC	Source
-0	21	0	#line 21 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	22	0		subcall __initialize_global_data, ____initialize_global_data_return
-0	21	2	#line 21 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	22	2	#line 22 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	23	2		subcall init_sensors, __init_sensors_return
-0	22	4	#line 22 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	22	4	#line 22 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	23	4		getin __main_7qG2_magnet_initial_7qG2_000, __constVal2, 4
-0	22	8	#line 22 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	27	8	#line 27 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	28	8		set __main_7qG2_MAIN_LOOP_7qG2_000, 1
-0	27	11	#line 27 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	27	11	#line 27 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	28	11		set __D0main, 1
-0	27	14	#line 27 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	28	14		tst 5, __D0main, __D0main
-0	27	17	#line 27 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	28	17		brtst 4, __ASM_Label_526, __D0main
-0	27	20	#line 27 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	28	20		mov __signed_stack_001main, __main_7qG2_MAIN_LOOP_7qG2_000
-0	27	22	#line 27 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	27	22	#line 27 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	28	22		set __D0main, 1
-0	27	25	#line 27 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	28	25		cmp 4, __D0main, __signed_stack_001main, __D0main
-0	30	29	#line 30 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	31	29		brtst 4, __ASM_Label_524, __D0main
-0	31	32	#line 31 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	32	32		set __main_7qG2_SPIN_MODE_7qG2_001, 1
-0	31	35	#line 31 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	31	35	#line 31 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	32	35		set __signed_stack_001main, 0
-0	31	38	#line 31 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	31	38	#line 31 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	32	38		set __D0main, 30
-0	31	41	#line 31 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	32	41		sub __D0main, __signed_stack_001main, __D0main
-0	31	45	#line 31 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	32	45	#pragma macro 7
-0	32	45		setout __constVal2, 2, __D0main, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
-0	4039	68	#line 4039 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	31	68	#line 31 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	31	68	#line 31 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	32	68		set __D0main, 30
-0	31	71	#line 31 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	32	71	#pragma macro 7
-0	32	71		setout __constVal0, 2, __D0main, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
-0	4044	94	#line 4044 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	31	94	#line 31 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	31	94	#line 31 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	32	94	#line 32 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	32	94	#line 32 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	33	94		set __D0main, 1
-0	32	97	#line 32 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	33	97		tst 5, __D0main, __D0main
-0	32	100	#line 32 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	33	100		brtst 4, __ASM_Label_538, __D0main
-0	32	103	#line 32 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	33	103		mov __signed_stack_001main, __main_7qG2_SPIN_MODE_7qG2_001
-0	32	105	#line 32 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	32	105	#line 32 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	33	105		set __D0main, 1
-0	32	108	#line 32 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	33	108		cmp 4, __D0main, __signed_stack_001main, __D0main
-0	33	112	#line 33 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	34	112		brtst 4, __ASM_Label_536, __D0main
-0	33	115	#line 33 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	34	115	#pragma macro 26
-0	34	115		acquire __RLSBmutex0
-0	34	116		mov __RLSReadBuf0, __RLSBbufLSWrite1
-0	34	118		set __RLSBytesCount0, 1
-0	34	121		wait2 NA, __constVal15
-0	34	124		subcall __ReadLSBytes0, ____ReadLSBytes0_return
-0	34	126		index __D0main, __RLSReadBuf0, 65535
-0	34	130		release __RLSBmutex0
-0	4070	131	#line 4070 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	33	131	#line 33 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	34	131		mov __signed_stack_001main, __D0main
-0	33	133	#line 33 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	34	133		set __D0main, 30
-0	33	136	#line 33 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	34	136		cmp 0, __D0main, __signed_stack_001main, __D0main
-0	34	140	#line 34 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	35	140		brtst 4, __ASM_Label_541, __D0main
-0	36	143	#line 36 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	37	143	#pragma macro 7
-0	37	143		setout __OUT_AC, 2, __constVal0, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
-0	4084	166	#line 4084 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	36	166	#line 36 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	36	166	#line 36 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	37	166	#pragma macro 26
-0	37	166		acquire __RLSBmutex0
-0	37	167		mov __RLSReadBuf0, __RLSBbufLSWrite1
-0	37	169		set __RLSBytesCount0, 1
-0	37	172		wait2 NA, __constVal15
-0	37	175		subcall __ReadLSBytes0, ____ReadLSBytes0_return
-0	37	177		index __D0main, __RLSReadBuf0, 65535
-0	37	181		release __RLSBmutex0
-0	4088	182	#line 4088 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	36	182	#line 36 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	37	182		mov __signed_stack_001main, __D0main
-0	36	184	#line 36 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	37	184		set __D0main, 15
-0	36	187	#line 36 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	37	187		cmp 1, __D0main, __signed_stack_001main, __D0main
-0	37	191	#line 37 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	38	191		brtst 4, __ASM_Label_543, __D0main
-0	37	194	#line 37 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	38	194		set __D0main, 75
-0	38	197	#line 38 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	39	197	#pragma macro 7
-0	39	197		setout __OUT_AC, 2, __D0main, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
-0	4104	220	#line 4104 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	38	220	#line 38 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	40	220	#line 40 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	41	220		jmp __ASM_Label_542
-0	40	222	#line 40 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	41	222	#line 41 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	42	222		set __main_7qG2_SPIN_MODE_7qG2_001, 0
-0	41	225	#line 41 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	41	225	#line 41 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	44	225	#line 44 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	44	225	#line 44 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	45	225		jmp __ASM_Label_535
-0	44	227	#line 44 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	45	227	#line 45 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	46	227		set __main_7qG2_left_empty_7qG2_001, 0
-0	45	230	#line 45 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	47	230	#line 47 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	48	230		set __main_7qG2_right_empty_7qG2_001, 0
-0	47	233	#line 47 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	47	233	#line 47 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	48	233		set __D0main, 30
-0	47	236	#line 47 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	48	236	#pragma macro 7
-0	48	236		setout __constVal2, 2, __D0main, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
-0	4140	259	#line 4140 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	47	259	#line 47 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	47	259	#line 47 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	48	259		set __signed_stack_001main, 0
-0	47	262	#line 47 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	47	262	#line 47 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	48	262		set __D0main, 30
-0	47	265	#line 47 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	48	265		sub __D0main, __signed_stack_001main, __D0main
-0	47	269	#line 47 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	48	269	#pragma macro 7
-0	48	269		setout __constVal0, 2, __D0main, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
-0	4155	292	#line 4155 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	47	292	#line 47 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	47	292	#line 47 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	48	292	#line 48 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	48	292	#line 48 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	49	292		set __Wait_7qG2_ms_7qG2_000_inline_main, 600
-0	48	295	#line 48 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	8551	295	#line 8551 "NXCDefs.h"
-0	8552	295		wait2 NA, __Wait_7qG2_ms_7qG2_000_inline_main
-0	8551	298	#line 8551 "NXCDefs.h"
-0	49	298	#line 49 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	50	298	#line 50 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	51	298	#pragma macro 7
-0	51	298		setout __OUT_AC, 2, __constVal0, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
-0	4172	321	#line 4172 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	50	321	#line 50 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	50	321	#line 50 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	51	321		set __Wait_7qG2_ms_7qG2_000_inline_main, 500
-0	50	324	#line 50 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	8551	324	#line 8551 "NXCDefs.h"
-0	8552	324		wait2 NA, __Wait_7qG2_ms_7qG2_000_inline_main
-0	8551	327	#line 8551 "NXCDefs.h"
-0	51	327	#line 51 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	51	327	#line 51 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	52	327	#pragma macro 26
-0	52	327		acquire __RLSBmutex0
-0	52	328		mov __RLSReadBuf0, __RLSBbufLSWrite1
-0	52	330		set __RLSBytesCount0, 1
-0	52	333		wait2 NA, __constVal15
-0	52	336		subcall __ReadLSBytes0, ____ReadLSBytes0_return
-0	52	338		index __D0main, __RLSReadBuf0, 65535
-0	52	342		release __RLSBmutex0
-0	4183	343	#line 4183 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	51	343	#line 51 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	52	343		mov __signed_stack_001main, __D0main
-0	51	345	#line 51 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	52	345		set __D0main, 30
-0	51	348	#line 51 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	52	348		cmp 1, __D0main, __signed_stack_001main, __D0main
-0	52	352	#line 52 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	53	352		brtst 4, __ASM_Label_566, __D0main
-0	53	355	#line 53 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	54	355		set __main_7qG2_right_empty_7qG2_001, 1
-0	53	358	#line 53 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	53	358	#line 53 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	56	358	#line 56 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	56	358	#line 56 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	57	358		set __signed_stack_001main, 0
-0	56	361	#line 56 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	56	361	#line 56 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	57	361		set __D0main, 30
-0	56	364	#line 56 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	57	364		sub __D0main, __signed_stack_001main, __D0main
-0	56	368	#line 56 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	57	368	#pragma macro 7
-0	57	368		setout __constVal2, 2, __D0main, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
-0	4216	391	#line 4216 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	56	391	#line 56 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	56	391	#line 56 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	57	391		set __D0main, 30
-0	56	394	#line 56 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	57	394	#pragma macro 7
-0	57	394		setout __constVal0, 2, __D0main, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
-0	4221	417	#line 4221 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	56	417	#line 56 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	56	417	#line 56 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	57	417	#line 57 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	57	417	#line 57 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	58	417		set __Wait_7qG2_ms_7qG2_000_inline_main, 1200
-0	57	420	#line 57 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	8551	420	#line 8551 "NXCDefs.h"
-0	8552	420		wait2 NA, __Wait_7qG2_ms_7qG2_000_inline_main
-0	8551	423	#line 8551 "NXCDefs.h"
-0	58	423	#line 58 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	59	423	#line 59 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	60	423	#pragma macro 7
-0	60	423		setout __OUT_AC, 2, __constVal0, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
-0	4234	446	#line 4234 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	59	446	#line 59 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	59	446	#line 59 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	60	446		set __Wait_7qG2_ms_7qG2_000_inline_main, 500
-0	59	449	#line 59 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	8551	449	#line 8551 "NXCDefs.h"
-0	8552	449		wait2 NA, __Wait_7qG2_ms_7qG2_000_inline_main
-0	8551	452	#line 8551 "NXCDefs.h"
-0	60	452	#line 60 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	60	452	#line 60 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	61	452	#pragma macro 26
-0	61	452		acquire __RLSBmutex0
-0	61	453		mov __RLSReadBuf0, __RLSBbufLSWrite1
-0	61	455		set __RLSBytesCount0, 1
-0	61	458		wait2 NA, __constVal15
-0	61	461		subcall __ReadLSBytes0, ____ReadLSBytes0_return
-0	61	463		index __D0main, __RLSReadBuf0, 65535
-0	61	467		release __RLSBmutex0
-0	4245	468	#line 4245 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	60	468	#line 60 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	61	468		mov __signed_stack_001main, __D0main
-0	60	470	#line 60 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	61	470		set __D0main, 30
-0	60	473	#line 60 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	61	473		cmp 1, __D0main, __signed_stack_001main, __D0main
-0	61	477	#line 61 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	62	477		brtst 4, __ASM_Label_581, __D0main
-0	62	480	#line 62 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	63	480		set __main_7qG2_left_empty_7qG2_001, 1
-0	62	483	#line 62 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	62	483	#line 62 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	64	483	#line 64 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	64	483	#line 64 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	65	483		mov __signed_stack_001main, __main_7qG2_left_empty_7qG2_001
-0	64	485	#line 64 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	64	485	#line 64 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	65	485		set __D0main, 1
-0	64	488	#line 64 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	65	488		cmp 4, __D0main, __signed_stack_001main, __D0main
-0	64	492	#line 64 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	65	492		brtst 4, __ASM_Label_585, __D0main
-0	64	495	#line 64 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	65	495		mov __signed_stack_001main, __main_7qG2_right_empty_7qG2_001
-0	64	497	#line 64 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	64	497	#line 64 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	65	497		set __D0main, 1
-0	64	500	#line 64 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	65	500		cmp 4, __D0main, __signed_stack_001main, __D0main
-0	67	504	#line 67 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	68	504		brtst 4, __ASM_Label_586, __D0main
-0	67	507	#line 67 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	68	507		set __D0main, 30
-0	67	510	#line 67 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	68	510	#pragma macro 7
-0	68	510		setout __constVal2, 2, __D0main, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
-0	4294	533	#line 4294 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	67	533	#line 67 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	67	533	#line 67 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	68	533		set __signed_stack_001main, 0
-0	67	536	#line 67 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	67	536	#line 67 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	68	536		set __D0main, 30
-0	67	539	#line 67 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	68	539		sub __D0main, __signed_stack_001main, __D0main
-0	67	543	#line 67 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	68	543	#pragma macro 7
-0	68	543		setout __constVal0, 2, __D0main, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
-0	4309	566	#line 4309 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	67	566	#line 67 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	67	566	#line 67 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	68	566	#line 68 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	68	566	#line 68 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	69	566		set __Wait_7qG2_ms_7qG2_000_inline_main, 600
-0	68	569	#line 68 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	8551	569	#line 8551 "NXCDefs.h"
-0	8552	569		wait2 NA, __Wait_7qG2_ms_7qG2_000_inline_main
-0	8551	572	#line 8551 "NXCDefs.h"
-0	69	572	#line 69 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	72	572	#line 72 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	73	572	#pragma macro 7
-0	73	572		setout __OUT_AC, 2, __constVal0, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
-0	4322	595	#line 4322 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	72	595	#line 72 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	75	595	#line 75 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	76	595		subcall acquire, __acquire_return
-0	75	597	#line 75 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	75	597	#line 75 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	76	597		set __D0main, 1
-0	75	600	#line 75 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	76	600		tst 5, __D0main, __D0main
-0	75	603	#line 75 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	76	603		brtst 4, __ASM_Label_598, __D0main
-0	75	606	#line 75 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	76	606		getin __signed_stack_001main, __constVal3, 4
-0	75	610	#line 75 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	75	610	#line 75 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	76	610		set __D0main, 50
-0	75	613	#line 75 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	76	613		cmp 0, __D0main, __signed_stack_001main, __D0main
-0	76	617	#line 76 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	77	617		brtst 4, __ASM_Label_596, __D0main
-0	76	620	#line 76 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	77	620		set __D0main, 30
-0	76	623	#line 76 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	77	623	#pragma macro 7
-0	77	623		setout __constVal2, 2, __D0main, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
-0	4351	646	#line 4351 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	76	646	#line 76 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	76	646	#line 76 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	77	646		set __signed_stack_001main, 0
-0	76	649	#line 76 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	76	649	#line 76 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	77	649		set __D0main, 30
-0	76	652	#line 76 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	77	652		sub __D0main, __signed_stack_001main, __D0main
-0	76	656	#line 76 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	77	656	#pragma macro 7
-0	77	656		setout __constVal0, 2, __D0main, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
-0	4366	679	#line 4366 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	76	679	#line 76 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	76	679	#line 76 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	77	679	#line 77 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	80	679	#line 80 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	81	679		jmp __ASM_Label_595
-0	80	681	#line 80 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	84	681	#line 84 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	85	681	#pragma macro 7
-0	85	681		setout __OUT_AC, 2, __constVal0, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
-0	4375	704	#line 4375 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	84	704	#line 84 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	84	704	#line 84 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	85	704		getin __signed_stack_001main, __constVal2, 4
-0	84	708	#line 84 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	84	708	#line 84 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	85	708		mov __D0main, __main_7qG2_magnet_initial_7qG2_000
-0	84	710	#line 84 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	85	710		cmp 1, __D0main, __signed_stack_001main, __D0main
-0	84	714	#line 84 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	85	714		not __D0main, __D0main
-0	85	717	#line 85 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	86	717		tst 5, __D0main, __D0main
-0	85	720	#line 85 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	86	720		brtst 4, __ASM_Label_609, __D0main
-0	85	723	#line 85 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	86	723		set __D0main, 75
-0	86	726	#line 86 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	87	726	#pragma macro 10
-0	87	726		acquire __OnRevMutex
-0	87	727		neg __OnRev_Tmp, __D0main
-0	87	730		setout __OUT_AC, 2, __OnRev_Tmp, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
-0	87	753		release __OnRevMutex
-0	4400	754	#line 4400 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	86	754	#line 86 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	86	754	#line 86 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	87	754		set __Wait_7qG2_ms_7qG2_000_inline_main, 10000
-0	86	757	#line 86 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	8551	757	#line 8551 "NXCDefs.h"
-0	8552	757		wait2 NA, __Wait_7qG2_ms_7qG2_000_inline_main
-0	8551	760	#line 8551 "NXCDefs.h"
-0	87	760	#line 87 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	88	760	#line 88 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	89	760	#pragma macro 7
-0	89	760		setout __OUT_AC, 2, __constVal0, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
-0	4411	783	#line 4411 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	88	783	#line 88 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	90	783	#line 90 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	90	783	#line 90 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	91	783		getin __signed_stack_001main, __constVal2, 4
-0	90	787	#line 90 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	90	787	#line 90 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	91	787		mov __D0main, __main_7qG2_magnet_initial_7qG2_000
-0	90	789	#line 90 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	91	789		cmp 1, __D0main, __signed_stack_001main, __D0main
-0	92	793	#line 92 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	93	793		brtst 4, __ASM_Label_618, __D0main
-0	94	796	#line 94 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	95	796		set __main_7qG2_wall_looking_7qG2_003, 1
-0	94	799	#line 94 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	94	799	#line 94 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	95	799		set __D0main, 1
-0	94	802	#line 94 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	95	802		tst 5, __D0main, __D0main
-0	94	805	#line 94 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	95	805		brtst 4, __ASM_Label_624, __D0main
-0	94	808	#line 94 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	95	808		mov __signed_stack_001main, __main_7qG2_wall_looking_7qG2_003
-0	94	810	#line 94 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	94	810	#line 94 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	95	810		set __D0main, 1
-0	94	813	#line 94 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	95	813		cmp 4, __D0main, __signed_stack_001main, __D0main
-0	95	817	#line 95 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	96	817		brtst 4, __ASM_Label_622, __D0main
-0	95	820	#line 95 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	96	820	#pragma macro 26
-0	96	820		acquire __RLSBmutex0
-0	96	821		mov __RLSReadBuf0, __RLSBbufLSWrite1
-0	96	823		set __RLSBytesCount0, 1
-0	96	826		wait2 NA, __constVal15
-0	96	829		subcall __ReadLSBytes0, ____ReadLSBytes0_return
-0	96	831		index __D0main, __RLSReadBuf0, 65535
-0	96	835		release __RLSBmutex0
-0	4462	836	#line 4462 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	95	836	#line 95 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	96	836		mov __signed_stack_001main, __D0main
-0	95	838	#line 95 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	96	838		set __D0main, 30
-0	95	841	#line 95 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	96	841		cmp 1, __D0main, __signed_stack_001main, __D0main
-0	96	845	#line 96 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	97	845		brtst 4, __ASM_Label_626, __D0main
-0	96	848	#line 96 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	97	848		set __D0main, 75
-0	97	851	#line 97 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	98	851	#pragma macro 7
-0	98	851		setout __OUT_AC, 2, __D0main, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
-0	4478	874	#line 4478 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	97	874	#line 97 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	100	874	#line 100 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	101	874		jmp __ASM_Label_625
-0	100	876	#line 100 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	101	876	#line 101 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	102	876		set __main_7qG2_left_empty_7qG2_001, 0
-0	101	879	#line 101 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	101	879	#line 101 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	102	879	#line 102 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	103	879		set __main_7qG2_right_empty_7qG2_001, 0
-0	102	882	#line 102 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	102	882	#line 102 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	103	882	#line 103 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	104	882		set __main_7qG2_sensor_left_7qG2_004, 0
-0	103	885	#line 103 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	106	885	#line 106 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	107	885		set __main_7qG2_sensor_right_7qG2_004, 0
-0	106	888	#line 106 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	106	888	#line 106 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	107	888		set __signed_stack_001main, 0
-0	106	891	#line 106 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	106	891	#line 106 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	107	891		set __D0main, 30
-0	106	894	#line 106 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	107	894		sub __D0main, __signed_stack_001main, __D0main
-0	106	898	#line 106 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	107	898	#pragma macro 7
-0	107	898		setout __constVal2, 2, __D0main, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
-0	4523	921	#line 4523 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	106	921	#line 106 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	106	921	#line 106 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	107	921		set __D0main, 30
-0	106	924	#line 106 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	107	924	#pragma macro 7
-0	107	924		setout __constVal0, 2, __D0main, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
-0	4528	947	#line 4528 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	106	947	#line 106 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	106	947	#line 106 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	107	947	#line 107 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	107	947	#line 107 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	108	947		set __Wait_7qG2_ms_7qG2_000_inline_main, 600
-0	107	950	#line 107 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	8551	950	#line 8551 "NXCDefs.h"
-0	8552	950		wait2 NA, __Wait_7qG2_ms_7qG2_000_inline_main
-0	8551	953	#line 8551 "NXCDefs.h"
-0	108	953	#line 108 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	109	953	#line 109 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	110	953	#pragma macro 7
-0	110	953		setout __OUT_AC, 2, __constVal0, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
-0	4541	976	#line 4541 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	109	976	#line 109 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	109	976	#line 109 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	110	976	#pragma macro 26
-0	110	976		acquire __RLSBmutex0
-0	110	977		mov __RLSReadBuf0, __RLSBbufLSWrite1
-0	110	979		set __RLSBytesCount0, 1
-0	110	982		wait2 NA, __constVal15
-0	110	985		subcall __ReadLSBytes0, ____ReadLSBytes0_return
-0	110	987		index __D0main, __RLSReadBuf0, 65535
-0	110	991		release __RLSBmutex0
-0	4544	992	#line 4544 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	109	992	#line 109 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	110	992		mov __signed_stack_001main, __D0main
-0	109	994	#line 109 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	110	994		set __D0main, 30
-0	109	997	#line 109 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	110	997		cmp 1, __D0main, __signed_stack_001main, __D0main
-0	110	1001	#line 110 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	111	1001		brtst 4, __ASM_Label_649, __D0main
-0	111	1004	#line 111 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	112	1004		set __main_7qG2_left_empty_7qG2_001, 1
-0	111	1007	#line 111 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	111	1007	#line 111 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	111	1007	#line 111 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	112	1007		set __Wait_7qG2_ms_7qG2_000_inline_main, 500
-0	111	1010	#line 111 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	8551	1010	#line 8551 "NXCDefs.h"
-0	8552	1010		wait2 NA, __Wait_7qG2_ms_7qG2_000_inline_main
-0	8551	1013	#line 8551 "NXCDefs.h"
-0	112	1013	#line 112 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	112	1013	#line 112 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	113	1013	#pragma macro 26
-0	113	1013		acquire __RLSBmutex0
-0	113	1014		mov __RLSReadBuf0, __RLSBbufLSWrite1
-0	113	1016		set __RLSBytesCount0, 1
-0	113	1019		wait2 NA, __constVal15
-0	113	1022		subcall __ReadLSBytes0, ____ReadLSBytes0_return
-0	113	1024		index __D0main, __RLSReadBuf0, 65535
-0	113	1028		release __RLSBmutex0
-0	4571	1029	#line 4571 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	112	1029	#line 112 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	113	1029		mov __main_7qG2_sensor_left_7qG2_004, __D0main
-0	112	1031	#line 112 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	112	1031	#line 112 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	117	1031	#line 117 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	117	1031	#line 117 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	118	1031		set __D0main, 30
-0	117	1034	#line 117 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	118	1034	#pragma macro 7
-0	118	1034		setout __constVal2, 2, __D0main, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
-0	4583	1057	#line 4583 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	117	1057	#line 117 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	117	1057	#line 117 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	118	1057		set __signed_stack_001main, 0
-0	117	1060	#line 117 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	117	1060	#line 117 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	118	1060		set __D0main, 30
-0	117	1063	#line 117 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	118	1063		sub __D0main, __signed_stack_001main, __D0main
-0	117	1067	#line 117 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	118	1067	#pragma macro 7
-0	118	1067		setout __constVal0, 2, __D0main, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
-0	4598	1090	#line 4598 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	117	1090	#line 117 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	117	1090	#line 117 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	118	1090	#line 118 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	118	1090	#line 118 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	119	1090		set __Wait_7qG2_ms_7qG2_000_inline_main, 1200
-0	118	1093	#line 118 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	8551	1093	#line 8551 "NXCDefs.h"
-0	8552	1093		wait2 NA, __Wait_7qG2_ms_7qG2_000_inline_main
-0	8551	1096	#line 8551 "NXCDefs.h"
-0	119	1096	#line 119 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	120	1096	#line 120 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	121	1096	#pragma macro 7
-0	121	1096		setout __OUT_AC, 2, __constVal0, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
-0	4611	1119	#line 4611 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	120	1119	#line 120 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	120	1119	#line 120 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	121	1119	#pragma macro 26
-0	121	1119		acquire __RLSBmutex0
-0	121	1120		mov __RLSReadBuf0, __RLSBbufLSWrite1
-0	121	1122		set __RLSBytesCount0, 1
-0	121	1125		wait2 NA, __constVal15
-0	121	1128		subcall __ReadLSBytes0, ____ReadLSBytes0_return
-0	121	1130		index __D0main, __RLSReadBuf0, 65535
-0	121	1134		release __RLSBmutex0
-0	4614	1135	#line 4614 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	120	1135	#line 120 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	121	1135		mov __signed_stack_001main, __D0main
-0	120	1137	#line 120 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	121	1137		set __D0main, 30
-0	120	1140	#line 120 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	121	1140		cmp 1, __D0main, __signed_stack_001main, __D0main
-0	121	1144	#line 121 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	122	1144		brtst 4, __ASM_Label_666, __D0main
-0	122	1147	#line 122 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	123	1147		set __main_7qG2_right_empty_7qG2_001, 1
-0	122	1150	#line 122 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	122	1150	#line 122 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	122	1150	#line 122 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	123	1150		set __Wait_7qG2_ms_7qG2_000_inline_main, 500
-0	122	1153	#line 122 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	8551	1153	#line 8551 "NXCDefs.h"
-0	8552	1153		wait2 NA, __Wait_7qG2_ms_7qG2_000_inline_main
-0	8551	1156	#line 8551 "NXCDefs.h"
-0	123	1156	#line 123 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	123	1156	#line 123 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	124	1156	#pragma macro 26
-0	124	1156		acquire __RLSBmutex0
-0	124	1157		mov __RLSReadBuf0, __RLSBbufLSWrite1
-0	124	1159		set __RLSBytesCount0, 1
-0	124	1162		wait2 NA, __constVal15
-0	124	1165		subcall __ReadLSBytes0, ____ReadLSBytes0_return
-0	124	1167		index __D0main, __RLSReadBuf0, 65535
-0	124	1171		release __RLSBmutex0
-0	4641	1172	#line 4641 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	124	1172	#line 124 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	125	1172		mov __main_7qG2_sensor_right_7qG2_004, __D0main
-0	124	1174	#line 124 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	127	1174	#line 127 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	127	1174	#line 127 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	128	1174		mov __signed_stack_001main, __main_7qG2_left_empty_7qG2_001
-0	127	1176	#line 127 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	127	1176	#line 127 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	128	1176		set __D0main, 0
-0	127	1179	#line 127 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	128	1179		cmp 4, __D0main, __signed_stack_001main, __D0main
-0	127	1183	#line 127 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	128	1183		brtst 4, __ASM_Label_674, __D0main
-0	127	1186	#line 127 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	128	1186		mov __signed_stack_001main, __main_7qG2_right_empty_7qG2_001
-0	127	1188	#line 127 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	127	1188	#line 127 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	128	1188		set __D0main, 0
-0	127	1191	#line 127 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	128	1191		cmp 4, __D0main, __signed_stack_001main, __D0main
-0	128	1195	#line 128 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	129	1195		brtst 4, __ASM_Label_675, __D0main
-0	129	1198	#line 129 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	130	1198		set __main_7qG2_wall_looking_7qG2_003, 0
-0	129	1201	#line 129 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	129	1201	#line 129 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	129	1201	#line 129 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	130	1201		set __signed_stack_001main, 0
-0	129	1204	#line 129 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	129	1204	#line 129 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	130	1204		set __D0main, 30
-0	129	1207	#line 129 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	130	1207		sub __D0main, __signed_stack_001main, __D0main
-0	129	1211	#line 129 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	130	1211	#pragma macro 7
-0	130	1211		setout __constVal2, 2, __D0main, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
-0	4693	1234	#line 4693 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	129	1234	#line 129 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	129	1234	#line 129 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	130	1234		set __D0main, 30
-0	129	1237	#line 129 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	130	1237	#pragma macro 7
-0	130	1237		setout __constVal0, 2, __D0main, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
-0	4698	1260	#line 4698 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	129	1260	#line 129 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	129	1260	#line 129 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	130	1260	#line 130 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	130	1260	#line 130 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	131	1260		set __Wait_7qG2_ms_7qG2_000_inline_main, 600
-0	130	1263	#line 130 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	8551	1263	#line 8551 "NXCDefs.h"
-0	8552	1263		wait2 NA, __Wait_7qG2_ms_7qG2_000_inline_main
-0	8551	1266	#line 8551 "NXCDefs.h"
-0	131	1266	#line 131 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	132	1266	#line 132 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	133	1266	#pragma macro 7
-0	133	1266		setout __OUT_AC, 2, __constVal0, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
-0	4711	1289	#line 4711 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	132	1289	#line 132 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	135	1289	#line 135 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	138	1289	#line 138 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	139	1289		set __main_7qG2_x_7qG2_004, 10000
-0	138	1292	#line 138 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	138	1292	#line 138 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	139	1292		mov __signed_stack_001main, __main_7qG2_sensor_left_7qG2_004
-0	138	1294	#line 138 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	138	1294	#line 138 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	139	1294		mov __D0main, __main_7qG2_sensor_right_7qG2_004
-0	138	1296	#line 138 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	139	1296		cmp 1, __D0main, __signed_stack_001main, __D0main
-0	139	1300	#line 139 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	140	1300		brtst 4, __ASM_Label_690, __D0main
-0	139	1303	#line 139 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	140	1303		set __D0main, 30
-0	139	1306	#line 139 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	140	1306	#pragma macro 7
-0	140	1306		setout __constVal2, 2, __D0main, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
-0	4740	1329	#line 4740 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	139	1329	#line 139 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	139	1329	#line 139 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	140	1329		set __signed_stack_001main, 0
-0	139	1332	#line 139 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	139	1332	#line 139 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	140	1332		set __D0main, 30
-0	139	1335	#line 139 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	140	1335		sub __D0main, __signed_stack_001main, __D0main
-0	139	1339	#line 139 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	140	1339	#pragma macro 7
-0	140	1339		setout __constVal0, 2, __D0main, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
-0	4755	1362	#line 4755 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	139	1362	#line 139 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	139	1362	#line 139 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	140	1362	#line 140 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	140	1362	#line 140 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	141	1362	#pragma macro 26
-0	141	1362		acquire __RLSBmutex0
-0	141	1363		mov __RLSReadBuf0, __RLSBbufLSWrite1
-0	141	1365		set __RLSBytesCount0, 1
-0	141	1368		wait2 NA, __constVal15
-0	141	1371		subcall __ReadLSBytes0, ____ReadLSBytes0_return
-0	141	1373		index __D0main, __RLSReadBuf0, 65535
-0	141	1377		release __RLSBmutex0
-0	4761	1378	#line 4761 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	140	1378	#line 140 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	141	1378		mov __signed_stack_001main, __D0main
-0	140	1380	#line 140 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	141	1380		mov __D0main, __main_7qG2_x_7qG2_004
-0	140	1382	#line 140 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	141	1382		cmp 1, __D0main, __signed_stack_001main, __D0main
-0	140	1386	#line 140 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	141	1386		not __D0main, __D0main
-0	141	1389	#line 141 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	142	1389		tst 5, __D0main, __D0main
-0	141	1392	#line 141 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	142	1392		brtst 4, __ASM_Label_698, __D0main
-0	141	1395	#line 141 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	142	1395	#pragma macro 26
-0	142	1395		acquire __RLSBmutex0
-0	142	1396		mov __RLSReadBuf0, __RLSBbufLSWrite1
-0	142	1398		set __RLSBytesCount0, 1
-0	142	1401		wait2 NA, __constVal15
-0	142	1404		subcall __ReadLSBytes0, ____ReadLSBytes0_return
-0	142	1406		index __D0main, __RLSReadBuf0, 65535
-0	142	1410		release __RLSBmutex0
-0	4781	1411	#line 4781 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	141	1411	#line 141 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	142	1411		mov __signed_stack_001main, __D0main
-0	141	1413	#line 141 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	142	1413		mov __D0main, __main_7qG2_x_7qG2_004
-0	141	1415	#line 141 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	142	1415		cmp 0, __D0main, __signed_stack_001main, __D0main
-0	142	1419	#line 142 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	143	1419		brtst 4, __ASM_Label_705, __D0main
-0	142	1422	#line 142 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	143	1422	#pragma macro 26
-0	143	1422		acquire __RLSBmutex0
-0	143	1423		mov __RLSReadBuf0, __RLSBbufLSWrite1
-0	143	1425		set __RLSBytesCount0, 1
-0	143	1428		wait2 NA, __constVal15
-0	143	1431		subcall __ReadLSBytes0, ____ReadLSBytes0_return
-0	143	1433		index __D0main, __RLSReadBuf0, 65535
-0	143	1437		release __RLSBmutex0
-0	4795	1438	#line 4795 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	142	1438	#line 142 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	143	1438		mov __main_7qG2_x_7qG2_004, __D0main
-0	142	1440	#line 142 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	142	1440	#line 142 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	146	1440	#line 146 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	146	1440	#line 146 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	147	1440		jmp __ASM_Label_697
-0	146	1442	#line 146 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	146	1442	#line 146 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	147	1442		set __signed_stack_001main, 0
-0	146	1445	#line 146 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	146	1445	#line 146 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	147	1445		set __D0main, 30
-0	146	1448	#line 146 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	147	1448		sub __D0main, __signed_stack_001main, __D0main
-0	146	1452	#line 146 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	147	1452	#pragma macro 7
-0	147	1452		setout __constVal2, 2, __D0main, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
-0	4821	1475	#line 4821 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	146	1475	#line 146 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	146	1475	#line 146 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	147	1475		set __D0main, 30
-0	146	1478	#line 146 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	147	1478	#pragma macro 7
-0	147	1478		setout __constVal0, 2, __D0main, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
-0	4826	1501	#line 4826 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	146	1501	#line 146 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	146	1501	#line 146 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	147	1501	#line 147 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	147	1501	#line 147 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	148	1501		set __Wait_7qG2_ms_7qG2_000_inline_main, 1500
-0	147	1504	#line 147 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	8551	1504	#line 8551 "NXCDefs.h"
-0	8552	1504		wait2 NA, __Wait_7qG2_ms_7qG2_000_inline_main
-0	8551	1507	#line 8551 "NXCDefs.h"
-0	148	1507	#line 148 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	152	1507	#line 152 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	153	1507		jmp __ASM_Label_716
-0	152	1509	#line 152 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	153	1509		set __signed_stack_001main, 0
-0	152	1512	#line 152 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	152	1512	#line 152 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	153	1512		set __D0main, 30
-0	152	1515	#line 152 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	153	1515		sub __D0main, __signed_stack_001main, __D0main
-0	152	1519	#line 152 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	153	1519	#pragma macro 7
-0	153	1519		setout __constVal2, 2, __D0main, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
-0	4854	1542	#line 4854 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	152	1542	#line 152 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	152	1542	#line 152 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	153	1542		set __D0main, 30
-0	152	1545	#line 152 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	153	1545	#pragma macro 7
-0	153	1545		setout __constVal0, 2, __D0main, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
-0	4859	1568	#line 4859 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	152	1568	#line 152 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	152	1568	#line 152 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	153	1568	#line 153 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	153	1568	#line 153 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	154	1568	#pragma macro 26
-0	154	1568		acquire __RLSBmutex0
-0	154	1569		mov __RLSReadBuf0, __RLSBbufLSWrite1
-0	154	1571		set __RLSBytesCount0, 1
-0	154	1574		wait2 NA, __constVal15
-0	154	1577		subcall __ReadLSBytes0, ____ReadLSBytes0_return
-0	154	1579		index __D0main, __RLSReadBuf0, 65535
-0	154	1583		release __RLSBmutex0
-0	4865	1584	#line 4865 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	153	1584	#line 153 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	154	1584		mov __signed_stack_001main, __D0main
-0	153	1586	#line 153 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	154	1586		mov __D0main, __main_7qG2_x_7qG2_004
-0	153	1588	#line 153 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	154	1588		cmp 1, __D0main, __signed_stack_001main, __D0main
-0	153	1592	#line 153 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	154	1592		not __D0main, __D0main
-0	154	1595	#line 154 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	155	1595		tst 5, __D0main, __D0main
-0	154	1598	#line 154 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	155	1598		brtst 4, __ASM_Label_724, __D0main
-0	154	1601	#line 154 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	155	1601	#pragma macro 26
-0	155	1601		acquire __RLSBmutex0
-0	155	1602		mov __RLSReadBuf0, __RLSBbufLSWrite1
-0	155	1604		set __RLSBytesCount0, 1
-0	155	1607		wait2 NA, __constVal15
-0	155	1610		subcall __ReadLSBytes0, ____ReadLSBytes0_return
-0	155	1612		index __D0main, __RLSReadBuf0, 65535
-0	155	1616		release __RLSBmutex0
-0	4885	1617	#line 4885 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	154	1617	#line 154 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	155	1617		mov __signed_stack_001main, __D0main
-0	154	1619	#line 154 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	155	1619		mov __D0main, __main_7qG2_x_7qG2_004
-0	154	1621	#line 154 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	155	1621		cmp 0, __D0main, __signed_stack_001main, __D0main
-0	155	1625	#line 155 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	156	1625		brtst 4, __ASM_Label_731, __D0main
-0	155	1628	#line 155 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	156	1628	#pragma macro 26
-0	156	1628		acquire __RLSBmutex0
-0	156	1629		mov __RLSReadBuf0, __RLSBbufLSWrite1
-0	156	1631		set __RLSBytesCount0, 1
-0	156	1634		wait2 NA, __constVal15
-0	156	1637		subcall __ReadLSBytes0, ____ReadLSBytes0_return
-0	156	1639		index __D0main, __RLSReadBuf0, 65535
-0	156	1643		release __RLSBmutex0
-0	4899	1644	#line 4899 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	155	1644	#line 155 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	156	1644		mov __main_7qG2_x_7qG2_004, __D0main
-0	155	1646	#line 155 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	155	1646	#line 155 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	159	1646	#line 159 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	159	1646	#line 159 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	160	1646		jmp __ASM_Label_723
-0	159	1648	#line 159 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	159	1648	#line 159 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	160	1648		set __D0main, 30
-0	159	1651	#line 159 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	160	1651	#pragma macro 7
-0	160	1651		setout __constVal2, 2, __D0main, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
-0	4915	1674	#line 4915 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	159	1674	#line 159 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	159	1674	#line 159 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	160	1674		set __signed_stack_001main, 0
-0	159	1677	#line 159 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	159	1677	#line 159 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	160	1677		set __D0main, 30
-0	159	1680	#line 159 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	160	1680		sub __D0main, __signed_stack_001main, __D0main
-0	159	1684	#line 159 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	160	1684	#pragma macro 7
-0	160	1684		setout __constVal0, 2, __D0main, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
-0	4930	1707	#line 4930 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	159	1707	#line 159 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	159	1707	#line 159 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	160	1707	#line 160 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	160	1707	#line 160 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	161	1707		set __Wait_7qG2_ms_7qG2_000_inline_main, 1500
-0	160	1710	#line 160 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	8551	1710	#line 8551 "NXCDefs.h"
-0	8552	1710		wait2 NA, __Wait_7qG2_ms_7qG2_000_inline_main
-0	8551	1713	#line 8551 "NXCDefs.h"
-0	161	1713	#line 161 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	164	1713	#line 164 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	164	1713	#line 164 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	165	1713		jmp __ASM_Label_621
-0	164	1715	#line 164 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	164	1715	#line 164 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	165	1715	#pragma macro 26
-0	165	1715		acquire __RLSBmutex0
-0	165	1716		mov __RLSReadBuf0, __RLSBbufLSWrite1
-0	165	1718		set __RLSBytesCount0, 1
-0	165	1721		wait2 NA, __constVal15
-0	165	1724		subcall __ReadLSBytes0, ____ReadLSBytes0_return
-0	165	1726		index __D0main, __RLSReadBuf0, 65535
-0	165	1730		release __RLSBmutex0
-0	4950	1731	#line 4950 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	164	1731	#line 164 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	165	1731		mov __signed_stack_001main, __D0main
-0	164	1733	#line 164 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	165	1733		set __D0main, 30
-0	164	1736	#line 164 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	165	1736		cmp 1, __D0main, __signed_stack_001main, __D0main
-0	165	1740	#line 165 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	166	1740		brtst 4, __ASM_Label_743, __D0main
-0	165	1743	#line 165 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	166	1743		set __D0main, 75
-0	166	1746	#line 166 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	167	1746	#pragma macro 7
-0	167	1746		setout __OUT_AC, 2, __D0main, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
-0	4966	1769	#line 4966 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	166	1769	#line 166 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	167	1769	#line 167 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	168	1769		jmp __ASM_Label_742
-0	167	1771	#line 167 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	168	1771	#line 168 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	169	1771	#pragma macro 7
-0	169	1771		setout __OUT_AC, 2, __constVal0, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
-0	4973	1794	#line 4973 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	168	1794	#line 168 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	171	1794	#line 171 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	172	1794		set __main_7qG2_MAIN_LOOP_7qG2_000, 0
-0	171	1797	#line 171 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	171	1797	#line 171 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	173	1797	#line 173 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	174	1797	#line 174 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	175	1797		jmp __ASM_Label_750
-0	174	1799	#line 174 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	175	1799		set __signed_stack_001main, 0
-0	174	1802	#line 174 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	174	1802	#line 174 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	175	1802		set __D0main, 30
-0	174	1805	#line 174 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	175	1805		sub __D0main, __signed_stack_001main, __D0main
-0	174	1809	#line 174 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	175	1809	#pragma macro 7
-0	175	1809		setout __constVal2, 2, __D0main, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
-0	4998	1832	#line 4998 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	174	1832	#line 174 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	174	1832	#line 174 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	175	1832		set __D0main, 30
-0	174	1835	#line 174 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	175	1835	#pragma macro 7
-0	175	1835		setout __constVal0, 2, __D0main, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
-0	5003	1858	#line 5003 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	174	1858	#line 174 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	174	1858	#line 174 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	175	1858	#line 175 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	175	1858	#line 175 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	176	1858		set __Wait_7qG2_ms_7qG2_000_inline_main, 1500
-0	175	1861	#line 175 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	8551	1861	#line 8551 "NXCDefs.h"
-0	8552	1861		wait2 NA, __Wait_7qG2_ms_7qG2_000_inline_main
-0	8551	1864	#line 8551 "NXCDefs.h"
-0	176	1864	#line 176 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	176	1864	#line 176 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	177	1864		set __D0main, 75
-0	177	1867	#line 177 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	178	1867	#pragma macro 7
-0	178	1867		setout __OUT_AC, 2, __D0main, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
-0	5018	1890	#line 5018 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	177	1890	#line 177 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	177	1890	#line 177 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	178	1890		set __Wait_7qG2_ms_7qG2_000_inline_main, 2000
-0	177	1893	#line 177 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	8551	1893	#line 8551 "NXCDefs.h"
-0	8552	1893		wait2 NA, __Wait_7qG2_ms_7qG2_000_inline_main
-0	8551	1896	#line 8551 "NXCDefs.h"
-0	178	1896	#line 178 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	182	1896	#line 182 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	184	1896	#line 184 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	185	1896		jmp __ASM_Label_523
-0	184	1898	#line 184 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-0	185	1898		exit -1, -1
-1	5476	0		setin __constVal1, __ResetSensorPort, 5
-1	5478	4		getin __ResetSensorTmp, __ResetSensorPort, 5
-1	5479	8		brtst 5, __SensorStillInvalid, __ResetSensorTmp
-1	5480	11		subret ____ResetSensorSubroutine_return
-2	6281	0	#pragma macro 25
-2	6281	0		acquire __CLSWMutex0
-2	6281	1		or __CLSWArgs0.Port, __constVal0, __LSWriteOptions0
-2	6281	5		mov __CLSWArgs0.ReturnLen, __RLSBytesCount0
-2	6281	7		mov __CLSWArgs0.Buffer, __RLSReadBuf0
-2	6281	9		syscall 21, __CLSWArgs0
-2	6281	12		mov __RLSBResult0, __CLSWArgs0.Result
-2	6281	14		release __CLSWMutex0
-2	6282	15	#line 6282 "NXTDefs.h"
-2	6283	15		brtst 5, __RLSBError0, __RLSBResult0
-2	6284	18		set __RLSBIterations0, 60
-2	6286	21	#pragma macro 23
-2	6286	21		acquire __CLSCSMutex0
-2	6286	22		set __CLSCSArgs0.Port, 0
-2	6286	25		syscall 23, __CLSCSArgs0
-2	6286	28		mov __RLSBytesCount0, __CLSCSArgs0.BytesReady
-2	6286	30		mov __RLSBResult0, __CLSCSArgs0.Result
-2	6286	32		release __CLSCSMutex0
-2	6286	33	#line 6286 "NXTDefs.h"
-2	6287	33		sub __RLSBIterations0, __RLSBIterations0, __constVal1
-2	6288	37		brtst 2, __RLSBError0, __RLSBIterations0
-2	6289	40		brtst 0, __RLSBError0, __RLSBResult0
-2	6290	43		brtst 4, __RLSBReadyToRead0, __RLSBResult0
-2	6292	46		wait2 NA, __constVal1
-2	6293	49		jmp __RLSBDoCheckStatus0
-2	6295	51		brtst 4, __RLSBReturn0, __RLSBytesCount0
-2	6296	54		arrinit __RLSReadBuf0, __constVal0, __RLSBytesCount0
-2	6298	58	#pragma macro 25
-2	6298	58		acquire __CLSRMutex0
-2	6298	59		set __CLSRArgs0.Port, 0
-2	6298	62		mov __CLSRArgs0.BufferLen, __RLSBytesCount0
-2	6298	64		syscall 22, __CLSRArgs0
-2	6298	67		mov __RLSReadBuf0, __CLSRArgs0.Buffer
-2	6298	69		mov __RLSBResult0, __CLSRArgs0.Result
-2	6298	71		release __CLSRMutex0
-2	6298	72	#line 6298 "NXTDefs.h"
-2	6299	72		brtst 5, __RLSBError0, __RLSBResult0
-2	6300	75		mov __RLSLastGoodRead0, __RLSReadBuf0
-2	6301	77		jmp __RLSBDone0
-2	6303	79		mov __RLSReadBuf0, __RLSLastGoodRead0
-2	6305	81		arrsize __RLSBytesCount0, __RLSReadBuf0
-2	6307	84		subret ____ReadLSBytes0_return
-3	38	0	#line 38 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\.\includes.nxc"
-3	39	0		set __SetSensorType_7qG2_port_7qG2_000_inline_init_sensors, 0
-3	38	3	#line 38 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\.\includes.nxc"
-3	38	3	#line 38 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\.\includes.nxc"
-3	39	3		set __SetSensorType_7qG2_type_7qG2_000_inline_init_sensors, 10
-3	38	6	#line 38 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\.\includes.nxc"
-3	4247	6	#line 4247 "NXCDefs.h"
-3	4248	6		setin __SetSensorType_7qG2_type_7qG2_000_inline_init_sensors, __SetSensorType_7qG2_port_7qG2_000_inline_init_sensors, 0
-3	4247	10	#line 4247 "NXCDefs.h"
-3	39	10	#line 39 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\.\includes.nxc"
-3	39	10	#line 39 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\.\includes.nxc"
-3	40	10		set __SetSensorType_7qG2_port_7qG2_000_inline_init_sensors, 1
-3	39	13	#line 39 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\.\includes.nxc"
-3	39	13	#line 39 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\.\includes.nxc"
-3	40	13		set __SetSensorType_7qG2_type_7qG2_000_inline_init_sensors, 1
-3	39	16	#line 39 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\.\includes.nxc"
-3	4247	16	#line 4247 "NXCDefs.h"
-3	4248	16		setin __SetSensorType_7qG2_type_7qG2_000_inline_init_sensors, __SetSensorType_7qG2_port_7qG2_000_inline_init_sensors, 0
-3	4247	20	#line 4247 "NXCDefs.h"
-3	40	20	#line 40 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\.\includes.nxc"
-3	40	20	#line 40 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\.\includes.nxc"
-3	41	20		set __SetSensorHTMagnet_7qG2_port_7qG2_000_inline_init_sensors, 2
-3	40	23	#line 40 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\.\includes.nxc"
-3	13790	23	#line 13790 "NXCDefs.h"
-3	13791	23		mov __SetSensorType_7qG2_port_7qG2_000_inline_SetSensorHTMagnet_inline_init_sensors, __SetSensorHTMagnet_7qG2_port_7qG2_000_inline_init_sensors
-3	13790	25	#line 13790 "NXCDefs.h"
-3	13790	25	#line 13790 "NXCDefs.h"
-3	13791	25		set __SetSensorType_7qG2_type_7qG2_000_inline_SetSensorHTMagnet_inline_init_sensors, 6
-3	13790	28	#line 13790 "NXCDefs.h"
-3	4247	28	#line 4247 "NXCDefs.h"
-3	4248	28		setin __SetSensorType_7qG2_type_7qG2_000_inline_SetSensorHTMagnet_inline_init_sensors, __SetSensorType_7qG2_port_7qG2_000_inline_SetSensorHTMagnet_inline_init_sensors, 0
-3	4247	32	#line 4247 "NXCDefs.h"
-3	13791	32	#line 13791 "NXCDefs.h"
-3	13791	32	#line 13791 "NXCDefs.h"
-3	13792	32		mov __SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorHTMagnet_inline_init_sensors, __SetSensorHTMagnet_7qG2_port_7qG2_000_inline_init_sensors
-3	13791	34	#line 13791 "NXCDefs.h"
-3	13791	34	#line 13791 "NXCDefs.h"
-3	13792	34		set __SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorHTMagnet_inline_init_sensors, 0
-3	13791	37	#line 13791 "NXCDefs.h"
-3	4260	37	#line 4260 "NXCDefs.h"
-3	4261	37		setin __SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorHTMagnet_inline_init_sensors, __SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorHTMagnet_inline_init_sensors, 1
-3	4260	41	#line 4260 "NXCDefs.h"
-3	13792	41	#line 13792 "NXCDefs.h"
-3	13792	41	#line 13792 "NXCDefs.h"
-3	13792	41	#line 13792 "NXCDefs.h"
-3	4278	41	#line 4278 "NXCDefs.h"
-3	4279	41	#pragma macro 4
-3	4279	41		mov __ResetSensorPort, __SetSensorHTMagnet_7qG2_port_7qG2_000_inline_init_sensors
-3	4279	43		subcall __ResetSensorSubroutine, ____ResetSensorSubroutine_return
-3	3872	45	#line 3872 "NXCDefs.h"
-3	4278	45	#line 4278 "NXCDefs.h"
-3	13793	45	#line 13793 "NXCDefs.h"
-3	41	45	#line 41 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\.\includes.nxc"
-3	41	45	#line 41 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\.\includes.nxc"
-3	42	45		set __SetSensorType_7qG2_port_7qG2_000_inline_init_sensors, 3
-3	41	48	#line 41 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\.\includes.nxc"
-3	41	48	#line 41 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\.\includes.nxc"
-3	42	48		set __SetSensorType_7qG2_type_7qG2_000_inline_init_sensors, 6
-3	41	51	#line 41 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\.\includes.nxc"
-3	4247	51	#line 4247 "NXCDefs.h"
-3	4248	51		setin __SetSensorType_7qG2_type_7qG2_000_inline_init_sensors, __SetSensorType_7qG2_port_7qG2_000_inline_init_sensors, 0
-3	4247	55	#line 4247 "NXCDefs.h"
-3	42	55	#line 42 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\.\includes.nxc"
-3	42	55	#line 42 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\.\includes.nxc"
-3	43	55		set __SetSensorMode_7qG2_port_7qG2_000_inline_init_sensors, 3
-3	42	58	#line 42 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\.\includes.nxc"
-3	42	58	#line 42 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\.\includes.nxc"
-3	43	58		set __SetSensorMode_7qG2_mode_7qG2_000_inline_init_sensors, 128
-3	42	61	#line 42 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\.\includes.nxc"
-3	4260	61	#line 4260 "NXCDefs.h"
-3	4261	61		setin __SetSensorMode_7qG2_mode_7qG2_000_inline_init_sensors, __SetSensorMode_7qG2_port_7qG2_000_inline_init_sensors, 1
-3	4260	65	#line 4260 "NXCDefs.h"
-3	43	65	#line 43 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\.\includes.nxc"
-3	46	65	#line 46 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\.\includes.nxc"
-3	47	65		subret __init_sensors_return
-4	4	0	#line 4 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-4	5	0		set __D0acquire, 30
-4	5	3	#line 5 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-4	6	3	#pragma macro 7
-4	6	3		setout __constVal1, 2, __D0acquire, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
-4	3918	26	#line 3918 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-4	5	26	#line 5 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-4	5	26	#line 5 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-4	6	26		set __Wait_7qG2_ms_7qG2_000_inline_acquire, 1000
-4	5	29	#line 5 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-4	8551	29	#line 8551 "NXCDefs.h"
-4	8552	29		wait2 NA, __Wait_7qG2_ms_7qG2_000_inline_acquire
-4	8551	32	#line 8551 "NXCDefs.h"
-4	6	32	#line 6 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-4	9	32	#line 9 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-4	10	32	#pragma macro 7
-4	10	32		setout __constVal1, 2, __constVal0, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
-4	3933	55	#line 3933 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-4	9	55	#line 9 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-4	9	55	#line 9 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-4	10	55		set __D0acquire, 75
-4	10	58	#line 10 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-4	11	58	#pragma macro 7
-4	11	58		setout __OUT_AC, 2, __D0acquire, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
-4	3938	81	#line 3938 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-4	10	81	#line 10 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-4	10	81	#line 10 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-4	11	81		set __Wait_7qG2_ms_7qG2_000_inline_acquire, 800
-4	10	84	#line 10 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-4	8551	84	#line 8551 "NXCDefs.h"
-4	8552	84		wait2 NA, __Wait_7qG2_ms_7qG2_000_inline_acquire
-4	8551	87	#line 8551 "NXCDefs.h"
-4	11	87	#line 11 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-4	14	87	#line 14 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-4	15	87	#pragma macro 7
-4	15	87		setout __OUT_AC, 2, __constVal0, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
-4	3949	110	#line 3949 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-4	14	110	#line 14 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-4	14	110	#line 14 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-4	15	110		set __D0acquire, 30
-4	15	113	#line 15 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-4	16	113	#pragma macro 10
-4	16	113		acquire __OnRevMutex
-4	16	114		neg __OnRev_Tmp, __D0acquire
-4	16	117		setout __constVal1, 2, __OnRev_Tmp, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
-4	16	140		release __OnRevMutex
-4	3954	141	#line 3954 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-4	15	141	#line 15 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-4	15	141	#line 15 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-4	16	141		set __Wait_7qG2_ms_7qG2_000_inline_acquire, 500
-4	15	144	#line 15 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-4	8551	144	#line 8551 "NXCDefs.h"
-4	8552	144		wait2 NA, __Wait_7qG2_ms_7qG2_000_inline_acquire
-4	8551	147	#line 8551 "NXCDefs.h"
-4	16	147	#line 16 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-4	17	147	#line 17 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-4	18	147	#pragma macro 7
-4	18	147		setout __constVal1, 2, __constVal0, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
-4	3965	170	#line 3965 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-4	17	170	#line 17 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-4	19	170	#line 19 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-4	20	170		subret __acquire_return
-5	185	0	#line 185 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc"
-5	186	0		subret ____initialize_global_data_return
+0	105	0	#line 105 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	106	0		subcall __initialize_global_data, ____initialize_global_data_return
+0	105	2	#line 105 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	106	2	#line 106 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	107	2		subcall init_sensors, __init_sensors_return
+0	106	4	#line 106 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	106	4	#line 106 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	107	4		getin __main_7qG2_magnet_initial_7qG2_000, __constVal2, 4
+0	106	8	#line 106 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	111	8	#line 111 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	112	8		set __main_7qG2_MAIN_LOOP_7qG2_000, 1
+0	111	11	#line 111 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	111	11	#line 111 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	112	11		set __D0main, 1
+0	111	14	#line 111 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	112	14		tst 5, __zfmain, __D0main
+0	111	17	#line 111 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	112	17		mov __D0main, __zfmain
+0	111	19	#line 111 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	112	19		brtst 4, __NXC_Label_766, __zfmain
+0	111	22	#line 111 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	112	22		mov __signed_stack_001main, __D0main
+0	111	24	#line 111 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	112	24		mov __signed_stack_002main, __main_7qG2_MAIN_LOOP_7qG2_000
+0	111	26	#line 111 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	111	26	#line 111 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	112	26		set __D0main, 1
+0	111	29	#line 111 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	112	29		cmp 4, __zfmain, __signed_stack_002main, __D0main
+0	111	33	#line 111 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	111	33	#line 111 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	112	33		and __D0main, __signed_stack_001main, __zfmain
+0	114	37	#line 114 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	115	37		tst 5, __zfmain, __D0main
+0	114	40	#line 114 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	115	40		brtst 4, __NXC_Label_764, __zfmain
+0	118	43	#line 118 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	119	43		subcall search, __search_return
+0	118	45	#line 118 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	118	45	#line 118 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	119	45		subcall isEmpty, __isEmpty_return
+0	118	47	#line 118 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	119	47		mov __unsigned_stack_001main, __DU0isEmpty
+0	118	49	#line 118 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	118	49	#line 118 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	119	49		set __D0main, 1
+0	118	52	#line 118 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	119	52		cmp 4, __zfmain, __unsigned_stack_001main, __D0main
+0	118	56	#line 118 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	119	56		mov __D0main, __zfmain
+0	121	58	#line 121 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	122	58		brtst 4, __NXC_Label_769, __zfmain
+0	121	61	#line 121 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	122	61		set __D0main, 30
+0	121	64	#line 121 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	122	64	#pragma macro 7
+0	122	64		setout __constVal2, 2, __D0main, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+0	7899	87	#line 7899 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	121	87	#line 121 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	121	87	#line 121 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	122	87		set __D0main, -30
+0	121	90	#line 121 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	122	90	#pragma macro 7
+0	122	90		setout __constVal0, 2, __D0main, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+0	7906	113	#line 7906 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	121	113	#line 121 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	121	113	#line 121 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	122	113	#line 122 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	122	113	#line 122 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	123	113		set __Wait_7qG2_ms_7qG2_000_inline_main, 800
+0	122	116	#line 122 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	7921	116	#line 7921 "NXCDefs.h"
+0	7922	116		wait 800
+0	7921	118	#line 7921 "NXCDefs.h"
+0	123	118	#line 123 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	126	118	#line 126 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	127	118	#pragma macro 7
+0	127	118		setout __OUT_AC, 2, __constVal0, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+0	7925	141	#line 7925 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	126	141	#line 126 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	129	141	#line 129 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	130	141		subcall acquire, __acquire_return
+0	129	143	#line 129 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	129	143	#line 129 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	130	143		set __D0main, 1
+0	129	146	#line 129 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	130	146		tst 5, __zfmain, __D0main
+0	129	149	#line 129 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	130	149		mov __D0main, __zfmain
+0	129	151	#line 129 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	130	151		brtst 4, __NXC_Label_781, __zfmain
+0	129	154	#line 129 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	130	154		mov __signed_stack_001main, __D0main
+0	129	156	#line 129 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	130	156		getin __signed_stack_002main, __constVal3, 4
+0	129	160	#line 129 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	129	160	#line 129 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	130	160		set __D0main, 50
+0	129	163	#line 129 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	130	163		cmp 0, __zfmain, __signed_stack_002main, __D0main
+0	129	167	#line 129 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	129	167	#line 129 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	130	167		and __D0main, __signed_stack_001main, __zfmain
+0	130	171	#line 130 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	131	171		tst 5, __zfmain, __D0main
+0	130	174	#line 130 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	131	174		brtst 4, __NXC_Label_779, __zfmain
+0	130	177	#line 130 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	131	177		set __D0main, 60
+0	130	180	#line 130 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	131	180	#pragma macro 7
+0	131	180		setout __constVal2, 2, __D0main, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+0	7964	203	#line 7964 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	130	203	#line 130 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	130	203	#line 130 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	131	203		set __D0main, -60
+0	130	206	#line 130 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	131	206	#pragma macro 7
+0	131	206		setout __constVal0, 2, __D0main, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+0	7971	229	#line 7971 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	130	229	#line 130 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	130	229	#line 130 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	131	229	#line 131 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	134	229	#line 134 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	135	229		jmp __NXC_Label_778
+0	134	231	#line 134 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	138	231	#line 138 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	139	231	#pragma macro 7
+0	139	231		setout __OUT_AC, 2, __constVal0, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+0	7980	254	#line 7980 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	138	254	#line 138 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	138	254	#line 138 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	139	254		getin __signed_stack_001main, __constVal2, 4
+0	138	258	#line 138 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	138	258	#line 138 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	139	258		mov __D0main, __main_7qG2_magnet_initial_7qG2_000
+0	138	260	#line 138 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	139	260		cmp 1, __zfmain, __signed_stack_001main, __D0main
+0	138	264	#line 138 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	138	264	#line 138 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	139	264		not __D0main, __zfmain
+0	139	267	#line 139 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	140	267		tst 5, __zfmain, __D0main
+0	139	270	#line 139 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	140	270		brtst 4, __NXC_Label_792, __zfmain
+0	139	273	#line 139 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	140	273		set __D0main, 75
+0	140	276	#line 140 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	141	276	#pragma macro 10
+0	141	276		acquire __OnRevMutex
+0	141	277		neg __OnRev_Tmp, __D0main
+0	141	280		setout __OUT_AC, 2, __OnRev_Tmp, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+0	141	303		release __OnRevMutex
+0	8007	304	#line 8007 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	140	304	#line 140 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	140	304	#line 140 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	141	304		set __Wait_7qG2_ms_7qG2_000_inline_main, 10000
+0	140	307	#line 140 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	7921	307	#line 7921 "NXCDefs.h"
+0	7922	307		wait 10000
+0	7921	309	#line 7921 "NXCDefs.h"
+0	141	309	#line 141 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	142	309	#line 142 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	143	309	#pragma macro 7
+0	143	309		setout __OUT_AC, 2, __constVal0, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+0	8020	332	#line 8020 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	142	332	#line 142 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	144	332	#line 144 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	144	332	#line 144 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	145	332		getin __signed_stack_001main, __constVal2, 4
+0	144	336	#line 144 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	144	336	#line 144 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	145	336		mov __D0main, __main_7qG2_magnet_initial_7qG2_000
+0	144	338	#line 144 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	145	338		cmp 1, __zfmain, __signed_stack_001main, __D0main
+0	144	342	#line 144 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	145	342		mov __D0main, __zfmain
+0	146	344	#line 146 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	147	344		brtst 4, __NXC_Label_801, __zfmain
+0	148	347	#line 148 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	149	347		set __main_7qG2_wall_looking_7qG2_003, 1
+0	148	350	#line 148 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	148	350	#line 148 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	149	350		set __D0main, 1
+0	148	353	#line 148 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	149	353		tst 5, __zfmain, __D0main
+0	148	356	#line 148 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	149	356		mov __D0main, __zfmain
+0	148	358	#line 148 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	149	358		brtst 4, __NXC_Label_807, __zfmain
+0	148	361	#line 148 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	149	361		mov __signed_stack_001main, __D0main
+0	148	363	#line 148 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	149	363		mov __signed_stack_002main, __main_7qG2_wall_looking_7qG2_003
+0	148	365	#line 148 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	148	365	#line 148 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	149	365		set __D0main, 1
+0	148	368	#line 148 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	149	368		cmp 4, __zfmain, __signed_stack_002main, __D0main
+0	148	372	#line 148 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	148	372	#line 148 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	149	372		and __D0main, __signed_stack_001main, __zfmain
+0	149	376	#line 149 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	150	376		tst 5, __zfmain, __D0main
+0	149	379	#line 149 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	150	379		brtst 4, __NXC_Label_805, __zfmain
+0	149	382	#line 149 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	150	382	#pragma macro 26
+0	150	382		acquire __RLSBmutex0
+0	150	383		mov __RLSReadBuf0, __RLSBbufLSWrite1
+0	150	385		set __RLSBytesCount0, 1
+0	150	388		wait 15
+0	150	390		subcall __ReadLSBytes0, ____ReadLSBytes0_return
+0	150	392		index __D0main, __RLSReadBuf0, 65535
+0	150	396		release __RLSBmutex0
+0	8081	397	#line 8081 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	149	397	#line 149 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	150	397		mov __signed_stack_001main, __D0main
+0	149	399	#line 149 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	150	399		set __D0main, 30
+0	149	402	#line 149 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	150	402		cmp 1, __zfmain, __signed_stack_001main, __D0main
+0	149	406	#line 149 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	150	406		mov __D0main, __zfmain
+0	150	408	#line 150 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	151	408		brtst 4, __NXC_Label_809, __zfmain
+0	150	411	#line 150 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	151	411		set __D0main, 75
+0	151	414	#line 151 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	152	414	#pragma macro 7
+0	152	414		setout __OUT_AC, 2, __D0main, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+0	8099	437	#line 8099 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	151	437	#line 151 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	155	437	#line 155 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	156	437		jmp __NXC_Label_808
+0	155	439	#line 155 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	155	439	#line 155 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	156	439		subcall isWall, __isWall_return
+0	155	441	#line 155 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	156	441		mov __unsigned_stack_001main, __DU0isWall
+0	155	443	#line 155 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	155	443	#line 155 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	156	443		set __D0main, 1
+0	155	446	#line 155 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	156	446		cmp 4, __zfmain, __unsigned_stack_001main, __D0main
+0	155	450	#line 155 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	156	450		mov __D0main, __zfmain
+0	156	452	#line 156 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	157	452		brtst 4, __NXC_Label_816, __zfmain
+0	157	455	#line 157 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	158	455		set __main_7qG2_wall_looking_7qG2_003, 0
+0	157	458	#line 157 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	157	458	#line 157 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	157	458	#line 157 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	158	458		set __D0main, -30
+0	157	461	#line 157 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	158	461	#pragma macro 7
+0	158	461		setout __constVal2, 2, __D0main, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+0	8133	484	#line 8133 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	157	484	#line 157 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	157	484	#line 157 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	158	484		set __D0main, 30
+0	157	487	#line 157 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	158	487	#pragma macro 7
+0	158	487		setout __constVal0, 2, __D0main, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+0	8140	510	#line 8140 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	157	510	#line 157 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	157	510	#line 157 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	158	510	#line 158 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	158	510	#line 158 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	159	510		set __Wait_7qG2_ms_7qG2_000_inline_main, 600
+0	158	513	#line 158 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	7921	513	#line 7921 "NXCDefs.h"
+0	7922	513		wait 600
+0	7921	515	#line 7921 "NXCDefs.h"
+0	159	515	#line 159 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	160	515	#line 160 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	161	515	#pragma macro 7
+0	161	515		setout __OUT_AC, 2, __constVal0, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+0	8155	538	#line 8155 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	160	538	#line 160 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	163	538	#line 163 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	166	538	#line 166 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	167	538		set __main_7qG2_x_7qG2_004, 10000
+0	166	541	#line 166 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	167	541	#line 167 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	168	541		set __main_7qG2_sensor_left_7qG2_004, 0
+0	167	544	#line 167 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	168	544	#line 168 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	169	544		set __main_7qG2_sensor_right_7qG2_004, 0
+0	168	547	#line 168 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	168	547	#line 168 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	169	547		mov __signed_stack_001main, __main_7qG2_sensor_left_7qG2_004
+0	168	549	#line 168 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	168	549	#line 168 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	169	549		mov __D0main, __main_7qG2_sensor_right_7qG2_004
+0	168	551	#line 168 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	169	551		cmp 1, __zfmain, __signed_stack_001main, __D0main
+0	168	555	#line 168 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	169	555		mov __D0main, __zfmain
+0	169	557	#line 169 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	170	557		brtst 4, __NXC_Label_835, __zfmain
+0	169	560	#line 169 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	170	560		set __D0main, 30
+0	169	563	#line 169 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	170	563	#pragma macro 7
+0	170	563		setout __constVal2, 2, __D0main, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+0	8208	586	#line 8208 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	169	586	#line 169 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	169	586	#line 169 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	170	586		set __D0main, -30
+0	169	589	#line 169 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	170	589	#pragma macro 7
+0	170	589		setout __constVal0, 2, __D0main, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+0	8215	612	#line 8215 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	169	612	#line 169 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	169	612	#line 169 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	170	612	#line 170 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	170	612	#line 170 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	171	612	#pragma macro 26
+0	171	612		acquire __RLSBmutex0
+0	171	613		mov __RLSReadBuf0, __RLSBbufLSWrite1
+0	171	615		set __RLSBytesCount0, 1
+0	171	618		wait 15
+0	171	620		subcall __ReadLSBytes0, ____ReadLSBytes0_return
+0	171	622		index __D0main, __RLSReadBuf0, 65535
+0	171	626		release __RLSBmutex0
+0	8221	627	#line 8221 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	170	627	#line 170 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	171	627		mov __signed_stack_001main, __D0main
+0	170	629	#line 170 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	171	629		mov __D0main, __main_7qG2_x_7qG2_004
+0	170	631	#line 170 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	171	631		cmp 1, __zfmain, __signed_stack_001main, __D0main
+0	170	635	#line 170 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	170	635	#line 170 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	171	635		not __D0main, __zfmain
+0	171	638	#line 171 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	172	638		tst 5, __zfmain, __D0main
+0	171	641	#line 171 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	172	641		brtst 4, __NXC_Label_843, __zfmain
+0	171	644	#line 171 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	172	644	#pragma macro 26
+0	172	644		acquire __RLSBmutex0
+0	172	645		mov __RLSReadBuf0, __RLSBbufLSWrite1
+0	172	647		set __RLSBytesCount0, 1
+0	172	650		wait 15
+0	172	652		subcall __ReadLSBytes0, ____ReadLSBytes0_return
+0	172	654		index __D0main, __RLSReadBuf0, 65535
+0	172	658		release __RLSBmutex0
+0	8241	659	#line 8241 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	171	659	#line 171 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	172	659		mov __signed_stack_001main, __D0main
+0	171	661	#line 171 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	172	661		mov __D0main, __main_7qG2_x_7qG2_004
+0	171	663	#line 171 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	172	663		cmp 0, __zfmain, __signed_stack_001main, __D0main
+0	171	667	#line 171 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	172	667		mov __D0main, __zfmain
+0	172	669	#line 172 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	173	669		brtst 4, __NXC_Label_850, __zfmain
+0	172	672	#line 172 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	173	672	#pragma macro 26
+0	173	672		acquire __RLSBmutex0
+0	173	673		mov __RLSReadBuf0, __RLSBbufLSWrite1
+0	173	675		set __RLSBytesCount0, 1
+0	173	678		wait 15
+0	173	680		subcall __ReadLSBytes0, ____ReadLSBytes0_return
+0	173	682		index __D0main, __RLSReadBuf0, 65535
+0	173	686		release __RLSBmutex0
+0	8255	687	#line 8255 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	172	687	#line 172 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	173	687		mov __main_7qG2_x_7qG2_004, __D0main
+0	172	689	#line 172 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	172	689	#line 172 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	176	689	#line 176 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	176	689	#line 176 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	177	689		jmp __NXC_Label_842
+0	176	691	#line 176 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	176	691	#line 176 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	177	691		set __D0main, -30
+0	176	694	#line 176 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	177	694	#pragma macro 7
+0	177	694		setout __constVal2, 2, __D0main, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+0	8273	717	#line 8273 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	176	717	#line 176 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	176	717	#line 176 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	177	717		set __D0main, 30
+0	176	720	#line 176 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	177	720	#pragma macro 7
+0	177	720		setout __constVal0, 2, __D0main, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+0	8280	743	#line 8280 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	176	743	#line 176 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	176	743	#line 176 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	177	743	#line 177 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	177	743	#line 177 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	178	743		set __Wait_7qG2_ms_7qG2_000_inline_main, 1500
+0	177	746	#line 177 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	7921	746	#line 7921 "NXCDefs.h"
+0	7922	746		wait 1500
+0	7921	748	#line 7921 "NXCDefs.h"
+0	178	748	#line 178 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	182	748	#line 182 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	183	748		jmp __NXC_Label_861
+0	182	750	#line 182 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	183	750		set __D0main, -30
+0	182	753	#line 182 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	183	753	#pragma macro 7
+0	183	753		setout __constVal2, 2, __D0main, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+0	8302	776	#line 8302 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	182	776	#line 182 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	182	776	#line 182 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	183	776		set __D0main, 30
+0	182	779	#line 182 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	183	779	#pragma macro 7
+0	183	779		setout __constVal0, 2, __D0main, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+0	8309	802	#line 8309 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	182	802	#line 182 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	182	802	#line 182 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	183	802	#line 183 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	183	802	#line 183 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	184	802	#pragma macro 26
+0	184	802		acquire __RLSBmutex0
+0	184	803		mov __RLSReadBuf0, __RLSBbufLSWrite1
+0	184	805		set __RLSBytesCount0, 1
+0	184	808		wait 15
+0	184	810		subcall __ReadLSBytes0, ____ReadLSBytes0_return
+0	184	812		index __D0main, __RLSReadBuf0, 65535
+0	184	816		release __RLSBmutex0
+0	8315	817	#line 8315 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	183	817	#line 183 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	184	817		mov __signed_stack_001main, __D0main
+0	183	819	#line 183 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	184	819		mov __D0main, __main_7qG2_x_7qG2_004
+0	183	821	#line 183 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	184	821		cmp 1, __zfmain, __signed_stack_001main, __D0main
+0	183	825	#line 183 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	183	825	#line 183 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	184	825		not __D0main, __zfmain
+0	184	828	#line 184 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	185	828		tst 5, __zfmain, __D0main
+0	184	831	#line 184 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	185	831		brtst 4, __NXC_Label_869, __zfmain
+0	184	834	#line 184 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	185	834	#pragma macro 26
+0	185	834		acquire __RLSBmutex0
+0	185	835		mov __RLSReadBuf0, __RLSBbufLSWrite1
+0	185	837		set __RLSBytesCount0, 1
+0	185	840		wait 15
+0	185	842		subcall __ReadLSBytes0, ____ReadLSBytes0_return
+0	185	844		index __D0main, __RLSReadBuf0, 65535
+0	185	848		release __RLSBmutex0
+0	8335	849	#line 8335 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	184	849	#line 184 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	185	849		mov __signed_stack_001main, __D0main
+0	184	851	#line 184 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	185	851		mov __D0main, __main_7qG2_x_7qG2_004
+0	184	853	#line 184 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	185	853		cmp 0, __zfmain, __signed_stack_001main, __D0main
+0	184	857	#line 184 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	185	857		mov __D0main, __zfmain
+0	185	859	#line 185 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	186	859		brtst 4, __NXC_Label_876, __zfmain
+0	185	862	#line 185 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	186	862	#pragma macro 26
+0	186	862		acquire __RLSBmutex0
+0	186	863		mov __RLSReadBuf0, __RLSBbufLSWrite1
+0	186	865		set __RLSBytesCount0, 1
+0	186	868		wait 15
+0	186	870		subcall __ReadLSBytes0, ____ReadLSBytes0_return
+0	186	872		index __D0main, __RLSReadBuf0, 65535
+0	186	876		release __RLSBmutex0
+0	8349	877	#line 8349 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	185	877	#line 185 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	186	877		mov __main_7qG2_x_7qG2_004, __D0main
+0	185	879	#line 185 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	185	879	#line 185 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	189	879	#line 189 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	189	879	#line 189 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	190	879		jmp __NXC_Label_868
+0	189	881	#line 189 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	189	881	#line 189 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	190	881		set __D0main, 30
+0	189	884	#line 189 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	190	884	#pragma macro 7
+0	190	884		setout __constVal2, 2, __D0main, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+0	8367	907	#line 8367 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	189	907	#line 189 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	189	907	#line 189 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	190	907		set __D0main, -30
+0	189	910	#line 189 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	190	910	#pragma macro 7
+0	190	910		setout __constVal0, 2, __D0main, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+0	8374	933	#line 8374 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	189	933	#line 189 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	189	933	#line 189 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	190	933	#line 190 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	190	933	#line 190 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	191	933		set __Wait_7qG2_ms_7qG2_000_inline_main, 1500
+0	190	936	#line 190 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	7921	936	#line 7921 "NXCDefs.h"
+0	7922	936		wait 1500
+0	7921	938	#line 7921 "NXCDefs.h"
+0	191	938	#line 191 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	195	938	#line 195 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	195	938	#line 195 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	196	938		jmp __NXC_Label_804
+0	195	940	#line 195 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	195	940	#line 195 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	196	940	#pragma macro 26
+0	196	940		acquire __RLSBmutex0
+0	196	941		mov __RLSReadBuf0, __RLSBbufLSWrite1
+0	196	943		set __RLSBytesCount0, 1
+0	196	946		wait 15
+0	196	948		subcall __ReadLSBytes0, ____ReadLSBytes0_return
+0	196	950		index __D0main, __RLSReadBuf0, 65535
+0	196	954		release __RLSBmutex0
+0	8396	955	#line 8396 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	195	955	#line 195 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	196	955		mov __signed_stack_001main, __D0main
+0	195	957	#line 195 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	196	957		set __D0main, 30
+0	195	960	#line 195 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	196	960		cmp 1, __zfmain, __signed_stack_001main, __D0main
+0	195	964	#line 195 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	196	964		mov __D0main, __zfmain
+0	196	966	#line 196 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	197	966		brtst 4, __NXC_Label_888, __zfmain
+0	196	969	#line 196 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	197	969		set __D0main, 75
+0	197	972	#line 197 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	198	972	#pragma macro 7
+0	198	972		setout __OUT_AC, 2, __D0main, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+0	8414	995	#line 8414 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	197	995	#line 197 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	198	995	#line 198 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	199	995		jmp __NXC_Label_887
+0	198	997	#line 198 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	199	997	#line 199 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	200	997	#pragma macro 7
+0	200	997		setout __OUT_AC, 2, __constVal0, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+0	8421	1020	#line 8421 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	199	1020	#line 199 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	200	1020	#line 200 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	201	1020		set __main_7qG2_MAIN_LOOP_7qG2_000, 0
+0	200	1023	#line 200 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	200	1023	#line 200 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	202	1023	#line 202 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	203	1023	#line 203 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	204	1023		jmp __NXC_Label_895
+0	203	1025	#line 203 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	204	1025		set __D0main, -30
+0	203	1028	#line 203 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	204	1028	#pragma macro 7
+0	204	1028		setout __constVal2, 2, __D0main, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+0	8440	1051	#line 8440 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	203	1051	#line 203 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	203	1051	#line 203 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	204	1051		set __D0main, 30
+0	203	1054	#line 203 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	204	1054	#pragma macro 7
+0	204	1054		setout __constVal0, 2, __D0main, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+0	8447	1077	#line 8447 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	203	1077	#line 203 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	203	1077	#line 203 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	204	1077	#line 204 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	204	1077	#line 204 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	205	1077		set __Wait_7qG2_ms_7qG2_000_inline_main, 1500
+0	204	1080	#line 204 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	7921	1080	#line 7921 "NXCDefs.h"
+0	7922	1080		wait 1500
+0	7921	1082	#line 7921 "NXCDefs.h"
+0	205	1082	#line 205 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	205	1082	#line 205 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	206	1082		set __D0main, 75
+0	206	1085	#line 206 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	207	1085	#pragma macro 7
+0	207	1085		setout __OUT_AC, 2, __D0main, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+0	8466	1108	#line 8466 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	206	1108	#line 206 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	206	1108	#line 206 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	207	1108		set __Wait_7qG2_ms_7qG2_000_inline_main, 2000
+0	206	1111	#line 206 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	7921	1111	#line 7921 "NXCDefs.h"
+0	7922	1111		wait 2000
+0	7921	1113	#line 7921 "NXCDefs.h"
+0	207	1113	#line 207 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	211	1113	#line 211 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	213	1113	#line 213 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	214	1113		jmp __NXC_Label_763
+0	213	1115	#line 213 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	214	1115		exit -1, -1
+1	4885	0		setin __constVal1, __ResetSensorPort, 5
+1	4887	4		getin __ResetSensorTmp, __ResetSensorPort, 5
+1	4888	8		brtst 5, __SensorStillInvalid, __ResetSensorTmp
+1	4889	11		subret ____ResetSensorSubroutine_return
+2	5672	0	#pragma macro 25
+2	5672	0		acquire __CLSWMutex0
+2	5672	1		set __CLSWArgs0.Port, 0
+2	5672	4		mov __CLSWArgs0.ReturnLen, __RLSBytesCount0
+2	5672	6		mov __CLSWArgs0.Buffer, __RLSReadBuf0
+2	5672	8		syscall 21, __CLSWArgs0
+2	5672	11		mov __RLSBResult0, __CLSWArgs0.Result
+2	5672	13		release __CLSWMutex0
+2	5673	14	#line 5673 "NXTDefs.h"
+2	5674	14		brtst 4, __RLSBReturn0, __RLSBytesCount0
+2	5675	17		arrinit __RLSReadBuf0, __constVal0, __RLSBytesCount0
+2	5676	21		brtst 5, __RLSBError0, __RLSBResult0
+2	5677	24		set __RLSBIterations0, 4
+2	5679	27	#pragma macro 23
+2	5679	27		acquire __CLSCSMutex0
+2	5679	28		set __CLSCSArgs0.Port, 0
+2	5679	31		syscall 23, __CLSCSArgs0
+2	5679	34		mov __RLSBytesCount0, __CLSCSArgs0.BytesReady
+2	5679	36		mov __RLSBResult0, __CLSCSArgs0.Result
+2	5679	38		release __CLSCSMutex0
+2	5679	39	#line 5679 "NXTDefs.h"
+2	5680	39		sub __RLSBIterations0, __RLSBIterations0, __constVal1
+2	5681	43		brtst 2, __RLSBError0, __RLSBIterations0
+2	5682	46		brtst 0, __RLSBError0, __RLSBResult0
+2	5683	49		brtst 4, __RLSBReadyToRead0, __RLSBResult0
+2	5685	52		wait 15
+2	5686	54		jmp __RLSBDoCheckStatus0
+2	5689	56	#pragma macro 25
+2	5689	56		acquire __CLSRMutex0
+2	5689	57		set __CLSRArgs0.Port, 0
+2	5689	60		mov __CLSRArgs0.BufferLen, __RLSBytesCount0
+2	5689	62		syscall 22, __CLSRArgs0
+2	5689	65		mov __RLSReadBuf0, __CLSRArgs0.Buffer
+2	5689	67		mov __RLSBResult0, __CLSRArgs0.Result
+2	5689	69		release __CLSRMutex0
+2	5689	70	#line 5689 "NXTDefs.h"
+2	5690	70		brtst 5, __RLSBError0, __RLSBResult0
+2	5691	73		mov __RLSLastGoodRead0, __RLSReadBuf0
+2	5692	75		jmp __RLSBDone0
+2	5694	77		mov __RLSReadBuf0, __RLSLastGoodRead0
+2	5696	79		arrsize __RLSBytesCount0, __RLSReadBuf0
+2	5698	82		subret ____ReadLSBytes0_return
+3	39	0	#line 39 "C:\ENGR102\Lab Code\includes.nxc"
+3	40	0		set __SetSensorType_7qG2_port_7qG2_000_inline_init_sensors, 0
+3	39	3	#line 39 "C:\ENGR102\Lab Code\includes.nxc"
+3	39	3	#line 39 "C:\ENGR102\Lab Code\includes.nxc"
+3	40	3		set __SetSensorType_7qG2_type_7qG2_000_inline_init_sensors, 10
+3	39	6	#line 39 "C:\ENGR102\Lab Code\includes.nxc"
+3	3663	6	#line 3663 "NXCDefs.h"
+3	3664	6		setin __SetSensorType_7qG2_type_7qG2_000_inline_init_sensors, __SetSensorType_7qG2_port_7qG2_000_inline_init_sensors, 0
+3	3663	10	#line 3663 "NXCDefs.h"
+3	40	10	#line 40 "C:\ENGR102\Lab Code\includes.nxc"
+3	40	10	#line 40 "C:\ENGR102\Lab Code\includes.nxc"
+3	41	10		set __SetSensorColorGreen_7qG2_port_7qG2_000_inline_init_sensors, 1
+3	40	13	#line 40 "C:\ENGR102\Lab Code\includes.nxc"
+3	3822	13	#line 3822 "NXCDefs.h"
+3	3823	13	#pragma macro 6
+3	3823	13		setin __constVal15, __SetSensorColorGreen_7qG2_port_7qG2_000_inline_init_sensors, 0
+3	3823	17		setin __constVal128, __SetSensorColorGreen_7qG2_port_7qG2_000_inline_init_sensors, 1
+3	3823	21		mov __ResetSensorPort, __SetSensorColorGreen_7qG2_port_7qG2_000_inline_init_sensors
+3	3823	23		subcall __ResetSensorSubroutine, ____ResetSensorSubroutine_return
+3	6988	25	#line 6988 "NXCDefs.h"
+3	3822	25	#line 3822 "NXCDefs.h"
+3	41	25	#line 41 "C:\ENGR102\Lab Code\includes.nxc"
+3	41	25	#line 41 "C:\ENGR102\Lab Code\includes.nxc"
+3	42	25		set __SetSensorHTMagnet_7qG2_port_7qG2_000_inline_init_sensors, 2
+3	41	28	#line 41 "C:\ENGR102\Lab Code\includes.nxc"
+3	12989	28	#line 12989 "NXCDefs.h"
+3	12990	28		mov __SetSensorType_7qG2_port_7qG2_000_inline_SetSensorHTMagnet_inline_init_sensors, __constVal2
+3	12989	30	#line 12989 "NXCDefs.h"
+3	12989	30	#line 12989 "NXCDefs.h"
+3	12990	30		set __SetSensorType_7qG2_type_7qG2_000_inline_SetSensorHTMagnet_inline_init_sensors, 6
+3	12989	33	#line 12989 "NXCDefs.h"
+3	3663	33	#line 3663 "NXCDefs.h"
+3	3664	33		setin __SetSensorType_7qG2_type_7qG2_000_inline_SetSensorHTMagnet_inline_init_sensors, __SetSensorType_7qG2_port_7qG2_000_inline_SetSensorHTMagnet_inline_init_sensors, 0
+3	3663	37	#line 3663 "NXCDefs.h"
+3	12990	37	#line 12990 "NXCDefs.h"
+3	12990	37	#line 12990 "NXCDefs.h"
+3	12991	37		mov __SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorHTMagnet_inline_init_sensors, __SetSensorHTMagnet_7qG2_port_7qG2_000_inline_init_sensors
+3	12990	39	#line 12990 "NXCDefs.h"
+3	12990	39	#line 12990 "NXCDefs.h"
+3	12991	39		set __SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorHTMagnet_inline_init_sensors, 0
+3	12990	42	#line 12990 "NXCDefs.h"
+3	3676	42	#line 3676 "NXCDefs.h"
+3	3677	42		setin __SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorHTMagnet_inline_init_sensors, __SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorHTMagnet_inline_init_sensors, 1
+3	3676	46	#line 3676 "NXCDefs.h"
+3	12991	46	#line 12991 "NXCDefs.h"
+3	12991	46	#line 12991 "NXCDefs.h"
+3	12991	46	#line 12991 "NXCDefs.h"
+3	3694	46	#line 3694 "NXCDefs.h"
+3	3695	46	#pragma macro 4
+3	3695	46		mov __ResetSensorPort, __SetSensorHTMagnet_7qG2_port_7qG2_000_inline_init_sensors
+3	3695	48		subcall __ResetSensorSubroutine, ____ResetSensorSubroutine_return
+3	7060	50	#line 7060 "NXCDefs.h"
+3	3694	50	#line 3694 "NXCDefs.h"
+3	12992	50	#line 12992 "NXCDefs.h"
+3	42	50	#line 42 "C:\ENGR102\Lab Code\includes.nxc"
+3	42	50	#line 42 "C:\ENGR102\Lab Code\includes.nxc"
+3	43	50		set __SetSensorType_7qG2_port_7qG2_000_inline_init_sensors, 3
+3	42	53	#line 42 "C:\ENGR102\Lab Code\includes.nxc"
+3	42	53	#line 42 "C:\ENGR102\Lab Code\includes.nxc"
+3	43	53		set __SetSensorType_7qG2_type_7qG2_000_inline_init_sensors, 6
+3	42	56	#line 42 "C:\ENGR102\Lab Code\includes.nxc"
+3	3663	56	#line 3663 "NXCDefs.h"
+3	3664	56		setin __SetSensorType_7qG2_type_7qG2_000_inline_init_sensors, __SetSensorType_7qG2_port_7qG2_000_inline_init_sensors, 0
+3	3663	60	#line 3663 "NXCDefs.h"
+3	43	60	#line 43 "C:\ENGR102\Lab Code\includes.nxc"
+3	43	60	#line 43 "C:\ENGR102\Lab Code\includes.nxc"
+3	44	60		set __SetSensorMode_7qG2_port_7qG2_000_inline_init_sensors, 3
+3	43	63	#line 43 "C:\ENGR102\Lab Code\includes.nxc"
+3	43	63	#line 43 "C:\ENGR102\Lab Code\includes.nxc"
+3	44	63		set __SetSensorMode_7qG2_mode_7qG2_000_inline_init_sensors, 128
+3	43	66	#line 43 "C:\ENGR102\Lab Code\includes.nxc"
+3	3676	66	#line 3676 "NXCDefs.h"
+3	3677	66		setin __SetSensorMode_7qG2_mode_7qG2_000_inline_init_sensors, __SetSensorMode_7qG2_port_7qG2_000_inline_init_sensors, 1
+3	3676	70	#line 3676 "NXCDefs.h"
+3	44	70	#line 44 "C:\ENGR102\Lab Code\includes.nxc"
+3	46	70	#line 46 "C:\ENGR102\Lab Code\includes.nxc"
+3	47	70		subret __init_sensors_return
+4	5	0	#line 5 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+4	6	0		set __search_7qG2_SPIN_MODE_7qG2_000, 1
+4	5	3	#line 5 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+4	5	3	#line 5 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+4	6	3		set __D0search, -30
+4	5	6	#line 5 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+4	6	6	#pragma macro 7
+4	6	6		setout __constVal2, 2, __D0search, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+4	7184	29	#line 7184 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+4	5	29	#line 5 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+4	5	29	#line 5 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+4	6	29		set __D0search, 30
+4	5	32	#line 5 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+4	6	32	#pragma macro 7
+4	6	32		setout __constVal0, 2, __D0search, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+4	7191	55	#line 7191 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+4	5	55	#line 5 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+4	5	55	#line 5 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+4	6	55	#line 6 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+4	6	55	#line 6 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+4	7	55		set __D0search, 1
+4	6	58	#line 6 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+4	7	58		tst 5, __zfsearch, __D0search
+4	6	61	#line 6 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+4	7	61		mov __D0search, __zfsearch
+4	6	63	#line 6 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+4	7	63		brtst 4, __NXC_Label_641, __zfsearch
+4	6	66	#line 6 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+4	7	66		mov __signed_stack_001search, __D0search
+4	6	68	#line 6 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+4	7	68		mov __signed_stack_002search, __search_7qG2_SPIN_MODE_7qG2_000
+4	6	70	#line 6 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+4	6	70	#line 6 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+4	7	70		set __D0search, 1
+4	6	73	#line 6 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+4	7	73		cmp 4, __zfsearch, __signed_stack_002search, __D0search
+4	6	77	#line 6 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+4	6	77	#line 6 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+4	7	77		and __D0search, __signed_stack_001search, __zfsearch
+4	7	81	#line 7 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+4	8	81		tst 5, __zfsearch, __D0search
+4	7	84	#line 7 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+4	8	84		brtst 4, __NXC_Label_639, __zfsearch
+4	7	87	#line 7 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+4	8	87	#pragma macro 26
+4	8	87		acquire __RLSBmutex0
+4	8	88		mov __RLSReadBuf0, __RLSBbufLSWrite1
+4	8	90		set __RLSBytesCount0, 1
+4	8	93		wait 15
+4	8	95		subcall __ReadLSBytes0, ____ReadLSBytes0_return
+4	8	97		index __D0search, __RLSReadBuf0, 65535
+4	8	101		release __RLSBmutex0
+4	7225	102	#line 7225 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+4	7	102	#line 7 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+4	8	102		mov __signed_stack_001search, __D0search
+4	7	104	#line 7 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+4	8	104		set __D0search, 30
+4	7	107	#line 7 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+4	8	107		cmp 0, __zfsearch, __signed_stack_001search, __D0search
+4	7	111	#line 7 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+4	8	111		mov __D0search, __zfsearch
+4	8	113	#line 8 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+4	9	113		brtst 4, __NXC_Label_644, __zfsearch
+4	8	116	#line 8 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+4	8	116	#line 8 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+4	7921	116	#line 7921 "NXCDefs.h"
+4	7922	116		wait 200
+4	7921	118	#line 7921 "NXCDefs.h"
+4	9	118	#line 9 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+4	12	118	#line 12 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+4	13	118	#pragma macro 7
+4	13	118		setout __OUT_AC, 2, __constVal0, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+4	7253	141	#line 7253 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+4	12	141	#line 12 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+4	12	141	#line 12 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+4	13	141	#pragma macro 26
+4	13	141		acquire __RLSBmutex0
+4	13	142		mov __RLSReadBuf0, __RLSBbufLSWrite1
+4	13	144		set __RLSBytesCount0, 1
+4	13	147		wait 15
+4	13	149		subcall __ReadLSBytes0, ____ReadLSBytes0_return
+4	13	151		index __D0search, __RLSReadBuf0, 65535
+4	13	155		release __RLSBmutex0
+4	7257	156	#line 7257 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+4	12	156	#line 12 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+4	13	156		mov __signed_stack_001search, __D0search
+4	12	158	#line 12 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+4	13	158		set __D0search, 15
+4	12	161	#line 12 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+4	13	161		cmp 1, __zfsearch, __signed_stack_001search, __D0search
+4	12	165	#line 12 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+4	13	165		mov __D0search, __zfsearch
+4	13	167	#line 13 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+4	14	167		brtst 4, __NXC_Label_648, __zfsearch
+4	13	170	#line 13 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+4	14	170		set __D0search, 75
+4	14	173	#line 14 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+4	15	173	#pragma macro 7
+4	15	173		setout __OUT_AC, 2, __D0search, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+4	7275	196	#line 7275 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+4	14	196	#line 14 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+4	16	196	#line 16 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+4	17	196		jmp __NXC_Label_647
+4	16	198	#line 16 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+4	17	198	#line 17 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+4	18	198		set __search_7qG2_SPIN_MODE_7qG2_000, 0
+4	17	201	#line 17 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+4	17	201	#line 17 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+4	19	201	#line 19 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+4	21	201	#line 21 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+4	22	201		jmp __NXC_Label_638
+4	21	203	#line 21 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+4	21	203	#line 21 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+4	22	203		subret __search_return
+5	23	0	#line 23 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+5	24	0		set __D0acquire, 30
+5	24	3	#line 24 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+5	25	3	#pragma macro 7
+5	25	3		setout __constVal1, 2, __D0acquire, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+5	7304	26	#line 7304 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+5	24	26	#line 24 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+5	24	26	#line 24 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+5	25	26		set __Wait_7qG2_ms_7qG2_000_inline_acquire, 1000
+5	24	29	#line 24 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+5	7921	29	#line 7921 "NXCDefs.h"
+5	7922	29		wait 1000
+5	7921	31	#line 7921 "NXCDefs.h"
+5	25	31	#line 25 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+5	28	31	#line 28 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+5	29	31	#pragma macro 7
+5	29	31		setout __constVal1, 2, __constVal0, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+5	7321	54	#line 7321 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+5	28	54	#line 28 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+5	28	54	#line 28 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+5	29	54		set __D0acquire, 75
+5	29	57	#line 29 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+5	30	57	#pragma macro 7
+5	30	57		setout __OUT_AC, 2, __D0acquire, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+5	7328	80	#line 7328 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+5	29	80	#line 29 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+5	29	80	#line 29 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+5	30	80		set __Wait_7qG2_ms_7qG2_000_inline_acquire, 800
+5	29	83	#line 29 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+5	7921	83	#line 7921 "NXCDefs.h"
+5	7922	83		wait 800
+5	7921	85	#line 7921 "NXCDefs.h"
+5	30	85	#line 30 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+5	33	85	#line 33 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+5	34	85	#pragma macro 7
+5	34	85		setout __OUT_AC, 2, __constVal0, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+5	7341	108	#line 7341 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+5	33	108	#line 33 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+5	33	108	#line 33 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+5	34	108		set __D0acquire, 30
+5	34	111	#line 34 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+5	35	111	#pragma macro 10
+5	35	111		acquire __OnRevMutex
+5	35	112		neg __OnRev_Tmp, __D0acquire
+5	35	115		setout __constVal1, 2, __OnRev_Tmp, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+5	35	138		release __OnRevMutex
+5	7348	139	#line 7348 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+5	34	139	#line 34 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+5	34	139	#line 34 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+5	35	139		set __Wait_7qG2_ms_7qG2_000_inline_acquire, 500
+5	34	142	#line 34 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+5	7921	142	#line 7921 "NXCDefs.h"
+5	7922	142		wait 500
+5	7921	144	#line 7921 "NXCDefs.h"
+5	35	144	#line 35 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+5	36	144	#line 36 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+5	37	144	#pragma macro 7
+5	37	144		setout __constVal1, 2, __constVal0, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+5	7361	167	#line 7361 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+5	36	167	#line 36 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+5	38	167	#line 38 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+5	39	167		subret __acquire_return
+6	41	0	#line 41 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+6	42	0		set __isEmpty_7qG2_left_empty_7qG2_000, 0
+6	41	3	#line 41 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+6	44	3	#line 44 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+6	45	3		set __isEmpty_7qG2_right_empty_7qG2_000, 0
+6	44	6	#line 44 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+6	44	6	#line 44 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+6	45	6		set __D0isEmpty, 30
+6	44	9	#line 44 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+6	45	9	#pragma macro 7
+6	45	9		setout __constVal2, 2, __D0isEmpty, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+6	7393	32	#line 7393 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+6	44	32	#line 44 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+6	44	32	#line 44 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+6	45	32		set __D0isEmpty, -30
+6	44	35	#line 44 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+6	45	35	#pragma macro 7
+6	45	35		setout __constVal0, 2, __D0isEmpty, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+6	7400	58	#line 7400 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+6	44	58	#line 44 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+6	44	58	#line 44 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+6	45	58	#line 45 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+6	45	58	#line 45 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+6	46	58		set __Wait_7qG2_ms_7qG2_000_inline_isEmpty, 600
+6	45	61	#line 45 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+6	7921	61	#line 7921 "NXCDefs.h"
+6	7922	61		wait 600
+6	7921	63	#line 7921 "NXCDefs.h"
+6	46	63	#line 46 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+6	47	63	#line 47 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+6	48	63	#pragma macro 7
+6	48	63		setout __OUT_AC, 2, __constVal0, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+6	7419	86	#line 7419 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+6	47	86	#line 47 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+6	47	86	#line 47 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+6	48	86		set __Wait_7qG2_ms_7qG2_000_inline_isEmpty, 500
+6	47	89	#line 47 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+6	7921	89	#line 7921 "NXCDefs.h"
+6	7922	89		wait 500
+6	7921	91	#line 7921 "NXCDefs.h"
+6	48	91	#line 48 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+6	48	91	#line 48 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+6	49	91	#pragma macro 26
+6	49	91		acquire __RLSBmutex0
+6	49	92		mov __RLSReadBuf0, __RLSBbufLSWrite1
+6	49	94		set __RLSBytesCount0, 1
+6	49	97		wait 15
+6	49	99		subcall __ReadLSBytes0, ____ReadLSBytes0_return
+6	49	101		index __D0isEmpty, __RLSReadBuf0, 65535
+6	49	105		release __RLSBmutex0
+6	7432	106	#line 7432 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+6	48	106	#line 48 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+6	49	106		mov __signed_stack_001isEmpty, __D0isEmpty
+6	48	108	#line 48 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+6	49	108		set __D0isEmpty, 30
+6	48	111	#line 48 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+6	49	111		cmp 1, __zfisEmpty, __signed_stack_001isEmpty, __D0isEmpty
+6	48	115	#line 48 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+6	49	115		mov __D0isEmpty, __zfisEmpty
+6	49	117	#line 49 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+6	50	117		brtst 4, __NXC_Label_683, __zfisEmpty
+6	50	120	#line 50 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+6	51	120		set __isEmpty_7qG2_right_empty_7qG2_000, 1
+6	50	123	#line 50 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+6	50	123	#line 50 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+6	53	123	#line 53 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+6	53	123	#line 53 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+6	54	123		set __D0isEmpty, -30
+6	53	126	#line 53 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+6	54	126	#pragma macro 7
+6	54	126		setout __constVal2, 2, __D0isEmpty, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+6	7459	149	#line 7459 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+6	53	149	#line 53 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+6	53	149	#line 53 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+6	54	149		set __D0isEmpty, 30
+6	53	152	#line 53 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+6	54	152	#pragma macro 7
+6	54	152		setout __constVal0, 2, __D0isEmpty, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+6	7466	175	#line 7466 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+6	53	175	#line 53 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+6	53	175	#line 53 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+6	54	175	#line 54 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+6	54	175	#line 54 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+6	55	175		set __Wait_7qG2_ms_7qG2_000_inline_isEmpty, 1000
+6	54	178	#line 54 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+6	7921	178	#line 7921 "NXCDefs.h"
+6	7922	178		wait 1000
+6	7921	180	#line 7921 "NXCDefs.h"
+6	55	180	#line 55 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+6	56	180	#line 56 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+6	57	180	#pragma macro 7
+6	57	180		setout __OUT_AC, 2, __constVal0, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+6	7481	203	#line 7481 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+6	56	203	#line 56 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+6	56	203	#line 56 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+6	57	203		set __Wait_7qG2_ms_7qG2_000_inline_isEmpty, 500
+6	56	206	#line 56 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+6	7921	206	#line 7921 "NXCDefs.h"
+6	7922	206		wait 500
+6	7921	208	#line 7921 "NXCDefs.h"
+6	57	208	#line 57 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+6	57	208	#line 57 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+6	58	208	#pragma macro 26
+6	58	208		acquire __RLSBmutex0
+6	58	209		mov __RLSReadBuf0, __RLSBbufLSWrite1
+6	58	211		set __RLSBytesCount0, 1
+6	58	214		wait 15
+6	58	216		subcall __ReadLSBytes0, ____ReadLSBytes0_return
+6	58	218		index __D0isEmpty, __RLSReadBuf0, 65535
+6	58	222		release __RLSBmutex0
+6	7494	223	#line 7494 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+6	57	223	#line 57 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+6	58	223		mov __signed_stack_001isEmpty, __D0isEmpty
+6	57	225	#line 57 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+6	58	225		set __D0isEmpty, 30
+6	57	228	#line 57 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+6	58	228		cmp 1, __zfisEmpty, __signed_stack_001isEmpty, __D0isEmpty
+6	57	232	#line 57 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+6	58	232		mov __D0isEmpty, __zfisEmpty
+6	58	234	#line 58 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+6	59	234		brtst 4, __NXC_Label_698, __zfisEmpty
+6	59	237	#line 59 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+6	60	237		set __isEmpty_7qG2_left_empty_7qG2_000, 1
+6	59	240	#line 59 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+6	59	240	#line 59 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+6	62	240	#line 62 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+6	62	240	#line 62 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+6	63	240		mov __signed_stack_001isEmpty, __isEmpty_7qG2_left_empty_7qG2_000
+6	62	242	#line 62 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+6	62	242	#line 62 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+6	63	242		set __D0isEmpty, 1
+6	62	245	#line 62 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+6	63	245		cmp 4, __zfisEmpty, __signed_stack_001isEmpty, __D0isEmpty
+6	62	249	#line 62 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+6	63	249		mov __D0isEmpty, __zfisEmpty
+6	62	251	#line 62 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+6	63	251		brtst 4, __NXC_Label_702, __zfisEmpty
+6	62	254	#line 62 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+6	63	254		mov __signed_stack_001isEmpty, __D0isEmpty
+6	62	256	#line 62 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+6	63	256		mov __signed_stack_002isEmpty, __isEmpty_7qG2_right_empty_7qG2_000
+6	62	258	#line 62 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+6	62	258	#line 62 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+6	63	258		set __D0isEmpty, 1
+6	62	261	#line 62 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+6	63	261		cmp 4, __zfisEmpty, __signed_stack_002isEmpty, __D0isEmpty
+6	62	265	#line 62 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+6	62	265	#line 62 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+6	63	265		and __D0isEmpty, __signed_stack_001isEmpty, __zfisEmpty
+6	63	269	#line 63 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+6	64	269		tst 5, __zfisEmpty, __D0isEmpty
+6	63	272	#line 63 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+6	64	272		brtst 4, __NXC_Label_703, __zfisEmpty
+6	64	275	#line 64 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+6	65	275		set __DU0isEmpty, 1
+6	64	278	#line 64 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+6	64	278	#line 64 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+6	65	278		subret __isEmpty_return
+6	64	280	#line 64 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+6	65	280	#line 65 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+6	66	280		jmp __NXC_Label_706
+6	65	282	#line 65 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+6	66	282		set __DU0isEmpty, 0
+6	65	285	#line 65 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+6	65	285	#line 65 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+6	66	285		subret __isEmpty_return
+6	65	287	#line 65 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+6	69	287	#line 69 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+6	69	287	#line 69 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+6	70	287		subret __isEmpty_return
+7	71	0	#line 71 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+7	72	0		set __isWall_7qG2_left_empty_7qG2_000, 0
+7	71	3	#line 71 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+7	72	3	#line 72 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+7	73	3		set __isWall_7qG2_right_empty_7qG2_000, 0
+7	72	6	#line 72 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+7	73	6	#line 73 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+7	74	6		set __isWall_7qG2_sensor_left_7qG2_000, 0
+7	73	9	#line 73 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+7	76	9	#line 76 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+7	77	9		set __isWall_7qG2_sensor_right_7qG2_000, 0
+7	76	12	#line 76 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+7	76	12	#line 76 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+7	77	12		set __D0isWall, -30
+7	76	15	#line 76 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+7	77	15	#pragma macro 7
+7	77	15		setout __constVal2, 2, __D0isWall, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+7	7621	38	#line 7621 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+7	76	38	#line 76 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+7	76	38	#line 76 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+7	77	38		set __D0isWall, 30
+7	76	41	#line 76 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+7	77	41	#pragma macro 7
+7	77	41		setout __constVal0, 2, __D0isWall, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+7	7628	64	#line 7628 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+7	76	64	#line 76 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+7	76	64	#line 76 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+7	77	64	#line 77 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+7	77	64	#line 77 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+7	78	64		set __Wait_7qG2_ms_7qG2_000_inline_isWall, 600
+7	77	67	#line 77 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+7	7921	67	#line 7921 "NXCDefs.h"
+7	7922	67		wait 600
+7	7921	69	#line 7921 "NXCDefs.h"
+7	78	69	#line 78 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+7	80	69	#line 80 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+7	81	69	#pragma macro 7
+7	81	69		setout __OUT_AC, 2, __constVal0, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+7	7647	92	#line 7647 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+7	80	92	#line 80 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+7	80	92	#line 80 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+7	81	92	#pragma macro 26
+7	81	92		acquire __RLSBmutex0
+7	81	93		mov __RLSReadBuf0, __RLSBbufLSWrite1
+7	81	95		set __RLSBytesCount0, 1
+7	81	98		wait 15
+7	81	100		subcall __ReadLSBytes0, ____ReadLSBytes0_return
+7	81	102		index __D0isWall, __RLSReadBuf0, 65535
+7	81	106		release __RLSBmutex0
+7	7650	107	#line 7650 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+7	80	107	#line 80 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+7	81	107		mov __signed_stack_001isWall, __D0isWall
+7	80	109	#line 80 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+7	81	109		set __D0isWall, 30
+7	80	112	#line 80 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+7	81	112		cmp 1, __zfisWall, __signed_stack_001isWall, __D0isWall
+7	80	116	#line 80 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+7	81	116		mov __D0isWall, __zfisWall
+7	81	118	#line 81 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+7	82	118		brtst 4, __NXC_Label_727, __zfisWall
+7	82	121	#line 82 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+7	83	121		set __isWall_7qG2_left_empty_7qG2_000, 1
+7	82	124	#line 82 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+7	82	124	#line 82 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+7	82	124	#line 82 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+7	83	124		set __Wait_7qG2_ms_7qG2_000_inline_isWall, 500
+7	82	127	#line 82 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+7	7921	127	#line 7921 "NXCDefs.h"
+7	7922	127		wait 500
+7	7921	129	#line 7921 "NXCDefs.h"
+7	83	129	#line 83 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+7	83	129	#line 83 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+7	84	129	#pragma macro 26
+7	84	129		acquire __RLSBmutex0
+7	84	130		mov __RLSReadBuf0, __RLSBbufLSWrite1
+7	84	132		set __RLSBytesCount0, 1
+7	84	135		wait 15
+7	84	137		subcall __ReadLSBytes0, ____ReadLSBytes0_return
+7	84	139		index __D0isWall, __RLSReadBuf0, 65535
+7	84	143		release __RLSBmutex0
+7	7681	144	#line 7681 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+7	83	144	#line 83 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+7	84	144		mov __isWall_7qG2_sensor_left_7qG2_000, __D0isWall
+7	83	146	#line 83 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+7	83	146	#line 83 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+7	87	146	#line 87 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+7	87	146	#line 87 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+7	88	146		set __D0isWall, 30
+7	87	149	#line 87 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+7	88	149	#pragma macro 7
+7	88	149		setout __constVal2, 2, __D0isWall, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+7	7695	172	#line 7695 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+7	87	172	#line 87 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+7	87	172	#line 87 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+7	88	172		set __D0isWall, -30
+7	87	175	#line 87 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+7	88	175	#pragma macro 7
+7	88	175		setout __constVal0, 2, __D0isWall, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+7	7702	198	#line 7702 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+7	87	198	#line 87 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+7	87	198	#line 87 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+7	88	198	#line 88 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+7	88	198	#line 88 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+7	89	198		set __Wait_7qG2_ms_7qG2_000_inline_isWall, 1200
+7	88	201	#line 88 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+7	7921	201	#line 7921 "NXCDefs.h"
+7	7922	201		wait 1200
+7	7921	203	#line 7921 "NXCDefs.h"
+7	89	203	#line 89 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+7	90	203	#line 90 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+7	91	203	#pragma macro 7
+7	91	203		setout __OUT_AC, 2, __constVal0, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+7	7717	226	#line 7717 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+7	90	226	#line 90 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+7	90	226	#line 90 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+7	91	226	#pragma macro 26
+7	91	226		acquire __RLSBmutex0
+7	91	227		mov __RLSReadBuf0, __RLSBbufLSWrite1
+7	91	229		set __RLSBytesCount0, 1
+7	91	232		wait 15
+7	91	234		subcall __ReadLSBytes0, ____ReadLSBytes0_return
+7	91	236		index __D0isWall, __RLSReadBuf0, 65535
+7	91	240		release __RLSBmutex0
+7	7720	241	#line 7720 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+7	90	241	#line 90 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+7	91	241		mov __signed_stack_001isWall, __D0isWall
+7	90	243	#line 90 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+7	91	243		set __D0isWall, 30
+7	90	246	#line 90 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+7	91	246		cmp 1, __zfisWall, __signed_stack_001isWall, __D0isWall
+7	90	250	#line 90 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+7	91	250		mov __D0isWall, __zfisWall
+7	91	252	#line 91 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+7	92	252		brtst 4, __NXC_Label_744, __zfisWall
+7	92	255	#line 92 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+7	93	255		set __isWall_7qG2_right_empty_7qG2_000, 1
+7	92	258	#line 92 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+7	92	258	#line 92 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+7	92	258	#line 92 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+7	93	258		set __Wait_7qG2_ms_7qG2_000_inline_isWall, 500
+7	92	261	#line 92 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+7	7921	261	#line 7921 "NXCDefs.h"
+7	7922	261		wait 500
+7	7921	263	#line 7921 "NXCDefs.h"
+7	93	263	#line 93 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+7	93	263	#line 93 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+7	94	263	#pragma macro 26
+7	94	263		acquire __RLSBmutex0
+7	94	264		mov __RLSReadBuf0, __RLSBbufLSWrite1
+7	94	266		set __RLSBytesCount0, 1
+7	94	269		wait 15
+7	94	271		subcall __ReadLSBytes0, ____ReadLSBytes0_return
+7	94	273		index __D0isWall, __RLSReadBuf0, 65535
+7	94	277		release __RLSBmutex0
+7	7751	278	#line 7751 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+7	94	278	#line 94 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+7	95	278		mov __isWall_7qG2_sensor_right_7qG2_000, __D0isWall
+7	94	280	#line 94 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+7	96	280	#line 96 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+7	96	280	#line 96 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+7	97	280		mov __signed_stack_001isWall, __isWall_7qG2_left_empty_7qG2_000
+7	96	282	#line 96 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+7	96	282	#line 96 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+7	97	282		set __D0isWall, 0
+7	96	285	#line 96 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+7	97	285		cmp 4, __zfisWall, __signed_stack_001isWall, __D0isWall
+7	96	289	#line 96 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+7	97	289		mov __D0isWall, __zfisWall
+7	96	291	#line 96 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+7	97	291		brtst 4, __NXC_Label_752, __zfisWall
+7	96	294	#line 96 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+7	97	294		mov __signed_stack_001isWall, __D0isWall
+7	96	296	#line 96 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+7	97	296		mov __signed_stack_002isWall, __isWall_7qG2_right_empty_7qG2_000
+7	96	298	#line 96 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+7	96	298	#line 96 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+7	97	298		set __D0isWall, 0
+7	96	301	#line 96 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+7	97	301		cmp 4, __zfisWall, __signed_stack_002isWall, __D0isWall
+7	96	305	#line 96 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+7	96	305	#line 96 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+7	97	305		and __D0isWall, __signed_stack_001isWall, __zfisWall
+7	97	309	#line 97 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+7	98	309		tst 5, __zfisWall, __D0isWall
+7	97	312	#line 97 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+7	98	312		brtst 4, __NXC_Label_753, __zfisWall
+7	98	315	#line 98 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+7	99	315		set __DU0isWall, 1
+7	98	318	#line 98 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+7	98	318	#line 98 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+7	99	318		subret __isWall_return
+7	98	320	#line 98 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+7	99	320	#line 99 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+7	100	320		jmp __NXC_Label_756
+7	99	322	#line 99 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+7	100	322		set __DU0isWall, 0
+7	99	325	#line 99 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+7	99	325	#line 99 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+7	100	325		subret __isWall_return
+7	99	327	#line 99 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+7	103	327	#line 103 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+7	103	327	#line 103 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+7	104	327		subret __isWall_return
+8	214	0	#line 214 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+8	215	0		subret ____initialize_global_data_return
 #CLUMPS
 Clump	Name	Offset	File
-0	main	0	C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc
-1	__ResetSensorSubroutine	1901	NXTDefs.h
-2	__ReadLSBytes0	1914	NXTDefs.h
-3	init_sensors	2000	C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\.\includes.nxc
-4	acquire	2067	C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc
-5	__initialize_global_data	2239	C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\engr102-robot\Lab Code\Harrison.nxc
+0	main	0	C:\Users\Ben\AppData\Local\Temp\temp.nxc
+1	__ResetSensorSubroutine	1118	NXTDefs.h
+2	__ReadLSBytes0	1131	NXTDefs.h
+3	init_sensors	1215	C:\ENGR102\Lab Code\includes.nxc
+4	search	1287	C:\Users\Ben\AppData\Local\Temp\temp.nxc
+5	acquire	1492	C:\Users\Ben\AppData\Local\Temp\temp.nxc
+6	isEmpty	1661	C:\Users\Ben\AppData\Local\Temp\temp.nxc
+7	isWall	1950	C:\Users\Ben\AppData\Local\Temp\temp.nxc
+8	__initialize_global_data	2279	C:\Users\Ben\AppData\Local\Temp\temp.nxc

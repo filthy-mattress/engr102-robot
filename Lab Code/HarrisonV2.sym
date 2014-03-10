@@ -1,0 +1,616 @@
+#SYMBOLS
+Index	Identifier	Type	Flag	Data	Size	RefCount
+0	__RLSBmutex0	9	0	0	4	8
+1	__D0acquire	6	1	4	4	4
+2	__CLSRMutex0	9	0	8	4	2
+3	__CLSCSMutex0	9	0	12	4	2
+4	__CLSWMutex0	9	0	16	4	2
+5	__Wait_7qG2_ms_7qG2_000_inline_acquire	5	1	20	4	6
+6	__Wait_7qG2_ms_7qG2_000_inline_main	5	1	24	4	12
+7	__signed_stack_002main	6	1	28	4	6
+8	__D0main	6	1	32	4	62
+9	__signed_stack_001main	6	1	36	4	16
+10	__main_7qG2_SPIN_MODE_7qG2_001	4	1	40	2	3
+11	__main_7qG2_MAIN_LOOP_7qG2_000	4	1	42	2	2
+12	__main_7qG2_left_empty_7qG2_001	4	1	44	2	3
+13	__main_7qG2_right_empty_7qG2_001	4	1	46	2	3
+14	__SetSensorType_7qG2_port_7qG2_000_inline_SetSensorHTMagnet_inline_init_sensors	1	1	48	1	2
+15	__SetSensorType_7qG2_type_7qG2_000_inline_SetSensorHTMagnet_inline_init_sensors	1	1	49	1	2
+16	__SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorHTMagnet_inline_init_sensors	1	1	50	1	2
+17	__SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorHTMagnet_inline_init_sensors	1	1	51	1	2
+18	__SetSensorHTMagnet_7qG2_port_7qG2_000_inline_init_sensors	1	1	52	1	3
+19	__SetSensorType_7qG2_port_7qG2_000_inline_init_sensors	1	1	53	1	4
+20	__init_sensors_return	1	1	54	1	3
+21	__SetSensorColorFull_7qG2_port_7qG2_000_inline_init_sensors	1	1	55	1	4
+22	__SetSensorType_7qG2_type_7qG2_000_inline_init_sensors	1	1	56	1	4
+23	____initialize_global_data_return	1	1	57	1	3
+24	__OnRev_Tmp	2	1	58	1	2
+25	__constVal30	2	0	59	1	1
+26	__constValNeg30	2	0	60	1	4
+27	__constVal63	2	0	61	1	19
+28	__SetSensorMode_7qG2_mode_7qG2_000_inline_init_sensors	1	1	62	1	2
+29	__SetSensorMode_7qG2_port_7qG2_000_inline_init_sensors	1	1	63	1	2
+30	__constVal96	2	0	64	1	19
+31	__acquire_return	1	1	65	1	3
+32	__RLSBytesCount0	1	1	66	1	10
+33	__RLSBResult0	2	1	67	1	7
+34	__constVal15	2	0	68	1	9
+35	__RLSBIterations0	1	1	69	1	4
+36	__ResetSensorTmp	1	1	70	1	2
+37	____ResetSensorSubroutine_return	1	1	71	1	4
+38	__ResetSensorPort	1	1	72	1	4
+39	____ReadLSBytes0_return	1	1	73	1	6
+40	__zfmain	1	1	74	1	33
+41	__constVal0	2	1	75	1	70
+42	__constVal32	2	0	76	1	57
+43	__constVal1	2	0	77	1	6
+44	__constVal3	2	0	78	1	19
+45	__constVal13	2	0	79	1	1
+46	__constVal2	2	0	80	1	5
+47	__PFTmp	1	1	81	1	1
+48	__CLSRArgs0	8	0	4	12	5
+49	__CLSRArgs0.Result	2	1	84	1	5
+50	__CLSRArgs0.Port	1	1	85	1	5
+51	__CLSRArgs0.Buffer	7	0	86	4	5
+52	__CLSRArgs0.Buffer.Buffer_type	1	0	0	1	0
+53	__CLSRArgs0.BufferLen	1	1	88	1	5
+54	__CLSCSArgs0	8	0	3	4	4
+55	__CLSCSArgs0.Result	2	1	92	1	4
+56	__CLSCSArgs0.Port	1	1	93	1	4
+57	__CLSCSArgs0.BytesReady	1	1	94	1	4
+58	__CLSWArgs0	8	0	4	12	5
+59	__CLSWArgs0.Result	2	1	96	1	5
+60	__CLSWArgs0.Port	1	1	97	1	5
+61	__CLSWArgs0.Buffer	7	0	98	4	5
+62	__CLSWArgs0.Buffer.Buffer_type	1	0	0	1	0
+63	__CLSWArgs0.ReturnLen	1	1	100	1	5
+64	__OUT_AC	7	0	102	4	7
+65	__OUT_AC.__OUT_AC_type	1	0	0	1	0
+66	__RLSLastGoodRead0	7	0	104	4	2
+67	__RLSLastGoodRead0.__RLSLastGoodRead0_type	1	0	0	1	0
+68	__RLSBbufLSWrite1	7	0	106	4	4
+69	__RLSBbufLSWrite1.__RLSBbufLSWrite1_type	1	0	0	1	0
+70	__RLSReadBuf0	7	0	108	4	14
+71	__RLSReadBuf0.__RLSReadBuf0_type	1	0	0	1	0
+#SOURCES
+Clump	Line	PC	Source
+0	21	0	#line 21 "C:\ENGR102\Lab Code\HarrisonV2.nxc"
+0	22	0		subcall __initialize_global_data, ____initialize_global_data_return
+0	21	2	#line 21 "C:\ENGR102\Lab Code\HarrisonV2.nxc"
+0	22	2	#line 22 "C:\ENGR102\Lab Code\HarrisonV2.nxc"
+0	23	2		subcall init_sensors, __init_sensors_return
+0	22	4	#line 22 "C:\ENGR102\Lab Code\HarrisonV2.nxc"
+0	22	4	#line 22 "C:\ENGR102\Lab Code\HarrisonV2.nxc"
+0	22	4	#line 22 "C:\ENGR102\Lab Code\HarrisonV2.nxc"
+0	27	4	#line 27 "C:\ENGR102\Lab Code\HarrisonV2.nxc"
+0	28	4		set __main_7qG2_MAIN_LOOP_7qG2_000, 1
+0	27	7	#line 27 "C:\ENGR102\Lab Code\HarrisonV2.nxc"
+0	28	7	#line 28 "C:\ENGR102\Lab Code\HarrisonV2.nxc"
+0	29	7		set __D0main, 1
+0	28	10	#line 28 "C:\ENGR102\Lab Code\HarrisonV2.nxc"
+0	29	10		tst 5, __zfmain, __D0main
+0	28	13	#line 28 "C:\ENGR102\Lab Code\HarrisonV2.nxc"
+0	29	13		mov __D0main, __zfmain
+0	28	15	#line 28 "C:\ENGR102\Lab Code\HarrisonV2.nxc"
+0	29	15		brtst 4, __NXC_Label_534, __zfmain
+0	28	18	#line 28 "C:\ENGR102\Lab Code\HarrisonV2.nxc"
+0	29	18		mov __signed_stack_001main, __D0main
+0	28	20	#line 28 "C:\ENGR102\Lab Code\HarrisonV2.nxc"
+0	29	20		mov __signed_stack_002main, __main_7qG2_MAIN_LOOP_7qG2_000
+0	28	22	#line 28 "C:\ENGR102\Lab Code\HarrisonV2.nxc"
+0	28	22	#line 28 "C:\ENGR102\Lab Code\HarrisonV2.nxc"
+0	29	22		set __D0main, 1
+0	28	25	#line 28 "C:\ENGR102\Lab Code\HarrisonV2.nxc"
+0	29	25		cmp 4, __zfmain, __signed_stack_002main, __D0main
+0	28	29	#line 28 "C:\ENGR102\Lab Code\HarrisonV2.nxc"
+0	28	29	#line 28 "C:\ENGR102\Lab Code\HarrisonV2.nxc"
+0	29	29		and __D0main, __signed_stack_001main, __zfmain
+0	31	33	#line 31 "C:\ENGR102\Lab Code\HarrisonV2.nxc"
+0	32	33		tst 5, __zfmain, __D0main
+0	31	36	#line 31 "C:\ENGR102\Lab Code\HarrisonV2.nxc"
+0	32	36		brtst 4, __NXC_Label_532, __zfmain
+0	32	39	#line 32 "C:\ENGR102\Lab Code\HarrisonV2.nxc"
+0	33	39		set __main_7qG2_SPIN_MODE_7qG2_001, 1
+0	32	42	#line 32 "C:\ENGR102\Lab Code\HarrisonV2.nxc"
+0	32	42	#line 32 "C:\ENGR102\Lab Code\HarrisonV2.nxc"
+0	32	42	#line 32 "C:\ENGR102\Lab Code\HarrisonV2.nxc"
+0	32	42	#line 32 "C:\ENGR102\Lab Code\HarrisonV2.nxc"
+0	32	42	#line 32 "C:\ENGR102\Lab Code\HarrisonV2.nxc"
+0	33	42	#line 33 "C:\ENGR102\Lab Code\HarrisonV2.nxc"
+0	34	42		mov __D0main, __constValNeg30
+0	33	44	#line 33 "C:\ENGR102\Lab Code\HarrisonV2.nxc"
+0	34	44	#pragma macro 7
+0	34	44		setout __constVal2, 2, __D0main, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+0	4222	67	#line 4222 "C:\ENGR102\Lab Code\HarrisonV2.nxc"
+0	33	67	#line 33 "C:\ENGR102\Lab Code\HarrisonV2.nxc"
+0	33	67	#line 33 "C:\ENGR102\Lab Code\HarrisonV2.nxc"
+0	34	67		set __D0main, 30
+0	33	70	#line 33 "C:\ENGR102\Lab Code\HarrisonV2.nxc"
+0	34	70	#pragma macro 7
+0	34	70		setout __constVal0, 2, __D0main, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+0	4229	93	#line 4229 "C:\ENGR102\Lab Code\HarrisonV2.nxc"
+0	33	93	#line 33 "C:\ENGR102\Lab Code\HarrisonV2.nxc"
+0	33	93	#line 33 "C:\ENGR102\Lab Code\HarrisonV2.nxc"
+0	35	93	#line 35 "C:\ENGR102\Lab Code\HarrisonV2.nxc"
+0	35	93	#line 35 "C:\ENGR102\Lab Code\HarrisonV2.nxc"
+0	36	93		set __D0main, 1
+0	35	96	#line 35 "C:\ENGR102\Lab Code\HarrisonV2.nxc"
+0	36	96		tst 5, __zfmain, __D0main
+0	35	99	#line 35 "C:\ENGR102\Lab Code\HarrisonV2.nxc"
+0	36	99		mov __D0main, __zfmain
+0	35	101	#line 35 "C:\ENGR102\Lab Code\HarrisonV2.nxc"
+0	36	101		brtst 4, __NXC_Label_548, __zfmain
+0	35	104	#line 35 "C:\ENGR102\Lab Code\HarrisonV2.nxc"
+0	36	104		mov __signed_stack_001main, __D0main
+0	35	106	#line 35 "C:\ENGR102\Lab Code\HarrisonV2.nxc"
+0	36	106		mov __signed_stack_002main, __main_7qG2_SPIN_MODE_7qG2_001
+0	35	108	#line 35 "C:\ENGR102\Lab Code\HarrisonV2.nxc"
+0	35	108	#line 35 "C:\ENGR102\Lab Code\HarrisonV2.nxc"
+0	36	108		set __D0main, 1
+0	35	111	#line 35 "C:\ENGR102\Lab Code\HarrisonV2.nxc"
+0	36	111		cmp 4, __zfmain, __signed_stack_002main, __D0main
+0	35	115	#line 35 "C:\ENGR102\Lab Code\HarrisonV2.nxc"
+0	35	115	#line 35 "C:\ENGR102\Lab Code\HarrisonV2.nxc"
+0	36	115		and __D0main, __signed_stack_001main, __zfmain
+0	36	119	#line 36 "C:\ENGR102\Lab Code\HarrisonV2.nxc"
+0	37	119		tst 5, __zfmain, __D0main
+0	36	122	#line 36 "C:\ENGR102\Lab Code\HarrisonV2.nxc"
+0	37	122		brtst 4, __NXC_Label_546, __zfmain
+0	36	125	#line 36 "C:\ENGR102\Lab Code\HarrisonV2.nxc"
+0	37	125	#pragma macro 26
+0	37	125		acquire __RLSBmutex0
+0	37	126		mov __RLSReadBuf0, __RLSBbufLSWrite1
+0	37	128		set __RLSBytesCount0, 1
+0	37	131		wait2 NA, __constVal15
+0	37	134		subcall __ReadLSBytes0, ____ReadLSBytes0_return
+0	37	136		index __D0main, __RLSReadBuf0, 65535
+0	37	140		release __RLSBmutex0
+0	4263	141	#line 4263 "C:\ENGR102\Lab Code\HarrisonV2.nxc"
+0	36	141	#line 36 "C:\ENGR102\Lab Code\HarrisonV2.nxc"
+0	37	141		mov __signed_stack_001main, __D0main
+0	36	143	#line 36 "C:\ENGR102\Lab Code\HarrisonV2.nxc"
+0	37	143		set __D0main, 30
+0	36	146	#line 36 "C:\ENGR102\Lab Code\HarrisonV2.nxc"
+0	37	146		cmp 0, __zfmain, __signed_stack_001main, __D0main
+0	36	150	#line 36 "C:\ENGR102\Lab Code\HarrisonV2.nxc"
+0	37	150		mov __D0main, __zfmain
+0	37	152	#line 37 "C:\ENGR102\Lab Code\HarrisonV2.nxc"
+0	38	152		brtst 4, __NXC_Label_551, __zfmain
+0	37	155	#line 37 "C:\ENGR102\Lab Code\HarrisonV2.nxc"
+0	38	155		set __Wait_7qG2_ms_7qG2_000_inline_main, 200
+0	37	158	#line 37 "C:\ENGR102\Lab Code\HarrisonV2.nxc"
+0	7921	158	#line 7921 "NXCDefs.h"
+0	7922	158		wait2 NA, __Wait_7qG2_ms_7qG2_000_inline_main
+0	7921	161	#line 7921 "NXCDefs.h"
+0	38	161	#line 38 "C:\ENGR102\Lab Code\HarrisonV2.nxc"
+0	38	161	#line 38 "C:\ENGR102\Lab Code\HarrisonV2.nxc"
+0	38	161	#line 38 "C:\ENGR102\Lab Code\HarrisonV2.nxc"
+0	39	161	#line 39 "C:\ENGR102\Lab Code\HarrisonV2.nxc"
+0	39	161	#line 39 "C:\ENGR102\Lab Code\HarrisonV2.nxc"
+0	39	161	#line 39 "C:\ENGR102\Lab Code\HarrisonV2.nxc"
+0	39	161	#line 39 "C:\ENGR102\Lab Code\HarrisonV2.nxc"
+0	39	161	#line 39 "C:\ENGR102\Lab Code\HarrisonV2.nxc"
+0	41	161	#line 41 "C:\ENGR102\Lab Code\HarrisonV2.nxc"
+0	42	161	#pragma macro 7
+0	42	161		setout __OUT_AC, 2, __constVal0, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+0	4305	184	#line 4305 "C:\ENGR102\Lab Code\HarrisonV2.nxc"
+0	41	184	#line 41 "C:\ENGR102\Lab Code\HarrisonV2.nxc"
+0	41	184	#line 41 "C:\ENGR102\Lab Code\HarrisonV2.nxc"
+0	42	184	#pragma macro 26
+0	42	184		acquire __RLSBmutex0
+0	42	185		mov __RLSReadBuf0, __RLSBbufLSWrite1
+0	42	187		set __RLSBytesCount0, 1
+0	42	190		wait2 NA, __constVal15
+0	42	193		subcall __ReadLSBytes0, ____ReadLSBytes0_return
+0	42	195		index __D0main, __RLSReadBuf0, 65535
+0	42	199		release __RLSBmutex0
+0	4309	200	#line 4309 "C:\ENGR102\Lab Code\HarrisonV2.nxc"
+0	41	200	#line 41 "C:\ENGR102\Lab Code\HarrisonV2.nxc"
+0	42	200		mov __signed_stack_001main, __D0main
+0	41	202	#line 41 "C:\ENGR102\Lab Code\HarrisonV2.nxc"
+0	42	202		set __D0main, 15
+0	41	205	#line 41 "C:\ENGR102\Lab Code\HarrisonV2.nxc"
+0	42	205		cmp 1, __zfmain, __signed_stack_001main, __D0main
+0	41	209	#line 41 "C:\ENGR102\Lab Code\HarrisonV2.nxc"
+0	42	209		mov __D0main, __zfmain
+0	42	211	#line 42 "C:\ENGR102\Lab Code\HarrisonV2.nxc"
+0	43	211		brtst 4, __NXC_Label_557, __zfmain
+0	42	214	#line 42 "C:\ENGR102\Lab Code\HarrisonV2.nxc"
+0	43	214		set __D0main, 75
+0	43	217	#line 43 "C:\ENGR102\Lab Code\HarrisonV2.nxc"
+0	44	217	#pragma macro 7
+0	44	217		setout __OUT_AC, 2, __D0main, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+0	4327	240	#line 4327 "C:\ENGR102\Lab Code\HarrisonV2.nxc"
+0	43	240	#line 43 "C:\ENGR102\Lab Code\HarrisonV2.nxc"
+0	45	240	#line 45 "C:\ENGR102\Lab Code\HarrisonV2.nxc"
+0	46	240		jmp __NXC_Label_556
+0	45	242	#line 45 "C:\ENGR102\Lab Code\HarrisonV2.nxc"
+0	46	242	#line 46 "C:\ENGR102\Lab Code\HarrisonV2.nxc"
+0	47	242		set __main_7qG2_SPIN_MODE_7qG2_001, 0
+0	46	245	#line 46 "C:\ENGR102\Lab Code\HarrisonV2.nxc"
+0	46	245	#line 46 "C:\ENGR102\Lab Code\HarrisonV2.nxc"
+0	49	245	#line 49 "C:\ENGR102\Lab Code\HarrisonV2.nxc"
+0	49	245	#line 49 "C:\ENGR102\Lab Code\HarrisonV2.nxc"
+0	50	245		jmp __NXC_Label_545
+0	49	247	#line 49 "C:\ENGR102\Lab Code\HarrisonV2.nxc"
+0	50	247	#line 50 "C:\ENGR102\Lab Code\HarrisonV2.nxc"
+0	51	247		set __main_7qG2_left_empty_7qG2_001, 0
+0	50	250	#line 50 "C:\ENGR102\Lab Code\HarrisonV2.nxc"
+0	53	250	#line 53 "C:\ENGR102\Lab Code\HarrisonV2.nxc"
+0	54	250		set __main_7qG2_right_empty_7qG2_001, 0
+0	53	253	#line 53 "C:\ENGR102\Lab Code\HarrisonV2.nxc"
+0	53	253	#line 53 "C:\ENGR102\Lab Code\HarrisonV2.nxc"
+0	54	253		set __D0main, 30
+0	53	256	#line 53 "C:\ENGR102\Lab Code\HarrisonV2.nxc"
+0	54	256	#pragma macro 7
+0	54	256		setout __constVal2, 2, __D0main, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+0	4371	279	#line 4371 "C:\ENGR102\Lab Code\HarrisonV2.nxc"
+0	53	279	#line 53 "C:\ENGR102\Lab Code\HarrisonV2.nxc"
+0	53	279	#line 53 "C:\ENGR102\Lab Code\HarrisonV2.nxc"
+0	54	279		mov __D0main, __constValNeg30
+0	53	281	#line 53 "C:\ENGR102\Lab Code\HarrisonV2.nxc"
+0	54	281	#pragma macro 7
+0	54	281		setout __constVal0, 2, __D0main, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+0	4378	304	#line 4378 "C:\ENGR102\Lab Code\HarrisonV2.nxc"
+0	53	304	#line 53 "C:\ENGR102\Lab Code\HarrisonV2.nxc"
+0	53	304	#line 53 "C:\ENGR102\Lab Code\HarrisonV2.nxc"
+0	54	304	#line 54 "C:\ENGR102\Lab Code\HarrisonV2.nxc"
+0	54	304	#line 54 "C:\ENGR102\Lab Code\HarrisonV2.nxc"
+0	55	304		set __Wait_7qG2_ms_7qG2_000_inline_main, 600
+0	54	307	#line 54 "C:\ENGR102\Lab Code\HarrisonV2.nxc"
+0	7921	307	#line 7921 "NXCDefs.h"
+0	7922	307		wait2 NA, __Wait_7qG2_ms_7qG2_000_inline_main
+0	7921	310	#line 7921 "NXCDefs.h"
+0	55	310	#line 55 "C:\ENGR102\Lab Code\HarrisonV2.nxc"
+0	56	310	#line 56 "C:\ENGR102\Lab Code\HarrisonV2.nxc"
+0	57	310	#pragma macro 7
+0	57	310		setout __OUT_AC, 2, __constVal0, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+0	4393	333	#line 4393 "C:\ENGR102\Lab Code\HarrisonV2.nxc"
+0	56	333	#line 56 "C:\ENGR102\Lab Code\HarrisonV2.nxc"
+0	56	333	#line 56 "C:\ENGR102\Lab Code\HarrisonV2.nxc"
+0	57	333		set __Wait_7qG2_ms_7qG2_000_inline_main, 500
+0	56	336	#line 56 "C:\ENGR102\Lab Code\HarrisonV2.nxc"
+0	7921	336	#line 7921 "NXCDefs.h"
+0	7922	336		wait2 NA, __Wait_7qG2_ms_7qG2_000_inline_main
+0	7921	339	#line 7921 "NXCDefs.h"
+0	57	339	#line 57 "C:\ENGR102\Lab Code\HarrisonV2.nxc"
+0	57	339	#line 57 "C:\ENGR102\Lab Code\HarrisonV2.nxc"
+0	58	339	#pragma macro 26
+0	58	339		acquire __RLSBmutex0
+0	58	340		mov __RLSReadBuf0, __RLSBbufLSWrite1
+0	58	342		set __RLSBytesCount0, 1
+0	58	345		wait2 NA, __constVal15
+0	58	348		subcall __ReadLSBytes0, ____ReadLSBytes0_return
+0	58	350		index __D0main, __RLSReadBuf0, 65535
+0	58	354		release __RLSBmutex0
+0	4406	355	#line 4406 "C:\ENGR102\Lab Code\HarrisonV2.nxc"
+0	57	355	#line 57 "C:\ENGR102\Lab Code\HarrisonV2.nxc"
+0	58	355		mov __signed_stack_001main, __D0main
+0	57	357	#line 57 "C:\ENGR102\Lab Code\HarrisonV2.nxc"
+0	58	357		set __D0main, 30
+0	57	360	#line 57 "C:\ENGR102\Lab Code\HarrisonV2.nxc"
+0	58	360		cmp 1, __zfmain, __signed_stack_001main, __D0main
+0	57	364	#line 57 "C:\ENGR102\Lab Code\HarrisonV2.nxc"
+0	58	364		mov __D0main, __zfmain
+0	58	366	#line 58 "C:\ENGR102\Lab Code\HarrisonV2.nxc"
+0	59	366		brtst 4, __NXC_Label_580, __zfmain
+0	59	369	#line 59 "C:\ENGR102\Lab Code\HarrisonV2.nxc"
+0	60	369		set __main_7qG2_right_empty_7qG2_001, 1
+0	59	372	#line 59 "C:\ENGR102\Lab Code\HarrisonV2.nxc"
+0	59	372	#line 59 "C:\ENGR102\Lab Code\HarrisonV2.nxc"
+0	62	372	#line 62 "C:\ENGR102\Lab Code\HarrisonV2.nxc"
+0	62	372	#line 62 "C:\ENGR102\Lab Code\HarrisonV2.nxc"
+0	63	372		mov __D0main, __constValNeg30
+0	62	374	#line 62 "C:\ENGR102\Lab Code\HarrisonV2.nxc"
+0	63	374	#pragma macro 7
+0	63	374		setout __constVal2, 2, __D0main, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+0	4433	397	#line 4433 "C:\ENGR102\Lab Code\HarrisonV2.nxc"
+0	62	397	#line 62 "C:\ENGR102\Lab Code\HarrisonV2.nxc"
+0	62	397	#line 62 "C:\ENGR102\Lab Code\HarrisonV2.nxc"
+0	63	397		set __D0main, 30
+0	62	400	#line 62 "C:\ENGR102\Lab Code\HarrisonV2.nxc"
+0	63	400	#pragma macro 7
+0	63	400		setout __constVal0, 2, __D0main, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+0	4440	423	#line 4440 "C:\ENGR102\Lab Code\HarrisonV2.nxc"
+0	62	423	#line 62 "C:\ENGR102\Lab Code\HarrisonV2.nxc"
+0	62	423	#line 62 "C:\ENGR102\Lab Code\HarrisonV2.nxc"
+0	63	423	#line 63 "C:\ENGR102\Lab Code\HarrisonV2.nxc"
+0	63	423	#line 63 "C:\ENGR102\Lab Code\HarrisonV2.nxc"
+0	64	423		set __Wait_7qG2_ms_7qG2_000_inline_main, 1000
+0	63	426	#line 63 "C:\ENGR102\Lab Code\HarrisonV2.nxc"
+0	7921	426	#line 7921 "NXCDefs.h"
+0	7922	426		wait2 NA, __Wait_7qG2_ms_7qG2_000_inline_main
+0	7921	429	#line 7921 "NXCDefs.h"
+0	64	429	#line 64 "C:\ENGR102\Lab Code\HarrisonV2.nxc"
+0	65	429	#line 65 "C:\ENGR102\Lab Code\HarrisonV2.nxc"
+0	66	429	#pragma macro 7
+0	66	429		setout __OUT_AC, 2, __constVal0, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+0	4455	452	#line 4455 "C:\ENGR102\Lab Code\HarrisonV2.nxc"
+0	65	452	#line 65 "C:\ENGR102\Lab Code\HarrisonV2.nxc"
+0	65	452	#line 65 "C:\ENGR102\Lab Code\HarrisonV2.nxc"
+0	66	452		set __Wait_7qG2_ms_7qG2_000_inline_main, 500
+0	65	455	#line 65 "C:\ENGR102\Lab Code\HarrisonV2.nxc"
+0	7921	455	#line 7921 "NXCDefs.h"
+0	7922	455		wait2 NA, __Wait_7qG2_ms_7qG2_000_inline_main
+0	7921	458	#line 7921 "NXCDefs.h"
+0	66	458	#line 66 "C:\ENGR102\Lab Code\HarrisonV2.nxc"
+0	66	458	#line 66 "C:\ENGR102\Lab Code\HarrisonV2.nxc"
+0	67	458	#pragma macro 26
+0	67	458		acquire __RLSBmutex0
+0	67	459		mov __RLSReadBuf0, __RLSBbufLSWrite1
+0	67	461		set __RLSBytesCount0, 1
+0	67	464		wait2 NA, __constVal15
+0	67	467		subcall __ReadLSBytes0, ____ReadLSBytes0_return
+0	67	469		index __D0main, __RLSReadBuf0, 65535
+0	67	473		release __RLSBmutex0
+0	4468	474	#line 4468 "C:\ENGR102\Lab Code\HarrisonV2.nxc"
+0	66	474	#line 66 "C:\ENGR102\Lab Code\HarrisonV2.nxc"
+0	67	474		mov __signed_stack_001main, __D0main
+0	66	476	#line 66 "C:\ENGR102\Lab Code\HarrisonV2.nxc"
+0	67	476		set __D0main, 30
+0	66	479	#line 66 "C:\ENGR102\Lab Code\HarrisonV2.nxc"
+0	67	479		cmp 1, __zfmain, __signed_stack_001main, __D0main
+0	66	483	#line 66 "C:\ENGR102\Lab Code\HarrisonV2.nxc"
+0	67	483		mov __D0main, __zfmain
+0	67	485	#line 67 "C:\ENGR102\Lab Code\HarrisonV2.nxc"
+0	68	485		brtst 4, __NXC_Label_595, __zfmain
+0	68	488	#line 68 "C:\ENGR102\Lab Code\HarrisonV2.nxc"
+0	69	488		set __main_7qG2_left_empty_7qG2_001, 1
+0	68	491	#line 68 "C:\ENGR102\Lab Code\HarrisonV2.nxc"
+0	68	491	#line 68 "C:\ENGR102\Lab Code\HarrisonV2.nxc"
+0	71	491	#line 71 "C:\ENGR102\Lab Code\HarrisonV2.nxc"
+0	71	491	#line 71 "C:\ENGR102\Lab Code\HarrisonV2.nxc"
+0	72	491		mov __signed_stack_001main, __main_7qG2_left_empty_7qG2_001
+0	71	493	#line 71 "C:\ENGR102\Lab Code\HarrisonV2.nxc"
+0	71	493	#line 71 "C:\ENGR102\Lab Code\HarrisonV2.nxc"
+0	72	493		set __D0main, 1
+0	71	496	#line 71 "C:\ENGR102\Lab Code\HarrisonV2.nxc"
+0	72	496		cmp 4, __zfmain, __signed_stack_001main, __D0main
+0	71	500	#line 71 "C:\ENGR102\Lab Code\HarrisonV2.nxc"
+0	72	500		mov __D0main, __zfmain
+0	71	502	#line 71 "C:\ENGR102\Lab Code\HarrisonV2.nxc"
+0	72	502		brtst 4, __NXC_Label_599, __zfmain
+0	71	505	#line 71 "C:\ENGR102\Lab Code\HarrisonV2.nxc"
+0	72	505		mov __signed_stack_001main, __D0main
+0	71	507	#line 71 "C:\ENGR102\Lab Code\HarrisonV2.nxc"
+0	72	507		mov __signed_stack_002main, __main_7qG2_right_empty_7qG2_001
+0	71	509	#line 71 "C:\ENGR102\Lab Code\HarrisonV2.nxc"
+0	71	509	#line 71 "C:\ENGR102\Lab Code\HarrisonV2.nxc"
+0	72	509		set __D0main, 1
+0	71	512	#line 71 "C:\ENGR102\Lab Code\HarrisonV2.nxc"
+0	72	512		cmp 4, __zfmain, __signed_stack_002main, __D0main
+0	71	516	#line 71 "C:\ENGR102\Lab Code\HarrisonV2.nxc"
+0	71	516	#line 71 "C:\ENGR102\Lab Code\HarrisonV2.nxc"
+0	72	516		and __D0main, __signed_stack_001main, __zfmain
+0	74	520	#line 74 "C:\ENGR102\Lab Code\HarrisonV2.nxc"
+0	75	520		tst 5, __zfmain, __D0main
+0	74	523	#line 74 "C:\ENGR102\Lab Code\HarrisonV2.nxc"
+0	75	523		brtst 4, __NXC_Label_600, __zfmain
+0	74	526	#line 74 "C:\ENGR102\Lab Code\HarrisonV2.nxc"
+0	75	526		set __D0main, 30
+0	74	529	#line 74 "C:\ENGR102\Lab Code\HarrisonV2.nxc"
+0	75	529	#pragma macro 7
+0	75	529		setout __constVal2, 2, __D0main, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+0	4527	552	#line 4527 "C:\ENGR102\Lab Code\HarrisonV2.nxc"
+0	74	552	#line 74 "C:\ENGR102\Lab Code\HarrisonV2.nxc"
+0	74	552	#line 74 "C:\ENGR102\Lab Code\HarrisonV2.nxc"
+0	75	552		mov __D0main, __constValNeg30
+0	74	554	#line 74 "C:\ENGR102\Lab Code\HarrisonV2.nxc"
+0	75	554	#pragma macro 7
+0	75	554		setout __constVal0, 2, __D0main, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+0	4534	577	#line 4534 "C:\ENGR102\Lab Code\HarrisonV2.nxc"
+0	74	577	#line 74 "C:\ENGR102\Lab Code\HarrisonV2.nxc"
+0	74	577	#line 74 "C:\ENGR102\Lab Code\HarrisonV2.nxc"
+0	75	577	#line 75 "C:\ENGR102\Lab Code\HarrisonV2.nxc"
+0	75	577	#line 75 "C:\ENGR102\Lab Code\HarrisonV2.nxc"
+0	76	577		set __Wait_7qG2_ms_7qG2_000_inline_main, 700
+0	75	580	#line 75 "C:\ENGR102\Lab Code\HarrisonV2.nxc"
+0	7921	580	#line 7921 "NXCDefs.h"
+0	7922	580		wait2 NA, __Wait_7qG2_ms_7qG2_000_inline_main
+0	7921	583	#line 7921 "NXCDefs.h"
+0	76	583	#line 76 "C:\ENGR102\Lab Code\HarrisonV2.nxc"
+0	79	583	#line 79 "C:\ENGR102\Lab Code\HarrisonV2.nxc"
+0	80	583	#pragma macro 7
+0	80	583		setout __OUT_AC, 2, __constVal0, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+0	4549	606	#line 4549 "C:\ENGR102\Lab Code\HarrisonV2.nxc"
+0	79	606	#line 79 "C:\ENGR102\Lab Code\HarrisonV2.nxc"
+0	80	606	#line 80 "C:\ENGR102\Lab Code\HarrisonV2.nxc"
+0	81	606		subcall acquire, __acquire_return
+0	80	608	#line 80 "C:\ENGR102\Lab Code\HarrisonV2.nxc"
+0	89	608	#line 89 "C:\ENGR102\Lab Code\HarrisonV2.nxc"
+0	91	608	#line 91 "C:\ENGR102\Lab Code\HarrisonV2.nxc"
+0	92	608		jmp __NXC_Label_531
+0	91	610	#line 91 "C:\ENGR102\Lab Code\HarrisonV2.nxc"
+0	92	610		exit -1, -1
+1	4885	0		setin __constVal1, __ResetSensorPort, 5
+1	4887	4		getin __ResetSensorTmp, __ResetSensorPort, 5
+1	4888	8		brtst 5, __SensorStillInvalid, __ResetSensorTmp
+1	4889	11		subret ____ResetSensorSubroutine_return
+2	5672	0	#pragma macro 25
+2	5672	0		acquire __CLSWMutex0
+2	5672	1		set __CLSWArgs0.Port, 0
+2	5672	4		mov __CLSWArgs0.ReturnLen, __RLSBytesCount0
+2	5672	6		mov __CLSWArgs0.Buffer, __RLSReadBuf0
+2	5672	8		syscall 21, __CLSWArgs0
+2	5672	11		mov __RLSBResult0, __CLSWArgs0.Result
+2	5672	13		release __CLSWMutex0
+2	5673	14	#line 5673 "NXTDefs.h"
+2	5674	14		brtst 4, __RLSBReturn0, __RLSBytesCount0
+2	5675	17		arrinit __RLSReadBuf0, __constVal0, __RLSBytesCount0
+2	5676	21		brtst 5, __RLSBError0, __RLSBResult0
+2	5677	24		set __RLSBIterations0, 4
+2	5679	27	#pragma macro 23
+2	5679	27		acquire __CLSCSMutex0
+2	5679	28		set __CLSCSArgs0.Port, 0
+2	5679	31		syscall 23, __CLSCSArgs0
+2	5679	34		mov __RLSBytesCount0, __CLSCSArgs0.BytesReady
+2	5679	36		mov __RLSBResult0, __CLSCSArgs0.Result
+2	5679	38		release __CLSCSMutex0
+2	5679	39	#line 5679 "NXTDefs.h"
+2	5680	39		sub __RLSBIterations0, __RLSBIterations0, __constVal1
+2	5681	43		brtst 2, __RLSBError0, __RLSBIterations0
+2	5682	46		brtst 0, __RLSBError0, __RLSBResult0
+2	5683	49		brtst 4, __RLSBReadyToRead0, __RLSBResult0
+2	5685	52		wait2 NA, __constVal15
+2	5686	55		jmp __RLSBDoCheckStatus0
+2	5689	57	#pragma macro 25
+2	5689	57		acquire __CLSRMutex0
+2	5689	58		set __CLSRArgs0.Port, 0
+2	5689	61		mov __CLSRArgs0.BufferLen, __RLSBytesCount0
+2	5689	63		syscall 22, __CLSRArgs0
+2	5689	66		mov __RLSReadBuf0, __CLSRArgs0.Buffer
+2	5689	68		mov __RLSBResult0, __CLSRArgs0.Result
+2	5689	70		release __CLSRMutex0
+2	5689	71	#line 5689 "NXTDefs.h"
+2	5690	71		brtst 5, __RLSBError0, __RLSBResult0
+2	5691	74		mov __RLSLastGoodRead0, __RLSReadBuf0
+2	5692	76		jmp __RLSBDone0
+2	5694	78		mov __RLSReadBuf0, __RLSLastGoodRead0
+2	5696	80		arrsize __RLSBytesCount0, __RLSReadBuf0
+2	5698	83		subret ____ReadLSBytes0_return
+3	38	0	#line 38 "C:\ENGR102\Lab Code\.\includes.nxc"
+3	39	0		set __SetSensorType_7qG2_port_7qG2_000_inline_init_sensors, 0
+3	38	3	#line 38 "C:\ENGR102\Lab Code\.\includes.nxc"
+3	38	3	#line 38 "C:\ENGR102\Lab Code\.\includes.nxc"
+3	39	3		set __SetSensorType_7qG2_type_7qG2_000_inline_init_sensors, 10
+3	38	6	#line 38 "C:\ENGR102\Lab Code\.\includes.nxc"
+3	3663	6	#line 3663 "NXCDefs.h"
+3	3664	6		setin __SetSensorType_7qG2_type_7qG2_000_inline_init_sensors, __SetSensorType_7qG2_port_7qG2_000_inline_init_sensors, 0
+3	3663	10	#line 3663 "NXCDefs.h"
+3	39	10	#line 39 "C:\ENGR102\Lab Code\.\includes.nxc"
+3	39	10	#line 39 "C:\ENGR102\Lab Code\.\includes.nxc"
+3	40	10		set __SetSensorColorFull_7qG2_port_7qG2_000_inline_init_sensors, 1
+3	39	13	#line 39 "C:\ENGR102\Lab Code\.\includes.nxc"
+3	3802	13	#line 3802 "NXCDefs.h"
+3	3803	13	#pragma macro 6
+3	3803	13		setin __constVal13, __SetSensorColorFull_7qG2_port_7qG2_000_inline_init_sensors, 0
+3	3803	17		setin __constVal0, __SetSensorColorFull_7qG2_port_7qG2_000_inline_init_sensors, 1
+3	3803	21		mov __ResetSensorPort, __SetSensorColorFull_7qG2_port_7qG2_000_inline_init_sensors
+3	3803	23		subcall __ResetSensorSubroutine, ____ResetSensorSubroutine_return
+3	3891	25	#line 3891 "NXCDefs.h"
+3	3802	25	#line 3802 "NXCDefs.h"
+3	40	25	#line 40 "C:\ENGR102\Lab Code\.\includes.nxc"
+3	40	25	#line 40 "C:\ENGR102\Lab Code\.\includes.nxc"
+3	41	25		set __SetSensorHTMagnet_7qG2_port_7qG2_000_inline_init_sensors, 2
+3	40	28	#line 40 "C:\ENGR102\Lab Code\.\includes.nxc"
+3	12989	28	#line 12989 "NXCDefs.h"
+3	12990	28		mov __SetSensorType_7qG2_port_7qG2_000_inline_SetSensorHTMagnet_inline_init_sensors, __constVal2
+3	12989	30	#line 12989 "NXCDefs.h"
+3	12989	30	#line 12989 "NXCDefs.h"
+3	12990	30		set __SetSensorType_7qG2_type_7qG2_000_inline_SetSensorHTMagnet_inline_init_sensors, 6
+3	12989	33	#line 12989 "NXCDefs.h"
+3	3663	33	#line 3663 "NXCDefs.h"
+3	3664	33		setin __SetSensorType_7qG2_type_7qG2_000_inline_SetSensorHTMagnet_inline_init_sensors, __SetSensorType_7qG2_port_7qG2_000_inline_SetSensorHTMagnet_inline_init_sensors, 0
+3	3663	37	#line 3663 "NXCDefs.h"
+3	12990	37	#line 12990 "NXCDefs.h"
+3	12990	37	#line 12990 "NXCDefs.h"
+3	12991	37		mov __SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorHTMagnet_inline_init_sensors, __SetSensorHTMagnet_7qG2_port_7qG2_000_inline_init_sensors
+3	12990	39	#line 12990 "NXCDefs.h"
+3	12990	39	#line 12990 "NXCDefs.h"
+3	12991	39		set __SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorHTMagnet_inline_init_sensors, 0
+3	12990	42	#line 12990 "NXCDefs.h"
+3	3676	42	#line 3676 "NXCDefs.h"
+3	3677	42		setin __SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorHTMagnet_inline_init_sensors, __SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorHTMagnet_inline_init_sensors, 1
+3	3676	46	#line 3676 "NXCDefs.h"
+3	12991	46	#line 12991 "NXCDefs.h"
+3	12991	46	#line 12991 "NXCDefs.h"
+3	12991	46	#line 12991 "NXCDefs.h"
+3	3694	46	#line 3694 "NXCDefs.h"
+3	3695	46	#pragma macro 4
+3	3695	46		mov __ResetSensorPort, __SetSensorHTMagnet_7qG2_port_7qG2_000_inline_init_sensors
+3	3695	48		subcall __ResetSensorSubroutine, ____ResetSensorSubroutine_return
+3	3963	50	#line 3963 "NXCDefs.h"
+3	3694	50	#line 3694 "NXCDefs.h"
+3	12992	50	#line 12992 "NXCDefs.h"
+3	41	50	#line 41 "C:\ENGR102\Lab Code\.\includes.nxc"
+3	41	50	#line 41 "C:\ENGR102\Lab Code\.\includes.nxc"
+3	42	50		set __SetSensorType_7qG2_port_7qG2_000_inline_init_sensors, 3
+3	41	53	#line 41 "C:\ENGR102\Lab Code\.\includes.nxc"
+3	41	53	#line 41 "C:\ENGR102\Lab Code\.\includes.nxc"
+3	42	53		set __SetSensorType_7qG2_type_7qG2_000_inline_init_sensors, 6
+3	41	56	#line 41 "C:\ENGR102\Lab Code\.\includes.nxc"
+3	3663	56	#line 3663 "NXCDefs.h"
+3	3664	56		setin __SetSensorType_7qG2_type_7qG2_000_inline_init_sensors, __SetSensorType_7qG2_port_7qG2_000_inline_init_sensors, 0
+3	3663	60	#line 3663 "NXCDefs.h"
+3	42	60	#line 42 "C:\ENGR102\Lab Code\.\includes.nxc"
+3	42	60	#line 42 "C:\ENGR102\Lab Code\.\includes.nxc"
+3	43	60		set __SetSensorMode_7qG2_port_7qG2_000_inline_init_sensors, 3
+3	42	63	#line 42 "C:\ENGR102\Lab Code\.\includes.nxc"
+3	42	63	#line 42 "C:\ENGR102\Lab Code\.\includes.nxc"
+3	43	63		set __SetSensorMode_7qG2_mode_7qG2_000_inline_init_sensors, 128
+3	42	66	#line 42 "C:\ENGR102\Lab Code\.\includes.nxc"
+3	3676	66	#line 3676 "NXCDefs.h"
+3	3677	66		setin __SetSensorMode_7qG2_mode_7qG2_000_inline_init_sensors, __SetSensorMode_7qG2_port_7qG2_000_inline_init_sensors, 1
+3	3676	70	#line 3676 "NXCDefs.h"
+3	43	70	#line 43 "C:\ENGR102\Lab Code\.\includes.nxc"
+3	45	70	#line 45 "C:\ENGR102\Lab Code\.\includes.nxc"
+3	46	70		subret __init_sensors_return
+4	4	0	#line 4 "C:\ENGR102\Lab Code\HarrisonV2.nxc"
+4	5	0		set __D0acquire, 30
+4	5	3	#line 5 "C:\ENGR102\Lab Code\HarrisonV2.nxc"
+4	6	3	#pragma macro 7
+4	6	3		setout __constVal1, 2, __D0acquire, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+4	4071	26	#line 4071 "C:\ENGR102\Lab Code\HarrisonV2.nxc"
+4	5	26	#line 5 "C:\ENGR102\Lab Code\HarrisonV2.nxc"
+4	5	26	#line 5 "C:\ENGR102\Lab Code\HarrisonV2.nxc"
+4	6	26		set __Wait_7qG2_ms_7qG2_000_inline_acquire, 1000
+4	5	29	#line 5 "C:\ENGR102\Lab Code\HarrisonV2.nxc"
+4	7921	29	#line 7921 "NXCDefs.h"
+4	7922	29		wait2 NA, __Wait_7qG2_ms_7qG2_000_inline_acquire
+4	7921	32	#line 7921 "NXCDefs.h"
+4	6	32	#line 6 "C:\ENGR102\Lab Code\HarrisonV2.nxc"
+4	9	32	#line 9 "C:\ENGR102\Lab Code\HarrisonV2.nxc"
+4	10	32	#pragma macro 7
+4	10	32		setout __constVal1, 2, __constVal0, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+4	4088	55	#line 4088 "C:\ENGR102\Lab Code\HarrisonV2.nxc"
+4	9	55	#line 9 "C:\ENGR102\Lab Code\HarrisonV2.nxc"
+4	9	55	#line 9 "C:\ENGR102\Lab Code\HarrisonV2.nxc"
+4	10	55		set __D0acquire, 75
+4	10	58	#line 10 "C:\ENGR102\Lab Code\HarrisonV2.nxc"
+4	11	58	#pragma macro 7
+4	11	58		setout __OUT_AC, 2, __D0acquire, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+4	4095	81	#line 4095 "C:\ENGR102\Lab Code\HarrisonV2.nxc"
+4	10	81	#line 10 "C:\ENGR102\Lab Code\HarrisonV2.nxc"
+4	10	81	#line 10 "C:\ENGR102\Lab Code\HarrisonV2.nxc"
+4	11	81		set __Wait_7qG2_ms_7qG2_000_inline_acquire, 1000
+4	10	84	#line 10 "C:\ENGR102\Lab Code\HarrisonV2.nxc"
+4	7921	84	#line 7921 "NXCDefs.h"
+4	7922	84		wait2 NA, __Wait_7qG2_ms_7qG2_000_inline_acquire
+4	7921	87	#line 7921 "NXCDefs.h"
+4	11	87	#line 11 "C:\ENGR102\Lab Code\HarrisonV2.nxc"
+4	14	87	#line 14 "C:\ENGR102\Lab Code\HarrisonV2.nxc"
+4	15	87	#pragma macro 7
+4	15	87		setout __OUT_AC, 2, __constVal0, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+4	4108	110	#line 4108 "C:\ENGR102\Lab Code\HarrisonV2.nxc"
+4	14	110	#line 14 "C:\ENGR102\Lab Code\HarrisonV2.nxc"
+4	14	110	#line 14 "C:\ENGR102\Lab Code\HarrisonV2.nxc"
+4	15	110	#line 15 "C:\ENGR102\Lab Code\HarrisonV2.nxc"
+4	16	110	#pragma macro 10
+4	16	110		neg __OnRev_Tmp, __constVal30
+4	16	113		setout __constVal1, 2, __OnRev_Tmp, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+4	4115	136	#line 4115 "C:\ENGR102\Lab Code\HarrisonV2.nxc"
+4	15	136	#line 15 "C:\ENGR102\Lab Code\HarrisonV2.nxc"
+4	15	136	#line 15 "C:\ENGR102\Lab Code\HarrisonV2.nxc"
+4	16	136		set __Wait_7qG2_ms_7qG2_000_inline_acquire, 500
+4	15	139	#line 15 "C:\ENGR102\Lab Code\HarrisonV2.nxc"
+4	7921	139	#line 7921 "NXCDefs.h"
+4	7922	139		wait2 NA, __Wait_7qG2_ms_7qG2_000_inline_acquire
+4	7921	142	#line 7921 "NXCDefs.h"
+4	16	142	#line 16 "C:\ENGR102\Lab Code\HarrisonV2.nxc"
+4	17	142	#line 17 "C:\ENGR102\Lab Code\HarrisonV2.nxc"
+4	18	142	#pragma macro 7
+4	18	142		setout __constVal1, 2, __constVal0, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+4	4128	165	#line 4128 "C:\ENGR102\Lab Code\HarrisonV2.nxc"
+4	17	165	#line 17 "C:\ENGR102\Lab Code\HarrisonV2.nxc"
+4	19	165	#line 19 "C:\ENGR102\Lab Code\HarrisonV2.nxc"
+4	20	165		subret __acquire_return
+5	92	0	#line 92 "C:\ENGR102\Lab Code\HarrisonV2.nxc"
+5	93	0		subret ____initialize_global_data_return
+#CLUMPS
+Clump	Name	Offset	File
+0	main	0	C:\ENGR102\Lab Code\HarrisonV2.nxc
+1	__ResetSensorSubroutine	613	NXTDefs.h
+2	__ReadLSBytes0	626	NXTDefs.h
+3	init_sensors	711	C:\ENGR102\Lab Code\.\includes.nxc
+4	acquire	783	C:\ENGR102\Lab Code\HarrisonV2.nxc
+5	__initialize_global_data	950	C:\ENGR102\Lab Code\HarrisonV2.nxc
