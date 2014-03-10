@@ -1,0 +1,90 @@
+#include "includes.nxc"
+
+sub acquire(){
+   // open gate
+      OnFwd(GATE_MOTOR,30);
+      Wait(1000);
+      Off(GATE_MOTOR);
+
+   // go forward
+      OnFwd(BOTH_MOTORS, MOVE_SPEED);
+      Wait(1000);
+      Off(BOTH_MOTORS);
+
+   // Grip close gate
+      OnRev(GATE_MOTOR,30);
+      Wait(500);
+      Off(GATE_MOTOR);
+}
+
+task main() {
+     // Init sensors
+     init_sensors();
+     int magnet_initial= Sensor(MAGNETIC);
+
+
+     // Main Loop
+     int MAIN_LOOP = 1;
+     long t0, time;
+     while(true && MAIN_LOOP == 1){
+   
+     // Spin around until object NEAR, then go close to object
+     int SPIN_MODE = 1;
+     t0 = CurrentTick(); // get initial time before spin
+     zp_turn_l(30);
+     
+     while(true && SPIN_MODE == 1){
+        if(SensorUS(ULTRASONIC)<NEAR){
+           Wait(200);// correct for sensor width
+           time = CurrentTick() - t0; // get time spent spinning
+           Off(BOTH_MOTORS);
+           // Go to Object
+           while(SensorUS(ULTRASONIC)>NEAR2){
+                OnFwd(BOTH_MOTORS, MOVE_SPEED);
+           }
+           // end loop
+         SPIN_MODE = 0;
+        }
+     }
+     // Check to see if both sides of object are empty
+     int left_empty = 0;
+     int right_empty = 0;
+     
+     // right
+     zp_turn_r(30);
+     Wait(600);
+     Off(BOTH_MOTORS);
+     Wait(500);
+     if (SensorUS(ULTRASONIC)>NEAR){
+        right_empty = 1;
+     }
+     
+     // left
+     zp_turn_l(30);
+     Wait(1000);
+     Off(BOTH_MOTORS);
+     Wait(500);
+     if (SensorUS(ULTRASONIC)>NEAR){
+        left_empty = 1;
+     }
+     
+     // If both were empty then turn back to original facing and proceed
+     if(left_empty == 1 && right_empty == 1) {
+     
+         // turn back other direction
+         zp_turn_r(30);
+         Wait(700);
+         Off(BOTH_MOTORS);
+         
+         // get object
+         acquire();
+     }
+     
+     // turn back to initial facing
+     //zp_turn_r(30);
+     //Wait(time);
+     //Off(BOTH_MOTORS);
+   
+   } // end main loop
+
+} // end main

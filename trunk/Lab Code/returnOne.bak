@@ -1,0 +1,118 @@
+//Motor ports
+#define RIGHT_MOTOR OUT_A
+#define LEFT_MOTOR OUT_C
+#define BOTH_MOTORS OUT_AC
+#define GATE_MOTOR OUT_B
+
+//Motor speeds
+#define MOVE_SPEED 75
+#define GATE_SPEED 30
+
+//Sensor ports
+#define ULTRASONIC IN_1
+#define TOUCH IN_2
+#define MAGNETIC IN_3
+#define LIGHT IN_4
+
+//Sensor read macros
+#define READ_ULTRASONIC Sensor(ULTRASONIC)
+#define READ_TOUCH Sensor(TOUCH)
+#define READ_MAGNETIC Sensor(MAGNETIC)
+#define READ_LIGHT Sensor(LIGHT)
+
+//Motor macros
+#define motors(lspd,rspd) {OnFwd(LEFT_MOTOR,lspd);OnFwd(RIGHT_MOTOR,rspd);}
+#define zp_turn_l(spd) motors(-(spd),spd);
+#define zp_turn_r(spd) motors(spd,-(spd));
+
+//Define constants
+#define NEAR 30
+#define NEAR2 15
+#define NEARWALL 30
+#define MAGNETISM 500
+#define LIGHT_THRESHOLD 40
+
+sub acquire(){
+   // open gate
+      OnFwd(GATE_MOTOR,30);
+      Wait(1000);
+      Off(GATE_MOTOR);
+
+   // go forward
+      OnFwd(BOTH_MOTORS, MOVE_SPEED);
+      Wait(800);
+      Off(BOTH_MOTORS);
+
+   // Grip close gate
+      OnRev(GATE_MOTOR,30);
+      Wait(500);
+      Off(GATE_MOTOR);
+}
+
+task main() {
+
+// Init sensors
+   SetSensorType(ULTRASONIC, SENSOR_TYPE_LOWSPEED);
+   SetSensorType(TOUCH,SENSOR_TYPE_TOUCH);
+   SetSensorHTMagnet(MAGNETIC);
+   SetSensorType(IN_4,IN_TYPE_LIGHT_INACTIVE);
+   SetSensorMode(IN_4,IN_MODE_PCTFULLSCALE);
+
+// Move forward initially
+   OnFwd(BOTH_MOTORS, MOVE_SPEED);
+   Wait(1000);
+   Off(BOTH_MOTORS);
+
+
+// Main Loop
+int MAIN_LOOP = 1;
+long t0, time;
+while(true && MAIN_LOOP == 1){
+   
+// Spin around until object NEAR, then go close to object
+   int SPIN_MODE = 1;
+   t0 = CurrentTick(); // get initial time before spin
+   zp_turn_l(30);
+   
+   while(true && SPIN_MODE == 1){
+      if(SensorUS(ULTRASONIC)<NEAR){
+         time = CurrentTick() - t0; // get time spent spinning
+         Off(BOTH_MOTORS);
+         
+         // Go to Object
+         while(SensorUS(ULTRASONIC)>NEAR2){
+              OnFwd(BOTH_MOTORS, MOVE_SPEED);
+         }
+         
+         // acquire and end loop
+         acquire();
+         SPIN_MODE = 0;
+      }
+
+    }
+    
+    // Turn back to initial facing
+    zp_turn_r(30);
+    Wait(time);
+    Off(BOTH_MOTORS);
+    
+    // Drive straight to wall
+    while(SensorUS(ULTRASONIC)>NEARWALL){
+          OnFwd(BOTH_MOTORS, MOVE_SPEED);
+    }
+    Off(BOTH_MOTORS);
+    
+    // 90 Degree turn right
+    zp_turn_r(30);
+    Wait(800);
+    Off(BOTH_MOTORS);
+    
+    // Drive straight to goal
+    while(SensorUS(ULTRASONIC)>NEARWALL){
+          OnFwd(BOTH_MOTORS, MOVE_SPEED);
+    }
+    Off(BOTH_MOTORS);
+   
+} // end main loop
+
+} // end main

@@ -1,5 +1,24 @@
 #include "includes.nxc"
 
+sub search(){
+    // Spin around until object NEAR, then go close to object
+     int SPIN_MODE = 1;
+     zp_turn_l(30);
+     while(true && SPIN_MODE == 1){
+        if(SensorUS(ULTRASONIC)<NEAR){
+           Wait(200);// correct for sensor width
+           Off(BOTH_MOTORS);
+           
+           // Go to Object
+           while(SensorUS(ULTRASONIC)>NEAR2){
+                OnFwd(BOTH_MOTORS, MOVE_SPEED);
+           }
+           // end loop
+         SPIN_MODE = 0;
+        }
+     }
+}
+
 sub acquire(){
    // open gate
       OnFwd(GATE_MOTOR,30);
@@ -17,6 +36,71 @@ sub acquire(){
       Off(GATE_MOTOR);
 }
 
+bool isEmpty(){
+ // Check to see if both sides of object are empty
+     int left_empty = 0;
+     int right_empty = 0;
+
+     // right
+     zp_turn_r(30);
+     Wait(600);
+     Off(BOTH_MOTORS);
+     Wait(500);
+     if (SensorUS(ULTRASONIC)>NEAR){
+        right_empty = 1;
+     }
+
+     // left
+     zp_turn_l(30);
+     Wait(1000);
+     Off(BOTH_MOTORS);
+     Wait(500);
+     if (SensorUS(ULTRASONIC)>NEAR){
+        left_empty = 1;
+     }
+     
+     // return true if both empty
+     if(left_empty == 1 && right_empty == 1) {
+          return true;
+     }
+     else{return false;}
+
+}
+
+bool isWall(){
+     int left_empty = 0;
+     int right_empty = 0;
+     int sensor_left = 0;
+     int sensor_right = 0;
+
+     // left
+     zp_turn_l(30);
+     Wait(600);
+     Off(BOTH_MOTORS);
+     
+     if (SensorUS(ULTRASONIC)>NEAR){
+        left_empty = 1;
+        Wait(500);
+        sensor_left = SensorUS(ULTRASONIC);
+     }
+
+     // right
+     zp_turn_r(30);
+     Wait(1200);
+     Off(BOTH_MOTORS);
+     if (SensorUS(ULTRASONIC)>NEAR){
+        right_empty = 1;
+        Wait(500);
+        sensor_right = SensorUS(ULTRASONIC)
+     }
+     
+     if(left_empty == 0 && right_empty == 0) {
+          return true;
+     }
+     else{return false;}
+
+}
+
 task main() {
      // Init sensors
      init_sensors();
@@ -28,45 +112,15 @@ task main() {
      while(true && MAIN_LOOP == 1){
    
      // Spin around until object NEAR, then go close to object
-     int SPIN_MODE = 1;
-     zp_turn_l(30);
-     while(true && SPIN_MODE == 1){
-        if(SensorUS(ULTRASONIC)<NEAR){
-           Off(BOTH_MOTORS);
-           // Go to Object
-           while(SensorUS(ULTRASONIC)>NEAR2){
-                OnFwd(BOTH_MOTORS, MOVE_SPEED);
-           }
-           // end loop
-         SPIN_MODE = 0;
-        }
-     }
-     // Check to see if both sides of object are empty
-     int left_empty = 0;
-     int right_empty = 0;
-     // left
-     zp_turn_r(30);
-     Wait(600);
-     Off(BOTH_MOTORS);
-     Wait(500);
-     if (SensorUS(ULTRASONIC)>NEAR){
-        right_empty = 1;
-     }
+     search();
      
-     // right
-     zp_turn_l(30);
-     Wait(1200);
-     Off(BOTH_MOTORS);
-     Wait(500);
-     if (SensorUS(ULTRASONIC)>NEAR){
-        left_empty = 1;
-     }
+     // Check to see if both sides of object are empty
      // If both were empty then turn back to original facing and proceed
-     if(left_empty == 1 && right_empty == 1) {
+     if(isEmpty() == true) {
      
          // turn back other direction
          zp_turn_r(30);
-         Wait(600);
+         Wait(800);
          Off(BOTH_MOTORS);
          
          // get object
@@ -74,7 +128,7 @@ task main() {
          
          // spin around and find light
          while (true && Sensor(LIGHT)<LIGHT_THRESHOLD){
-             zp_turn_r(30);
+             zp_turn_r(60); // changed to 60
          }
          
          // turn off motors once light found
@@ -98,34 +152,8 @@ task main() {
                   }
                   
                  // Check to see if either side of object are empty
-                 left_empty = 0;
-                 right_empty = 0;
-                 int sensor_left = 0;
-                 int sensor_right = 0;
-
-                 // left
-                 zp_turn_l(30);
-                 Wait(600);
-                 Off(BOTH_MOTORS);
-                 if (SensorUS(ULTRASONIC)>NEAR){
-                    left_empty = 1;
-                    Wait(500);
-                    sensor_left = SensorUS(ULTRASONIC);
-                    
-                 }
-
-                 // right
-                 zp_turn_r(30);
-                 Wait(1200);
-                 Off(BOTH_MOTORS);
-                 if (SensorUS(ULTRASONIC)>NEAR){
-                    right_empty = 1;
-                    Wait(500);
-                    sensor_right = SensorUS(ULTRASONIC)
-                 }
-                 
                  // if wall, stop looking for wall and return to original position
-                 if(left_empty == 0 && right_empty == 0) {
+                 if(isWall() == true) {
                      wall_looking = 0;
                      zp_turn_l(30);
                      Wait(600);
@@ -136,6 +164,8 @@ task main() {
                  int x = 10000;
                  
                  // Turn to Right to find Perpendicular
+                 int sensor_left = 0;
+                 int sensor_right = 0;
                  if (sensor_left > sensor_right){
                     zp_turn_r(30);
                     until(SensorUS(ULTRASONIC) > x){
@@ -161,14 +191,13 @@ task main() {
                     Wait(1500);
                  }
              }
+             
              //Drive to DropZone
              while(SensorUS(ULTRASONIC)>NEAR){
                        OnFwd(BOTH_MOTORS, MOVE_SPEED);
                 }
                 Off(BOTH_MOTORS);
                 MAIN_LOOP = 0;
-
-         
          }
      }
      else {

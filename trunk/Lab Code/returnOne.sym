@@ -1,0 +1,709 @@
+#SYMBOLS
+Index	Identifier	Type	Flag	Data	Size	RefCount
+0	__D0search	6	1	0	4	24
+1	__D0main	6	1	4	4	17
+2	__signed_stack_001isEmpty	6	1	8	4	8
+3	__signed_stack_001find_light	6	1	12	4	2
+4	__D0find_light	6	1	16	4	7
+5	__D0acquire	6	1	20	4	4
+6	__DU0isEmpty	5	1	24	4	3
+7	__D0isEmpty	6	1	28	4	26
+8	__signed_stack_002isEmpty	6	1	32	4	2
+9	__Wait_7qG2_ms_7qG2_000_inline_acquire	5	1	36	4	3
+10	__signed_stack_002search	6	1	40	4	2
+11	__Wait_7qG2_ms_7qG2_000_inline_main	5	1	44	4	2
+12	__Wait_7qG2_ms_7qG2_000_inline_isEmpty	5	1	48	4	4
+13	__signed_stack_002main	6	1	52	4	2
+14	__signed_stack_001main	6	1	56	4	2
+15	__signed_stack_001search	6	1	60	4	6
+16	__unsigned_stack_001main	5	1	64	4	2
+17	__RLSBmutex0	9	0	68	4	8
+18	__CLSWMutex0	9	0	72	4	2
+19	__CLSCSMutex0	9	0	76	4	2
+20	__CLSRMutex0	9	0	80	4	2
+21	__isEmpty_7qG2_left_empty_7qG2_000	4	1	84	2	3
+22	__constVal128	4	0	86	2	1
+23	__isEmpty_7qG2_right_empty_7qG2_000	4	1	88	2	3
+24	__search_7qG2_SPIN_MODE_7qG2_000	4	1	90	2	3
+25	__main_7qG2_MAIN_LOOP_7qG2_000	4	1	92	2	2
+26	__SetSensorMode_7qG2_mode_7qG2_000_inline_init_sensors	1	1	94	1	2
+27	__SetSensorMode_7qG2_port_7qG2_000_inline_init_sensors	1	1	95	1	2
+28	__SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorHTMagnet_inline_init_sensors	1	1	96	1	2
+29	__SetSensorHTMagnet_7qG2_port_7qG2_000_inline_init_sensors	1	1	97	1	3
+30	__SetSensorColorGreen_7qG2_port_7qG2_000_inline_init_sensors	1	1	98	1	4
+31	__SetSensorType_7qG2_type_7qG2_000_inline_init_sensors	1	1	99	1	4
+32	__SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorHTMagnet_inline_init_sensors	1	1	100	1	2
+33	__SetSensorType_7qG2_type_7qG2_000_inline_SetSensorHTMagnet_inline_init_sensors	1	1	101	1	2
+34	__SetSensorType_7qG2_port_7qG2_000_inline_SetSensorHTMagnet_inline_init_sensors	1	1	102	1	2
+35	__OnRev_Tmp	2	1	103	1	2
+36	__isEmpty_return	1	1	104	1	5
+37	__find_light_return	1	1	105	1	3
+38	__constVal30	2	0	106	1	1
+39	____initialize_global_data_return	1	1	107	1	3
+40	__constVal96	2	0	108	1	23
+41	__search_return	1	1	109	1	3
+42	__constVal63	2	0	110	1	23
+43	__constVal32	2	0	111	1	69
+44	__acquire_return	1	1	112	1	3
+45	__SetSensorType_7qG2_port_7qG2_000_inline_init_sensors	1	1	113	1	4
+46	__zffind_light	1	1	114	1	3
+47	____ReadLSBytes0_return	1	1	115	1	6
+48	__zfmain	1	1	116	1	10
+49	__zfisEmpty	1	1	117	1	13
+50	__constVal15	2	0	118	1	1
+51	__RLSBytesCount0	1	1	119	1	10
+52	__RLSBResult0	2	1	120	1	7
+53	__constVal2	2	0	121	1	6
+54	__RLSBIterations0	1	1	122	1	4
+55	__constVal3	2	0	123	1	24
+56	__ResetSensorPort	1	1	124	1	4
+57	__ResetSensorTmp	1	1	125	1	2
+58	__init_sensors_return	1	1	126	1	3
+59	__constVal1	2	0	127	1	6
+60	__constVal0	2	1	128	1	83
+61	__zfsearch	1	1	129	1	13
+62	____ResetSensorSubroutine_return	1	1	130	1	4
+63	__CLSCSArgs0	8	0	3	4	4
+64	__CLSCSArgs0.Result	2	1	132	1	4
+65	__CLSCSArgs0.Port	1	1	133	1	4
+66	__CLSCSArgs0.BytesReady	1	1	134	1	4
+67	__CLSWArgs0	8	0	4	12	5
+68	__CLSWArgs0.Result	2	1	136	1	5
+69	__CLSWArgs0.Port	1	1	137	1	5
+70	__CLSWArgs0.Buffer	7	0	138	4	5
+71	__CLSWArgs0.Buffer.Buffer_type	1	0	0	1	0
+72	__CLSWArgs0.ReturnLen	1	1	140	1	5
+73	__CLSRArgs0	8	0	4	12	5
+74	__CLSRArgs0.Result	2	1	144	1	5
+75	__CLSRArgs0.Port	1	1	145	1	5
+76	__CLSRArgs0.Buffer	7	0	146	4	5
+77	__CLSRArgs0.Buffer.Buffer_type	1	0	0	1	0
+78	__CLSRArgs0.BufferLen	1	1	148	1	5
+79	__RLSBbufLSWrite1	7	0	150	4	4
+80	__RLSBbufLSWrite1.__RLSBbufLSWrite1_type	1	0	0	1	0
+81	__RLSLastGoodRead0	7	0	152	4	2
+82	__RLSLastGoodRead0.__RLSLastGoodRead0_type	1	0	0	1	0
+83	__RLSReadBuf0	7	0	154	4	14
+84	__RLSReadBuf0.__RLSReadBuf0_type	1	0	0	1	0
+85	__OUT_AC	7	0	156	4	9
+86	__OUT_AC.__OUT_AC_type	1	0	0	1	0
+#SOURCES
+Clump	Line	PC	Source
+0	178	0	#line 178 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	179	0		subcall __initialize_global_data, ____initialize_global_data_return
+0	178	2	#line 178 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	181	2	#line 181 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	182	2		subcall init_sensors, __init_sensors_return
+0	181	4	#line 181 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	181	4	#line 181 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	182	4		set __D0main, 75
+0	182	7	#line 182 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	183	7	#pragma macro 7
+0	183	7		setout __OUT_AC, 2, __D0main, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+0	8251	30	#line 8251 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	182	30	#line 182 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	182	30	#line 182 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	183	30		set __Wait_7qG2_ms_7qG2_000_inline_main, 1000
+0	182	33	#line 182 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	7921	33	#line 7921 "NXCDefs.h"
+0	7922	33		wait 1000
+0	7921	35	#line 7921 "NXCDefs.h"
+0	183	35	#line 183 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	187	35	#line 187 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	188	35	#pragma macro 7
+0	188	35		setout __OUT_AC, 2, __constVal0, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+0	8268	58	#line 8268 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	187	58	#line 187 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	188	58	#line 188 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	189	58		set __main_7qG2_MAIN_LOOP_7qG2_000, 1
+0	188	61	#line 188 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	188	61	#line 188 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	189	61		set __D0main, 1
+0	188	64	#line 188 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	189	64		tst 5, __zfmain, __D0main
+0	188	67	#line 188 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	189	67		mov __D0main, __zfmain
+0	188	69	#line 188 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	189	69		brtst 4, __NXC_Label_851, __zfmain
+0	188	72	#line 188 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	189	72		mov __signed_stack_001main, __D0main
+0	188	74	#line 188 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	189	74		mov __signed_stack_002main, __main_7qG2_MAIN_LOOP_7qG2_000
+0	188	76	#line 188 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	188	76	#line 188 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	189	76		set __D0main, 1
+0	188	79	#line 188 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	189	79		cmp 4, __zfmain, __signed_stack_002main, __D0main
+0	188	83	#line 188 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	188	83	#line 188 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	189	83		and __D0main, __signed_stack_001main, __zfmain
+0	191	87	#line 191 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	192	87		tst 5, __zfmain, __D0main
+0	191	90	#line 191 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	192	90		brtst 4, __NXC_Label_849, __zfmain
+0	195	93	#line 195 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	196	93		subcall search, __search_return
+0	195	95	#line 195 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	195	95	#line 195 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	196	95		subcall isEmpty, __isEmpty_return
+0	195	97	#line 195 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	196	97		mov __unsigned_stack_001main, __DU0isEmpty
+0	195	99	#line 195 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	195	99	#line 195 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	196	99		set __D0main, 1
+0	195	102	#line 195 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	196	102		cmp 4, __zfmain, __unsigned_stack_001main, __D0main
+0	195	106	#line 195 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	196	106		mov __D0main, __zfmain
+0	198	108	#line 198 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	199	108		brtst 4, __NXC_Label_854, __zfmain
+0	198	111	#line 198 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	199	111		set __D0main, 30
+0	198	114	#line 198 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	199	114	#pragma macro 7
+0	199	114		setout __constVal2, 2, __D0main, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+0	8333	137	#line 8333 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	198	137	#line 198 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	198	137	#line 198 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	199	137		set __D0main, -30
+0	198	140	#line 198 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	199	140	#pragma macro 7
+0	199	140		setout __constVal0, 2, __D0main, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+0	8340	163	#line 8340 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	198	163	#line 198 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	198	163	#line 198 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	199	163	#line 199 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	199	163	#line 199 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	200	163		set __Wait_7qG2_ms_7qG2_000_inline_main, 600
+0	199	166	#line 199 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	7921	166	#line 7921 "NXCDefs.h"
+0	7922	166		wait 600
+0	7921	168	#line 7921 "NXCDefs.h"
+0	200	168	#line 200 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	203	168	#line 203 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	204	168	#pragma macro 7
+0	204	168		setout __OUT_AC, 2, __constVal0, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+0	8355	191	#line 8355 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	203	191	#line 203 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	205	191	#line 205 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	206	191		subcall acquire, __acquire_return
+0	205	193	#line 205 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	206	193	#line 206 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	207	193		subcall find_light, __find_light_return
+0	206	195	#line 206 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	211	195	#line 211 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	213	195	#line 213 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	214	195		jmp __NXC_Label_848
+0	213	197	#line 213 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	214	197		exit -1, -1
+1	4885	0		setin __constVal1, __ResetSensorPort, 5
+1	4887	4		getin __ResetSensorTmp, __ResetSensorPort, 5
+1	4888	8		brtst 5, __SensorStillInvalid, __ResetSensorTmp
+1	4889	11		subret ____ResetSensorSubroutine_return
+2	5672	0	#pragma macro 25
+2	5672	0		acquire __CLSWMutex0
+2	5672	1		set __CLSWArgs0.Port, 0
+2	5672	4		mov __CLSWArgs0.ReturnLen, __RLSBytesCount0
+2	5672	6		mov __CLSWArgs0.Buffer, __RLSReadBuf0
+2	5672	8		syscall 21, __CLSWArgs0
+2	5672	11		mov __RLSBResult0, __CLSWArgs0.Result
+2	5672	13		release __CLSWMutex0
+2	5673	14	#line 5673 "NXTDefs.h"
+2	5674	14		brtst 4, __RLSBReturn0, __RLSBytesCount0
+2	5675	17		arrinit __RLSReadBuf0, __constVal0, __RLSBytesCount0
+2	5676	21		brtst 5, __RLSBError0, __RLSBResult0
+2	5677	24		set __RLSBIterations0, 4
+2	5679	27	#pragma macro 23
+2	5679	27		acquire __CLSCSMutex0
+2	5679	28		set __CLSCSArgs0.Port, 0
+2	5679	31		syscall 23, __CLSCSArgs0
+2	5679	34		mov __RLSBytesCount0, __CLSCSArgs0.BytesReady
+2	5679	36		mov __RLSBResult0, __CLSCSArgs0.Result
+2	5679	38		release __CLSCSMutex0
+2	5679	39	#line 5679 "NXTDefs.h"
+2	5680	39		sub __RLSBIterations0, __RLSBIterations0, __constVal1
+2	5681	43		brtst 2, __RLSBError0, __RLSBIterations0
+2	5682	46		brtst 0, __RLSBError0, __RLSBResult0
+2	5683	49		brtst 4, __RLSBReadyToRead0, __RLSBResult0
+2	5685	52		wait 15
+2	5686	54		jmp __RLSBDoCheckStatus0
+2	5689	56	#pragma macro 25
+2	5689	56		acquire __CLSRMutex0
+2	5689	57		set __CLSRArgs0.Port, 0
+2	5689	60		mov __CLSRArgs0.BufferLen, __RLSBytesCount0
+2	5689	62		syscall 22, __CLSRArgs0
+2	5689	65		mov __RLSReadBuf0, __CLSRArgs0.Buffer
+2	5689	67		mov __RLSBResult0, __CLSRArgs0.Result
+2	5689	69		release __CLSRMutex0
+2	5689	70	#line 5689 "NXTDefs.h"
+2	5690	70		brtst 5, __RLSBError0, __RLSBResult0
+2	5691	73		mov __RLSLastGoodRead0, __RLSReadBuf0
+2	5692	75		jmp __RLSBDone0
+2	5694	77		mov __RLSReadBuf0, __RLSLastGoodRead0
+2	5696	79		arrsize __RLSBytesCount0, __RLSReadBuf0
+2	5698	82		subret ____ReadLSBytes0_return
+3	39	0	#line 39 "C:\ENGR102\Lab Code\includes.nxc"
+3	40	0		set __SetSensorType_7qG2_port_7qG2_000_inline_init_sensors, 0
+3	39	3	#line 39 "C:\ENGR102\Lab Code\includes.nxc"
+3	39	3	#line 39 "C:\ENGR102\Lab Code\includes.nxc"
+3	40	3		set __SetSensorType_7qG2_type_7qG2_000_inline_init_sensors, 10
+3	39	6	#line 39 "C:\ENGR102\Lab Code\includes.nxc"
+3	3663	6	#line 3663 "NXCDefs.h"
+3	3664	6		setin __SetSensorType_7qG2_type_7qG2_000_inline_init_sensors, __SetSensorType_7qG2_port_7qG2_000_inline_init_sensors, 0
+3	3663	10	#line 3663 "NXCDefs.h"
+3	40	10	#line 40 "C:\ENGR102\Lab Code\includes.nxc"
+3	40	10	#line 40 "C:\ENGR102\Lab Code\includes.nxc"
+3	41	10		set __SetSensorColorGreen_7qG2_port_7qG2_000_inline_init_sensors, 1
+3	40	13	#line 40 "C:\ENGR102\Lab Code\includes.nxc"
+3	3822	13	#line 3822 "NXCDefs.h"
+3	3823	13	#pragma macro 6
+3	3823	13		setin __constVal15, __SetSensorColorGreen_7qG2_port_7qG2_000_inline_init_sensors, 0
+3	3823	17		setin __constVal128, __SetSensorColorGreen_7qG2_port_7qG2_000_inline_init_sensors, 1
+3	3823	21		mov __ResetSensorPort, __SetSensorColorGreen_7qG2_port_7qG2_000_inline_init_sensors
+3	3823	23		subcall __ResetSensorSubroutine, ____ResetSensorSubroutine_return
+3	7066	25	#line 7066 "NXCDefs.h"
+3	3822	25	#line 3822 "NXCDefs.h"
+3	41	25	#line 41 "C:\ENGR102\Lab Code\includes.nxc"
+3	41	25	#line 41 "C:\ENGR102\Lab Code\includes.nxc"
+3	42	25		set __SetSensorHTMagnet_7qG2_port_7qG2_000_inline_init_sensors, 2
+3	41	28	#line 41 "C:\ENGR102\Lab Code\includes.nxc"
+3	12989	28	#line 12989 "NXCDefs.h"
+3	12990	28		mov __SetSensorType_7qG2_port_7qG2_000_inline_SetSensorHTMagnet_inline_init_sensors, __constVal2
+3	12989	30	#line 12989 "NXCDefs.h"
+3	12989	30	#line 12989 "NXCDefs.h"
+3	12990	30		set __SetSensorType_7qG2_type_7qG2_000_inline_SetSensorHTMagnet_inline_init_sensors, 6
+3	12989	33	#line 12989 "NXCDefs.h"
+3	3663	33	#line 3663 "NXCDefs.h"
+3	3664	33		setin __SetSensorType_7qG2_type_7qG2_000_inline_SetSensorHTMagnet_inline_init_sensors, __SetSensorType_7qG2_port_7qG2_000_inline_SetSensorHTMagnet_inline_init_sensors, 0
+3	3663	37	#line 3663 "NXCDefs.h"
+3	12990	37	#line 12990 "NXCDefs.h"
+3	12990	37	#line 12990 "NXCDefs.h"
+3	12991	37		mov __SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorHTMagnet_inline_init_sensors, __SetSensorHTMagnet_7qG2_port_7qG2_000_inline_init_sensors
+3	12990	39	#line 12990 "NXCDefs.h"
+3	12990	39	#line 12990 "NXCDefs.h"
+3	12991	39		set __SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorHTMagnet_inline_init_sensors, 0
+3	12990	42	#line 12990 "NXCDefs.h"
+3	3676	42	#line 3676 "NXCDefs.h"
+3	3677	42		setin __SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorHTMagnet_inline_init_sensors, __SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorHTMagnet_inline_init_sensors, 1
+3	3676	46	#line 3676 "NXCDefs.h"
+3	12991	46	#line 12991 "NXCDefs.h"
+3	12991	46	#line 12991 "NXCDefs.h"
+3	12991	46	#line 12991 "NXCDefs.h"
+3	3694	46	#line 3694 "NXCDefs.h"
+3	3695	46	#pragma macro 4
+3	3695	46		mov __ResetSensorPort, __SetSensorHTMagnet_7qG2_port_7qG2_000_inline_init_sensors
+3	3695	48		subcall __ResetSensorSubroutine, ____ResetSensorSubroutine_return
+3	7138	50	#line 7138 "NXCDefs.h"
+3	3694	50	#line 3694 "NXCDefs.h"
+3	12992	50	#line 12992 "NXCDefs.h"
+3	42	50	#line 42 "C:\ENGR102\Lab Code\includes.nxc"
+3	42	50	#line 42 "C:\ENGR102\Lab Code\includes.nxc"
+3	43	50		set __SetSensorType_7qG2_port_7qG2_000_inline_init_sensors, 3
+3	42	53	#line 42 "C:\ENGR102\Lab Code\includes.nxc"
+3	42	53	#line 42 "C:\ENGR102\Lab Code\includes.nxc"
+3	43	53		set __SetSensorType_7qG2_type_7qG2_000_inline_init_sensors, 6
+3	42	56	#line 42 "C:\ENGR102\Lab Code\includes.nxc"
+3	3663	56	#line 3663 "NXCDefs.h"
+3	3664	56		setin __SetSensorType_7qG2_type_7qG2_000_inline_init_sensors, __SetSensorType_7qG2_port_7qG2_000_inline_init_sensors, 0
+3	3663	60	#line 3663 "NXCDefs.h"
+3	43	60	#line 43 "C:\ENGR102\Lab Code\includes.nxc"
+3	43	60	#line 43 "C:\ENGR102\Lab Code\includes.nxc"
+3	44	60		set __SetSensorMode_7qG2_port_7qG2_000_inline_init_sensors, 3
+3	43	63	#line 43 "C:\ENGR102\Lab Code\includes.nxc"
+3	43	63	#line 43 "C:\ENGR102\Lab Code\includes.nxc"
+3	44	63		set __SetSensorMode_7qG2_mode_7qG2_000_inline_init_sensors, 128
+3	43	66	#line 43 "C:\ENGR102\Lab Code\includes.nxc"
+3	3676	66	#line 3676 "NXCDefs.h"
+3	3677	66		setin __SetSensorMode_7qG2_mode_7qG2_000_inline_init_sensors, __SetSensorMode_7qG2_port_7qG2_000_inline_init_sensors, 1
+3	3676	70	#line 3676 "NXCDefs.h"
+3	44	70	#line 44 "C:\ENGR102\Lab Code\includes.nxc"
+3	46	70	#line 46 "C:\ENGR102\Lab Code\includes.nxc"
+3	47	70		subret __init_sensors_return
+4	5	0	#line 5 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+4	6	0		set __search_7qG2_SPIN_MODE_7qG2_000, 1
+4	5	3	#line 5 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+4	5	3	#line 5 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+4	6	3		set __D0search, -30
+4	5	6	#line 5 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+4	6	6	#pragma macro 7
+4	6	6		setout __constVal2, 2, __D0search, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+4	7262	29	#line 7262 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+4	5	29	#line 5 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+4	5	29	#line 5 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+4	6	29		set __D0search, 30
+4	5	32	#line 5 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+4	6	32	#pragma macro 7
+4	6	32		setout __constVal0, 2, __D0search, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+4	7269	55	#line 7269 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+4	5	55	#line 5 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+4	5	55	#line 5 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+4	6	55	#line 6 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+4	6	55	#line 6 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+4	7	55		set __D0search, 1
+4	6	58	#line 6 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+4	7	58		tst 5, __zfsearch, __D0search
+4	6	61	#line 6 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+4	7	61		mov __D0search, __zfsearch
+4	6	63	#line 6 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+4	7	63		brtst 4, __NXC_Label_641, __zfsearch
+4	6	66	#line 6 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+4	7	66		mov __signed_stack_001search, __D0search
+4	6	68	#line 6 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+4	7	68		mov __signed_stack_002search, __search_7qG2_SPIN_MODE_7qG2_000
+4	6	70	#line 6 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+4	6	70	#line 6 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+4	7	70		set __D0search, 1
+4	6	73	#line 6 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+4	7	73		cmp 4, __zfsearch, __signed_stack_002search, __D0search
+4	6	77	#line 6 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+4	6	77	#line 6 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+4	7	77		and __D0search, __signed_stack_001search, __zfsearch
+4	7	81	#line 7 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+4	8	81		tst 5, __zfsearch, __D0search
+4	7	84	#line 7 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+4	8	84		brtst 4, __NXC_Label_639, __zfsearch
+4	7	87	#line 7 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+4	8	87	#pragma macro 26
+4	8	87		acquire __RLSBmutex0
+4	8	88		mov __RLSReadBuf0, __RLSBbufLSWrite1
+4	8	90		set __RLSBytesCount0, 1
+4	8	93		wait 15
+4	8	95		subcall __ReadLSBytes0, ____ReadLSBytes0_return
+4	8	97		index __D0search, __RLSReadBuf0, 65535
+4	8	101		release __RLSBmutex0
+4	7303	102	#line 7303 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+4	7	102	#line 7 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+4	8	102		mov __signed_stack_001search, __D0search
+4	7	104	#line 7 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+4	8	104		set __D0search, 45
+4	7	107	#line 7 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+4	8	107		cmp 0, __zfsearch, __signed_stack_001search, __D0search
+4	7	111	#line 7 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+4	8	111		mov __D0search, __zfsearch
+4	8	113	#line 8 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+4	9	113		brtst 4, __NXC_Label_644, __zfsearch
+4	8	116	#line 8 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+4	8	116	#line 8 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+4	7921	116	#line 7921 "NXCDefs.h"
+4	7922	116		wait 200
+4	7921	118	#line 7921 "NXCDefs.h"
+4	9	118	#line 9 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+4	12	118	#line 12 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+4	13	118	#pragma macro 7
+4	13	118		setout __OUT_AC, 2, __constVal0, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+4	7331	141	#line 7331 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+4	12	141	#line 12 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+4	12	141	#line 12 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+4	13	141	#pragma macro 26
+4	13	141		acquire __RLSBmutex0
+4	13	142		mov __RLSReadBuf0, __RLSBbufLSWrite1
+4	13	144		set __RLSBytesCount0, 1
+4	13	147		wait 15
+4	13	149		subcall __ReadLSBytes0, ____ReadLSBytes0_return
+4	13	151		index __D0search, __RLSReadBuf0, 65535
+4	13	155		release __RLSBmutex0
+4	7335	156	#line 7335 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+4	12	156	#line 12 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+4	13	156		mov __signed_stack_001search, __D0search
+4	12	158	#line 12 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+4	13	158		set __D0search, 8
+4	12	161	#line 12 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+4	13	161		cmp 1, __zfsearch, __signed_stack_001search, __D0search
+4	12	165	#line 12 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+4	13	165		mov __D0search, __zfsearch
+4	13	167	#line 13 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+4	14	167		brtst 4, __NXC_Label_648, __zfsearch
+4	13	170	#line 13 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+4	14	170		set __D0search, 75
+4	14	173	#line 14 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+4	15	173	#pragma macro 7
+4	15	173		setout __OUT_AC, 2, __D0search, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+4	7353	196	#line 7353 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+4	14	196	#line 14 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+4	16	196	#line 16 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+4	17	196		jmp __NXC_Label_647
+4	16	198	#line 16 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+4	17	198	#line 17 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+4	18	198		set __search_7qG2_SPIN_MODE_7qG2_000, 0
+4	17	201	#line 17 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+4	17	201	#line 17 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+4	19	201	#line 19 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+4	21	201	#line 21 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+4	22	201		jmp __NXC_Label_638
+4	21	203	#line 21 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+4	21	203	#line 21 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+4	22	203		subret __search_return
+5	23	0	#line 23 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+5	24	0		set __D0acquire, 30
+5	24	3	#line 24 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+5	25	3	#pragma macro 7
+5	25	3		setout __constVal1, 2, __D0acquire, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+5	7382	26	#line 7382 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+5	24	26	#line 24 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+5	24	26	#line 24 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+5	25	26		set __Wait_7qG2_ms_7qG2_000_inline_acquire, 1000
+5	24	29	#line 24 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+5	7921	29	#line 7921 "NXCDefs.h"
+5	7922	29		wait 1000
+5	7921	31	#line 7921 "NXCDefs.h"
+5	25	31	#line 25 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+5	28	31	#line 28 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+5	29	31	#pragma macro 7
+5	29	31		setout __constVal1, 2, __constVal0, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+5	7399	54	#line 7399 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+5	28	54	#line 28 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+5	28	54	#line 28 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+5	29	54		set __D0acquire, 75
+5	29	57	#line 29 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+5	30	57	#pragma macro 7
+5	30	57		setout __OUT_AC, 2, __D0acquire, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+5	7406	80	#line 7406 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+5	29	80	#line 29 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+5	29	80	#line 29 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+5	30	80		set __Wait_7qG2_ms_7qG2_000_inline_acquire, 800
+5	29	83	#line 29 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+5	7921	83	#line 7921 "NXCDefs.h"
+5	7922	83		wait 800
+5	7921	85	#line 7921 "NXCDefs.h"
+5	30	85	#line 30 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+5	33	85	#line 33 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+5	34	85	#pragma macro 7
+5	34	85		setout __OUT_AC, 2, __constVal0, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+5	7419	108	#line 7419 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+5	33	108	#line 33 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+5	33	108	#line 33 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+5	34	108	#line 34 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+5	35	108	#pragma macro 10
+5	35	108		neg __OnRev_Tmp, __constVal30
+5	35	111		setout __constVal1, 2, __OnRev_Tmp, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+5	7426	134	#line 7426 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+5	34	134	#line 34 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+5	34	134	#line 34 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+5	35	134		set __Wait_7qG2_ms_7qG2_000_inline_acquire, 500
+5	34	137	#line 34 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+5	7921	137	#line 7921 "NXCDefs.h"
+5	7922	137		wait 500
+5	7921	139	#line 7921 "NXCDefs.h"
+5	35	139	#line 35 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+5	36	139	#line 36 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+5	37	139	#pragma macro 7
+5	37	139		setout __constVal1, 2, __constVal0, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+5	7439	162	#line 7439 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+5	36	162	#line 36 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+5	38	162	#line 38 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+5	39	162		subret __acquire_return
+6	41	0	#line 41 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+6	42	0		set __isEmpty_7qG2_left_empty_7qG2_000, 0
+6	41	3	#line 41 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+6	44	3	#line 44 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+6	45	3		set __isEmpty_7qG2_right_empty_7qG2_000, 0
+6	44	6	#line 44 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+6	44	6	#line 44 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+6	45	6		set __D0isEmpty, 30
+6	44	9	#line 44 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+6	45	9	#pragma macro 7
+6	45	9		setout __constVal2, 2, __D0isEmpty, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+6	7471	32	#line 7471 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+6	44	32	#line 44 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+6	44	32	#line 44 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+6	45	32		set __D0isEmpty, -30
+6	44	35	#line 44 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+6	45	35	#pragma macro 7
+6	45	35		setout __constVal0, 2, __D0isEmpty, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+6	7478	58	#line 7478 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+6	44	58	#line 44 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+6	44	58	#line 44 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+6	45	58	#line 45 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+6	45	58	#line 45 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+6	46	58		set __Wait_7qG2_ms_7qG2_000_inline_isEmpty, 600
+6	45	61	#line 45 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+6	7921	61	#line 7921 "NXCDefs.h"
+6	7922	61		wait 600
+6	7921	63	#line 7921 "NXCDefs.h"
+6	46	63	#line 46 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+6	47	63	#line 47 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+6	48	63	#pragma macro 7
+6	48	63		setout __OUT_AC, 2, __constVal0, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+6	7497	86	#line 7497 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+6	47	86	#line 47 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+6	47	86	#line 47 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+6	48	86		set __Wait_7qG2_ms_7qG2_000_inline_isEmpty, 500
+6	47	89	#line 47 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+6	7921	89	#line 7921 "NXCDefs.h"
+6	7922	89		wait 500
+6	7921	91	#line 7921 "NXCDefs.h"
+6	48	91	#line 48 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+6	48	91	#line 48 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+6	49	91	#pragma macro 26
+6	49	91		acquire __RLSBmutex0
+6	49	92		mov __RLSReadBuf0, __RLSBbufLSWrite1
+6	49	94		set __RLSBytesCount0, 1
+6	49	97		wait 15
+6	49	99		subcall __ReadLSBytes0, ____ReadLSBytes0_return
+6	49	101		index __D0isEmpty, __RLSReadBuf0, 65535
+6	49	105		release __RLSBmutex0
+6	7510	106	#line 7510 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+6	48	106	#line 48 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+6	49	106		mov __signed_stack_001isEmpty, __D0isEmpty
+6	48	108	#line 48 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+6	49	108		set __D0isEmpty, 45
+6	48	111	#line 48 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+6	49	111		cmp 1, __zfisEmpty, __signed_stack_001isEmpty, __D0isEmpty
+6	48	115	#line 48 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+6	49	115		mov __D0isEmpty, __zfisEmpty
+6	49	117	#line 49 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+6	50	117		brtst 4, __NXC_Label_683, __zfisEmpty
+6	50	120	#line 50 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+6	51	120		set __isEmpty_7qG2_right_empty_7qG2_000, 1
+6	50	123	#line 50 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+6	50	123	#line 50 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+6	53	123	#line 53 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+6	53	123	#line 53 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+6	54	123		set __D0isEmpty, -30
+6	53	126	#line 53 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+6	54	126	#pragma macro 7
+6	54	126		setout __constVal2, 2, __D0isEmpty, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+6	7537	149	#line 7537 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+6	53	149	#line 53 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+6	53	149	#line 53 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+6	54	149		set __D0isEmpty, 30
+6	53	152	#line 53 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+6	54	152	#pragma macro 7
+6	54	152		setout __constVal0, 2, __D0isEmpty, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+6	7544	175	#line 7544 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+6	53	175	#line 53 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+6	53	175	#line 53 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+6	54	175	#line 54 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+6	54	175	#line 54 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+6	55	175		set __Wait_7qG2_ms_7qG2_000_inline_isEmpty, 1000
+6	54	178	#line 54 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+6	7921	178	#line 7921 "NXCDefs.h"
+6	7922	178		wait 1000
+6	7921	180	#line 7921 "NXCDefs.h"
+6	55	180	#line 55 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+6	56	180	#line 56 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+6	57	180	#pragma macro 7
+6	57	180		setout __OUT_AC, 2, __constVal0, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+6	7559	203	#line 7559 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+6	56	203	#line 56 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+6	56	203	#line 56 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+6	57	203		set __Wait_7qG2_ms_7qG2_000_inline_isEmpty, 500
+6	56	206	#line 56 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+6	7921	206	#line 7921 "NXCDefs.h"
+6	7922	206		wait 500
+6	7921	208	#line 7921 "NXCDefs.h"
+6	57	208	#line 57 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+6	57	208	#line 57 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+6	58	208	#pragma macro 26
+6	58	208		acquire __RLSBmutex0
+6	58	209		mov __RLSReadBuf0, __RLSBbufLSWrite1
+6	58	211		set __RLSBytesCount0, 1
+6	58	214		wait 15
+6	58	216		subcall __ReadLSBytes0, ____ReadLSBytes0_return
+6	58	218		index __D0isEmpty, __RLSReadBuf0, 65535
+6	58	222		release __RLSBmutex0
+6	7572	223	#line 7572 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+6	57	223	#line 57 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+6	58	223		mov __signed_stack_001isEmpty, __D0isEmpty
+6	57	225	#line 57 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+6	58	225		set __D0isEmpty, 45
+6	57	228	#line 57 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+6	58	228		cmp 1, __zfisEmpty, __signed_stack_001isEmpty, __D0isEmpty
+6	57	232	#line 57 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+6	58	232		mov __D0isEmpty, __zfisEmpty
+6	58	234	#line 58 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+6	59	234		brtst 4, __NXC_Label_698, __zfisEmpty
+6	59	237	#line 59 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+6	60	237		set __isEmpty_7qG2_left_empty_7qG2_000, 1
+6	59	240	#line 59 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+6	59	240	#line 59 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+6	62	240	#line 62 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+6	62	240	#line 62 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+6	63	240		mov __signed_stack_001isEmpty, __isEmpty_7qG2_left_empty_7qG2_000
+6	62	242	#line 62 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+6	62	242	#line 62 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+6	63	242		set __D0isEmpty, 1
+6	62	245	#line 62 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+6	63	245		cmp 4, __zfisEmpty, __signed_stack_001isEmpty, __D0isEmpty
+6	62	249	#line 62 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+6	63	249		mov __D0isEmpty, __zfisEmpty
+6	62	251	#line 62 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+6	63	251		brtst 4, __NXC_Label_702, __zfisEmpty
+6	62	254	#line 62 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+6	63	254		mov __signed_stack_001isEmpty, __D0isEmpty
+6	62	256	#line 62 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+6	63	256		mov __signed_stack_002isEmpty, __isEmpty_7qG2_right_empty_7qG2_000
+6	62	258	#line 62 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+6	62	258	#line 62 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+6	63	258		set __D0isEmpty, 1
+6	62	261	#line 62 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+6	63	261		cmp 4, __zfisEmpty, __signed_stack_002isEmpty, __D0isEmpty
+6	62	265	#line 62 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+6	62	265	#line 62 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+6	63	265		and __D0isEmpty, __signed_stack_001isEmpty, __zfisEmpty
+6	63	269	#line 63 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+6	64	269		tst 5, __zfisEmpty, __D0isEmpty
+6	63	272	#line 63 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+6	64	272		brtst 4, __NXC_Label_703, __zfisEmpty
+6	64	275	#line 64 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+6	65	275		set __DU0isEmpty, 1
+6	64	278	#line 64 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+6	64	278	#line 64 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+6	65	278		subret __isEmpty_return
+6	64	280	#line 64 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+6	65	280	#line 65 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+6	66	280		jmp __NXC_Label_706
+6	65	282	#line 65 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+6	66	282		set __DU0isEmpty, 0
+6	65	285	#line 65 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+6	65	285	#line 65 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+6	66	285		subret __isEmpty_return
+6	65	287	#line 65 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+6	69	287	#line 69 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+6	69	287	#line 69 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+6	70	287		subret __isEmpty_return
+7	71	0	#line 71 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+7	72	0		getin __signed_stack_001find_light, __constVal3, 4
+7	71	4	#line 71 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+7	71	4	#line 71 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+7	72	4		set __D0find_light, 40
+7	71	7	#line 71 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+7	72	7		cmp 0, __zffind_light, __signed_stack_001find_light, __D0find_light
+7	71	11	#line 71 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+7	72	11		mov __D0find_light, __zffind_light
+7	72	13	#line 72 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+7	73	13		brtst 4, __NXC_Label_710, __zffind_light
+7	72	16	#line 72 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+7	73	16		set __D0find_light, 30
+7	72	19	#line 72 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+7	73	19	#pragma macro 7
+7	73	19		setout __constVal2, 2, __D0find_light, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+7	7674	42	#line 7674 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+7	72	42	#line 72 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+7	72	42	#line 72 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+7	73	42		set __D0find_light, -30
+7	72	45	#line 72 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+7	73	45	#pragma macro 7
+7	73	45		setout __constVal0, 2, __D0find_light, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+7	7681	68	#line 7681 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+7	72	68	#line 72 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+7	72	68	#line 72 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+7	73	68	#line 73 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+7	76	68	#line 76 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+7	77	68		jmp __NXC_Label_709
+7	76	70	#line 76 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+7	76	70	#line 76 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+7	77	70		subret __find_light_return
+8	214	0	#line 214 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+8	215	0		subret ____initialize_global_data_return
+#CLUMPS
+Clump	Name	Offset	File
+0	main	0	C:\Users\Ben\AppData\Local\Temp\temp.nxc
+1	__ResetSensorSubroutine	200	NXTDefs.h
+2	__ReadLSBytes0	213	NXTDefs.h
+3	init_sensors	297	C:\ENGR102\Lab Code\includes.nxc
+4	search	369	C:\Users\Ben\AppData\Local\Temp\temp.nxc
+5	acquire	574	C:\Users\Ben\AppData\Local\Temp\temp.nxc
+6	isEmpty	738	C:\Users\Ben\AppData\Local\Temp\temp.nxc
+7	find_light	1027	C:\Users\Ben\AppData\Local\Temp\temp.nxc
+8	__initialize_global_data	1099	C:\Users\Ben\AppData\Local\Temp\temp.nxc

@@ -1,0 +1,11 @@
+
+#include "includes.nxc"
+
+task main(){
+    SetSensorColorGreen(Color);
+    int x = ReadSensorColorEx(Color);
+    while(true){
+         TextOut(5,LCD_LINE2, NumToStr(Color));
+    }
+
+}

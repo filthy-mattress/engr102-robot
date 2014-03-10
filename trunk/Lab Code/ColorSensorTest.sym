@@ -1,0 +1,265 @@
+#SYMBOLS
+Index	Identifier	Type	Flag	Data	Size	RefCount
+0	__DU0main	5	1	0	4	8
+1	__signed_stack_001main	6	1	4	4	12
+2	__D0main	6	1	8	4	14
+3	__TextOutMutex	9	0	12	4	12
+4	__signed_stack_003main	6	1	16	4	8
+5	__ResetSensorMutex	9	0	20	4	2
+6	__signed_stack_002main	6	1	24	4	12
+7	__constVal128	4	0	28	2	1
+8	__ArrHelper__main_6_0	3	1	30	2	8
+9	__main_7qG2_x_7qG2_001	4	1	32	2	2
+10	__constVal0	2	1	34	1	4
+11	__ResetSensorPort	1	1	35	1	3
+12	__ResetSensorTmp	1	1	36	1	2
+13	__constVal1	2	0	37	1	3
+14	__SetSensorColorGreen_7qG2_port_7qG2_000_inline_main	1	1	38	1	4
+15	____initialize_global_data_return	1	1	39	1	3
+16	__PFTmp	1	1	40	1	1
+17	__constVal15	2	0	41	1	1
+18	__zfmain	1	1	42	1	2
+19	____ResetSensorSubroutine_return	1	1	43	1	3
+20	__TextOutArgs	8	0	4	16	36
+21	__TextOutArgs.Result	2	1	44	1	36
+22	__TextOutArgs.Location	8	0	2	4	36
+23	__TextOutArgs.Location.X	4	1	48	2	36
+24	__TextOutArgs.Location.Y	4	1	50	2	36
+25	__TextOutArgs.Text	7	0	52	4	36
+26	__TextOutArgs.Text.Text_type	1	0	0	1	0
+27	__TextOutArgs.Options	5	1	56	4	36
+28	__ColorSensorReadArgs	8	0	7	20	4
+29	__ColorSensorReadArgs.Result	2	1	60	1	4
+30	__ColorSensorReadArgs.Port	1	1	61	1	4
+31	__ColorSensorReadArgs.ColorValue	4	1	62	2	4
+32	__ColorSensorReadArgs.RawArray	7	0	64	4	4
+33	__ColorSensorReadArgs.RawArray.RawArray_type	3	0	0	2	0
+34	__ColorSensorReadArgs.NormalizedArray	7	0	66	4	4
+35	__ColorSensorReadArgs.NormalizedArray.NormalizedArray_type	3	0	0	2	0
+36	__ColorSensorReadArgs.ScaledArray	7	0	68	4	4
+37	__ColorSensorReadArgs.ScaledArray.ScaledArray_type	4	0	0	2	0
+38	__ColorSensorReadArgs.Invalid	1	1	70	1	4
+39	__main_7qG2_rawVals_7qG2_000	7	0	72	4	6
+40	__main_7qG2_rawVals_7qG2_000.__main_7qG2_rawVals_7qG2_000_type	3	0	0	2	0
+#SOURCES
+Clump	Line	PC	Source
+0	4	0	#line 4 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	5	0		subcall __initialize_global_data, ____initialize_global_data_return
+0	4	2	#line 4 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	4	2	#line 4 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	5	2		set __SetSensorColorGreen_7qG2_port_7qG2_000_inline_main, 1
+0	4	5	#line 4 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	3822	5	#line 3822 "NXCDefs.h"
+0	3823	5	#pragma macro 6
+0	3823	5		setin __constVal15, __SetSensorColorGreen_7qG2_port_7qG2_000_inline_main, 0
+0	3823	9		setin __constVal128, __SetSensorColorGreen_7qG2_port_7qG2_000_inline_main, 1
+0	3823	13		acquire __ResetSensorMutex
+0	3823	14		mov __ResetSensorPort, __SetSensorColorGreen_7qG2_port_7qG2_000_inline_main
+0	3823	16		subcall __ResetSensorSubroutine, ____ResetSensorSubroutine_return
+0	3823	18		release __ResetSensorMutex
+0	3999	19	#line 3999 "NXCDefs.h"
+0	3822	19	#line 3822 "NXCDefs.h"
+0	5	19	#line 5 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	6	19	#line 6 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	7	19		arrbuild __main_7qG2_rawVals_7qG2_000, __constVal0, __constVal0, __constVal0, __constVal0
+0	6	26	#line 6 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	7	26		set __D0main, 1
+0	7	29	#line 7 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	8	29		tst 5, __zfmain, __D0main
+0	7	32	#line 7 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	8	32		brtst 4, __NXC_Label_518, __zfmain
+0	7	35	#line 7 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	8	35	#pragma macro 6
+0	8	35		mov __ColorSensorReadArgs.Port, __constVal1
+0	8	37		syscall 34, __ColorSensorReadArgs
+0	8	40		mov __main_7qG2_rawVals_7qG2_000, __ColorSensorReadArgs.RawArray
+0	8	42		tst 4, __D0main, __ColorSensorReadArgs.Result
+0	4022	45	#line 4022 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	7	45	#line 7 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	8	45		mov __main_7qG2_x_7qG2_001, __D0main
+0	8	47	#line 8 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	9	47		set __signed_stack_001main, 5
+0	8	50	#line 8 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	8	50	#line 8 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	9	50		set __signed_stack_002main, 56
+0	8	53	#line 8 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	8	53	#line 8 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	9	53		set __signed_stack_003main, 0
+0	8	56	#line 8 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	8	56	#line 8 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	9	56		index __ArrHelper__main_6_0, __main_7qG2_rawVals_7qG2_000, __signed_stack_003main
+0	8	60	#line 8 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	9	60		mov __DU0main, __ArrHelper__main_6_0
+0	9	62	#line 9 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	10	62		acquire __TextOutMutex
+0	9	63	#line 9 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	10	63		mov __TextOutArgs.Location.X, __signed_stack_001main
+0	9	65	#line 9 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	10	65		mov __TextOutArgs.Location.Y, __signed_stack_002main
+0	9	67	#line 9 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	10	67		set __TextOutArgs.Options, 0
+0	9	70	#line 9 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	10	70		numtostr __TextOutArgs.Text, __DU0main
+0	9	73	#line 9 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	10	73		syscall 13, __TextOutArgs
+0	9	76	#line 9 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	10	76		mov __D0main, __TextOutArgs.Result
+0	9	78	#line 9 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	10	78		release __TextOutMutex
+0	9	79	#line 9 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	9	79	#line 9 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	10	79		set __signed_stack_001main, 5
+0	9	82	#line 9 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	9	82	#line 9 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	10	82		set __signed_stack_002main, 48
+0	9	85	#line 9 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	9	85	#line 9 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	10	85		set __signed_stack_003main, 1
+0	9	88	#line 9 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	9	88	#line 9 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	10	88		index __ArrHelper__main_6_0, __main_7qG2_rawVals_7qG2_000, __signed_stack_003main
+0	9	92	#line 9 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	10	92		mov __DU0main, __ArrHelper__main_6_0
+0	10	94	#line 10 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	11	94		acquire __TextOutMutex
+0	10	95	#line 10 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	11	95		mov __TextOutArgs.Location.X, __signed_stack_001main
+0	10	97	#line 10 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	11	97		mov __TextOutArgs.Location.Y, __signed_stack_002main
+0	10	99	#line 10 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	11	99		set __TextOutArgs.Options, 0
+0	10	102	#line 10 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	11	102		numtostr __TextOutArgs.Text, __DU0main
+0	10	105	#line 10 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	11	105		syscall 13, __TextOutArgs
+0	10	108	#line 10 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	11	108		mov __D0main, __TextOutArgs.Result
+0	10	110	#line 10 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	11	110		release __TextOutMutex
+0	10	111	#line 10 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	10	111	#line 10 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	11	111		set __signed_stack_001main, 5
+0	10	114	#line 10 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	10	114	#line 10 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	11	114		set __signed_stack_002main, 40
+0	10	117	#line 10 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	10	117	#line 10 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	11	117		set __signed_stack_003main, 2
+0	10	120	#line 10 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	10	120	#line 10 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	11	120		index __ArrHelper__main_6_0, __main_7qG2_rawVals_7qG2_000, __signed_stack_003main
+0	10	124	#line 10 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	11	124		mov __DU0main, __ArrHelper__main_6_0
+0	11	126	#line 11 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	12	126		acquire __TextOutMutex
+0	11	127	#line 11 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	12	127		mov __TextOutArgs.Location.X, __signed_stack_001main
+0	11	129	#line 11 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	12	129		mov __TextOutArgs.Location.Y, __signed_stack_002main
+0	11	131	#line 11 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	12	131		set __TextOutArgs.Options, 0
+0	11	134	#line 11 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	12	134		numtostr __TextOutArgs.Text, __DU0main
+0	11	137	#line 11 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	12	137		syscall 13, __TextOutArgs
+0	11	140	#line 11 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	12	140		mov __D0main, __TextOutArgs.Result
+0	11	142	#line 11 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	12	142		release __TextOutMutex
+0	11	143	#line 11 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	11	143	#line 11 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	12	143		set __signed_stack_001main, 5
+0	11	146	#line 11 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	11	146	#line 11 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	12	146		set __signed_stack_002main, 32
+0	11	149	#line 11 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	11	149	#line 11 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	12	149		set __signed_stack_003main, 3
+0	11	152	#line 11 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	11	152	#line 11 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	12	152		index __ArrHelper__main_6_0, __main_7qG2_rawVals_7qG2_000, __signed_stack_003main
+0	11	156	#line 11 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	12	156		mov __DU0main, __ArrHelper__main_6_0
+0	12	158	#line 12 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	13	158		acquire __TextOutMutex
+0	12	159	#line 12 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	13	159		mov __TextOutArgs.Location.X, __signed_stack_001main
+0	12	161	#line 12 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	13	161		mov __TextOutArgs.Location.Y, __signed_stack_002main
+0	12	163	#line 12 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	13	163		set __TextOutArgs.Options, 0
+0	12	166	#line 12 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	13	166		numtostr __TextOutArgs.Text, __DU0main
+0	12	169	#line 12 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	13	169		syscall 13, __TextOutArgs
+0	12	172	#line 12 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	13	172		mov __D0main, __TextOutArgs.Result
+0	12	174	#line 12 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	13	174		release __TextOutMutex
+0	12	175	#line 12 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	12	175	#line 12 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	13	175		set __signed_stack_001main, 5
+0	12	178	#line 12 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	12	178	#line 12 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	13	178		set __signed_stack_002main, 24
+0	12	181	#line 12 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	12	181	#line 12 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	13	181		getin __D0main, __constVal1, 4
+0	13	185	#line 13 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	14	185		acquire __TextOutMutex
+0	13	186	#line 13 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	14	186		mov __TextOutArgs.Location.X, __signed_stack_001main
+0	13	188	#line 13 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	14	188		mov __TextOutArgs.Location.Y, __signed_stack_002main
+0	13	190	#line 13 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	14	190		set __TextOutArgs.Options, 0
+0	13	193	#line 13 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	14	193		numtostr __TextOutArgs.Text, __D0main
+0	13	196	#line 13 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	14	196		syscall 13, __TextOutArgs
+0	13	199	#line 13 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	14	199		mov __D0main, __TextOutArgs.Result
+0	13	201	#line 13 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	14	201		release __TextOutMutex
+0	13	202	#line 13 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	13	202	#line 13 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	13	202	#line 13 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	14	202		set __signed_stack_001main, 5
+0	13	205	#line 13 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	13	205	#line 13 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	14	205		set __signed_stack_002main, 16
+0	13	208	#line 13 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	13	208	#line 13 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	14	208		mov __D0main, __main_7qG2_x_7qG2_001
+0	14	210	#line 14 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	15	210		acquire __TextOutMutex
+0	14	211	#line 14 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	15	211		mov __TextOutArgs.Location.X, __signed_stack_001main
+0	14	213	#line 14 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	15	213		mov __TextOutArgs.Location.Y, __signed_stack_002main
+0	14	215	#line 14 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	15	215		set __TextOutArgs.Options, 0
+0	14	218	#line 14 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	15	218		numtostr __TextOutArgs.Text, __D0main
+0	14	221	#line 14 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	15	221		syscall 13, __TextOutArgs
+0	14	224	#line 14 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	15	224		mov __D0main, __TextOutArgs.Result
+0	14	226	#line 14 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	15	226		release __TextOutMutex
+0	14	227	#line 14 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	18	227	#line 18 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	19	227		jmp __NXC_Label_517
+0	18	229	#line 18 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+0	19	229		exit -1, -1
+1	4885	0		setin __constVal1, __ResetSensorPort, 5
+1	4887	4		getin __ResetSensorTmp, __ResetSensorPort, 5
+1	4888	8		brtst 5, __SensorStillInvalid, __ResetSensorTmp
+1	4889	11		subret ____ResetSensorSubroutine_return
+2	19	0	#line 19 "C:\Users\Ben\AppData\Local\Temp\temp.nxc"
+2	20	0		subret ____initialize_global_data_return
+#CLUMPS
+Clump	Name	Offset	File
+0	main	0	C:\Users\Ben\AppData\Local\Temp\temp.nxc
+1	__ResetSensorSubroutine	232	NXTDefs.h
+2	__initialize_global_data	245	C:\Users\Ben\AppData\Local\Temp\temp.nxc
