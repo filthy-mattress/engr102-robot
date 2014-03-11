@@ -1,6 +1,8 @@
 #ifndef __INCLUDES__
 #define __INCLUDES__
 
+#include "timer.nxc"
+
 //Motor ports
 #define RIGHT_MOTOR OUT_A
 #define LEFT_MOTOR OUT_C
@@ -33,8 +35,12 @@
 #define NEAR2 (8)
 #define NEARWALL (15)
 #define MAGNETISM (500)
-#define LIGHT_THRESHOLD (40)
+#define LIGHT_THRESHOLD (50)
 #define MAGNET_TURN_STRENGTH (60)
+
+enum ZPTurnDir{
+    LEFT, RIGHT
+};
 
 void init_sensors(){
    SetSensorType(ULTRASONIC, SENSOR_TYPE_LOWSPEED);
