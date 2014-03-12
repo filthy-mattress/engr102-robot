@@ -14,8 +14,24 @@ task timer(){
     }while(timer_repeat);
     timer_running=false;
 }
-#define timer_start(time) {timer_period=time;StartTask(timer);}
-#define timer_start_reps(time) {timer_repeat=true;timer_start(time);}
+void timer_start(unsigned long time) {
+	if(timer_running){//No simultaneous timers!
+		bool tmp=timer_repeat;
+		timer_repeat=false;
+		while(timer_running){}
+		timer_repeat=tmp;
+	}
+	timer_period=time;
+	StartTask(timer);
+}
+void timer_start_reps(unsigned long time) {
+	timer_repeat=true;
+	timer_start(time);
+}
+void timer_start_noreps(unsigned long time){
+	timer_repeat=false;
+	timer_start(time);
+}
 
 
 #endif
