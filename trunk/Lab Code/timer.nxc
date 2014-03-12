@@ -1,0 +1,21 @@
+#ifndef __TIMER__
+#define __TIMER__
+
+bool timer_running=false;
+unsigned long timer_period=0;
+unsigned int timer_reps=0;
+bool timer_repeat=false;
+task timer(){
+    timer_running=true;
+    timer_reps=0;
+    do{
+        timer_reps++;
+        Wait(timer_period);
+    }while(timer_repeat);
+    timer_running=false;
+}
+#define timer_start(time) {timer_period=time;StartTask(timer);}
+#define timer_start_reps(time) {timer_repeat=true;timer_start(time);}
+
+
+#endif

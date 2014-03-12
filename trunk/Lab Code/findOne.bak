@@ -18,7 +18,7 @@ sub search(){
      zp_turn_l(30);
      while(SPIN_MODE == 1){
         if(SensorUS(ULTRASONIC)<NEAR){
-           Wait(200);// correct for sensor width
+           Wait(350);// correct for sensor width
            Off(BOTH_MOTORS);
 
            // Go to Object
@@ -32,13 +32,13 @@ sub search(){
 }
 void open_gate(){
       OnFwd(GATE_MOTOR,30);
-      Wait(1000);
+      Wait(1300);
       Off(GATE_MOTOR);
 }
 
 void close_gate(){
       OnRev(GATE_MOTOR,30);
-      Wait(500);
+      Wait(700);
       Off(GATE_MOTOR);
 
 }
@@ -57,10 +57,10 @@ bool isEmpty(){
  // Check to see if both sides of object are empty
      int left_empty = 0;
      int right_empty = 0;
-
+     unsigned long time= 800;
      // right
      zp_turn_r(30);
-     Wait(600);
+     Wait(800);
      Off(BOTH_MOTORS);
      Wait(500);
      if (SensorUS(ULTRASONIC)>NEAR){
@@ -69,7 +69,7 @@ bool isEmpty(){
 
      // left
      zp_turn_l(30);
-     Wait(1000);
+     Wait(1400);
      Off(BOTH_MOTORS);
      Wait(500);
      if (SensorUS(ULTRASONIC)>NEAR){
@@ -87,9 +87,17 @@ bool isEmpty(){
 void find_light(){
       // spin around and find light
          while (READ_LIGHT<LIGHT_THRESHOLD){
-             zp_turn_r(30);
+             zp_turn_r(50);
          }
          Off(BOTH_MOTORS);
+}
+
+void fwd_until_near(){
+    // go forward until near again
+    while(SensorUS(ULTRASONIC)>NEAR){
+        OnFwd(BOTH_MOTORS, MOVE_SPEED);
+    }
+    Off(BOTH_MOTORS);
 }
 
 int magnet_move_running=0;
@@ -103,34 +111,12 @@ task magnet_move(){
              find_light();
          // move to wall, check if wall
              while(wall_looking == 1){
-                  while(SensorUS(ULTRASONIC)>NEARWALL){
+                  while(READ_ULTRASONIC>NEARWALL){
                        OnFwd(BOTH_MOTORS, MOVE_SPEED);
                   }
-
-             // Check to see if either side of object are empty
-                 int left_empty = 0;
-                 int right_empty = 0;
-
-                 // left
-                 zp_turn_r(MAGNET_TURN_STRENGTH);
-                 Wait(200);
-                 Off(BOTH_MOTORS);
-                 if (SensorUS(ULTRASONIC)>NEAR){
-                    left_empty = 1;
-                 }
-
-                 // right
-                 zp_turn_l(MAGNET_TURN_STRENGTH);
-                 Wait(400);
-                 Off(BOTH_MOTORS);
-                 if (SensorUS(ULTRASONIC)>NEAR){
-                    right_empty = 1;
-                 }
-
-                 // if wall, stop looking for wall
-                 if(left_empty == 0 && right_empty == 0) {
-                     wall_looking = 0;
-                 }
+                  if(isEmpty()){
+                      wall_looking=0;
+                  }
              }
 
          // Turn Left, see if ultrasonic value is increasing or decreasing
@@ -157,10 +143,7 @@ task magnet_move(){
                 Off(BOTH_MOTORS);
 
                 // go forward until near again
-                while(SensorUS(ULTRASONIC)>NEAR){
-                       OnFwd(BOTH_MOTORS, MOVE_SPEED);
-                }
-                Off(BOTH_MOTORS);
+                fwd_until_near();
 
             }
 
@@ -179,10 +162,7 @@ task magnet_move(){
                Off(BOTH_MOTORS);
 
                // go forward until near again
-               while(SensorUS(ULTRASONIC)>NEAR){
-                     OnFwd(BOTH_MOTORS, MOVE_SPEED);
-               }
-               Off(BOTH_MOTORS);
+               fwd_until_near();
 
             }
      }
@@ -191,6 +171,8 @@ task magnet_move(){
 #define magnet_turn_start {StartTask(magnet_move);}
 #define magnet_turn_stop {magnet_move_running=0;until(magnet_move_done);}
 
+int magnet_initial;
+
 task main() {
 
      // Init sensors
@@ -198,7 +180,7 @@ task main() {
    test_color();
    // Move forward initially
    fwd_timed(1000);
-
+   magnet_initial=READ_MAGNETIC-10;
 
    // Main Loop
    int MAIN_LOOP = 1;
@@ -209,34 +191,28 @@ task main() {
     
     // Check to see if both sides of object are empty
    // If both were empty then turn back to original facing and proceed
-     if(isEmpty() == true) {
+     if(isEmpty()) {
      
          // turn back other direction
          zp_turn_r(30);
-         Wait(600);
+         Wait(800);
          Off(BOTH_MOTORS);
          
          // get object
          acquire();
-         
-         while(READ_COLOR <40){
-              find_light();
-         
-              // turn off motors once light found
-              Off(BOTH_MOTORS);
-         
-              // if not magnetic go forward
-              //if (READ_MAGNETIC<MAGNETISM){
-                  fwd_timed(3000);
-              /*}else{
-                    // if magnetic, proceed
-                    magnet_turn_start;
-                    while(READ_MAGNETIC>=MAGNETISM);
-                    magnet_turn_stop;
-              }*/
+         if(READ_MAGNETIC>magnet_initial){
+              while(READ_COLOR <10){
+                   find_light();
+                   // turn off motors once light found
+                   Off(BOTH_MOTORS);
+                   fwd_timed(1500);
+              }
          }
          open_gate();
          rev_timed(3000);
+         close_gate();
+         zp_turn_l(MOVE_SPEED);
+         Wait(800);
      }
 
    

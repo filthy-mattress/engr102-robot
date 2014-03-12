@@ -1,1276 +1,1355 @@
 #SYMBOLS
 Index	Identifier	Type	Flag	Data	Size	RefCount
-0	__D0search	6	1	0	4	19
-1	__D0task_test_color	6	1	4	4	5
-2	__D0PlaySound	6	1	8	4	48
-3	__D0rev_timed	6	1	12	4	2
-4	__signed_stack_002isEmpty	6	1	16	4	2
-5	__signed_stack_001main	6	1	20	4	4
-6	__signed_stack_001find_light	6	1	24	4	2
-7	__signed_stack_001isEmpty	6	1	28	4	8
-8	__D0find_light	6	1	32	4	7
+0	__D0task_test_color	6	1	0	4	7
+1	__D0zp_turn_timed	6	1	4	4	14
+2	__D0rev_timed	6	1	8	4	2
+3	__D0search	6	1	12	4	24
+4	__DU0zp_turn_timed	5	1	16	4	2
+5	__signed_stack_001main	6	1	20	4	12
+6	__signed_stack_001PlaySound	6	1	24	4	44
+7	__signed_stack_001find_light	6	1	28	4	4
+8	__signed_stack_001isEmpty	6	1	32	4	8
 9	__D0fwd_timed	6	1	36	4	2
-10	__SPTArgsMutex	9	0	40	4	14
+10	__D0isEmpty	6	1	40	4	20
 11	__D0close_gate	6	1	44	4	2
-12	__D0main	6	1	48	4	13
-13	__D0open_gate	6	1	52	4	2
-14	__D0isEmpty	6	1	56	4	26
-15	__DU0isEmpty	5	1	60	4	3
-16	__unsigned_stack_001main	5	1	64	4	2
-17	__Wait_7qG2_ms_7qG2_000_inline_search	5	1	68	4	2
-18	__Wait_7qG2_ms_7qG2_000_inline_open_gate	5	1	72	4	2
-19	__rev_timed_7qG2_time_7qG2_000	5	1	76	4	2
-20	__Wait_7qG2_ms_7qG2_000_inline_rev_timed	5	1	80	4	2
-21	__Wait_7qG2_ms_7qG2_000_inline_isEmpty	5	1	84	4	8
-22	__Wait_7qG2_ms_7qG2_000_inline_main	5	1	88	4	2
-23	__Wait_7qG2_ms_7qG2_000_inline_close_gate	5	1	92	4	2
-24	__isEmpty_7qG2_time_7qG2_000	5	1	96	4	3
-25	__signed_stack_003PlaySound	6	1	100	4	14
-26	__signed_stack_001search	6	1	104	4	6
-27	__signed_stack_001PlaySound	6	1	108	4	38
-28	__signed_stack_002PlaySound	6	1	112	4	14
-29	__fwd_timed_7qG2_time_7qG2_000	5	1	116	4	4
-30	__Wait_7qG2_ms_7qG2_000_inline_fwd_timed	5	1	120	4	2
-31	__signed_stack_001task_test_color	6	1	124	4	2
-32	__signed_stack_002task_test_color	6	1	128	4	2
-33	__CLSCSMutex0	9	0	132	4	2
-34	__OnRevMutex	9	0	136	4	4
-35	__CLSWMutex0	9	0	140	4	2
-36	__RLSBmutex0	9	0	144	4	8
-37	__CLSRMutex0	9	0	148	4	2
+12	__D0find_light	6	1	48	4	10
+13	__DU0isEmpty	5	1	52	4	3
+14	__D0open_gate	6	1	56	4	2
+15	__D0PlaySound	6	1	60	4	69
+16	__D0main	6	1	64	4	28
+17	__DU0main	5	1	68	4	2
+18	__zp_turn_timed_7qG2_time_7qG2_000	5	1	72	4	4
+19	__Wait_7qG2_ms_7qG2_000_inline_zp_turn_timed	5	1	76	4	2
+20	__rev_timed_7qG2_time_7qG2_000	5	1	80	4	3
+21	__Wait_7qG2_ms_7qG2_000_inline_rev_timed	5	1	84	4	2
+22	__Wait_7qG2_ms_7qG2_000_inline_search	5	1	88	4	2
+23	__Wait_7qG2_ms_7qG2_000_inline_isEmpty	5	1	92	4	4
+24	__Wait_7qG2_ms_7qG2_000_inline_main	5	1	96	4	4
+25	__Wait_7qG2_ms_7qG2_000_inline_open_gate	5	1	100	4	2
+26	__Wait_7qG2_ms_7qG2_000_inline_close_gate	5	1	104	4	2
+27	__signed_stack_001search	6	1	108	4	8
+28	__signed_stack_001task_test_color	6	1	112	4	2
+29	__signed_stack_002PlaySound	6	1	116	4	14
+30	__signed_stack_003PlaySound	6	1	120	4	14
+31	__signed_stack_002task_test_color	6	1	124	4	2
+32	__fwd_timed_7qG2_time_7qG2_000	5	1	128	4	4
+33	__Wait_7qG2_ms_7qG2_000_inline_fwd_timed	5	1	132	4	2
+34	__signed_stack_001zp_turn_timed	6	1	136	4	4
+35	__unsigned_stack_001zp_turn_timed	5	1	140	4	2
+36	__CLSRMutex0	9	0	144	4	2
+37	__CLSWMutex0	9	0	148	4	2
 38	__TextOutMutex	9	0	152	4	2
-39	__constVal500	4	0	156	2	1
-40	__PlaySound_7qG2_aCode_7qG2_000	4	1	158	2	8
-41	__search_7qG2_SPIN_MODE_7qG2_000	4	1	160	2	3
-42	__PlaySound_7qG2_i_7qG2_001	4	1	162	2	15
-43	__constVal150	4	0	164	2	1
-44	__isEmpty_7qG2_right_empty_7qG2_000	4	1	166	2	3
-45	__constVal128	4	0	168	2	1
-46	__main_7qG2_MAIN_LOOP_7qG2_000	4	1	170	2	2
-47	__constVal200	4	0	172	2	1
-48	__isEmpty_7qG2_left_empty_7qG2_000	4	1	174	2	3
-49	__constVal523	4	0	176	2	3
-50	__constVal63	2	0	178	1	25
-51	__constVal96	2	0	179	1	25
-52	__constVal4	2	0	180	1	3
-53	__SetSensorMode_7qG2_port_7qG2_000_inline_init_sensors	1	1	181	1	2
-54	__SetSensorMode_7qG2_mode_7qG2_000_inline_init_sensors	1	1	182	1	2
-55	__SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorHTMagnet_inline_init_sensors	1	1	183	1	2
-56	__SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorHTMagnet_inline_init_sensors	1	1	184	1	2
-57	__ResetSensorPort	1	1	185	1	4
-58	__fwd_timed_return	1	1	186	1	5
-59	__test_color_return	1	1	187	1	3
-60	__task_test_color_Spawner_return	1	1	188	1	1
-61	__acquire_return	1	1	189	1	3
-62	__constVal32	2	0	190	1	75
-63	__close_gate_return	1	1	191	1	4
-64	__isEmpty_return	1	1	192	1	5
-65	____initialize_global_data_return	1	1	193	1	3
-66	__find_light_return	1	1	194	1	3
-67	__OnRev_Tmp	2	1	195	1	4
-68	__constVal1	2	0	196	1	11
-69	__constVal50	2	0	197	1	1
-70	__rev_timed_return	1	1	198	1	3
-71	__constVal3	2	0	199	1	26
-72	__search_return	1	1	200	1	3
-73	__open_gate_return	1	1	201	1	4
-74	__constVal0	2	1	202	1	91
-75	__constValNeg30	2	0	203	1	5
-76	__RLSBResult0	2	1	204	1	7
-77	__RLSBytesCount0	1	1	205	1	10
-78	__zfmain	1	1	206	1	9
-79	__zfPlaySound	1	1	207	1	27
-80	__zftask_test_color	1	1	208	1	2
-81	____ReadLSBytes0_return	1	1	209	1	6
-82	__zfsearch	1	1	210	1	9
-83	__zffind_light	1	1	211	1	3
-84	__constVal100	2	0	212	1	2
-85	__PFTmp	1	1	213	1	1
-86	__constVal2	2	0	214	1	7
-87	__RLSBIterations0	1	1	215	1	4
-88	__zfisEmpty	1	1	216	1	13
-89	__constVal15	2	0	217	1	16
-90	__SetSensorType_7qG2_port_7qG2_000_inline_init_sensors	1	1	218	1	4
-91	__SetSensorType_7qG2_type_7qG2_000_inline_init_sensors	1	1	219	1	4
-92	__PlaySound_return	1	1	220	1	4
-93	__init_sensors_return	1	1	221	1	3
-94	__SetSensorType_7qG2_port_7qG2_000_inline_SetSensorHTMagnet_inline_init_sensors	1	1	222	1	2
-95	__SetSensorType_7qG2_type_7qG2_000_inline_SetSensorHTMagnet_inline_init_sensors	1	1	223	1	2
-96	__SetSensorColorGreen_7qG2_port_7qG2_000_inline_init_sensors	1	1	224	1	4
-97	__SetSensorHTMagnet_7qG2_port_7qG2_000_inline_init_sensors	1	1	225	1	3
-98	____ResetSensorSubroutine_return	1	1	226	1	4
-99	__ResetSensorTmp	1	1	227	1	2
-100	__CLSRArgs0	8	0	4	12	5
-101	__CLSRArgs0.Result	2	1	228	1	5
-102	__CLSRArgs0.Port	1	1	229	1	5
-103	__CLSRArgs0.Buffer	7	0	230	4	5
-104	__CLSRArgs0.Buffer.Buffer_type	1	0	0	1	0
-105	__CLSRArgs0.BufferLen	1	1	232	1	5
-106	__TextOutArgs	8	0	4	16	6
-107	__TextOutArgs.Result	2	1	236	1	6
-108	__TextOutArgs.Location	8	0	2	4	6
-109	__TextOutArgs.Location.X	4	1	240	2	6
-110	__TextOutArgs.Location.Y	4	1	242	2	6
-111	__TextOutArgs.Text	7	0	244	4	6
-112	__TextOutArgs.Text.Text_type	1	0	0	1	0
-113	__TextOutArgs.Options	5	1	248	4	6
-114	__SPTArgs	8	0	5	8	42
-115	__SPTArgs.Result	2	1	252	1	42
-116	__SPTArgs.Frequency	3	1	254	2	42
-117	__SPTArgs.Duration	3	1	256	2	42
-118	__SPTArgs.Loop	1	1	258	1	42
-119	__SPTArgs.Volume	1	1	259	1	42
-120	__CLSWArgs0	8	0	4	12	5
-121	__CLSWArgs0.Result	2	1	260	1	5
-122	__CLSWArgs0.Port	1	1	261	1	5
-123	__CLSWArgs0.Buffer	7	0	262	4	5
-124	__CLSWArgs0.Buffer.Buffer_type	1	0	0	1	0
-125	__CLSWArgs0.ReturnLen	1	1	264	1	5
-126	__CLSCSArgs0	8	0	3	4	4
-127	__CLSCSArgs0.Result	2	1	268	1	4
-128	__CLSCSArgs0.Port	1	1	269	1	4
-129	__CLSCSArgs0.BytesReady	1	1	270	1	4
-130	__OUT_AC	7	0	272	4	11
-131	__OUT_AC.__OUT_AC_type	1	0	0	1	0
-132	__RLSBbufLSWrite1	7	0	274	4	4
-133	__RLSBbufLSWrite1.__RLSBbufLSWrite1_type	1	0	0	1	0
-134	__RLSLastGoodRead0	7	0	276	4	2
-135	__RLSLastGoodRead0.__RLSLastGoodRead0_type	1	0	0	1	0
-136	__RLSReadBuf0	7	0	278	4	14
-137	__RLSReadBuf0.__RLSReadBuf0_type	1	0	0	1	0
+39	__OnRevMutex	9	0	156	4	4
+40	__RLSBmutex0	9	0	160	4	8
+41	__CLSCSMutex0	9	0	164	4	2
+42	__SPTArgsMutex	9	0	168	4	14
+43	__PlaySound_7qG2_i_7qG2_001	4	1	172	2	15
+44	__constVal500	4	0	174	2	1
+45	__PlaySound_7qG2_aCode_7qG2_000	4	1	176	2	8
+46	__search_7qG2_SPIN_MODE_7qG2_000	4	1	178	2	3
+47	__constVal150	4	0	180	2	1
+48	__isEmpty_7qG2_right_empty_7qG2_000	4	1	182	2	3
+49	magnet_initial	4	1	184	2	2
+50	__isEmpty_7qG2_left_empty_7qG2_000	4	1	186	2	3
+51	__main_7qG2_MAIN_LOOP_7qG2_000	4	1	188	2	2
+52	__constVal200	4	0	190	2	1
+53	__constVal128	4	0	192	2	1
+54	__rev_timed_return	1	1	194	1	4
+55	__zp_turn_timed_7qG2_direction_7qG2_000	1	1	195	1	4
+56	__constVal50	2	0	196	1	1
+57	__constVal3	2	0	197	1	29
+58	____ResetSensorSubroutine_return	1	1	198	1	4
+59	__fwd_timed_return	1	1	199	1	5
+60	__test_color_return	1	1	200	1	3
+61	__task_test_color_Spawner_return	1	1	201	1	1
+62	__ResetSensorTmp	1	1	202	1	2
+63	__ResetSensorPort	1	1	203	1	4
+64	__constVal96	2	0	204	1	28
+65	__constVal63	2	0	205	1	28
+66	__constVal32	2	0	206	1	84
+67	__open_gate_return	1	1	207	1	4
+68	__constVal1	2	0	208	1	12
+69	__acquire_return	1	1	209	1	3
+70	__isEmpty_return	1	1	210	1	5
+71	__close_gate_return	1	1	211	1	4
+72	__constVal0	2	1	212	1	103
+73	____initialize_global_data_return	1	1	213	1	3
+74	__zp_turn_timed_return	1	1	214	1	5
+75	__OnRev_Tmp	2	1	215	1	4
+76	__find_light_return	1	1	216	1	3
+77	__search_return	1	1	217	1	3
+78	__SetSensorMode_7qG2_mode_7qG2_000_inline_init_sensors	1	1	218	1	2
+79	__PFTmp	1	1	219	1	1
+80	__LSWriteOptions0	1	1	220	1	1
+81	__constVal15	2	0	221	1	15
+82	LEFT	1	1	222	1	2
+83	__PlaySound_return	1	1	223	1	4
+84	__constVal100	2	0	224	1	2
+85	__RLSBResult0	2	1	225	1	7
+86	__RLSBytesCount0	1	1	226	1	10
+87	__RLSBIterations0	1	1	227	1	4
+88	__constVal2	2	0	228	1	8
+89	____ReadLSBytes0_return	1	1	229	1	6
+90	__SetSensorType_7qG2_type_7qG2_000_inline_SetSensorHTMagnet_inline_init_sensors	1	1	230	1	2
+91	__SetSensorType_7qG2_port_7qG2_000_inline_SetSensorHTMagnet_inline_init_sensors	1	1	231	1	2
+92	__SetSensorHTMagnet_7qG2_port_7qG2_000_inline_init_sensors	1	1	232	1	4
+93	__SetSensorMode_7qG2_port_7qG2_000_inline_init_sensors	1	1	233	1	2
+94	__SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorHTMagnet_inline_init_sensors	1	1	234	1	2
+95	__SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorHTMagnet_inline_init_sensors	1	1	235	1	2
+96	__init_sensors_return	1	1	236	1	3
+97	RIGHT	1	0	237	1	2
+98	__SetSensorType_7qG2_port_7qG2_000_inline_init_sensors	1	1	238	1	4
+99	__SetSensorColorGreen_7qG2_port_7qG2_000_inline_init_sensors	1	1	239	1	4
+100	__SetSensorType_7qG2_type_7qG2_000_inline_init_sensors	1	1	240	1	4
+101	__SPTArgs	8	0	5	8	42
+102	__SPTArgs.Result	2	1	244	1	42
+103	__SPTArgs.Frequency	3	1	246	2	42
+104	__SPTArgs.Duration	3	1	248	2	42
+105	__SPTArgs.Loop	1	1	250	1	42
+106	__SPTArgs.Volume	1	1	251	1	42
+107	__CLSRArgs0	8	0	4	12	5
+108	__CLSRArgs0.Result	2	1	252	1	5
+109	__CLSRArgs0.Port	1	1	253	1	5
+110	__CLSRArgs0.Buffer	7	0	254	4	5
+111	__CLSRArgs0.Buffer.Buffer_type	1	0	0	1	0
+112	__CLSRArgs0.BufferLen	1	1	256	1	5
+113	__CLSWArgs0	8	0	4	12	5
+114	__CLSWArgs0.Result	2	1	260	1	5
+115	__CLSWArgs0.Port	1	1	261	1	5
+116	__CLSWArgs0.Buffer	7	0	262	4	5
+117	__CLSWArgs0.Buffer.Buffer_type	1	0	0	1	0
+118	__CLSWArgs0.ReturnLen	1	1	264	1	5
+119	__CLSCSArgs0	8	0	3	4	4
+120	__CLSCSArgs0.Result	2	1	268	1	4
+121	__CLSCSArgs0.Port	1	1	269	1	4
+122	__CLSCSArgs0.BytesReady	1	1	270	1	4
+123	__TextOutArgs	8	0	4	16	6
+124	__TextOutArgs.Result	2	1	272	1	6
+125	__TextOutArgs.Location	8	0	2	4	6
+126	__TextOutArgs.Location.X	4	1	276	2	6
+127	__TextOutArgs.Location.Y	4	1	278	2	6
+128	__TextOutArgs.Text	7	0	280	4	6
+129	__TextOutArgs.Text.Text_type	1	0	0	1	0
+130	__TextOutArgs.Options	5	1	284	4	6
+131	__RLSLastGoodRead0	7	0	288	4	2
+132	__RLSLastGoodRead0.__RLSLastGoodRead0_type	1	0	0	1	0
+133	__OUT_AC	7	0	290	4	12
+134	__OUT_AC.__OUT_AC_type	1	0	0	1	0
+135	__RLSBbufLSWrite1	7	0	292	4	4
+136	__RLSBbufLSWrite1.__RLSBbufLSWrite1_type	1	0	0	1	0
+137	__RLSReadBuf0	7	0	294	4	14
+138	__RLSReadBuf0.__RLSReadBuf0_type	1	0	0	1	0
 #SOURCES
 Clump	Line	PC	Source
-0	174	0	#line 174 "C:\ENGR102\Lab Code\findOne.nxc"
-0	175	0		subcall __initialize_global_data, ____initialize_global_data_return
-0	174	2	#line 174 "C:\ENGR102\Lab Code\findOne.nxc"
-0	175	2	#line 175 "C:\ENGR102\Lab Code\findOne.nxc"
-0	176	2		subcall init_sensors, __init_sensors_return
-0	175	4	#line 175 "C:\ENGR102\Lab Code\findOne.nxc"
-0	177	4	#line 177 "C:\ENGR102\Lab Code\findOne.nxc"
-0	178	4		subcall test_color, __test_color_return
-0	177	6	#line 177 "C:\ENGR102\Lab Code\findOne.nxc"
-0	177	6	#line 177 "C:\ENGR102\Lab Code\findOne.nxc"
-0	178	6		set __fwd_timed_7qG2_time_7qG2_000, 1000
-0	177	9	#line 177 "C:\ENGR102\Lab Code\findOne.nxc"
-0	181	9	#line 181 "C:\ENGR102\Lab Code\findOne.nxc"
-0	182	9		subcall fwd_timed, __fwd_timed_return
-0	181	11	#line 181 "C:\ENGR102\Lab Code\findOne.nxc"
-0	182	11	#line 182 "C:\ENGR102\Lab Code\findOne.nxc"
-0	183	11		set __main_7qG2_MAIN_LOOP_7qG2_000, 1
-0	182	14	#line 182 "C:\ENGR102\Lab Code\findOne.nxc"
-0	182	14	#line 182 "C:\ENGR102\Lab Code\findOne.nxc"
-0	183	14		mov __signed_stack_001main, __main_7qG2_MAIN_LOOP_7qG2_000
-0	182	16	#line 182 "C:\ENGR102\Lab Code\findOne.nxc"
-0	182	16	#line 182 "C:\ENGR102\Lab Code\findOne.nxc"
-0	183	16		set __D0main, 1
-0	182	19	#line 182 "C:\ENGR102\Lab Code\findOne.nxc"
-0	183	19		cmp 4, __zfmain, __signed_stack_001main, __D0main
-0	182	23	#line 182 "C:\ENGR102\Lab Code\findOne.nxc"
-0	183	23		mov __D0main, __zfmain
-0	185	25	#line 185 "C:\ENGR102\Lab Code\findOne.nxc"
-0	186	25		brtst 4, __NXC_Label_720, __zfmain
-0	189	28	#line 189 "C:\ENGR102\Lab Code\findOne.nxc"
-0	190	28		subcall search, __search_return
-0	189	30	#line 189 "C:\ENGR102\Lab Code\findOne.nxc"
-0	189	30	#line 189 "C:\ENGR102\Lab Code\findOne.nxc"
-0	190	30		subcall isEmpty, __isEmpty_return
-0	189	32	#line 189 "C:\ENGR102\Lab Code\findOne.nxc"
-0	190	32		mov __unsigned_stack_001main, __DU0isEmpty
-0	189	34	#line 189 "C:\ENGR102\Lab Code\findOne.nxc"
-0	189	34	#line 189 "C:\ENGR102\Lab Code\findOne.nxc"
-0	190	34		set __D0main, 1
-0	189	37	#line 189 "C:\ENGR102\Lab Code\findOne.nxc"
-0	190	37		cmp 4, __zfmain, __unsigned_stack_001main, __D0main
-0	189	41	#line 189 "C:\ENGR102\Lab Code\findOne.nxc"
-0	190	41		mov __D0main, __zfmain
-0	192	43	#line 192 "C:\ENGR102\Lab Code\findOne.nxc"
-0	193	43		brtst 4, __NXC_Label_725, __zfmain
-0	192	46	#line 192 "C:\ENGR102\Lab Code\findOne.nxc"
-0	193	46		set __D0main, 30
-0	192	49	#line 192 "C:\ENGR102\Lab Code\findOne.nxc"
-0	193	49	#pragma macro 7
-0	193	49		setout __constVal2, 2, __D0main, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
-0	5722	72	#line 5722 "C:\ENGR102\Lab Code\findOne.nxc"
-0	192	72	#line 192 "C:\ENGR102\Lab Code\findOne.nxc"
-0	192	72	#line 192 "C:\ENGR102\Lab Code\findOne.nxc"
-0	193	72		mov __D0main, __constValNeg30
-0	192	74	#line 192 "C:\ENGR102\Lab Code\findOne.nxc"
-0	193	74	#pragma macro 7
-0	193	74		setout __constVal0, 2, __D0main, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
-0	5729	97	#line 5729 "C:\ENGR102\Lab Code\findOne.nxc"
-0	192	97	#line 192 "C:\ENGR102\Lab Code\findOne.nxc"
-0	192	97	#line 192 "C:\ENGR102\Lab Code\findOne.nxc"
-0	193	97	#line 193 "C:\ENGR102\Lab Code\findOne.nxc"
-0	193	97	#line 193 "C:\ENGR102\Lab Code\findOne.nxc"
-0	194	97		set __Wait_7qG2_ms_7qG2_000_inline_main, 600
-0	193	100	#line 193 "C:\ENGR102\Lab Code\findOne.nxc"
-0	7921	100	#line 7921 "NXCDefs.h"
-0	7922	100		wait2 NA, __Wait_7qG2_ms_7qG2_000_inline_main
-0	7921	103	#line 7921 "NXCDefs.h"
-0	194	103	#line 194 "C:\ENGR102\Lab Code\findOne.nxc"
-0	197	103	#line 197 "C:\ENGR102\Lab Code\findOne.nxc"
-0	198	103	#pragma macro 7
-0	198	103		setout __OUT_AC, 2, __constVal0, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
-0	5748	126	#line 5748 "C:\ENGR102\Lab Code\findOne.nxc"
-0	197	126	#line 197 "C:\ENGR102\Lab Code\findOne.nxc"
-0	199	126	#line 199 "C:\ENGR102\Lab Code\findOne.nxc"
-0	200	126		subcall acquire, __acquire_return
-0	199	128	#line 199 "C:\ENGR102\Lab Code\findOne.nxc"
-0	199	128	#line 199 "C:\ENGR102\Lab Code\findOne.nxc"
-0	200	128		getin __signed_stack_001main, __constVal1, 4
-0	199	132	#line 199 "C:\ENGR102\Lab Code\findOne.nxc"
-0	199	132	#line 199 "C:\ENGR102\Lab Code\findOne.nxc"
-0	200	132		set __D0main, 30
-0	199	135	#line 199 "C:\ENGR102\Lab Code\findOne.nxc"
-0	200	135		cmp 0, __zfmain, __signed_stack_001main, __D0main
-0	199	139	#line 199 "C:\ENGR102\Lab Code\findOne.nxc"
-0	200	139		mov __D0main, __zfmain
-0	200	141	#line 200 "C:\ENGR102\Lab Code\findOne.nxc"
-0	201	141		brtst 4, __NXC_Label_735, __zfmain
-0	203	144	#line 203 "C:\ENGR102\Lab Code\findOne.nxc"
-0	204	144		subcall find_light, __find_light_return
-0	203	146	#line 203 "C:\ENGR102\Lab Code\findOne.nxc"
-0	209	146	#line 209 "C:\ENGR102\Lab Code\findOne.nxc"
-0	210	146	#pragma macro 7
-0	210	146		setout __OUT_AC, 2, __constVal0, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
-0	5774	169	#line 5774 "C:\ENGR102\Lab Code\findOne.nxc"
-0	209	169	#line 209 "C:\ENGR102\Lab Code\findOne.nxc"
-0	209	169	#line 209 "C:\ENGR102\Lab Code\findOne.nxc"
-0	210	169		set __fwd_timed_7qG2_time_7qG2_000, 1500
-0	209	172	#line 209 "C:\ENGR102\Lab Code\findOne.nxc"
-0	216	172	#line 216 "C:\ENGR102\Lab Code\findOne.nxc"
-0	217	172		subcall fwd_timed, __fwd_timed_return
-0	216	174	#line 216 "C:\ENGR102\Lab Code\findOne.nxc"
-0	217	174	#line 217 "C:\ENGR102\Lab Code\findOne.nxc"
-0	218	174		jmp __NXC_Label_734
-0	217	176	#line 217 "C:\ENGR102\Lab Code\findOne.nxc"
-0	218	176	#line 218 "C:\ENGR102\Lab Code\findOne.nxc"
-0	219	176		subcall open_gate, __open_gate_return
-0	218	178	#line 218 "C:\ENGR102\Lab Code\findOne.nxc"
-0	218	178	#line 218 "C:\ENGR102\Lab Code\findOne.nxc"
-0	219	178		set __rev_timed_7qG2_time_7qG2_000, 3000
-0	218	181	#line 218 "C:\ENGR102\Lab Code\findOne.nxc"
-0	219	181	#line 219 "C:\ENGR102\Lab Code\findOne.nxc"
-0	220	181		subcall rev_timed, __rev_timed_return
-0	219	183	#line 219 "C:\ENGR102\Lab Code\findOne.nxc"
-0	220	183	#line 220 "C:\ENGR102\Lab Code\findOne.nxc"
-0	221	183		subcall close_gate, __close_gate_return
-0	220	185	#line 220 "C:\ENGR102\Lab Code\findOne.nxc"
-0	225	185	#line 225 "C:\ENGR102\Lab Code\findOne.nxc"
-0	227	185	#line 227 "C:\ENGR102\Lab Code\findOne.nxc"
-0	228	185		jmp __NXC_Label_719
-0	227	187	#line 227 "C:\ENGR102\Lab Code\findOne.nxc"
-0	228	187		exit -1, -1
-1	4885	0		setin __constVal1, __ResetSensorPort, 5
-1	4887	4		getin __ResetSensorTmp, __ResetSensorPort, 5
-1	4888	8		brtst 5, __SensorStillInvalid, __ResetSensorTmp
-1	4889	11		subret ____ResetSensorSubroutine_return
-2	5672	0	#pragma macro 25
-2	5672	0		acquire __CLSWMutex0
-2	5672	1		set __CLSWArgs0.Port, 0
-2	5672	4		mov __CLSWArgs0.ReturnLen, __RLSBytesCount0
-2	5672	6		mov __CLSWArgs0.Buffer, __RLSReadBuf0
-2	5672	8		syscall 21, __CLSWArgs0
-2	5672	11		mov __RLSBResult0, __CLSWArgs0.Result
-2	5672	13		release __CLSWMutex0
-2	5673	14	#line 5673 "NXTDefs.h"
-2	5674	14		brtst 4, __RLSBReturn0, __RLSBytesCount0
-2	5675	17		arrinit __RLSReadBuf0, __constVal0, __RLSBytesCount0
-2	5676	21		brtst 5, __RLSBError0, __RLSBResult0
-2	5677	24		set __RLSBIterations0, 4
-2	5679	27	#pragma macro 23
-2	5679	27		acquire __CLSCSMutex0
-2	5679	28		set __CLSCSArgs0.Port, 0
-2	5679	31		syscall 23, __CLSCSArgs0
-2	5679	34		mov __RLSBytesCount0, __CLSCSArgs0.BytesReady
-2	5679	36		mov __RLSBResult0, __CLSCSArgs0.Result
-2	5679	38		release __CLSCSMutex0
-2	5679	39	#line 5679 "NXTDefs.h"
-2	5680	39		sub __RLSBIterations0, __RLSBIterations0, __constVal1
-2	5681	43		brtst 2, __RLSBError0, __RLSBIterations0
-2	5682	46		brtst 0, __RLSBError0, __RLSBResult0
-2	5683	49		brtst 4, __RLSBReadyToRead0, __RLSBResult0
-2	5685	52		wait2 NA, __constVal15
-2	5686	55		jmp __RLSBDoCheckStatus0
-2	5689	57	#pragma macro 25
-2	5689	57		acquire __CLSRMutex0
-2	5689	58		set __CLSRArgs0.Port, 0
-2	5689	61		mov __CLSRArgs0.BufferLen, __RLSBytesCount0
-2	5689	63		syscall 22, __CLSRArgs0
-2	5689	66		mov __RLSReadBuf0, __CLSRArgs0.Buffer
-2	5689	68		mov __RLSBResult0, __CLSRArgs0.Result
-2	5689	70		release __CLSRMutex0
-2	5689	71	#line 5689 "NXTDefs.h"
-2	5690	71		brtst 5, __RLSBError0, __RLSBResult0
-2	5691	74		mov __RLSLastGoodRead0, __RLSReadBuf0
-2	5692	76		jmp __RLSBDone0
-2	5694	78		mov __RLSReadBuf0, __RLSLastGoodRead0
-2	5696	80		arrsize __RLSBytesCount0, __RLSReadBuf0
-2	5698	83		subret ____ReadLSBytes0_return
-3	6518	0	#line 6518 "NXCDefs.h"
-3	6519	0		mov __signed_stack_001PlaySound, __PlaySound_7qG2_aCode_7qG2_000
-3	6518	2	#line 6518 "NXCDefs.h"
-3	6519	2	#line 6519 "NXCDefs.h"
-3	6520	2		set __D0PlaySound, 0
-3	6519	5	#line 6519 "NXCDefs.h"
-3	6520	5		cmp 4, __zfPlaySound, __signed_stack_001PlaySound, __D0PlaySound
-3	6519	9	#line 6519 "NXCDefs.h"
-3	6520	9		mov __D0PlaySound, __zfPlaySound
-3	6519	11	#line 6519 "NXCDefs.h"
-3	6520	11		brtst 4, __NXC_Label_56, __zfPlaySound
-3	6519	14	#line 6519 "NXCDefs.h"
-3	6520	14		set __signed_stack_001PlaySound, 600
-3	6519	17	#line 6519 "NXCDefs.h"
-3	6519	17	#line 6519 "NXCDefs.h"
-3	6520	17		set __signed_stack_002PlaySound, 200
-3	6519	20	#line 6519 "NXCDefs.h"
-3	6519	20	#line 6519 "NXCDefs.h"
-3	6520	20		set __signed_stack_003PlaySound, 4
-3	6519	23	#line 6519 "NXCDefs.h"
-3	6519	23	#line 6519 "NXCDefs.h"
-3	6520	23		set __D0PlaySound, 0
-3	6520	26	#line 6520 "NXCDefs.h"
-3	6521	26		acquire __SPTArgsMutex
-3	6520	27	#line 6520 "NXCDefs.h"
-3	6521	27		mov __SPTArgs.Frequency, __signed_stack_001PlaySound
-3	6520	29	#line 6520 "NXCDefs.h"
-3	6521	29		mov __SPTArgs.Duration, __signed_stack_002PlaySound
-3	6520	31	#line 6520 "NXCDefs.h"
-3	6521	31		mov __SPTArgs.Volume, __signed_stack_003PlaySound
-3	6520	33	#line 6520 "NXCDefs.h"
-3	6521	33		mov __SPTArgs.Loop, __D0PlaySound
-3	6520	35	#line 6520 "NXCDefs.h"
-3	6521	35		syscall 10, __SPTArgs
-3	6520	38	#line 6520 "NXCDefs.h"
-3	6521	38		mov __D0PlaySound, __SPTArgs.Result
-3	6520	40	#line 6520 "NXCDefs.h"
-3	6521	40		release __SPTArgsMutex
-3	6520	41	#line 6520 "NXCDefs.h"
-3	6520	41	#line 6520 "NXCDefs.h"
-3	6521	41		jmp __NXC_Label_65
-3	6520	43	#line 6520 "NXCDefs.h"
-3	6521	43		mov __signed_stack_001PlaySound, __PlaySound_7qG2_aCode_7qG2_000
-3	6520	45	#line 6520 "NXCDefs.h"
-3	6521	45	#line 6521 "NXCDefs.h"
-3	6522	45		set __D0PlaySound, 1
-3	6521	48	#line 6521 "NXCDefs.h"
-3	6522	48		cmp 4, __zfPlaySound, __signed_stack_001PlaySound, __D0PlaySound
-3	6521	52	#line 6521 "NXCDefs.h"
-3	6522	52		mov __D0PlaySound, __zfPlaySound
-3	6522	54	#line 6522 "NXCDefs.h"
-3	6523	54		brtst 4, __NXC_Label_68, __zfPlaySound
-3	6522	57	#line 6522 "NXCDefs.h"
-3	6523	57		set __signed_stack_001PlaySound, 600
-3	6522	60	#line 6522 "NXCDefs.h"
-3	6522	60	#line 6522 "NXCDefs.h"
-3	6523	60		set __signed_stack_002PlaySound, 150
-3	6522	63	#line 6522 "NXCDefs.h"
-3	6522	63	#line 6522 "NXCDefs.h"
-3	6523	63		set __signed_stack_003PlaySound, 4
-3	6522	66	#line 6522 "NXCDefs.h"
-3	6522	66	#line 6522 "NXCDefs.h"
-3	6523	66		set __D0PlaySound, 0
-3	6523	69	#line 6523 "NXCDefs.h"
-3	6524	69		acquire __SPTArgsMutex
-3	6523	70	#line 6523 "NXCDefs.h"
-3	6524	70		mov __SPTArgs.Frequency, __signed_stack_001PlaySound
-3	6523	72	#line 6523 "NXCDefs.h"
-3	6524	72		mov __SPTArgs.Duration, __signed_stack_002PlaySound
-3	6523	74	#line 6523 "NXCDefs.h"
-3	6524	74		mov __SPTArgs.Volume, __signed_stack_003PlaySound
-3	6523	76	#line 6523 "NXCDefs.h"
-3	6524	76		mov __SPTArgs.Loop, __D0PlaySound
-3	6523	78	#line 6523 "NXCDefs.h"
-3	6524	78		syscall 10, __SPTArgs
-3	6523	81	#line 6523 "NXCDefs.h"
-3	6524	81		mov __D0PlaySound, __SPTArgs.Result
-3	6523	83	#line 6523 "NXCDefs.h"
-3	6524	83		release __SPTArgsMutex
-3	6523	84	#line 6523 "NXCDefs.h"
-3	6523	84	#line 6523 "NXCDefs.h"
-3	6524	84		wait2 NA, __constVal200
-3	6523	87	#line 6523 "NXCDefs.h"
-3	6523	87	#line 6523 "NXCDefs.h"
-3	6524	87	#line 6524 "NXCDefs.h"
-3	6525	87		set __signed_stack_001PlaySound, 600
-3	6524	90	#line 6524 "NXCDefs.h"
-3	6524	90	#line 6524 "NXCDefs.h"
-3	6525	90		set __signed_stack_002PlaySound, 150
-3	6524	93	#line 6524 "NXCDefs.h"
-3	6524	93	#line 6524 "NXCDefs.h"
-3	6525	93		set __signed_stack_003PlaySound, 4
-3	6524	96	#line 6524 "NXCDefs.h"
-3	6524	96	#line 6524 "NXCDefs.h"
-3	6525	96		set __D0PlaySound, 0
-3	6525	99	#line 6525 "NXCDefs.h"
-3	6526	99		acquire __SPTArgsMutex
-3	6525	100	#line 6525 "NXCDefs.h"
-3	6526	100		mov __SPTArgs.Frequency, __signed_stack_001PlaySound
-3	6525	102	#line 6525 "NXCDefs.h"
-3	6526	102		mov __SPTArgs.Duration, __signed_stack_002PlaySound
-3	6525	104	#line 6525 "NXCDefs.h"
-3	6526	104		mov __SPTArgs.Volume, __signed_stack_003PlaySound
-3	6525	106	#line 6525 "NXCDefs.h"
-3	6526	106		mov __SPTArgs.Loop, __D0PlaySound
-3	6525	108	#line 6525 "NXCDefs.h"
-3	6526	108		syscall 10, __SPTArgs
-3	6525	111	#line 6525 "NXCDefs.h"
-3	6526	111		mov __D0PlaySound, __SPTArgs.Result
-3	6525	113	#line 6525 "NXCDefs.h"
-3	6526	113		release __SPTArgsMutex
-3	6525	114	#line 6525 "NXCDefs.h"
-3	6525	114	#line 6525 "NXCDefs.h"
-3	6526	114		wait2 NA, __constVal150
-3	6525	117	#line 6525 "NXCDefs.h"
-3	6525	117	#line 6525 "NXCDefs.h"
-3	6527	117	#line 6527 "NXCDefs.h"
-3	6528	117		jmp __NXC_Label_85
-3	6527	119	#line 6527 "NXCDefs.h"
-3	6528	119		mov __signed_stack_001PlaySound, __PlaySound_7qG2_aCode_7qG2_000
-3	6527	121	#line 6527 "NXCDefs.h"
-3	6528	121	#line 6528 "NXCDefs.h"
-3	6529	121		set __D0PlaySound, 3
-3	6528	124	#line 6528 "NXCDefs.h"
-3	6529	124		cmp 4, __zfPlaySound, __signed_stack_001PlaySound, __D0PlaySound
-3	6528	128	#line 6528 "NXCDefs.h"
-3	6529	128		mov __D0PlaySound, __zfPlaySound
-3	6528	130	#line 6528 "NXCDefs.h"
-3	6529	130		brtst 4, __NXC_Label_88, __zfPlaySound
-3	6528	133	#line 6528 "NXCDefs.h"
-3	6529	133		set __PlaySound_7qG2_i_7qG2_001, 4
-3	6528	136	#line 6528 "NXCDefs.h"
-3	6528	136	#line 6528 "NXCDefs.h"
-3	6529	136		mov __signed_stack_001PlaySound, __PlaySound_7qG2_i_7qG2_001
-3	6528	138	#line 6528 "NXCDefs.h"
-3	6528	138	#line 6528 "NXCDefs.h"
-3	6529	138		set __D0PlaySound, 8
-3	6528	141	#line 6528 "NXCDefs.h"
-3	6529	141		cmp 0, __zfPlaySound, __signed_stack_001PlaySound, __D0PlaySound
-3	6528	145	#line 6528 "NXCDefs.h"
-3	6529	145		mov __D0PlaySound, __zfPlaySound
-3	6528	147	#line 6528 "NXCDefs.h"
-3	6529	147		brtst 4, __NXC_Label_90, __zfPlaySound
-3	6528	150	#line 6528 "NXCDefs.h"
-3	6529	150		jmp __NXC_Label_91
-3	6529	152	#line 6529 "NXCDefs.h"
-3	6530	152		add __PlaySound_7qG2_i_7qG2_001, __PlaySound_7qG2_i_7qG2_001, __constVal1
-3	6530	156	#line 6530 "NXCDefs.h"
-3	6531	156		jmp __NXC_Label_89
-3	6530	158	#line 6530 "NXCDefs.h"
-3	6530	158	#line 6530 "NXCDefs.h"
-3	6530	158	#line 6530 "NXCDefs.h"
-3	6530	158	#line 6530 "NXCDefs.h"
-3	6531	158		mul __signed_stack_001PlaySound, __constVal523, __PlaySound_7qG2_i_7qG2_001
-3	6530	162	#line 6530 "NXCDefs.h"
-3	6530	162	#line 6530 "NXCDefs.h"
-3	6530	162	#line 6530 "NXCDefs.h"
-3	6531	162		div __signed_stack_001PlaySound, __signed_stack_001PlaySound, __constVal4
-3	6530	166	#line 6530 "NXCDefs.h"
-3	6530	166	#line 6530 "NXCDefs.h"
-3	6531	166		set __signed_stack_002PlaySound, 100
-3	6530	169	#line 6530 "NXCDefs.h"
-3	6530	169	#line 6530 "NXCDefs.h"
-3	6531	169		set __signed_stack_003PlaySound, 4
-3	6530	172	#line 6530 "NXCDefs.h"
-3	6530	172	#line 6530 "NXCDefs.h"
-3	6531	172		set __D0PlaySound, 0
-3	6531	175	#line 6531 "NXCDefs.h"
-3	6532	175		acquire __SPTArgsMutex
-3	6531	176	#line 6531 "NXCDefs.h"
-3	6532	176		mov __SPTArgs.Frequency, __signed_stack_001PlaySound
-3	6531	178	#line 6531 "NXCDefs.h"
-3	6532	178		mov __SPTArgs.Duration, __signed_stack_002PlaySound
-3	6531	180	#line 6531 "NXCDefs.h"
-3	6532	180		mov __SPTArgs.Volume, __signed_stack_003PlaySound
-3	6531	182	#line 6531 "NXCDefs.h"
-3	6532	182		mov __SPTArgs.Loop, __D0PlaySound
-3	6531	184	#line 6531 "NXCDefs.h"
-3	6532	184		syscall 10, __SPTArgs
-3	6531	187	#line 6531 "NXCDefs.h"
-3	6532	187		mov __D0PlaySound, __SPTArgs.Result
-3	6531	189	#line 6531 "NXCDefs.h"
-3	6532	189		release __SPTArgsMutex
-3	6531	190	#line 6531 "NXCDefs.h"
-3	6531	190	#line 6531 "NXCDefs.h"
-3	6532	190		wait2 NA, __constVal100
-3	6531	193	#line 6531 "NXCDefs.h"
-3	6531	193	#line 6531 "NXCDefs.h"
-3	6533	193	#line 6533 "NXCDefs.h"
-3	6534	193		jmp __NXC_Label_92
-3	6533	195	#line 6533 "NXCDefs.h"
-3	6533	195	#line 6533 "NXCDefs.h"
-3	6534	195		jmp __NXC_Label_105
-3	6533	197	#line 6533 "NXCDefs.h"
-3	6534	197		mov __signed_stack_001PlaySound, __PlaySound_7qG2_aCode_7qG2_000
-3	6533	199	#line 6533 "NXCDefs.h"
-3	6534	199	#line 6534 "NXCDefs.h"
-3	6535	199		set __D0PlaySound, 2
-3	6534	202	#line 6534 "NXCDefs.h"
-3	6535	202		cmp 4, __zfPlaySound, __signed_stack_001PlaySound, __D0PlaySound
-3	6534	206	#line 6534 "NXCDefs.h"
-3	6535	206		mov __D0PlaySound, __zfPlaySound
-3	6534	208	#line 6534 "NXCDefs.h"
-3	6535	208		brtst 4, __NXC_Label_108, __zfPlaySound
-3	6534	211	#line 6534 "NXCDefs.h"
-3	6535	211		set __PlaySound_7qG2_i_7qG2_001, 7
-3	6534	214	#line 6534 "NXCDefs.h"
-3	6534	214	#line 6534 "NXCDefs.h"
-3	6535	214		mov __signed_stack_001PlaySound, __PlaySound_7qG2_i_7qG2_001
-3	6534	216	#line 6534 "NXCDefs.h"
-3	6534	216	#line 6534 "NXCDefs.h"
-3	6535	216		set __D0PlaySound, 3
-3	6534	219	#line 6534 "NXCDefs.h"
-3	6535	219		cmp 1, __zfPlaySound, __signed_stack_001PlaySound, __D0PlaySound
-3	6534	223	#line 6534 "NXCDefs.h"
-3	6535	223		mov __D0PlaySound, __zfPlaySound
-3	6534	225	#line 6534 "NXCDefs.h"
-3	6535	225		brtst 4, __NXC_Label_110, __zfPlaySound
-3	6534	228	#line 6534 "NXCDefs.h"
-3	6535	228		jmp __NXC_Label_111
-3	6535	230	#line 6535 "NXCDefs.h"
-3	6536	230		sub __PlaySound_7qG2_i_7qG2_001, __PlaySound_7qG2_i_7qG2_001, __constVal1
-3	6536	234	#line 6536 "NXCDefs.h"
-3	6537	234		jmp __NXC_Label_109
-3	6536	236	#line 6536 "NXCDefs.h"
-3	6536	236	#line 6536 "NXCDefs.h"
-3	6536	236	#line 6536 "NXCDefs.h"
-3	6536	236	#line 6536 "NXCDefs.h"
-3	6537	236		mul __signed_stack_001PlaySound, __constVal523, __PlaySound_7qG2_i_7qG2_001
-3	6536	240	#line 6536 "NXCDefs.h"
-3	6536	240	#line 6536 "NXCDefs.h"
-3	6536	240	#line 6536 "NXCDefs.h"
-3	6537	240		div __signed_stack_001PlaySound, __signed_stack_001PlaySound, __constVal4
-3	6536	244	#line 6536 "NXCDefs.h"
-3	6536	244	#line 6536 "NXCDefs.h"
-3	6537	244		set __signed_stack_002PlaySound, 100
-3	6536	247	#line 6536 "NXCDefs.h"
-3	6536	247	#line 6536 "NXCDefs.h"
-3	6537	247		set __signed_stack_003PlaySound, 4
-3	6536	250	#line 6536 "NXCDefs.h"
-3	6536	250	#line 6536 "NXCDefs.h"
-3	6537	250		set __D0PlaySound, 0
-3	6537	253	#line 6537 "NXCDefs.h"
-3	6538	253		acquire __SPTArgsMutex
-3	6537	254	#line 6537 "NXCDefs.h"
-3	6538	254		mov __SPTArgs.Frequency, __signed_stack_001PlaySound
-3	6537	256	#line 6537 "NXCDefs.h"
-3	6538	256		mov __SPTArgs.Duration, __signed_stack_002PlaySound
-3	6537	258	#line 6537 "NXCDefs.h"
-3	6538	258		mov __SPTArgs.Volume, __signed_stack_003PlaySound
-3	6537	260	#line 6537 "NXCDefs.h"
-3	6538	260		mov __SPTArgs.Loop, __D0PlaySound
-3	6537	262	#line 6537 "NXCDefs.h"
-3	6538	262		syscall 10, __SPTArgs
-3	6537	265	#line 6537 "NXCDefs.h"
-3	6538	265		mov __D0PlaySound, __SPTArgs.Result
-3	6537	267	#line 6537 "NXCDefs.h"
-3	6538	267		release __SPTArgsMutex
-3	6537	268	#line 6537 "NXCDefs.h"
-3	6537	268	#line 6537 "NXCDefs.h"
-3	6538	268		wait2 NA, __constVal100
-3	6537	271	#line 6537 "NXCDefs.h"
-3	6537	271	#line 6537 "NXCDefs.h"
-3	6539	271	#line 6539 "NXCDefs.h"
-3	6540	271		jmp __NXC_Label_112
-3	6539	273	#line 6539 "NXCDefs.h"
-3	6539	273	#line 6539 "NXCDefs.h"
-3	6540	273		jmp __NXC_Label_125
-3	6539	275	#line 6539 "NXCDefs.h"
-3	6540	275		mov __signed_stack_001PlaySound, __PlaySound_7qG2_aCode_7qG2_000
-3	6539	277	#line 6539 "NXCDefs.h"
-3	6540	277	#line 6540 "NXCDefs.h"
-3	6541	277		set __D0PlaySound, 4
-3	6540	280	#line 6540 "NXCDefs.h"
-3	6541	280		cmp 4, __zfPlaySound, __signed_stack_001PlaySound, __D0PlaySound
-3	6540	284	#line 6540 "NXCDefs.h"
-3	6541	284		mov __D0PlaySound, __zfPlaySound
-3	6541	286	#line 6541 "NXCDefs.h"
-3	6542	286		brtst 4, __NXC_Label_128, __zfPlaySound
-3	6541	289	#line 6541 "NXCDefs.h"
-3	6542	289		set __signed_stack_001PlaySound, 100
-3	6541	292	#line 6541 "NXCDefs.h"
-3	6541	292	#line 6541 "NXCDefs.h"
-3	6542	292		set __signed_stack_002PlaySound, 500
-3	6541	295	#line 6541 "NXCDefs.h"
-3	6541	295	#line 6541 "NXCDefs.h"
-3	6542	295		set __signed_stack_003PlaySound, 4
-3	6541	298	#line 6541 "NXCDefs.h"
-3	6541	298	#line 6541 "NXCDefs.h"
-3	6542	298		set __D0PlaySound, 0
-3	6542	301	#line 6542 "NXCDefs.h"
-3	6543	301		acquire __SPTArgsMutex
-3	6542	302	#line 6542 "NXCDefs.h"
-3	6543	302		mov __SPTArgs.Frequency, __signed_stack_001PlaySound
-3	6542	304	#line 6542 "NXCDefs.h"
-3	6543	304		mov __SPTArgs.Duration, __signed_stack_002PlaySound
-3	6542	306	#line 6542 "NXCDefs.h"
-3	6543	306		mov __SPTArgs.Volume, __signed_stack_003PlaySound
-3	6542	308	#line 6542 "NXCDefs.h"
-3	6543	308		mov __SPTArgs.Loop, __D0PlaySound
-3	6542	310	#line 6542 "NXCDefs.h"
-3	6543	310		syscall 10, __SPTArgs
-3	6542	313	#line 6542 "NXCDefs.h"
-3	6543	313		mov __D0PlaySound, __SPTArgs.Result
-3	6542	315	#line 6542 "NXCDefs.h"
-3	6543	315		release __SPTArgsMutex
-3	6542	316	#line 6542 "NXCDefs.h"
-3	6542	316	#line 6542 "NXCDefs.h"
-3	6543	316		wait2 NA, __constVal500
-3	6542	319	#line 6542 "NXCDefs.h"
-3	6542	319	#line 6542 "NXCDefs.h"
-3	6544	319	#line 6544 "NXCDefs.h"
-3	6545	319		jmp __NXC_Label_137
-3	6544	321	#line 6544 "NXCDefs.h"
-3	6545	321		mov __signed_stack_001PlaySound, __PlaySound_7qG2_aCode_7qG2_000
-3	6544	323	#line 6544 "NXCDefs.h"
-3	6545	323	#line 6545 "NXCDefs.h"
-3	6546	323		set __D0PlaySound, 5
-3	6545	326	#line 6545 "NXCDefs.h"
-3	6546	326		cmp 4, __zfPlaySound, __signed_stack_001PlaySound, __D0PlaySound
-3	6545	330	#line 6545 "NXCDefs.h"
-3	6546	330		mov __D0PlaySound, __zfPlaySound
-3	6545	332	#line 6545 "NXCDefs.h"
-3	6546	332		brtst 4, __NXC_Label_140, __zfPlaySound
-3	6545	335	#line 6545 "NXCDefs.h"
-3	6546	335		set __PlaySound_7qG2_i_7qG2_001, 4
-3	6545	338	#line 6545 "NXCDefs.h"
-3	6545	338	#line 6545 "NXCDefs.h"
-3	6546	338		mov __signed_stack_001PlaySound, __PlaySound_7qG2_i_7qG2_001
-3	6545	340	#line 6545 "NXCDefs.h"
-3	6545	340	#line 6545 "NXCDefs.h"
-3	6546	340		set __D0PlaySound, 8
-3	6545	343	#line 6545 "NXCDefs.h"
-3	6546	343		cmp 0, __zfPlaySound, __signed_stack_001PlaySound, __D0PlaySound
-3	6545	347	#line 6545 "NXCDefs.h"
-3	6546	347		mov __D0PlaySound, __zfPlaySound
-3	6545	349	#line 6545 "NXCDefs.h"
-3	6546	349		brtst 4, __NXC_Label_142, __zfPlaySound
-3	6545	352	#line 6545 "NXCDefs.h"
-3	6546	352		jmp __NXC_Label_143
-3	6546	354	#line 6546 "NXCDefs.h"
-3	6547	354		add __PlaySound_7qG2_i_7qG2_001, __PlaySound_7qG2_i_7qG2_001, __constVal1
-3	6547	358	#line 6547 "NXCDefs.h"
-3	6548	358		jmp __NXC_Label_141
-3	6547	360	#line 6547 "NXCDefs.h"
-3	6547	360	#line 6547 "NXCDefs.h"
-3	6547	360	#line 6547 "NXCDefs.h"
-3	6547	360	#line 6547 "NXCDefs.h"
-3	6548	360		mul __signed_stack_001PlaySound, __constVal523, __PlaySound_7qG2_i_7qG2_001
-3	6547	364	#line 6547 "NXCDefs.h"
-3	6547	364	#line 6547 "NXCDefs.h"
-3	6547	364	#line 6547 "NXCDefs.h"
-3	6548	364		div __signed_stack_001PlaySound, __signed_stack_001PlaySound, __constVal4
-3	6547	368	#line 6547 "NXCDefs.h"
-3	6547	368	#line 6547 "NXCDefs.h"
-3	6548	368		set __signed_stack_002PlaySound, 50
-3	6547	371	#line 6547 "NXCDefs.h"
-3	6547	371	#line 6547 "NXCDefs.h"
-3	6548	371		set __signed_stack_003PlaySound, 4
-3	6547	374	#line 6547 "NXCDefs.h"
-3	6547	374	#line 6547 "NXCDefs.h"
-3	6548	374		set __D0PlaySound, 0
-3	6548	377	#line 6548 "NXCDefs.h"
-3	6549	377		acquire __SPTArgsMutex
-3	6548	378	#line 6548 "NXCDefs.h"
-3	6549	378		mov __SPTArgs.Frequency, __signed_stack_001PlaySound
-3	6548	380	#line 6548 "NXCDefs.h"
-3	6549	380		mov __SPTArgs.Duration, __signed_stack_002PlaySound
-3	6548	382	#line 6548 "NXCDefs.h"
-3	6549	382		mov __SPTArgs.Volume, __signed_stack_003PlaySound
-3	6548	384	#line 6548 "NXCDefs.h"
-3	6549	384		mov __SPTArgs.Loop, __D0PlaySound
-3	6548	386	#line 6548 "NXCDefs.h"
-3	6549	386		syscall 10, __SPTArgs
-3	6548	389	#line 6548 "NXCDefs.h"
-3	6549	389		mov __D0PlaySound, __SPTArgs.Result
-3	6548	391	#line 6548 "NXCDefs.h"
-3	6549	391		release __SPTArgsMutex
-3	6548	392	#line 6548 "NXCDefs.h"
-3	6548	392	#line 6548 "NXCDefs.h"
-3	6549	392		wait2 NA, __constVal50
-3	6548	395	#line 6548 "NXCDefs.h"
-3	6548	395	#line 6548 "NXCDefs.h"
-3	6560	395	#line 6560 "NXCDefs.h"
-3	6561	395		jmp __NXC_Label_144
-3	6560	397	#line 6560 "NXCDefs.h"
-3	6560	397	#line 6560 "NXCDefs.h"
-3	6560	397	#line 6560 "NXCDefs.h"
-3	6560	397	#line 6560 "NXCDefs.h"
-3	6560	397	#line 6560 "NXCDefs.h"
-3	6560	397	#line 6560 "NXCDefs.h"
-3	6560	397	#line 6560 "NXCDefs.h"
-3	6560	397	#line 6560 "NXCDefs.h"
-3	6561	397		subret __PlaySound_return
-4	39	0	#line 39 "C:\ENGR102\Lab Code\.\includes.nxc"
-4	40	0		set __SetSensorType_7qG2_port_7qG2_000_inline_init_sensors, 0
-4	39	3	#line 39 "C:\ENGR102\Lab Code\.\includes.nxc"
-4	39	3	#line 39 "C:\ENGR102\Lab Code\.\includes.nxc"
-4	40	3		set __SetSensorType_7qG2_type_7qG2_000_inline_init_sensors, 10
-4	39	6	#line 39 "C:\ENGR102\Lab Code\.\includes.nxc"
-4	3663	6	#line 3663 "NXCDefs.h"
-4	3664	6		setin __SetSensorType_7qG2_type_7qG2_000_inline_init_sensors, __SetSensorType_7qG2_port_7qG2_000_inline_init_sensors, 0
-4	3663	10	#line 3663 "NXCDefs.h"
-4	40	10	#line 40 "C:\ENGR102\Lab Code\.\includes.nxc"
-4	40	10	#line 40 "C:\ENGR102\Lab Code\.\includes.nxc"
-4	41	10		set __SetSensorColorGreen_7qG2_port_7qG2_000_inline_init_sensors, 1
-4	40	13	#line 40 "C:\ENGR102\Lab Code\.\includes.nxc"
-4	3822	13	#line 3822 "NXCDefs.h"
-4	3823	13	#pragma macro 6
-4	3823	13		setin __constVal15, __SetSensorColorGreen_7qG2_port_7qG2_000_inline_init_sensors, 0
-4	3823	17		setin __constVal128, __SetSensorColorGreen_7qG2_port_7qG2_000_inline_init_sensors, 1
-4	3823	21		mov __ResetSensorPort, __SetSensorColorGreen_7qG2_port_7qG2_000_inline_init_sensors
-4	3823	23		subcall __ResetSensorSubroutine, ____ResetSensorSubroutine_return
-4	4521	25	#line 4521 "NXCDefs.h"
-4	3822	25	#line 3822 "NXCDefs.h"
-4	41	25	#line 41 "C:\ENGR102\Lab Code\.\includes.nxc"
-4	41	25	#line 41 "C:\ENGR102\Lab Code\.\includes.nxc"
-4	42	25		set __SetSensorHTMagnet_7qG2_port_7qG2_000_inline_init_sensors, 2
-4	41	28	#line 41 "C:\ENGR102\Lab Code\.\includes.nxc"
-4	12989	28	#line 12989 "NXCDefs.h"
-4	12990	28		mov __SetSensorType_7qG2_port_7qG2_000_inline_SetSensorHTMagnet_inline_init_sensors, __constVal2
-4	12989	30	#line 12989 "NXCDefs.h"
-4	12989	30	#line 12989 "NXCDefs.h"
-4	12990	30		set __SetSensorType_7qG2_type_7qG2_000_inline_SetSensorHTMagnet_inline_init_sensors, 6
-4	12989	33	#line 12989 "NXCDefs.h"
-4	3663	33	#line 3663 "NXCDefs.h"
-4	3664	33		setin __SetSensorType_7qG2_type_7qG2_000_inline_SetSensorHTMagnet_inline_init_sensors, __SetSensorType_7qG2_port_7qG2_000_inline_SetSensorHTMagnet_inline_init_sensors, 0
-4	3663	37	#line 3663 "NXCDefs.h"
-4	12990	37	#line 12990 "NXCDefs.h"
-4	12990	37	#line 12990 "NXCDefs.h"
-4	12991	37		mov __SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorHTMagnet_inline_init_sensors, __SetSensorHTMagnet_7qG2_port_7qG2_000_inline_init_sensors
-4	12990	39	#line 12990 "NXCDefs.h"
-4	12990	39	#line 12990 "NXCDefs.h"
-4	12991	39		set __SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorHTMagnet_inline_init_sensors, 0
-4	12990	42	#line 12990 "NXCDefs.h"
-4	3676	42	#line 3676 "NXCDefs.h"
-4	3677	42		setin __SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorHTMagnet_inline_init_sensors, __SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorHTMagnet_inline_init_sensors, 1
-4	3676	46	#line 3676 "NXCDefs.h"
-4	12991	46	#line 12991 "NXCDefs.h"
-4	12991	46	#line 12991 "NXCDefs.h"
-4	12991	46	#line 12991 "NXCDefs.h"
-4	3694	46	#line 3694 "NXCDefs.h"
-4	3695	46	#pragma macro 4
-4	3695	46		mov __ResetSensorPort, __SetSensorHTMagnet_7qG2_port_7qG2_000_inline_init_sensors
-4	3695	48		subcall __ResetSensorSubroutine, ____ResetSensorSubroutine_return
-4	4593	50	#line 4593 "NXCDefs.h"
-4	3694	50	#line 3694 "NXCDefs.h"
-4	12992	50	#line 12992 "NXCDefs.h"
-4	42	50	#line 42 "C:\ENGR102\Lab Code\.\includes.nxc"
-4	42	50	#line 42 "C:\ENGR102\Lab Code\.\includes.nxc"
-4	43	50		set __SetSensorType_7qG2_port_7qG2_000_inline_init_sensors, 3
-4	42	53	#line 42 "C:\ENGR102\Lab Code\.\includes.nxc"
-4	42	53	#line 42 "C:\ENGR102\Lab Code\.\includes.nxc"
-4	43	53		set __SetSensorType_7qG2_type_7qG2_000_inline_init_sensors, 6
-4	42	56	#line 42 "C:\ENGR102\Lab Code\.\includes.nxc"
-4	3663	56	#line 3663 "NXCDefs.h"
-4	3664	56		setin __SetSensorType_7qG2_type_7qG2_000_inline_init_sensors, __SetSensorType_7qG2_port_7qG2_000_inline_init_sensors, 0
-4	3663	60	#line 3663 "NXCDefs.h"
-4	43	60	#line 43 "C:\ENGR102\Lab Code\.\includes.nxc"
-4	43	60	#line 43 "C:\ENGR102\Lab Code\.\includes.nxc"
-4	44	60		set __SetSensorMode_7qG2_port_7qG2_000_inline_init_sensors, 3
-4	43	63	#line 43 "C:\ENGR102\Lab Code\.\includes.nxc"
-4	43	63	#line 43 "C:\ENGR102\Lab Code\.\includes.nxc"
-4	44	63		set __SetSensorMode_7qG2_mode_7qG2_000_inline_init_sensors, 128
-4	43	66	#line 43 "C:\ENGR102\Lab Code\.\includes.nxc"
-4	3676	66	#line 3676 "NXCDefs.h"
-4	3677	66		setin __SetSensorMode_7qG2_mode_7qG2_000_inline_init_sensors, __SetSensorMode_7qG2_port_7qG2_000_inline_init_sensors, 1
-4	3676	70	#line 3676 "NXCDefs.h"
-4	44	70	#line 44 "C:\ENGR102\Lab Code\.\includes.nxc"
-4	46	70	#line 46 "C:\ENGR102\Lab Code\.\includes.nxc"
-4	47	70		subret __init_sensors_return
-5	47	0	#line 47 "C:\ENGR102\Lab Code\.\includes.nxc"
-5	48	0		set __D0task_test_color, 1
-5	48	3	#line 48 "C:\ENGR102\Lab Code\.\includes.nxc"
-5	49	3		tst 5, __zftask_test_color, __D0task_test_color
-5	48	6	#line 48 "C:\ENGR102\Lab Code\.\includes.nxc"
-5	49	6		brtst 4, __NXC_Label_506, __zftask_test_color
-5	48	9	#line 48 "C:\ENGR102\Lab Code\.\includes.nxc"
-5	49	9		set __signed_stack_001task_test_color, 0
-5	48	12	#line 48 "C:\ENGR102\Lab Code\.\includes.nxc"
-5	48	12	#line 48 "C:\ENGR102\Lab Code\.\includes.nxc"
-5	49	12		set __signed_stack_002task_test_color, 0
-5	48	15	#line 48 "C:\ENGR102\Lab Code\.\includes.nxc"
-5	48	15	#line 48 "C:\ENGR102\Lab Code\.\includes.nxc"
-5	49	15		getin __D0task_test_color, __constVal1, 4
-5	49	19	#line 49 "C:\ENGR102\Lab Code\.\includes.nxc"
-5	50	19		acquire __TextOutMutex
-5	49	20	#line 49 "C:\ENGR102\Lab Code\.\includes.nxc"
-5	50	20		mov __TextOutArgs.Location.X, __signed_stack_001task_test_color
-5	49	22	#line 49 "C:\ENGR102\Lab Code\.\includes.nxc"
-5	50	22		mov __TextOutArgs.Location.Y, __signed_stack_002task_test_color
-5	49	24	#line 49 "C:\ENGR102\Lab Code\.\includes.nxc"
-5	50	24		set __TextOutArgs.Options, 0
-5	49	27	#line 49 "C:\ENGR102\Lab Code\.\includes.nxc"
-5	50	27		numtostr __TextOutArgs.Text, __D0task_test_color
-5	49	30	#line 49 "C:\ENGR102\Lab Code\.\includes.nxc"
-5	50	30		syscall 13, __TextOutArgs
-5	49	33	#line 49 "C:\ENGR102\Lab Code\.\includes.nxc"
-5	50	33		mov __D0task_test_color, __TextOutArgs.Result
-5	49	35	#line 49 "C:\ENGR102\Lab Code\.\includes.nxc"
-5	50	35		release __TextOutMutex
-5	49	36	#line 49 "C:\ENGR102\Lab Code\.\includes.nxc"
-5	49	36	#line 49 "C:\ENGR102\Lab Code\.\includes.nxc"
-5	51	36	#line 51 "C:\ENGR102\Lab Code\.\includes.nxc"
-5	52	36		jmp __NXC_Label_505
-5	51	38	#line 51 "C:\ENGR102\Lab Code\.\includes.nxc"
-5	52	38		exit -1, -1
-6	53	0	#line 53 "C:\ENGR102\Lab Code\.\includes.nxc"
-6	54	0		subcall __task_test_color_Spawner, __task_test_color_Spawner_return
-6	53	2	#line 53 "C:\ENGR102\Lab Code\.\includes.nxc"
-6	56	2	#line 56 "C:\ENGR102\Lab Code\.\includes.nxc"
-6	57	2		subret __test_color_return
+0	183	0	#line 183 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\Ben Code\findOne.nxc"
+0	184	0		subcall __initialize_global_data, ____initialize_global_data_return
+0	183	2	#line 183 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\Ben Code\findOne.nxc"
+0	184	2	#line 184 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\Ben Code\findOne.nxc"
+0	185	2		subcall init_sensors, __init_sensors_return
+0	184	4	#line 184 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\Ben Code\findOne.nxc"
+0	186	4	#line 186 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\Ben Code\findOne.nxc"
+0	187	4		subcall test_color, __test_color_return
+0	186	6	#line 186 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\Ben Code\findOne.nxc"
+0	186	6	#line 186 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\Ben Code\findOne.nxc"
+0	187	6		set __fwd_timed_7qG2_time_7qG2_000, 1000
+0	186	9	#line 186 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\Ben Code\findOne.nxc"
+0	187	9	#line 187 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\Ben Code\findOne.nxc"
+0	188	9		subcall fwd_timed, __fwd_timed_return
+0	187	11	#line 187 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\Ben Code\findOne.nxc"
+0	187	11	#line 187 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\Ben Code\findOne.nxc"
+0	188	11		getin __signed_stack_001main, __constVal2, 4
+0	187	15	#line 187 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\Ben Code\findOne.nxc"
+0	190	15	#line 190 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\Ben Code\findOne.nxc"
+0	191	15		set __D0main, 10
+0	190	18	#line 190 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\Ben Code\findOne.nxc"
+0	191	18		sub magnet_initial, __signed_stack_001main, __D0main
+0	190	22	#line 190 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\Ben Code\findOne.nxc"
+0	190	22	#line 190 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\Ben Code\findOne.nxc"
+0	190	22	#line 190 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\Ben Code\findOne.nxc"
+0	191	22	#line 191 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\Ben Code\findOne.nxc"
+0	192	22		set __main_7qG2_MAIN_LOOP_7qG2_000, 1
+0	191	25	#line 191 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\Ben Code\findOne.nxc"
+0	191	25	#line 191 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\Ben Code\findOne.nxc"
+0	192	25		mov __signed_stack_001main, __main_7qG2_MAIN_LOOP_7qG2_000
+0	191	27	#line 191 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\Ben Code\findOne.nxc"
+0	191	27	#line 191 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\Ben Code\findOne.nxc"
+0	192	27		set __D0main, 1
+0	191	30	#line 191 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\Ben Code\findOne.nxc"
+0	192	30		cmp 4, __D0main, __signed_stack_001main, __D0main
+0	194	34	#line 194 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\Ben Code\findOne.nxc"
+0	195	34		brtst 4, __ASM_Label_728, __D0main
+0	198	37	#line 198 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\Ben Code\findOne.nxc"
+0	199	37		subcall search, __search_return
+0	198	39	#line 198 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\Ben Code\findOne.nxc"
+0	198	39	#line 198 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\Ben Code\findOne.nxc"
+0	199	39		subcall isEmpty, __isEmpty_return
+0	198	41	#line 198 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\Ben Code\findOne.nxc"
+0	199	41		mov __DU0main, __DU0isEmpty
+0	201	43	#line 201 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\Ben Code\findOne.nxc"
+0	202	43		tst 5, __D0main, __DU0main
+0	201	46	#line 201 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\Ben Code\findOne.nxc"
+0	202	46		brtst 4, __ASM_Label_733, __D0main
+0	201	49	#line 201 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\Ben Code\findOne.nxc"
+0	202	49		set __zp_turn_timed_7qG2_time_7qG2_000, 800
+0	201	52	#line 201 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\Ben Code\findOne.nxc"
+0	201	52	#line 201 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\Ben Code\findOne.nxc"
+0	202	52		mov __zp_turn_timed_7qG2_direction_7qG2_000, RIGHT
+0	201	54	#line 201 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\Ben Code\findOne.nxc"
+0	202	54	#line 202 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\Ben Code\findOne.nxc"
+0	203	54		subcall zp_turn_timed, __zp_turn_timed_return
+0	202	56	#line 202 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\Ben Code\findOne.nxc"
+0	205	56	#line 205 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\Ben Code\findOne.nxc"
+0	206	56	#pragma macro 7
+0	206	56		setout __OUT_AC, 2, __constVal0, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+0	5932	79	#line 5932 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\Ben Code\findOne.nxc"
+0	205	79	#line 205 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\Ben Code\findOne.nxc"
+0	206	79	#line 206 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\Ben Code\findOne.nxc"
+0	207	79		subcall acquire, __acquire_return
+0	206	81	#line 206 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\Ben Code\findOne.nxc"
+0	206	81	#line 206 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\Ben Code\findOne.nxc"
+0	207	81		getin __signed_stack_001main, __constVal2, 4
+0	206	85	#line 206 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\Ben Code\findOne.nxc"
+0	206	85	#line 206 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\Ben Code\findOne.nxc"
+0	207	85		mov __D0main, magnet_initial
+0	206	87	#line 206 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\Ben Code\findOne.nxc"
+0	207	87		cmp 1, __D0main, __signed_stack_001main, __D0main
+0	207	91	#line 207 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\Ben Code\findOne.nxc"
+0	208	91		brtst 4, __ASM_Label_742, __D0main
+0	207	94	#line 207 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\Ben Code\findOne.nxc"
+0	208	94		getin __signed_stack_001main, __constVal1, 4
+0	207	98	#line 207 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\Ben Code\findOne.nxc"
+0	207	98	#line 207 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\Ben Code\findOne.nxc"
+0	208	98		set __D0main, 10
+0	207	101	#line 207 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\Ben Code\findOne.nxc"
+0	208	101		cmp 0, __D0main, __signed_stack_001main, __D0main
+0	208	105	#line 208 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\Ben Code\findOne.nxc"
+0	209	105		brtst 4, __ASM_Label_744, __D0main
+0	210	108	#line 210 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\Ben Code\findOne.nxc"
+0	211	108		subcall find_light, __find_light_return
+0	210	110	#line 210 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\Ben Code\findOne.nxc"
+0	211	110	#line 211 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\Ben Code\findOne.nxc"
+0	212	110	#pragma macro 7
+0	212	110		setout __OUT_AC, 2, __constVal0, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+0	5974	133	#line 5974 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\Ben Code\findOne.nxc"
+0	211	133	#line 211 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\Ben Code\findOne.nxc"
+0	211	133	#line 211 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\Ben Code\findOne.nxc"
+0	212	133		set __fwd_timed_7qG2_time_7qG2_000, 1500
+0	211	136	#line 211 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\Ben Code\findOne.nxc"
+0	212	136	#line 212 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\Ben Code\findOne.nxc"
+0	213	136		subcall fwd_timed, __fwd_timed_return
+0	212	138	#line 212 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\Ben Code\findOne.nxc"
+0	214	138	#line 214 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\Ben Code\findOne.nxc"
+0	215	138		jmp __ASM_Label_743
+0	214	140	#line 214 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\Ben Code\findOne.nxc"
+0	214	140	#line 214 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\Ben Code\findOne.nxc"
+0	215	140	#line 215 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\Ben Code\findOne.nxc"
+0	216	140		subcall open_gate, __open_gate_return
+0	215	142	#line 215 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\Ben Code\findOne.nxc"
+0	215	142	#line 215 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\Ben Code\findOne.nxc"
+0	216	142		set __rev_timed_7qG2_time_7qG2_000, 3000
+0	215	145	#line 215 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\Ben Code\findOne.nxc"
+0	216	145	#line 216 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\Ben Code\findOne.nxc"
+0	217	145		subcall rev_timed, __rev_timed_return
+0	216	147	#line 216 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\Ben Code\findOne.nxc"
+0	217	147	#line 217 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\Ben Code\findOne.nxc"
+0	218	147		subcall close_gate, __close_gate_return
+0	217	149	#line 217 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\Ben Code\findOne.nxc"
+0	217	149	#line 217 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\Ben Code\findOne.nxc"
+0	218	149		set __signed_stack_001main, 0
+0	217	152	#line 217 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\Ben Code\findOne.nxc"
+0	217	152	#line 217 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\Ben Code\findOne.nxc"
+0	218	152		set __D0main, 75
+0	217	155	#line 217 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\Ben Code\findOne.nxc"
+0	218	155		sub __D0main, __signed_stack_001main, __D0main
+0	217	159	#line 217 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\Ben Code\findOne.nxc"
+0	218	159	#pragma macro 7
+0	218	159		setout __constVal2, 2, __D0main, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+0	6015	182	#line 6015 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\Ben Code\findOne.nxc"
+0	217	182	#line 217 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\Ben Code\findOne.nxc"
+0	217	182	#line 217 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\Ben Code\findOne.nxc"
+0	218	182		set __D0main, 75
+0	217	185	#line 217 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\Ben Code\findOne.nxc"
+0	218	185	#pragma macro 7
+0	218	185		setout __constVal0, 2, __D0main, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+0	6020	208	#line 6020 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\Ben Code\findOne.nxc"
+0	217	208	#line 217 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\Ben Code\findOne.nxc"
+0	217	208	#line 217 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\Ben Code\findOne.nxc"
+0	218	208	#line 218 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\Ben Code\findOne.nxc"
+0	218	208	#line 218 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\Ben Code\findOne.nxc"
+0	219	208		set __Wait_7qG2_ms_7qG2_000_inline_main, 800
+0	218	211	#line 218 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\Ben Code\findOne.nxc"
+0	8551	211	#line 8551 "NXCDefs.h"
+0	8552	211		wait2 NA, __Wait_7qG2_ms_7qG2_000_inline_main
+0	8551	214	#line 8551 "NXCDefs.h"
+0	219	214	#line 219 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\Ben Code\findOne.nxc"
+0	220	214	#line 220 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\Ben Code\findOne.nxc"
+0	221	214	#pragma macro 7
+0	221	214		setout __OUT_AC, 2, __constVal0, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+0	6037	237	#line 6037 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\Ben Code\findOne.nxc"
+0	220	237	#line 220 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\Ben Code\findOne.nxc"
+0	221	237	#line 221 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\Ben Code\findOne.nxc"
+0	222	237		jmp __ASM_Label_761
+0	221	239	#line 221 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\Ben Code\findOne.nxc"
+0	222	239		set __rev_timed_7qG2_time_7qG2_000, 1000
+0	221	242	#line 221 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\Ben Code\findOne.nxc"
+0	222	242	#line 222 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\Ben Code\findOne.nxc"
+0	223	242		subcall rev_timed, __rev_timed_return
+0	222	244	#line 222 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\Ben Code\findOne.nxc"
+0	222	244	#line 222 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\Ben Code\findOne.nxc"
+0	223	244		set __signed_stack_001main, 0
+0	222	247	#line 222 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\Ben Code\findOne.nxc"
+0	222	247	#line 222 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\Ben Code\findOne.nxc"
+0	223	247		set __D0main, 75
+0	222	250	#line 222 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\Ben Code\findOne.nxc"
+0	223	250		sub __D0main, __signed_stack_001main, __D0main
+0	222	254	#line 222 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\Ben Code\findOne.nxc"
+0	223	254	#pragma macro 7
+0	223	254		setout __constVal2, 2, __D0main, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+0	6062	277	#line 6062 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\Ben Code\findOne.nxc"
+0	222	277	#line 222 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\Ben Code\findOne.nxc"
+0	222	277	#line 222 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\Ben Code\findOne.nxc"
+0	223	277		set __D0main, 75
+0	222	280	#line 222 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\Ben Code\findOne.nxc"
+0	223	280	#pragma macro 7
+0	223	280		setout __constVal0, 2, __D0main, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+0	6067	303	#line 6067 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\Ben Code\findOne.nxc"
+0	222	303	#line 222 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\Ben Code\findOne.nxc"
+0	222	303	#line 222 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\Ben Code\findOne.nxc"
+0	223	303	#line 223 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\Ben Code\findOne.nxc"
+0	223	303	#line 223 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\Ben Code\findOne.nxc"
+0	224	303		set __Wait_7qG2_ms_7qG2_000_inline_main, 800
+0	223	306	#line 223 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\Ben Code\findOne.nxc"
+0	8551	306	#line 8551 "NXCDefs.h"
+0	8552	306		wait2 NA, __Wait_7qG2_ms_7qG2_000_inline_main
+0	8551	309	#line 8551 "NXCDefs.h"
+0	224	309	#line 224 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\Ben Code\findOne.nxc"
+0	225	309	#line 225 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\Ben Code\findOne.nxc"
+0	226	309	#pragma macro 7
+0	226	309		setout __OUT_AC, 2, __constVal0, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+0	6080	332	#line 6080 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\Ben Code\findOne.nxc"
+0	225	332	#line 225 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\Ben Code\findOne.nxc"
+0	231	332	#line 231 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\Ben Code\findOne.nxc"
+0	233	332	#line 233 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\Ben Code\findOne.nxc"
+0	234	332		jmp __ASM_Label_727
+0	233	334	#line 233 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\Ben Code\findOne.nxc"
+0	234	334		exit -1, -1
+1	5476	0		setin __constVal1, __ResetSensorPort, 5
+1	5478	4		getin __ResetSensorTmp, __ResetSensorPort, 5
+1	5479	8		brtst 5, __SensorStillInvalid, __ResetSensorTmp
+1	5480	11		subret ____ResetSensorSubroutine_return
+2	6281	0	#pragma macro 25
+2	6281	0		acquire __CLSWMutex0
+2	6281	1		or __CLSWArgs0.Port, __constVal0, __LSWriteOptions0
+2	6281	5		mov __CLSWArgs0.ReturnLen, __RLSBytesCount0
+2	6281	7		mov __CLSWArgs0.Buffer, __RLSReadBuf0
+2	6281	9		syscall 21, __CLSWArgs0
+2	6281	12		mov __RLSBResult0, __CLSWArgs0.Result
+2	6281	14		release __CLSWMutex0
+2	6282	15	#line 6282 "NXTDefs.h"
+2	6283	15		brtst 5, __RLSBError0, __RLSBResult0
+2	6284	18		set __RLSBIterations0, 60
+2	6286	21	#pragma macro 23
+2	6286	21		acquire __CLSCSMutex0
+2	6286	22		set __CLSCSArgs0.Port, 0
+2	6286	25		syscall 23, __CLSCSArgs0
+2	6286	28		mov __RLSBytesCount0, __CLSCSArgs0.BytesReady
+2	6286	30		mov __RLSBResult0, __CLSCSArgs0.Result
+2	6286	32		release __CLSCSMutex0
+2	6286	33	#line 6286 "NXTDefs.h"
+2	6287	33		sub __RLSBIterations0, __RLSBIterations0, __constVal1
+2	6288	37		brtst 2, __RLSBError0, __RLSBIterations0
+2	6289	40		brtst 0, __RLSBError0, __RLSBResult0
+2	6290	43		brtst 4, __RLSBReadyToRead0, __RLSBResult0
+2	6292	46		wait2 NA, __constVal1
+2	6293	49		jmp __RLSBDoCheckStatus0
+2	6295	51		brtst 4, __RLSBReturn0, __RLSBytesCount0
+2	6296	54		arrinit __RLSReadBuf0, __constVal0, __RLSBytesCount0
+2	6298	58	#pragma macro 25
+2	6298	58		acquire __CLSRMutex0
+2	6298	59		set __CLSRArgs0.Port, 0
+2	6298	62		mov __CLSRArgs0.BufferLen, __RLSBytesCount0
+2	6298	64		syscall 22, __CLSRArgs0
+2	6298	67		mov __RLSReadBuf0, __CLSRArgs0.Buffer
+2	6298	69		mov __RLSBResult0, __CLSRArgs0.Result
+2	6298	71		release __CLSRMutex0
+2	6298	72	#line 6298 "NXTDefs.h"
+2	6299	72		brtst 5, __RLSBError0, __RLSBResult0
+2	6300	75		mov __RLSLastGoodRead0, __RLSReadBuf0
+2	6301	77		jmp __RLSBDone0
+2	6303	79		mov __RLSReadBuf0, __RLSLastGoodRead0
+2	6305	81		arrsize __RLSBytesCount0, __RLSReadBuf0
+2	6307	84		subret ____ReadLSBytes0_return
+3	7127	0	#line 7127 "NXCDefs.h"
+3	7128	0		mov __signed_stack_001PlaySound, __PlaySound_7qG2_aCode_7qG2_000
+3	7127	2	#line 7127 "NXCDefs.h"
+3	7128	2	#line 7128 "NXCDefs.h"
+3	7129	2		set __D0PlaySound, 0
+3	7128	5	#line 7128 "NXCDefs.h"
+3	7129	5		cmp 4, __D0PlaySound, __signed_stack_001PlaySound, __D0PlaySound
+3	7128	9	#line 7128 "NXCDefs.h"
+3	7129	9		brtst 4, __ASM_Label_56, __D0PlaySound
+3	7128	12	#line 7128 "NXCDefs.h"
+3	7129	12		set __signed_stack_001PlaySound, 600
+3	7128	15	#line 7128 "NXCDefs.h"
+3	7128	15	#line 7128 "NXCDefs.h"
+3	7129	15		set __signed_stack_002PlaySound, 200
+3	7128	18	#line 7128 "NXCDefs.h"
+3	7128	18	#line 7128 "NXCDefs.h"
+3	7129	18		set __signed_stack_003PlaySound, 4
+3	7128	21	#line 7128 "NXCDefs.h"
+3	7128	21	#line 7128 "NXCDefs.h"
+3	7129	21		set __D0PlaySound, 0
+3	7129	24	#line 7129 "NXCDefs.h"
+3	7130	24		acquire __SPTArgsMutex
+3	7129	25	#line 7129 "NXCDefs.h"
+3	7130	25		mov __SPTArgs.Frequency, __signed_stack_001PlaySound
+3	7129	27	#line 7129 "NXCDefs.h"
+3	7130	27		mov __SPTArgs.Duration, __signed_stack_002PlaySound
+3	7129	29	#line 7129 "NXCDefs.h"
+3	7130	29		mov __SPTArgs.Volume, __signed_stack_003PlaySound
+3	7129	31	#line 7129 "NXCDefs.h"
+3	7130	31		mov __SPTArgs.Loop, __D0PlaySound
+3	7129	33	#line 7129 "NXCDefs.h"
+3	7130	33		syscall 10, __SPTArgs
+3	7129	36	#line 7129 "NXCDefs.h"
+3	7130	36		mov __D0PlaySound, __SPTArgs.Result
+3	7129	38	#line 7129 "NXCDefs.h"
+3	7130	38		release __SPTArgsMutex
+3	7129	39	#line 7129 "NXCDefs.h"
+3	7129	39	#line 7129 "NXCDefs.h"
+3	7130	39		jmp __ASM_Label_65
+3	7129	41	#line 7129 "NXCDefs.h"
+3	7130	41		mov __signed_stack_001PlaySound, __PlaySound_7qG2_aCode_7qG2_000
+3	7129	43	#line 7129 "NXCDefs.h"
+3	7130	43	#line 7130 "NXCDefs.h"
+3	7131	43		set __D0PlaySound, 1
+3	7130	46	#line 7130 "NXCDefs.h"
+3	7131	46		cmp 4, __D0PlaySound, __signed_stack_001PlaySound, __D0PlaySound
+3	7131	50	#line 7131 "NXCDefs.h"
+3	7132	50		brtst 4, __ASM_Label_68, __D0PlaySound
+3	7131	53	#line 7131 "NXCDefs.h"
+3	7132	53		set __signed_stack_001PlaySound, 600
+3	7131	56	#line 7131 "NXCDefs.h"
+3	7131	56	#line 7131 "NXCDefs.h"
+3	7132	56		set __signed_stack_002PlaySound, 150
+3	7131	59	#line 7131 "NXCDefs.h"
+3	7131	59	#line 7131 "NXCDefs.h"
+3	7132	59		set __signed_stack_003PlaySound, 4
+3	7131	62	#line 7131 "NXCDefs.h"
+3	7131	62	#line 7131 "NXCDefs.h"
+3	7132	62		set __D0PlaySound, 0
+3	7132	65	#line 7132 "NXCDefs.h"
+3	7133	65		acquire __SPTArgsMutex
+3	7132	66	#line 7132 "NXCDefs.h"
+3	7133	66		mov __SPTArgs.Frequency, __signed_stack_001PlaySound
+3	7132	68	#line 7132 "NXCDefs.h"
+3	7133	68		mov __SPTArgs.Duration, __signed_stack_002PlaySound
+3	7132	70	#line 7132 "NXCDefs.h"
+3	7133	70		mov __SPTArgs.Volume, __signed_stack_003PlaySound
+3	7132	72	#line 7132 "NXCDefs.h"
+3	7133	72		mov __SPTArgs.Loop, __D0PlaySound
+3	7132	74	#line 7132 "NXCDefs.h"
+3	7133	74		syscall 10, __SPTArgs
+3	7132	77	#line 7132 "NXCDefs.h"
+3	7133	77		mov __D0PlaySound, __SPTArgs.Result
+3	7132	79	#line 7132 "NXCDefs.h"
+3	7133	79		release __SPTArgsMutex
+3	7132	80	#line 7132 "NXCDefs.h"
+3	7132	80	#line 7132 "NXCDefs.h"
+3	7133	80		wait2 NA, __constVal200
+3	7132	83	#line 7132 "NXCDefs.h"
+3	7132	83	#line 7132 "NXCDefs.h"
+3	7133	83	#line 7133 "NXCDefs.h"
+3	7134	83		set __signed_stack_001PlaySound, 600
+3	7133	86	#line 7133 "NXCDefs.h"
+3	7133	86	#line 7133 "NXCDefs.h"
+3	7134	86		set __signed_stack_002PlaySound, 150
+3	7133	89	#line 7133 "NXCDefs.h"
+3	7133	89	#line 7133 "NXCDefs.h"
+3	7134	89		set __signed_stack_003PlaySound, 4
+3	7133	92	#line 7133 "NXCDefs.h"
+3	7133	92	#line 7133 "NXCDefs.h"
+3	7134	92		set __D0PlaySound, 0
+3	7134	95	#line 7134 "NXCDefs.h"
+3	7135	95		acquire __SPTArgsMutex
+3	7134	96	#line 7134 "NXCDefs.h"
+3	7135	96		mov __SPTArgs.Frequency, __signed_stack_001PlaySound
+3	7134	98	#line 7134 "NXCDefs.h"
+3	7135	98		mov __SPTArgs.Duration, __signed_stack_002PlaySound
+3	7134	100	#line 7134 "NXCDefs.h"
+3	7135	100		mov __SPTArgs.Volume, __signed_stack_003PlaySound
+3	7134	102	#line 7134 "NXCDefs.h"
+3	7135	102		mov __SPTArgs.Loop, __D0PlaySound
+3	7134	104	#line 7134 "NXCDefs.h"
+3	7135	104		syscall 10, __SPTArgs
+3	7134	107	#line 7134 "NXCDefs.h"
+3	7135	107		mov __D0PlaySound, __SPTArgs.Result
+3	7134	109	#line 7134 "NXCDefs.h"
+3	7135	109		release __SPTArgsMutex
+3	7134	110	#line 7134 "NXCDefs.h"
+3	7134	110	#line 7134 "NXCDefs.h"
+3	7135	110		wait2 NA, __constVal150
+3	7134	113	#line 7134 "NXCDefs.h"
+3	7134	113	#line 7134 "NXCDefs.h"
+3	7136	113	#line 7136 "NXCDefs.h"
+3	7137	113		jmp __ASM_Label_85
+3	7136	115	#line 7136 "NXCDefs.h"
+3	7137	115		mov __signed_stack_001PlaySound, __PlaySound_7qG2_aCode_7qG2_000
+3	7136	117	#line 7136 "NXCDefs.h"
+3	7137	117	#line 7137 "NXCDefs.h"
+3	7138	117		set __D0PlaySound, 3
+3	7137	120	#line 7137 "NXCDefs.h"
+3	7138	120		cmp 4, __D0PlaySound, __signed_stack_001PlaySound, __D0PlaySound
+3	7137	124	#line 7137 "NXCDefs.h"
+3	7138	124		brtst 4, __ASM_Label_88, __D0PlaySound
+3	7137	127	#line 7137 "NXCDefs.h"
+3	7138	127		set __PlaySound_7qG2_i_7qG2_001, 4
+3	7137	130	#line 7137 "NXCDefs.h"
+3	7137	130	#line 7137 "NXCDefs.h"
+3	7138	130		mov __signed_stack_001PlaySound, __PlaySound_7qG2_i_7qG2_001
+3	7137	132	#line 7137 "NXCDefs.h"
+3	7137	132	#line 7137 "NXCDefs.h"
+3	7138	132		set __D0PlaySound, 8
+3	7137	135	#line 7137 "NXCDefs.h"
+3	7138	135		cmp 0, __D0PlaySound, __signed_stack_001PlaySound, __D0PlaySound
+3	7137	139	#line 7137 "NXCDefs.h"
+3	7138	139		brtst 4, __ASM_Label_90, __D0PlaySound
+3	7137	142	#line 7137 "NXCDefs.h"
+3	7138	142		jmp __ASM_Label_91
+3	7138	144	#line 7138 "NXCDefs.h"
+3	7139	144		add __PlaySound_7qG2_i_7qG2_001, __PlaySound_7qG2_i_7qG2_001, __constVal1
+3	7139	148	#line 7139 "NXCDefs.h"
+3	7140	148		jmp __ASM_Label_89
+3	7139	150	#line 7139 "NXCDefs.h"
+3	7140	150		set __signed_stack_001PlaySound, 523
+3	7139	153	#line 7139 "NXCDefs.h"
+3	7139	153	#line 7139 "NXCDefs.h"
+3	7140	153		mov __D0PlaySound, __PlaySound_7qG2_i_7qG2_001
+3	7139	155	#line 7139 "NXCDefs.h"
+3	7140	155		mul __signed_stack_001PlaySound, __signed_stack_001PlaySound, __D0PlaySound
+3	7139	159	#line 7139 "NXCDefs.h"
+3	7139	159	#line 7139 "NXCDefs.h"
+3	7140	159		set __D0PlaySound, 4
+3	7139	162	#line 7139 "NXCDefs.h"
+3	7140	162		div __signed_stack_001PlaySound, __signed_stack_001PlaySound, __D0PlaySound
+3	7139	166	#line 7139 "NXCDefs.h"
+3	7139	166	#line 7139 "NXCDefs.h"
+3	7140	166		set __signed_stack_002PlaySound, 100
+3	7139	169	#line 7139 "NXCDefs.h"
+3	7139	169	#line 7139 "NXCDefs.h"
+3	7140	169		set __signed_stack_003PlaySound, 4
+3	7139	172	#line 7139 "NXCDefs.h"
+3	7139	172	#line 7139 "NXCDefs.h"
+3	7140	172		set __D0PlaySound, 0
+3	7140	175	#line 7140 "NXCDefs.h"
+3	7141	175		acquire __SPTArgsMutex
+3	7140	176	#line 7140 "NXCDefs.h"
+3	7141	176		mov __SPTArgs.Frequency, __signed_stack_001PlaySound
+3	7140	178	#line 7140 "NXCDefs.h"
+3	7141	178		mov __SPTArgs.Duration, __signed_stack_002PlaySound
+3	7140	180	#line 7140 "NXCDefs.h"
+3	7141	180		mov __SPTArgs.Volume, __signed_stack_003PlaySound
+3	7140	182	#line 7140 "NXCDefs.h"
+3	7141	182		mov __SPTArgs.Loop, __D0PlaySound
+3	7140	184	#line 7140 "NXCDefs.h"
+3	7141	184		syscall 10, __SPTArgs
+3	7140	187	#line 7140 "NXCDefs.h"
+3	7141	187		mov __D0PlaySound, __SPTArgs.Result
+3	7140	189	#line 7140 "NXCDefs.h"
+3	7141	189		release __SPTArgsMutex
+3	7140	190	#line 7140 "NXCDefs.h"
+3	7140	190	#line 7140 "NXCDefs.h"
+3	7141	190		wait2 NA, __constVal100
+3	7140	193	#line 7140 "NXCDefs.h"
+3	7140	193	#line 7140 "NXCDefs.h"
+3	7142	193	#line 7142 "NXCDefs.h"
+3	7143	193		jmp __ASM_Label_92
+3	7142	195	#line 7142 "NXCDefs.h"
+3	7142	195	#line 7142 "NXCDefs.h"
+3	7143	195		jmp __ASM_Label_105
+3	7142	197	#line 7142 "NXCDefs.h"
+3	7143	197		mov __signed_stack_001PlaySound, __PlaySound_7qG2_aCode_7qG2_000
+3	7142	199	#line 7142 "NXCDefs.h"
+3	7143	199	#line 7143 "NXCDefs.h"
+3	7144	199		set __D0PlaySound, 2
+3	7143	202	#line 7143 "NXCDefs.h"
+3	7144	202		cmp 4, __D0PlaySound, __signed_stack_001PlaySound, __D0PlaySound
+3	7143	206	#line 7143 "NXCDefs.h"
+3	7144	206		brtst 4, __ASM_Label_108, __D0PlaySound
+3	7143	209	#line 7143 "NXCDefs.h"
+3	7144	209		set __PlaySound_7qG2_i_7qG2_001, 7
+3	7143	212	#line 7143 "NXCDefs.h"
+3	7143	212	#line 7143 "NXCDefs.h"
+3	7144	212		mov __signed_stack_001PlaySound, __PlaySound_7qG2_i_7qG2_001
+3	7143	214	#line 7143 "NXCDefs.h"
+3	7143	214	#line 7143 "NXCDefs.h"
+3	7144	214		set __D0PlaySound, 3
+3	7143	217	#line 7143 "NXCDefs.h"
+3	7144	217		cmp 1, __D0PlaySound, __signed_stack_001PlaySound, __D0PlaySound
+3	7143	221	#line 7143 "NXCDefs.h"
+3	7144	221		brtst 4, __ASM_Label_110, __D0PlaySound
+3	7143	224	#line 7143 "NXCDefs.h"
+3	7144	224		jmp __ASM_Label_111
+3	7144	226	#line 7144 "NXCDefs.h"
+3	7145	226		sub __PlaySound_7qG2_i_7qG2_001, __PlaySound_7qG2_i_7qG2_001, __constVal1
+3	7145	230	#line 7145 "NXCDefs.h"
+3	7146	230		jmp __ASM_Label_109
+3	7145	232	#line 7145 "NXCDefs.h"
+3	7146	232		set __signed_stack_001PlaySound, 523
+3	7145	235	#line 7145 "NXCDefs.h"
+3	7145	235	#line 7145 "NXCDefs.h"
+3	7146	235		mov __D0PlaySound, __PlaySound_7qG2_i_7qG2_001
+3	7145	237	#line 7145 "NXCDefs.h"
+3	7146	237		mul __signed_stack_001PlaySound, __signed_stack_001PlaySound, __D0PlaySound
+3	7145	241	#line 7145 "NXCDefs.h"
+3	7145	241	#line 7145 "NXCDefs.h"
+3	7146	241		set __D0PlaySound, 4
+3	7145	244	#line 7145 "NXCDefs.h"
+3	7146	244		div __signed_stack_001PlaySound, __signed_stack_001PlaySound, __D0PlaySound
+3	7145	248	#line 7145 "NXCDefs.h"
+3	7145	248	#line 7145 "NXCDefs.h"
+3	7146	248		set __signed_stack_002PlaySound, 100
+3	7145	251	#line 7145 "NXCDefs.h"
+3	7145	251	#line 7145 "NXCDefs.h"
+3	7146	251		set __signed_stack_003PlaySound, 4
+3	7145	254	#line 7145 "NXCDefs.h"
+3	7145	254	#line 7145 "NXCDefs.h"
+3	7146	254		set __D0PlaySound, 0
+3	7146	257	#line 7146 "NXCDefs.h"
+3	7147	257		acquire __SPTArgsMutex
+3	7146	258	#line 7146 "NXCDefs.h"
+3	7147	258		mov __SPTArgs.Frequency, __signed_stack_001PlaySound
+3	7146	260	#line 7146 "NXCDefs.h"
+3	7147	260		mov __SPTArgs.Duration, __signed_stack_002PlaySound
+3	7146	262	#line 7146 "NXCDefs.h"
+3	7147	262		mov __SPTArgs.Volume, __signed_stack_003PlaySound
+3	7146	264	#line 7146 "NXCDefs.h"
+3	7147	264		mov __SPTArgs.Loop, __D0PlaySound
+3	7146	266	#line 7146 "NXCDefs.h"
+3	7147	266		syscall 10, __SPTArgs
+3	7146	269	#line 7146 "NXCDefs.h"
+3	7147	269		mov __D0PlaySound, __SPTArgs.Result
+3	7146	271	#line 7146 "NXCDefs.h"
+3	7147	271		release __SPTArgsMutex
+3	7146	272	#line 7146 "NXCDefs.h"
+3	7146	272	#line 7146 "NXCDefs.h"
+3	7147	272		wait2 NA, __constVal100
+3	7146	275	#line 7146 "NXCDefs.h"
+3	7146	275	#line 7146 "NXCDefs.h"
+3	7148	275	#line 7148 "NXCDefs.h"
+3	7149	275		jmp __ASM_Label_112
+3	7148	277	#line 7148 "NXCDefs.h"
+3	7148	277	#line 7148 "NXCDefs.h"
+3	7149	277		jmp __ASM_Label_125
+3	7148	279	#line 7148 "NXCDefs.h"
+3	7149	279		mov __signed_stack_001PlaySound, __PlaySound_7qG2_aCode_7qG2_000
+3	7148	281	#line 7148 "NXCDefs.h"
+3	7149	281	#line 7149 "NXCDefs.h"
+3	7150	281		set __D0PlaySound, 4
+3	7149	284	#line 7149 "NXCDefs.h"
+3	7150	284		cmp 4, __D0PlaySound, __signed_stack_001PlaySound, __D0PlaySound
+3	7150	288	#line 7150 "NXCDefs.h"
+3	7151	288		brtst 4, __ASM_Label_128, __D0PlaySound
+3	7150	291	#line 7150 "NXCDefs.h"
+3	7151	291		set __signed_stack_001PlaySound, 100
+3	7150	294	#line 7150 "NXCDefs.h"
+3	7150	294	#line 7150 "NXCDefs.h"
+3	7151	294		set __signed_stack_002PlaySound, 500
+3	7150	297	#line 7150 "NXCDefs.h"
+3	7150	297	#line 7150 "NXCDefs.h"
+3	7151	297		set __signed_stack_003PlaySound, 4
+3	7150	300	#line 7150 "NXCDefs.h"
+3	7150	300	#line 7150 "NXCDefs.h"
+3	7151	300		set __D0PlaySound, 0
+3	7151	303	#line 7151 "NXCDefs.h"
+3	7152	303		acquire __SPTArgsMutex
+3	7151	304	#line 7151 "NXCDefs.h"
+3	7152	304		mov __SPTArgs.Frequency, __signed_stack_001PlaySound
+3	7151	306	#line 7151 "NXCDefs.h"
+3	7152	306		mov __SPTArgs.Duration, __signed_stack_002PlaySound
+3	7151	308	#line 7151 "NXCDefs.h"
+3	7152	308		mov __SPTArgs.Volume, __signed_stack_003PlaySound
+3	7151	310	#line 7151 "NXCDefs.h"
+3	7152	310		mov __SPTArgs.Loop, __D0PlaySound
+3	7151	312	#line 7151 "NXCDefs.h"
+3	7152	312		syscall 10, __SPTArgs
+3	7151	315	#line 7151 "NXCDefs.h"
+3	7152	315		mov __D0PlaySound, __SPTArgs.Result
+3	7151	317	#line 7151 "NXCDefs.h"
+3	7152	317		release __SPTArgsMutex
+3	7151	318	#line 7151 "NXCDefs.h"
+3	7151	318	#line 7151 "NXCDefs.h"
+3	7152	318		wait2 NA, __constVal500
+3	7151	321	#line 7151 "NXCDefs.h"
+3	7151	321	#line 7151 "NXCDefs.h"
+3	7153	321	#line 7153 "NXCDefs.h"
+3	7154	321		jmp __ASM_Label_137
+3	7153	323	#line 7153 "NXCDefs.h"
+3	7154	323		mov __signed_stack_001PlaySound, __PlaySound_7qG2_aCode_7qG2_000
+3	7153	325	#line 7153 "NXCDefs.h"
+3	7154	325	#line 7154 "NXCDefs.h"
+3	7155	325		set __D0PlaySound, 5
+3	7154	328	#line 7154 "NXCDefs.h"
+3	7155	328		cmp 4, __D0PlaySound, __signed_stack_001PlaySound, __D0PlaySound
+3	7154	332	#line 7154 "NXCDefs.h"
+3	7155	332		brtst 4, __ASM_Label_140, __D0PlaySound
+3	7154	335	#line 7154 "NXCDefs.h"
+3	7155	335		set __PlaySound_7qG2_i_7qG2_001, 4
+3	7154	338	#line 7154 "NXCDefs.h"
+3	7154	338	#line 7154 "NXCDefs.h"
+3	7155	338		mov __signed_stack_001PlaySound, __PlaySound_7qG2_i_7qG2_001
+3	7154	340	#line 7154 "NXCDefs.h"
+3	7154	340	#line 7154 "NXCDefs.h"
+3	7155	340		set __D0PlaySound, 8
+3	7154	343	#line 7154 "NXCDefs.h"
+3	7155	343		cmp 0, __D0PlaySound, __signed_stack_001PlaySound, __D0PlaySound
+3	7154	347	#line 7154 "NXCDefs.h"
+3	7155	347		brtst 4, __ASM_Label_142, __D0PlaySound
+3	7154	350	#line 7154 "NXCDefs.h"
+3	7155	350		jmp __ASM_Label_143
+3	7155	352	#line 7155 "NXCDefs.h"
+3	7156	352		add __PlaySound_7qG2_i_7qG2_001, __PlaySound_7qG2_i_7qG2_001, __constVal1
+3	7156	356	#line 7156 "NXCDefs.h"
+3	7157	356		jmp __ASM_Label_141
+3	7156	358	#line 7156 "NXCDefs.h"
+3	7157	358		set __signed_stack_001PlaySound, 523
+3	7156	361	#line 7156 "NXCDefs.h"
+3	7156	361	#line 7156 "NXCDefs.h"
+3	7157	361		mov __D0PlaySound, __PlaySound_7qG2_i_7qG2_001
+3	7156	363	#line 7156 "NXCDefs.h"
+3	7157	363		mul __signed_stack_001PlaySound, __signed_stack_001PlaySound, __D0PlaySound
+3	7156	367	#line 7156 "NXCDefs.h"
+3	7156	367	#line 7156 "NXCDefs.h"
+3	7157	367		set __D0PlaySound, 4
+3	7156	370	#line 7156 "NXCDefs.h"
+3	7157	370		div __signed_stack_001PlaySound, __signed_stack_001PlaySound, __D0PlaySound
+3	7156	374	#line 7156 "NXCDefs.h"
+3	7156	374	#line 7156 "NXCDefs.h"
+3	7157	374		set __signed_stack_002PlaySound, 50
+3	7156	377	#line 7156 "NXCDefs.h"
+3	7156	377	#line 7156 "NXCDefs.h"
+3	7157	377		set __signed_stack_003PlaySound, 4
+3	7156	380	#line 7156 "NXCDefs.h"
+3	7156	380	#line 7156 "NXCDefs.h"
+3	7157	380		set __D0PlaySound, 0
+3	7157	383	#line 7157 "NXCDefs.h"
+3	7158	383		acquire __SPTArgsMutex
+3	7157	384	#line 7157 "NXCDefs.h"
+3	7158	384		mov __SPTArgs.Frequency, __signed_stack_001PlaySound
+3	7157	386	#line 7157 "NXCDefs.h"
+3	7158	386		mov __SPTArgs.Duration, __signed_stack_002PlaySound
+3	7157	388	#line 7157 "NXCDefs.h"
+3	7158	388		mov __SPTArgs.Volume, __signed_stack_003PlaySound
+3	7157	390	#line 7157 "NXCDefs.h"
+3	7158	390		mov __SPTArgs.Loop, __D0PlaySound
+3	7157	392	#line 7157 "NXCDefs.h"
+3	7158	392		syscall 10, __SPTArgs
+3	7157	395	#line 7157 "NXCDefs.h"
+3	7158	395		mov __D0PlaySound, __SPTArgs.Result
+3	7157	397	#line 7157 "NXCDefs.h"
+3	7158	397		release __SPTArgsMutex
+3	7157	398	#line 7157 "NXCDefs.h"
+3	7157	398	#line 7157 "NXCDefs.h"
+3	7158	398		wait2 NA, __constVal50
+3	7157	401	#line 7157 "NXCDefs.h"
+3	7157	401	#line 7157 "NXCDefs.h"
+3	7169	401	#line 7169 "NXCDefs.h"
+3	7170	401		jmp __ASM_Label_144
+3	7169	403	#line 7169 "NXCDefs.h"
+3	7169	403	#line 7169 "NXCDefs.h"
+3	7169	403	#line 7169 "NXCDefs.h"
+3	7169	403	#line 7169 "NXCDefs.h"
+3	7169	403	#line 7169 "NXCDefs.h"
+3	7169	403	#line 7169 "NXCDefs.h"
+3	7169	403	#line 7169 "NXCDefs.h"
+3	7169	403	#line 7169 "NXCDefs.h"
+3	7170	403		subret __PlaySound_return
+4	45	0	#line 45 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\Ben Code\.\includes.nxc"
+4	46	0		set __SetSensorType_7qG2_port_7qG2_000_inline_init_sensors, 0
+4	45	3	#line 45 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\Ben Code\.\includes.nxc"
+4	45	3	#line 45 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\Ben Code\.\includes.nxc"
+4	46	3		set __SetSensorType_7qG2_type_7qG2_000_inline_init_sensors, 10
+4	45	6	#line 45 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\Ben Code\.\includes.nxc"
+4	4247	6	#line 4247 "NXCDefs.h"
+4	4248	6		setin __SetSensorType_7qG2_type_7qG2_000_inline_init_sensors, __SetSensorType_7qG2_port_7qG2_000_inline_init_sensors, 0
+4	4247	10	#line 4247 "NXCDefs.h"
+4	46	10	#line 46 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\Ben Code\.\includes.nxc"
+4	46	10	#line 46 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\Ben Code\.\includes.nxc"
+4	47	10		set __SetSensorColorGreen_7qG2_port_7qG2_000_inline_init_sensors, 1
+4	46	13	#line 46 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\Ben Code\.\includes.nxc"
+4	4406	13	#line 4406 "NXCDefs.h"
+4	4407	13	#pragma macro 6
+4	4407	13		setin __constVal15, __SetSensorColorGreen_7qG2_port_7qG2_000_inline_init_sensors, 0
+4	4407	17		setin __constVal128, __SetSensorColorGreen_7qG2_port_7qG2_000_inline_init_sensors, 1
+4	4407	21		mov __ResetSensorPort, __SetSensorColorGreen_7qG2_port_7qG2_000_inline_init_sensors
+4	4407	23		subcall __ResetSensorSubroutine, ____ResetSensorSubroutine_return
+4	4719	25	#line 4719 "NXCDefs.h"
+4	4406	25	#line 4406 "NXCDefs.h"
+4	47	25	#line 47 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\Ben Code\.\includes.nxc"
+4	47	25	#line 47 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\Ben Code\.\includes.nxc"
+4	48	25		set __SetSensorHTMagnet_7qG2_port_7qG2_000_inline_init_sensors, 2
+4	47	28	#line 47 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\Ben Code\.\includes.nxc"
+4	13790	28	#line 13790 "NXCDefs.h"
+4	13791	28		mov __SetSensorType_7qG2_port_7qG2_000_inline_SetSensorHTMagnet_inline_init_sensors, __SetSensorHTMagnet_7qG2_port_7qG2_000_inline_init_sensors
+4	13790	30	#line 13790 "NXCDefs.h"
+4	13790	30	#line 13790 "NXCDefs.h"
+4	13791	30		set __SetSensorType_7qG2_type_7qG2_000_inline_SetSensorHTMagnet_inline_init_sensors, 6
+4	13790	33	#line 13790 "NXCDefs.h"
+4	4247	33	#line 4247 "NXCDefs.h"
+4	4248	33		setin __SetSensorType_7qG2_type_7qG2_000_inline_SetSensorHTMagnet_inline_init_sensors, __SetSensorType_7qG2_port_7qG2_000_inline_SetSensorHTMagnet_inline_init_sensors, 0
+4	4247	37	#line 4247 "NXCDefs.h"
+4	13791	37	#line 13791 "NXCDefs.h"
+4	13791	37	#line 13791 "NXCDefs.h"
+4	13792	37		mov __SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorHTMagnet_inline_init_sensors, __SetSensorHTMagnet_7qG2_port_7qG2_000_inline_init_sensors
+4	13791	39	#line 13791 "NXCDefs.h"
+4	13791	39	#line 13791 "NXCDefs.h"
+4	13792	39		set __SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorHTMagnet_inline_init_sensors, 0
+4	13791	42	#line 13791 "NXCDefs.h"
+4	4260	42	#line 4260 "NXCDefs.h"
+4	4261	42		setin __SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorHTMagnet_inline_init_sensors, __SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorHTMagnet_inline_init_sensors, 1
+4	4260	46	#line 4260 "NXCDefs.h"
+4	13792	46	#line 13792 "NXCDefs.h"
+4	13792	46	#line 13792 "NXCDefs.h"
+4	13792	46	#line 13792 "NXCDefs.h"
+4	4278	46	#line 4278 "NXCDefs.h"
+4	4279	46	#pragma macro 4
+4	4279	46		mov __ResetSensorPort, __SetSensorHTMagnet_7qG2_port_7qG2_000_inline_init_sensors
+4	4279	48		subcall __ResetSensorSubroutine, ____ResetSensorSubroutine_return
+4	4785	50	#line 4785 "NXCDefs.h"
+4	4278	50	#line 4278 "NXCDefs.h"
+4	13793	50	#line 13793 "NXCDefs.h"
+4	48	50	#line 48 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\Ben Code\.\includes.nxc"
+4	48	50	#line 48 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\Ben Code\.\includes.nxc"
+4	49	50		set __SetSensorType_7qG2_port_7qG2_000_inline_init_sensors, 3
+4	48	53	#line 48 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\Ben Code\.\includes.nxc"
+4	48	53	#line 48 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\Ben Code\.\includes.nxc"
+4	49	53		set __SetSensorType_7qG2_type_7qG2_000_inline_init_sensors, 6
+4	48	56	#line 48 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\Ben Code\.\includes.nxc"
+4	4247	56	#line 4247 "NXCDefs.h"
+4	4248	56		setin __SetSensorType_7qG2_type_7qG2_000_inline_init_sensors, __SetSensorType_7qG2_port_7qG2_000_inline_init_sensors, 0
+4	4247	60	#line 4247 "NXCDefs.h"
+4	49	60	#line 49 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\Ben Code\.\includes.nxc"
+4	49	60	#line 49 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\Ben Code\.\includes.nxc"
+4	50	60		set __SetSensorMode_7qG2_port_7qG2_000_inline_init_sensors, 3
+4	49	63	#line 49 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\Ben Code\.\includes.nxc"
+4	49	63	#line 49 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\Ben Code\.\includes.nxc"
+4	50	63		set __SetSensorMode_7qG2_mode_7qG2_000_inline_init_sensors, 128
+4	49	66	#line 49 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\Ben Code\.\includes.nxc"
+4	4260	66	#line 4260 "NXCDefs.h"
+4	4261	66		setin __SetSensorMode_7qG2_mode_7qG2_000_inline_init_sensors, __SetSensorMode_7qG2_port_7qG2_000_inline_init_sensors, 1
+4	4260	70	#line 4260 "NXCDefs.h"
+4	50	70	#line 50 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\Ben Code\.\includes.nxc"
+4	52	70	#line 52 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\Ben Code\.\includes.nxc"
+4	53	70		subret __init_sensors_return
+5	53	0	#line 53 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\Ben Code\.\includes.nxc"
+5	54	0		set __D0task_test_color, 1
+5	54	3	#line 54 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\Ben Code\.\includes.nxc"
+5	55	3		tst 5, __D0task_test_color, __D0task_test_color
+5	54	6	#line 54 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\Ben Code\.\includes.nxc"
+5	55	6		brtst 4, __ASM_Label_506, __D0task_test_color
+5	54	9	#line 54 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\Ben Code\.\includes.nxc"
+5	55	9		set __signed_stack_001task_test_color, 0
+5	54	12	#line 54 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\Ben Code\.\includes.nxc"
+5	54	12	#line 54 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\Ben Code\.\includes.nxc"
+5	55	12		set __signed_stack_002task_test_color, 0
+5	54	15	#line 54 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\Ben Code\.\includes.nxc"
+5	54	15	#line 54 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\Ben Code\.\includes.nxc"
+5	55	15		getin __D0task_test_color, __constVal1, 4
+5	55	19	#line 55 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\Ben Code\.\includes.nxc"
+5	56	19		acquire __TextOutMutex
+5	55	20	#line 55 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\Ben Code\.\includes.nxc"
+5	56	20		mov __TextOutArgs.Location.X, __signed_stack_001task_test_color
+5	55	22	#line 55 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\Ben Code\.\includes.nxc"
+5	56	22		mov __TextOutArgs.Location.Y, __signed_stack_002task_test_color
+5	55	24	#line 55 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\Ben Code\.\includes.nxc"
+5	56	24		set __TextOutArgs.Options, 0
+5	55	27	#line 55 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\Ben Code\.\includes.nxc"
+5	56	27		numtostr __TextOutArgs.Text, __D0task_test_color
+5	55	30	#line 55 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\Ben Code\.\includes.nxc"
+5	56	30		syscall 13, __TextOutArgs
+5	55	33	#line 55 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\Ben Code\.\includes.nxc"
+5	56	33		mov __D0task_test_color, __TextOutArgs.Result
+5	55	35	#line 55 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\Ben Code\.\includes.nxc"
+5	56	35		release __TextOutMutex
+5	55	36	#line 55 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\Ben Code\.\includes.nxc"
+5	55	36	#line 55 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\Ben Code\.\includes.nxc"
+5	57	36	#line 57 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\Ben Code\.\includes.nxc"
+5	58	36		jmp __ASM_Label_505
+5	57	38	#line 57 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\Ben Code\.\includes.nxc"
+5	58	38		exit -1, -1
+6	59	0	#line 59 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\Ben Code\.\includes.nxc"
+6	60	0		subcall __task_test_color_Spawner, __task_test_color_Spawner_return
+6	59	2	#line 59 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\Ben Code\.\includes.nxc"
+6	62	2	#line 62 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\Ben Code\.\includes.nxc"
+6	63	2		subret __test_color_return
 7	0	0		subret __task_test_color_Spawner_return
 8	0	0		exit 0, 1
-9	3	0	#line 3 "C:\ENGR102\Lab Code\findOne.nxc"
+9	3	0	#line 3 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\Ben Code\findOne.nxc"
 9	4	0		set __PlaySound_7qG2_aCode_7qG2_000, 3
-9	3	3	#line 3 "C:\ENGR102\Lab Code\findOne.nxc"
-9	4	3	#line 4 "C:\ENGR102\Lab Code\findOne.nxc"
+9	3	3	#line 3 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\Ben Code\findOne.nxc"
+9	4	3	#line 4 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\Ben Code\findOne.nxc"
 9	5	3		subcall PlaySound, __PlaySound_return
-9	4	5	#line 4 "C:\ENGR102\Lab Code\findOne.nxc"
-9	4	5	#line 4 "C:\ENGR102\Lab Code\findOne.nxc"
+9	4	5	#line 4 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\Ben Code\findOne.nxc"
+9	4	5	#line 4 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\Ben Code\findOne.nxc"
 9	5	5		set __D0fwd_timed, 75
-9	5	8	#line 5 "C:\ENGR102\Lab Code\findOne.nxc"
+9	5	8	#line 5 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\Ben Code\findOne.nxc"
 9	6	8	#pragma macro 7
 9	6	8		setout __OUT_AC, 2, __D0fwd_timed, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
-9	4722	31	#line 4722 "C:\ENGR102\Lab Code\findOne.nxc"
-9	5	31	#line 5 "C:\ENGR102\Lab Code\findOne.nxc"
-9	5	31	#line 5 "C:\ENGR102\Lab Code\findOne.nxc"
+9	4900	31	#line 4900 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\Ben Code\findOne.nxc"
+9	5	31	#line 5 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\Ben Code\findOne.nxc"
+9	5	31	#line 5 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\Ben Code\findOne.nxc"
 9	6	31		mov __Wait_7qG2_ms_7qG2_000_inline_fwd_timed, __fwd_timed_7qG2_time_7qG2_000
-9	5	33	#line 5 "C:\ENGR102\Lab Code\findOne.nxc"
-9	7921	33	#line 7921 "NXCDefs.h"
-9	7922	33		wait2 NA, __Wait_7qG2_ms_7qG2_000_inline_fwd_timed
-9	7921	36	#line 7921 "NXCDefs.h"
-9	6	36	#line 6 "C:\ENGR102\Lab Code\findOne.nxc"
-9	7	36	#line 7 "C:\ENGR102\Lab Code\findOne.nxc"
+9	5	33	#line 5 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\Ben Code\findOne.nxc"
+9	8551	33	#line 8551 "NXCDefs.h"
+9	8552	33		wait2 NA, __Wait_7qG2_ms_7qG2_000_inline_fwd_timed
+9	8551	36	#line 8551 "NXCDefs.h"
+9	6	36	#line 6 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\Ben Code\findOne.nxc"
+9	7	36	#line 7 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\Ben Code\findOne.nxc"
 9	8	36	#pragma macro 7
 9	8	36		setout __OUT_AC, 2, __constVal0, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
-9	4739	59	#line 4739 "C:\ENGR102\Lab Code\findOne.nxc"
-9	7	59	#line 7 "C:\ENGR102\Lab Code\findOne.nxc"
-9	8	59	#line 8 "C:\ENGR102\Lab Code\findOne.nxc"
+9	4917	59	#line 4917 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\Ben Code\findOne.nxc"
+9	7	59	#line 7 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\Ben Code\findOne.nxc"
+9	8	59	#line 8 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\Ben Code\findOne.nxc"
 9	9	59		subret __fwd_timed_return
-10	9	0	#line 9 "C:\ENGR102\Lab Code\findOne.nxc"
+10	9	0	#line 9 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\Ben Code\findOne.nxc"
 10	10	0		set __PlaySound_7qG2_aCode_7qG2_000, 2
-10	9	3	#line 9 "C:\ENGR102\Lab Code\findOne.nxc"
-10	10	3	#line 10 "C:\ENGR102\Lab Code\findOne.nxc"
+10	9	3	#line 9 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\Ben Code\findOne.nxc"
+10	10	3	#line 10 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\Ben Code\findOne.nxc"
 10	11	3		subcall PlaySound, __PlaySound_return
-10	10	5	#line 10 "C:\ENGR102\Lab Code\findOne.nxc"
-10	10	5	#line 10 "C:\ENGR102\Lab Code\findOne.nxc"
+10	10	5	#line 10 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\Ben Code\findOne.nxc"
+10	10	5	#line 10 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\Ben Code\findOne.nxc"
 10	11	5		set __D0rev_timed, 75
-10	11	8	#line 11 "C:\ENGR102\Lab Code\findOne.nxc"
+10	11	8	#line 11 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\Ben Code\findOne.nxc"
 10	12	8	#pragma macro 10
 10	12	8		acquire __OnRevMutex
 10	12	9		neg __OnRev_Tmp, __D0rev_timed
 10	12	12		setout __OUT_AC, 2, __OnRev_Tmp, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
 10	12	35		release __OnRevMutex
-10	4764	36	#line 4764 "C:\ENGR102\Lab Code\findOne.nxc"
-10	11	36	#line 11 "C:\ENGR102\Lab Code\findOne.nxc"
-10	11	36	#line 11 "C:\ENGR102\Lab Code\findOne.nxc"
+10	4938	36	#line 4938 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\Ben Code\findOne.nxc"
+10	11	36	#line 11 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\Ben Code\findOne.nxc"
+10	11	36	#line 11 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\Ben Code\findOne.nxc"
 10	12	36		mov __Wait_7qG2_ms_7qG2_000_inline_rev_timed, __rev_timed_7qG2_time_7qG2_000
-10	11	38	#line 11 "C:\ENGR102\Lab Code\findOne.nxc"
-10	7921	38	#line 7921 "NXCDefs.h"
-10	7922	38		wait2 NA, __Wait_7qG2_ms_7qG2_000_inline_rev_timed
-10	7921	41	#line 7921 "NXCDefs.h"
-10	12	41	#line 12 "C:\ENGR102\Lab Code\findOne.nxc"
-10	13	41	#line 13 "C:\ENGR102\Lab Code\findOne.nxc"
+10	11	38	#line 11 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\Ben Code\findOne.nxc"
+10	8551	38	#line 8551 "NXCDefs.h"
+10	8552	38		wait2 NA, __Wait_7qG2_ms_7qG2_000_inline_rev_timed
+10	8551	41	#line 8551 "NXCDefs.h"
+10	12	41	#line 12 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\Ben Code\findOne.nxc"
+10	13	41	#line 13 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\Ben Code\findOne.nxc"
 10	14	41	#pragma macro 7
 10	14	41		setout __OUT_AC, 2, __constVal0, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
-10	4781	64	#line 4781 "C:\ENGR102\Lab Code\findOne.nxc"
-10	13	64	#line 13 "C:\ENGR102\Lab Code\findOne.nxc"
-10	14	64	#line 14 "C:\ENGR102\Lab Code\findOne.nxc"
+10	4955	64	#line 4955 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\Ben Code\findOne.nxc"
+10	13	64	#line 13 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\Ben Code\findOne.nxc"
+10	14	64	#line 14 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\Ben Code\findOne.nxc"
 10	15	64		subret __rev_timed_return
-11	17	0	#line 17 "C:\ENGR102\Lab Code\findOne.nxc"
-11	18	0		set __search_7qG2_SPIN_MODE_7qG2_000, 1
-11	17	3	#line 17 "C:\ENGR102\Lab Code\findOne.nxc"
-11	17	3	#line 17 "C:\ENGR102\Lab Code\findOne.nxc"
-11	18	3		mov __D0search, __constValNeg30
-11	17	5	#line 17 "C:\ENGR102\Lab Code\findOne.nxc"
-11	18	5	#pragma macro 7
-11	18	5		setout __constVal2, 2, __D0search, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
-11	4803	28	#line 4803 "C:\ENGR102\Lab Code\findOne.nxc"
-11	17	28	#line 17 "C:\ENGR102\Lab Code\findOne.nxc"
-11	17	28	#line 17 "C:\ENGR102\Lab Code\findOne.nxc"
-11	18	28		set __D0search, 30
-11	17	31	#line 17 "C:\ENGR102\Lab Code\findOne.nxc"
-11	18	31	#pragma macro 7
-11	18	31		setout __constVal0, 2, __D0search, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
-11	4810	54	#line 4810 "C:\ENGR102\Lab Code\findOne.nxc"
-11	17	54	#line 17 "C:\ENGR102\Lab Code\findOne.nxc"
-11	17	54	#line 17 "C:\ENGR102\Lab Code\findOne.nxc"
-11	18	54	#line 18 "C:\ENGR102\Lab Code\findOne.nxc"
-11	18	54	#line 18 "C:\ENGR102\Lab Code\findOne.nxc"
-11	19	54		mov __signed_stack_001search, __search_7qG2_SPIN_MODE_7qG2_000
-11	18	56	#line 18 "C:\ENGR102\Lab Code\findOne.nxc"
-11	18	56	#line 18 "C:\ENGR102\Lab Code\findOne.nxc"
-11	19	56		set __D0search, 1
-11	18	59	#line 18 "C:\ENGR102\Lab Code\findOne.nxc"
-11	19	59		cmp 4, __zfsearch, __signed_stack_001search, __D0search
-11	18	63	#line 18 "C:\ENGR102\Lab Code\findOne.nxc"
-11	19	63		mov __D0search, __zfsearch
-11	19	65	#line 19 "C:\ENGR102\Lab Code\findOne.nxc"
-11	20	65		brtst 4, __NXC_Label_538, __zfsearch
-11	19	68	#line 19 "C:\ENGR102\Lab Code\findOne.nxc"
-11	20	68	#pragma macro 26
-11	20	68		acquire __RLSBmutex0
-11	20	69		mov __RLSReadBuf0, __RLSBbufLSWrite1
-11	20	71		set __RLSBytesCount0, 1
-11	20	74		wait2 NA, __constVal15
-11	20	77		subcall __ReadLSBytes0, ____ReadLSBytes0_return
-11	20	79		index __D0search, __RLSReadBuf0, 65535
-11	20	83		release __RLSBmutex0
-11	4830	84	#line 4830 "C:\ENGR102\Lab Code\findOne.nxc"
-11	19	84	#line 19 "C:\ENGR102\Lab Code\findOne.nxc"
-11	20	84		mov __signed_stack_001search, __D0search
-11	19	86	#line 19 "C:\ENGR102\Lab Code\findOne.nxc"
-11	20	86		set __D0search, 45
-11	19	89	#line 19 "C:\ENGR102\Lab Code\findOne.nxc"
-11	20	89		cmp 0, __zfsearch, __signed_stack_001search, __D0search
-11	19	93	#line 19 "C:\ENGR102\Lab Code\findOne.nxc"
-11	20	93		mov __D0search, __zfsearch
-11	20	95	#line 20 "C:\ENGR102\Lab Code\findOne.nxc"
-11	21	95		brtst 4, __NXC_Label_543, __zfsearch
-11	20	98	#line 20 "C:\ENGR102\Lab Code\findOne.nxc"
-11	21	98		set __Wait_7qG2_ms_7qG2_000_inline_search, 200
-11	20	101	#line 20 "C:\ENGR102\Lab Code\findOne.nxc"
-11	7921	101	#line 7921 "NXCDefs.h"
-11	7922	101		wait2 NA, __Wait_7qG2_ms_7qG2_000_inline_search
-11	7921	104	#line 7921 "NXCDefs.h"
-11	21	104	#line 21 "C:\ENGR102\Lab Code\findOne.nxc"
-11	24	104	#line 24 "C:\ENGR102\Lab Code\findOne.nxc"
-11	25	104	#pragma macro 7
-11	25	104		setout __OUT_AC, 2, __constVal0, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
-11	4858	127	#line 4858 "C:\ENGR102\Lab Code\findOne.nxc"
-11	24	127	#line 24 "C:\ENGR102\Lab Code\findOne.nxc"
-11	24	127	#line 24 "C:\ENGR102\Lab Code\findOne.nxc"
-11	25	127	#pragma macro 26
-11	25	127		acquire __RLSBmutex0
-11	25	128		mov __RLSReadBuf0, __RLSBbufLSWrite1
-11	25	130		set __RLSBytesCount0, 1
-11	25	133		wait2 NA, __constVal15
-11	25	136		subcall __ReadLSBytes0, ____ReadLSBytes0_return
-11	25	138		index __D0search, __RLSReadBuf0, 65535
-11	25	142		release __RLSBmutex0
-11	4862	143	#line 4862 "C:\ENGR102\Lab Code\findOne.nxc"
-11	24	143	#line 24 "C:\ENGR102\Lab Code\findOne.nxc"
-11	25	143		mov __signed_stack_001search, __D0search
-11	24	145	#line 24 "C:\ENGR102\Lab Code\findOne.nxc"
-11	25	145		set __D0search, 8
-11	24	148	#line 24 "C:\ENGR102\Lab Code\findOne.nxc"
-11	25	148		cmp 1, __zfsearch, __signed_stack_001search, __D0search
-11	24	152	#line 24 "C:\ENGR102\Lab Code\findOne.nxc"
-11	25	152		mov __D0search, __zfsearch
-11	25	154	#line 25 "C:\ENGR102\Lab Code\findOne.nxc"
-11	26	154		brtst 4, __NXC_Label_547, __zfsearch
-11	25	157	#line 25 "C:\ENGR102\Lab Code\findOne.nxc"
-11	26	157		set __D0search, 75
-11	26	160	#line 26 "C:\ENGR102\Lab Code\findOne.nxc"
-11	27	160	#pragma macro 7
-11	27	160		setout __OUT_AC, 2, __D0search, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
-11	4880	183	#line 4880 "C:\ENGR102\Lab Code\findOne.nxc"
-11	26	183	#line 26 "C:\ENGR102\Lab Code\findOne.nxc"
-11	28	183	#line 28 "C:\ENGR102\Lab Code\findOne.nxc"
-11	29	183		jmp __NXC_Label_546
-11	28	185	#line 28 "C:\ENGR102\Lab Code\findOne.nxc"
-11	29	185	#line 29 "C:\ENGR102\Lab Code\findOne.nxc"
-11	30	185		set __search_7qG2_SPIN_MODE_7qG2_000, 0
-11	29	188	#line 29 "C:\ENGR102\Lab Code\findOne.nxc"
-11	29	188	#line 29 "C:\ENGR102\Lab Code\findOne.nxc"
-11	31	188	#line 31 "C:\ENGR102\Lab Code\findOne.nxc"
-11	32	188	#line 32 "C:\ENGR102\Lab Code\findOne.nxc"
-11	33	188		jmp __NXC_Label_537
-11	32	190	#line 32 "C:\ENGR102\Lab Code\findOne.nxc"
-11	32	190	#line 32 "C:\ENGR102\Lab Code\findOne.nxc"
-11	33	190		subret __search_return
-12	33	0	#line 33 "C:\ENGR102\Lab Code\findOne.nxc"
-12	34	0		set __D0open_gate, 30
-12	34	3	#line 34 "C:\ENGR102\Lab Code\findOne.nxc"
-12	35	3	#pragma macro 7
-12	35	3		setout __constVal1, 2, __D0open_gate, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
-12	4909	26	#line 4909 "C:\ENGR102\Lab Code\findOne.nxc"
-12	34	26	#line 34 "C:\ENGR102\Lab Code\findOne.nxc"
-12	34	26	#line 34 "C:\ENGR102\Lab Code\findOne.nxc"
-12	35	26		set __Wait_7qG2_ms_7qG2_000_inline_open_gate, 1000
-12	34	29	#line 34 "C:\ENGR102\Lab Code\findOne.nxc"
-12	7921	29	#line 7921 "NXCDefs.h"
-12	7922	29		wait2 NA, __Wait_7qG2_ms_7qG2_000_inline_open_gate
-12	7921	32	#line 7921 "NXCDefs.h"
-12	35	32	#line 35 "C:\ENGR102\Lab Code\findOne.nxc"
-12	36	32	#line 36 "C:\ENGR102\Lab Code\findOne.nxc"
-12	37	32	#pragma macro 7
-12	37	32		setout __constVal1, 2, __constVal0, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
-12	4926	55	#line 4926 "C:\ENGR102\Lab Code\findOne.nxc"
-12	36	55	#line 36 "C:\ENGR102\Lab Code\findOne.nxc"
-12	38	55	#line 38 "C:\ENGR102\Lab Code\findOne.nxc"
-12	39	55		subret __open_gate_return
-13	39	0	#line 39 "C:\ENGR102\Lab Code\findOne.nxc"
-13	40	0		set __D0close_gate, 30
-13	40	3	#line 40 "C:\ENGR102\Lab Code\findOne.nxc"
-13	41	3	#pragma macro 10
-13	41	3		acquire __OnRevMutex
-13	41	4		neg __OnRev_Tmp, __D0close_gate
-13	41	7		setout __constVal1, 2, __OnRev_Tmp, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
-13	41	30		release __OnRevMutex
-13	4938	31	#line 4938 "C:\ENGR102\Lab Code\findOne.nxc"
-13	40	31	#line 40 "C:\ENGR102\Lab Code\findOne.nxc"
-13	40	31	#line 40 "C:\ENGR102\Lab Code\findOne.nxc"
-13	41	31		set __Wait_7qG2_ms_7qG2_000_inline_close_gate, 500
-13	40	34	#line 40 "C:\ENGR102\Lab Code\findOne.nxc"
-13	7921	34	#line 7921 "NXCDefs.h"
-13	7922	34		wait2 NA, __Wait_7qG2_ms_7qG2_000_inline_close_gate
-13	7921	37	#line 7921 "NXCDefs.h"
-13	41	37	#line 41 "C:\ENGR102\Lab Code\findOne.nxc"
-13	43	37	#line 43 "C:\ENGR102\Lab Code\findOne.nxc"
-13	44	37	#pragma macro 7
-13	44	37		setout __constVal1, 2, __constVal0, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
-13	4955	60	#line 4955 "C:\ENGR102\Lab Code\findOne.nxc"
-13	43	60	#line 43 "C:\ENGR102\Lab Code\findOne.nxc"
-13	44	60	#line 44 "C:\ENGR102\Lab Code\findOne.nxc"
-13	45	60		subret __close_gate_return
-14	49	0	#line 49 "C:\ENGR102\Lab Code\findOne.nxc"
-14	50	0		subcall open_gate, __open_gate_return
-14	49	2	#line 49 "C:\ENGR102\Lab Code\findOne.nxc"
-14	49	2	#line 49 "C:\ENGR102\Lab Code\findOne.nxc"
-14	50	2		set __fwd_timed_7qG2_time_7qG2_000, 1300
-14	49	5	#line 49 "C:\ENGR102\Lab Code\findOne.nxc"
-14	52	5	#line 52 "C:\ENGR102\Lab Code\findOne.nxc"
-14	53	5		subcall fwd_timed, __fwd_timed_return
-14	52	7	#line 52 "C:\ENGR102\Lab Code\findOne.nxc"
-14	53	7	#line 53 "C:\ENGR102\Lab Code\findOne.nxc"
-14	54	7		subcall close_gate, __close_gate_return
-14	53	9	#line 53 "C:\ENGR102\Lab Code\findOne.nxc"
-14	55	9	#line 55 "C:\ENGR102\Lab Code\findOne.nxc"
-14	56	9		subret __acquire_return
-15	58	0	#line 58 "C:\ENGR102\Lab Code\findOne.nxc"
-15	59	0		set __isEmpty_7qG2_left_empty_7qG2_000, 0
-15	58	3	#line 58 "C:\ENGR102\Lab Code\findOne.nxc"
-15	59	3	#line 59 "C:\ENGR102\Lab Code\findOne.nxc"
-15	60	3		set __isEmpty_7qG2_right_empty_7qG2_000, 0
-15	59	6	#line 59 "C:\ENGR102\Lab Code\findOne.nxc"
-15	61	6	#line 61 "C:\ENGR102\Lab Code\findOne.nxc"
-15	62	6		set __isEmpty_7qG2_time_7qG2_000, 700
-15	61	9	#line 61 "C:\ENGR102\Lab Code\findOne.nxc"
-15	61	9	#line 61 "C:\ENGR102\Lab Code\findOne.nxc"
-15	62	9		set __D0isEmpty, 30
-15	61	12	#line 61 "C:\ENGR102\Lab Code\findOne.nxc"
-15	62	12	#pragma macro 7
-15	62	12		setout __constVal2, 2, __D0isEmpty, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
-15	5017	35	#line 5017 "C:\ENGR102\Lab Code\findOne.nxc"
-15	61	35	#line 61 "C:\ENGR102\Lab Code\findOne.nxc"
-15	61	35	#line 61 "C:\ENGR102\Lab Code\findOne.nxc"
-15	62	35		mov __D0isEmpty, __constValNeg30
-15	61	37	#line 61 "C:\ENGR102\Lab Code\findOne.nxc"
-15	62	37	#pragma macro 7
-15	62	37		setout __constVal0, 2, __D0isEmpty, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
-15	5024	60	#line 5024 "C:\ENGR102\Lab Code\findOne.nxc"
-15	61	60	#line 61 "C:\ENGR102\Lab Code\findOne.nxc"
-15	61	60	#line 61 "C:\ENGR102\Lab Code\findOne.nxc"
-15	62	60	#line 62 "C:\ENGR102\Lab Code\findOne.nxc"
-15	62	60	#line 62 "C:\ENGR102\Lab Code\findOne.nxc"
-15	63	60		mov __Wait_7qG2_ms_7qG2_000_inline_isEmpty, __isEmpty_7qG2_time_7qG2_000
-15	62	62	#line 62 "C:\ENGR102\Lab Code\findOne.nxc"
-15	7921	62	#line 7921 "NXCDefs.h"
-15	7922	62		wait2 NA, __Wait_7qG2_ms_7qG2_000_inline_isEmpty
-15	7921	65	#line 7921 "NXCDefs.h"
-15	63	65	#line 63 "C:\ENGR102\Lab Code\findOne.nxc"
-15	64	65	#line 64 "C:\ENGR102\Lab Code\findOne.nxc"
-15	65	65	#pragma macro 7
-15	65	65		setout __OUT_AC, 2, __constVal0, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
-15	5043	88	#line 5043 "C:\ENGR102\Lab Code\findOne.nxc"
-15	64	88	#line 64 "C:\ENGR102\Lab Code\findOne.nxc"
-15	64	88	#line 64 "C:\ENGR102\Lab Code\findOne.nxc"
-15	65	88		set __Wait_7qG2_ms_7qG2_000_inline_isEmpty, 500
-15	64	91	#line 64 "C:\ENGR102\Lab Code\findOne.nxc"
-15	7921	91	#line 7921 "NXCDefs.h"
-15	7922	91		wait2 NA, __Wait_7qG2_ms_7qG2_000_inline_isEmpty
-15	7921	94	#line 7921 "NXCDefs.h"
-15	65	94	#line 65 "C:\ENGR102\Lab Code\findOne.nxc"
-15	65	94	#line 65 "C:\ENGR102\Lab Code\findOne.nxc"
-15	66	94	#pragma macro 26
-15	66	94		acquire __RLSBmutex0
-15	66	95		mov __RLSReadBuf0, __RLSBbufLSWrite1
-15	66	97		set __RLSBytesCount0, 1
-15	66	100		wait2 NA, __constVal15
-15	66	103		subcall __ReadLSBytes0, ____ReadLSBytes0_return
-15	66	105		index __D0isEmpty, __RLSReadBuf0, 65535
-15	66	109		release __RLSBmutex0
-15	5056	110	#line 5056 "C:\ENGR102\Lab Code\findOne.nxc"
-15	65	110	#line 65 "C:\ENGR102\Lab Code\findOne.nxc"
-15	66	110		mov __signed_stack_001isEmpty, __D0isEmpty
-15	65	112	#line 65 "C:\ENGR102\Lab Code\findOne.nxc"
-15	66	112		set __D0isEmpty, 45
-15	65	115	#line 65 "C:\ENGR102\Lab Code\findOne.nxc"
-15	66	115		cmp 1, __zfisEmpty, __signed_stack_001isEmpty, __D0isEmpty
-15	65	119	#line 65 "C:\ENGR102\Lab Code\findOne.nxc"
-15	66	119		mov __D0isEmpty, __zfisEmpty
-15	66	121	#line 66 "C:\ENGR102\Lab Code\findOne.nxc"
-15	67	121		brtst 4, __NXC_Label_582, __zfisEmpty
-15	67	124	#line 67 "C:\ENGR102\Lab Code\findOne.nxc"
-15	68	124		set __isEmpty_7qG2_right_empty_7qG2_000, 1
-15	67	127	#line 67 "C:\ENGR102\Lab Code\findOne.nxc"
-15	67	127	#line 67 "C:\ENGR102\Lab Code\findOne.nxc"
-15	70	127	#line 70 "C:\ENGR102\Lab Code\findOne.nxc"
-15	70	127	#line 70 "C:\ENGR102\Lab Code\findOne.nxc"
-15	71	127		mov __D0isEmpty, __constValNeg30
-15	70	129	#line 70 "C:\ENGR102\Lab Code\findOne.nxc"
-15	71	129	#pragma macro 7
-15	71	129		setout __constVal2, 2, __D0isEmpty, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
-15	5083	152	#line 5083 "C:\ENGR102\Lab Code\findOne.nxc"
-15	70	152	#line 70 "C:\ENGR102\Lab Code\findOne.nxc"
-15	70	152	#line 70 "C:\ENGR102\Lab Code\findOne.nxc"
-15	71	152		set __D0isEmpty, 30
-15	70	155	#line 70 "C:\ENGR102\Lab Code\findOne.nxc"
-15	71	155	#pragma macro 7
-15	71	155		setout __constVal0, 2, __D0isEmpty, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
-15	5090	178	#line 5090 "C:\ENGR102\Lab Code\findOne.nxc"
-15	70	178	#line 70 "C:\ENGR102\Lab Code\findOne.nxc"
-15	70	178	#line 70 "C:\ENGR102\Lab Code\findOne.nxc"
-15	71	178	#line 71 "C:\ENGR102\Lab Code\findOne.nxc"
-15	71	178	#line 71 "C:\ENGR102\Lab Code\findOne.nxc"
-15	71	178	#line 71 "C:\ENGR102\Lab Code\findOne.nxc"
-15	71	178	#line 71 "C:\ENGR102\Lab Code\findOne.nxc"
-15	71	178	#line 71 "C:\ENGR102\Lab Code\findOne.nxc"
-15	72	178		mul __Wait_7qG2_ms_7qG2_000_inline_isEmpty, __isEmpty_7qG2_time_7qG2_000, __constVal2
-15	71	182	#line 71 "C:\ENGR102\Lab Code\findOne.nxc"
-15	7921	182	#line 7921 "NXCDefs.h"
-15	7922	182		wait2 NA, __Wait_7qG2_ms_7qG2_000_inline_isEmpty
-15	7921	185	#line 7921 "NXCDefs.h"
-15	72	185	#line 72 "C:\ENGR102\Lab Code\findOne.nxc"
-15	73	185	#line 73 "C:\ENGR102\Lab Code\findOne.nxc"
-15	74	185	#pragma macro 7
-15	74	185		setout __OUT_AC, 2, __constVal0, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
-15	5111	208	#line 5111 "C:\ENGR102\Lab Code\findOne.nxc"
-15	73	208	#line 73 "C:\ENGR102\Lab Code\findOne.nxc"
-15	73	208	#line 73 "C:\ENGR102\Lab Code\findOne.nxc"
-15	74	208		set __Wait_7qG2_ms_7qG2_000_inline_isEmpty, 500
-15	73	211	#line 73 "C:\ENGR102\Lab Code\findOne.nxc"
-15	7921	211	#line 7921 "NXCDefs.h"
-15	7922	211		wait2 NA, __Wait_7qG2_ms_7qG2_000_inline_isEmpty
-15	7921	214	#line 7921 "NXCDefs.h"
-15	74	214	#line 74 "C:\ENGR102\Lab Code\findOne.nxc"
-15	74	214	#line 74 "C:\ENGR102\Lab Code\findOne.nxc"
-15	75	214	#pragma macro 26
-15	75	214		acquire __RLSBmutex0
-15	75	215		mov __RLSReadBuf0, __RLSBbufLSWrite1
-15	75	217		set __RLSBytesCount0, 1
-15	75	220		wait2 NA, __constVal15
-15	75	223		subcall __ReadLSBytes0, ____ReadLSBytes0_return
-15	75	225		index __D0isEmpty, __RLSReadBuf0, 65535
-15	75	229		release __RLSBmutex0
-15	5124	230	#line 5124 "C:\ENGR102\Lab Code\findOne.nxc"
-15	74	230	#line 74 "C:\ENGR102\Lab Code\findOne.nxc"
-15	75	230		mov __signed_stack_001isEmpty, __D0isEmpty
-15	74	232	#line 74 "C:\ENGR102\Lab Code\findOne.nxc"
-15	75	232		set __D0isEmpty, 45
-15	74	235	#line 74 "C:\ENGR102\Lab Code\findOne.nxc"
-15	75	235		cmp 1, __zfisEmpty, __signed_stack_001isEmpty, __D0isEmpty
-15	74	239	#line 74 "C:\ENGR102\Lab Code\findOne.nxc"
-15	75	239		mov __D0isEmpty, __zfisEmpty
-15	75	241	#line 75 "C:\ENGR102\Lab Code\findOne.nxc"
-15	76	241		brtst 4, __NXC_Label_597, __zfisEmpty
-15	76	244	#line 76 "C:\ENGR102\Lab Code\findOne.nxc"
-15	77	244		set __isEmpty_7qG2_left_empty_7qG2_000, 1
-15	76	247	#line 76 "C:\ENGR102\Lab Code\findOne.nxc"
-15	76	247	#line 76 "C:\ENGR102\Lab Code\findOne.nxc"
-15	79	247	#line 79 "C:\ENGR102\Lab Code\findOne.nxc"
-15	79	247	#line 79 "C:\ENGR102\Lab Code\findOne.nxc"
-15	80	247		mov __signed_stack_001isEmpty, __isEmpty_7qG2_left_empty_7qG2_000
-15	79	249	#line 79 "C:\ENGR102\Lab Code\findOne.nxc"
-15	79	249	#line 79 "C:\ENGR102\Lab Code\findOne.nxc"
-15	80	249		set __D0isEmpty, 1
-15	79	252	#line 79 "C:\ENGR102\Lab Code\findOne.nxc"
-15	80	252		cmp 4, __zfisEmpty, __signed_stack_001isEmpty, __D0isEmpty
-15	79	256	#line 79 "C:\ENGR102\Lab Code\findOne.nxc"
-15	80	256		mov __D0isEmpty, __zfisEmpty
-15	79	258	#line 79 "C:\ENGR102\Lab Code\findOne.nxc"
-15	80	258		brtst 4, __NXC_Label_601, __zfisEmpty
-15	79	261	#line 79 "C:\ENGR102\Lab Code\findOne.nxc"
-15	80	261		mov __signed_stack_001isEmpty, __D0isEmpty
-15	79	263	#line 79 "C:\ENGR102\Lab Code\findOne.nxc"
-15	80	263		mov __signed_stack_002isEmpty, __isEmpty_7qG2_right_empty_7qG2_000
-15	79	265	#line 79 "C:\ENGR102\Lab Code\findOne.nxc"
-15	79	265	#line 79 "C:\ENGR102\Lab Code\findOne.nxc"
-15	80	265		set __D0isEmpty, 1
-15	79	268	#line 79 "C:\ENGR102\Lab Code\findOne.nxc"
-15	80	268		cmp 4, __zfisEmpty, __signed_stack_002isEmpty, __D0isEmpty
-15	79	272	#line 79 "C:\ENGR102\Lab Code\findOne.nxc"
-15	79	272	#line 79 "C:\ENGR102\Lab Code\findOne.nxc"
-15	80	272		and __D0isEmpty, __signed_stack_001isEmpty, __zfisEmpty
-15	80	276	#line 80 "C:\ENGR102\Lab Code\findOne.nxc"
-15	81	276		tst 5, __zfisEmpty, __D0isEmpty
-15	80	279	#line 80 "C:\ENGR102\Lab Code\findOne.nxc"
-15	81	279		brtst 4, __NXC_Label_602, __zfisEmpty
-15	81	282	#line 81 "C:\ENGR102\Lab Code\findOne.nxc"
-15	82	282		set __DU0isEmpty, 1
-15	81	285	#line 81 "C:\ENGR102\Lab Code\findOne.nxc"
-15	81	285	#line 81 "C:\ENGR102\Lab Code\findOne.nxc"
-15	82	285		subret __isEmpty_return
-15	81	287	#line 81 "C:\ENGR102\Lab Code\findOne.nxc"
-15	82	287	#line 82 "C:\ENGR102\Lab Code\findOne.nxc"
-15	83	287		jmp __NXC_Label_605
-15	82	289	#line 82 "C:\ENGR102\Lab Code\findOne.nxc"
-15	83	289		set __DU0isEmpty, 0
-15	82	292	#line 82 "C:\ENGR102\Lab Code\findOne.nxc"
-15	82	292	#line 82 "C:\ENGR102\Lab Code\findOne.nxc"
-15	83	292		subret __isEmpty_return
-15	82	294	#line 82 "C:\ENGR102\Lab Code\findOne.nxc"
-15	86	294	#line 86 "C:\ENGR102\Lab Code\findOne.nxc"
-15	86	294	#line 86 "C:\ENGR102\Lab Code\findOne.nxc"
-15	87	294		subret __isEmpty_return
-16	88	0	#line 88 "C:\ENGR102\Lab Code\findOne.nxc"
-16	89	0		getin __signed_stack_001find_light, __constVal3, 4
-16	88	4	#line 88 "C:\ENGR102\Lab Code\findOne.nxc"
-16	88	4	#line 88 "C:\ENGR102\Lab Code\findOne.nxc"
-16	89	4		set __D0find_light, 40
-16	88	7	#line 88 "C:\ENGR102\Lab Code\findOne.nxc"
-16	89	7		cmp 0, __zffind_light, __signed_stack_001find_light, __D0find_light
-16	88	11	#line 88 "C:\ENGR102\Lab Code\findOne.nxc"
-16	89	11		mov __D0find_light, __zffind_light
-16	89	13	#line 89 "C:\ENGR102\Lab Code\findOne.nxc"
-16	90	13		brtst 4, __NXC_Label_609, __zffind_light
-16	89	16	#line 89 "C:\ENGR102\Lab Code\findOne.nxc"
-16	90	16		set __D0find_light, 30
-16	89	19	#line 89 "C:\ENGR102\Lab Code\findOne.nxc"
-16	90	19	#pragma macro 7
-16	90	19		setout __constVal2, 2, __D0find_light, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
-16	5228	42	#line 5228 "C:\ENGR102\Lab Code\findOne.nxc"
-16	89	42	#line 89 "C:\ENGR102\Lab Code\findOne.nxc"
-16	89	42	#line 89 "C:\ENGR102\Lab Code\findOne.nxc"
-16	90	42		mov __D0find_light, __constValNeg30
-16	89	44	#line 89 "C:\ENGR102\Lab Code\findOne.nxc"
-16	90	44	#pragma macro 7
-16	90	44		setout __constVal0, 2, __D0find_light, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
-16	5235	67	#line 5235 "C:\ENGR102\Lab Code\findOne.nxc"
-16	89	67	#line 89 "C:\ENGR102\Lab Code\findOne.nxc"
-16	89	67	#line 89 "C:\ENGR102\Lab Code\findOne.nxc"
-16	90	67	#line 90 "C:\ENGR102\Lab Code\findOne.nxc"
-16	91	67	#line 91 "C:\ENGR102\Lab Code\findOne.nxc"
-16	92	67		jmp __NXC_Label_608
-16	91	69	#line 91 "C:\ENGR102\Lab Code\findOne.nxc"
-16	92	69	#line 92 "C:\ENGR102\Lab Code\findOne.nxc"
-16	93	69	#pragma macro 7
-16	93	69		setout __OUT_AC, 2, __constVal0, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
-16	5244	92	#line 5244 "C:\ENGR102\Lab Code\findOne.nxc"
-16	92	92	#line 92 "C:\ENGR102\Lab Code\findOne.nxc"
-16	94	92	#line 94 "C:\ENGR102\Lab Code\findOne.nxc"
-16	95	92		subret __find_light_return
-17	228	0	#line 228 "C:\ENGR102\Lab Code\findOne.nxc"
-17	229	0		subret ____initialize_global_data_return
+11	15	0	#line 15 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\Ben Code\findOne.nxc"
+11	16	0		mov __unsigned_stack_001zp_turn_timed, __zp_turn_timed_7qG2_direction_7qG2_000
+11	15	2	#line 15 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\Ben Code\findOne.nxc"
+11	15	2	#line 15 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\Ben Code\findOne.nxc"
+11	16	2		mov __DU0zp_turn_timed, LEFT
+11	15	4	#line 15 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\Ben Code\findOne.nxc"
+11	16	4		cmp 4, __D0zp_turn_timed, __unsigned_stack_001zp_turn_timed, __DU0zp_turn_timed
+11	16	8	#line 16 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\Ben Code\findOne.nxc"
+11	17	8		brtst 4, __ASM_Label_531, __D0zp_turn_timed
+11	16	11	#line 16 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\Ben Code\findOne.nxc"
+11	17	11		set __signed_stack_001zp_turn_timed, 0
+11	16	14	#line 16 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\Ben Code\findOne.nxc"
+11	16	14	#line 16 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\Ben Code\findOne.nxc"
+11	17	14		set __D0zp_turn_timed, 37
+11	16	17	#line 16 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\Ben Code\findOne.nxc"
+11	17	17		sub __D0zp_turn_timed, __signed_stack_001zp_turn_timed, __D0zp_turn_timed
+11	16	21	#line 16 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\Ben Code\findOne.nxc"
+11	17	21	#pragma macro 7
+11	17	21		setout __constVal2, 2, __D0zp_turn_timed, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+11	4997	44	#line 4997 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\Ben Code\findOne.nxc"
+11	16	44	#line 16 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\Ben Code\findOne.nxc"
+11	16	44	#line 16 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\Ben Code\findOne.nxc"
+11	17	44		set __D0zp_turn_timed, 37
+11	16	47	#line 16 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\Ben Code\findOne.nxc"
+11	17	47	#pragma macro 7
+11	17	47		setout __constVal0, 2, __D0zp_turn_timed, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+11	5002	70	#line 5002 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\Ben Code\findOne.nxc"
+11	16	70	#line 16 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\Ben Code\findOne.nxc"
+11	16	70	#line 16 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\Ben Code\findOne.nxc"
+11	17	70	#line 17 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\Ben Code\findOne.nxc"
+11	18	70	#line 18 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\Ben Code\findOne.nxc"
+11	19	70		jmp __ASM_Label_538
+11	18	72	#line 18 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\Ben Code\findOne.nxc"
+11	19	72		set __D0zp_turn_timed, 37
+11	18	75	#line 18 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\Ben Code\findOne.nxc"
+11	19	75	#pragma macro 7
+11	19	75		setout __constVal2, 2, __D0zp_turn_timed, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+11	5012	98	#line 5012 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\Ben Code\findOne.nxc"
+11	18	98	#line 18 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\Ben Code\findOne.nxc"
+11	18	98	#line 18 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\Ben Code\findOne.nxc"
+11	19	98		set __signed_stack_001zp_turn_timed, 0
+11	18	101	#line 18 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\Ben Code\findOne.nxc"
+11	18	101	#line 18 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\Ben Code\findOne.nxc"
+11	19	101		set __D0zp_turn_timed, 37
+11	18	104	#line 18 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\Ben Code\findOne.nxc"
+11	19	104		sub __D0zp_turn_timed, __signed_stack_001zp_turn_timed, __D0zp_turn_timed
+11	18	108	#line 18 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\Ben Code\findOne.nxc"
+11	19	108	#pragma macro 7
+11	19	108		setout __constVal0, 2, __D0zp_turn_timed, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+11	5027	131	#line 5027 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\Ben Code\findOne.nxc"
+11	18	131	#line 18 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\Ben Code\findOne.nxc"
+11	18	131	#line 18 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\Ben Code\findOne.nxc"
+11	19	131	#line 19 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\Ben Code\findOne.nxc"
+11	20	131	#line 20 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\Ben Code\findOne.nxc"
+11	20	131	#line 20 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\Ben Code\findOne.nxc"
+11	21	131		mov __Wait_7qG2_ms_7qG2_000_inline_zp_turn_timed, __zp_turn_timed_7qG2_time_7qG2_000
+11	20	133	#line 20 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\Ben Code\findOne.nxc"
+11	8551	133	#line 8551 "NXCDefs.h"
+11	8552	133		wait2 NA, __Wait_7qG2_ms_7qG2_000_inline_zp_turn_timed
+11	8551	136	#line 8551 "NXCDefs.h"
+11	21	136	#line 21 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\Ben Code\findOne.nxc"
+11	22	136	#line 22 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\Ben Code\findOne.nxc"
+11	23	136	#pragma macro 7
+11	23	136		setout __OUT_AC, 2, __constVal0, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+11	5048	159	#line 5048 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\Ben Code\findOne.nxc"
+11	22	159	#line 22 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\Ben Code\findOne.nxc"
+11	23	159	#line 23 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\Ben Code\findOne.nxc"
+11	24	159		subret __zp_turn_timed_return
+12	26	0	#line 26 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\Ben Code\findOne.nxc"
+12	27	0		set __search_7qG2_SPIN_MODE_7qG2_000, 1
+12	26	3	#line 26 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\Ben Code\findOne.nxc"
+12	26	3	#line 26 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\Ben Code\findOne.nxc"
+12	27	3		set __signed_stack_001search, 0
+12	26	6	#line 26 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\Ben Code\findOne.nxc"
+12	26	6	#line 26 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\Ben Code\findOne.nxc"
+12	27	6		set __D0search, 30
+12	26	9	#line 26 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\Ben Code\findOne.nxc"
+12	27	9		sub __D0search, __signed_stack_001search, __D0search
+12	26	13	#line 26 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\Ben Code\findOne.nxc"
+12	27	13	#pragma macro 7
+12	27	13		setout __constVal2, 2, __D0search, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+12	5076	36	#line 5076 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\Ben Code\findOne.nxc"
+12	26	36	#line 26 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\Ben Code\findOne.nxc"
+12	26	36	#line 26 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\Ben Code\findOne.nxc"
+12	27	36		set __D0search, 30
+12	26	39	#line 26 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\Ben Code\findOne.nxc"
+12	27	39	#pragma macro 7
+12	27	39		setout __constVal0, 2, __D0search, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+12	5081	62	#line 5081 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\Ben Code\findOne.nxc"
+12	26	62	#line 26 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\Ben Code\findOne.nxc"
+12	26	62	#line 26 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\Ben Code\findOne.nxc"
+12	27	62	#line 27 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\Ben Code\findOne.nxc"
+12	27	62	#line 27 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\Ben Code\findOne.nxc"
+12	28	62		mov __signed_stack_001search, __search_7qG2_SPIN_MODE_7qG2_000
+12	27	64	#line 27 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\Ben Code\findOne.nxc"
+12	27	64	#line 27 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\Ben Code\findOne.nxc"
+12	28	64		set __D0search, 1
+12	27	67	#line 27 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\Ben Code\findOne.nxc"
+12	28	67		cmp 4, __D0search, __signed_stack_001search, __D0search
+12	28	71	#line 28 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\Ben Code\findOne.nxc"
+12	29	71		brtst 4, __ASM_Label_556, __D0search
+12	28	74	#line 28 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\Ben Code\findOne.nxc"
+12	29	74	#pragma macro 26
+12	29	74		acquire __RLSBmutex0
+12	29	75		mov __RLSReadBuf0, __RLSBbufLSWrite1
+12	29	77		set __RLSBytesCount0, 1
+12	29	80		wait2 NA, __constVal15
+12	29	83		subcall __ReadLSBytes0, ____ReadLSBytes0_return
+12	29	85		index __D0search, __RLSReadBuf0, 65535
+12	29	89		release __RLSBmutex0
+12	5101	90	#line 5101 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\Ben Code\findOne.nxc"
+12	28	90	#line 28 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\Ben Code\findOne.nxc"
+12	29	90		mov __signed_stack_001search, __D0search
+12	28	92	#line 28 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\Ben Code\findOne.nxc"
+12	29	92		set __D0search, 45
+12	28	95	#line 28 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\Ben Code\findOne.nxc"
+12	29	95		cmp 0, __D0search, __signed_stack_001search, __D0search
+12	29	99	#line 29 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\Ben Code\findOne.nxc"
+12	30	99		brtst 4, __ASM_Label_561, __D0search
+12	29	102	#line 29 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\Ben Code\findOne.nxc"
+12	30	102		set __Wait_7qG2_ms_7qG2_000_inline_search, 350
+12	29	105	#line 29 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\Ben Code\findOne.nxc"
+12	8551	105	#line 8551 "NXCDefs.h"
+12	8552	105		wait2 NA, __Wait_7qG2_ms_7qG2_000_inline_search
+12	8551	108	#line 8551 "NXCDefs.h"
+12	30	108	#line 30 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\Ben Code\findOne.nxc"
+12	33	108	#line 33 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\Ben Code\findOne.nxc"
+12	34	108	#pragma macro 7
+12	34	108		setout __OUT_AC, 2, __constVal0, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+12	5127	131	#line 5127 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\Ben Code\findOne.nxc"
+12	33	131	#line 33 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\Ben Code\findOne.nxc"
+12	33	131	#line 33 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\Ben Code\findOne.nxc"
+12	34	131	#pragma macro 26
+12	34	131		acquire __RLSBmutex0
+12	34	132		mov __RLSReadBuf0, __RLSBbufLSWrite1
+12	34	134		set __RLSBytesCount0, 1
+12	34	137		wait2 NA, __constVal15
+12	34	140		subcall __ReadLSBytes0, ____ReadLSBytes0_return
+12	34	142		index __D0search, __RLSReadBuf0, 65535
+12	34	146		release __RLSBmutex0
+12	5131	147	#line 5131 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\Ben Code\findOne.nxc"
+12	33	147	#line 33 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\Ben Code\findOne.nxc"
+12	34	147		mov __signed_stack_001search, __D0search
+12	33	149	#line 33 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\Ben Code\findOne.nxc"
+12	34	149		set __D0search, 8
+12	33	152	#line 33 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\Ben Code\findOne.nxc"
+12	34	152		cmp 1, __D0search, __signed_stack_001search, __D0search
+12	34	156	#line 34 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\Ben Code\findOne.nxc"
+12	35	156		brtst 4, __ASM_Label_565, __D0search
+12	34	159	#line 34 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\Ben Code\findOne.nxc"
+12	35	159		set __D0search, 75
+12	35	162	#line 35 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\Ben Code\findOne.nxc"
+12	36	162	#pragma macro 7
+12	36	162		setout __OUT_AC, 2, __D0search, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+12	5147	185	#line 5147 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\Ben Code\findOne.nxc"
+12	35	185	#line 35 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\Ben Code\findOne.nxc"
+12	37	185	#line 37 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\Ben Code\findOne.nxc"
+12	38	185		jmp __ASM_Label_564
+12	37	187	#line 37 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\Ben Code\findOne.nxc"
+12	38	187	#line 38 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\Ben Code\findOne.nxc"
+12	39	187		set __search_7qG2_SPIN_MODE_7qG2_000, 0
+12	38	190	#line 38 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\Ben Code\findOne.nxc"
+12	38	190	#line 38 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\Ben Code\findOne.nxc"
+12	40	190	#line 40 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\Ben Code\findOne.nxc"
+12	41	190	#line 41 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\Ben Code\findOne.nxc"
+12	42	190		jmp __ASM_Label_555
+12	41	192	#line 41 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\Ben Code\findOne.nxc"
+12	41	192	#line 41 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\Ben Code\findOne.nxc"
+12	42	192		subret __search_return
+13	42	0	#line 42 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\Ben Code\findOne.nxc"
+13	43	0		set __D0open_gate, 30
+13	43	3	#line 43 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\Ben Code\findOne.nxc"
+13	44	3	#pragma macro 7
+13	44	3		setout __constVal1, 2, __D0open_gate, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+13	5172	26	#line 5172 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\Ben Code\findOne.nxc"
+13	43	26	#line 43 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\Ben Code\findOne.nxc"
+13	43	26	#line 43 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\Ben Code\findOne.nxc"
+13	44	26		set __Wait_7qG2_ms_7qG2_000_inline_open_gate, 1300
+13	43	29	#line 43 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\Ben Code\findOne.nxc"
+13	8551	29	#line 8551 "NXCDefs.h"
+13	8552	29		wait2 NA, __Wait_7qG2_ms_7qG2_000_inline_open_gate
+13	8551	32	#line 8551 "NXCDefs.h"
+13	44	32	#line 44 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\Ben Code\findOne.nxc"
+13	45	32	#line 45 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\Ben Code\findOne.nxc"
+13	46	32	#pragma macro 7
+13	46	32		setout __constVal1, 2, __constVal0, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+13	5187	55	#line 5187 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\Ben Code\findOne.nxc"
+13	45	55	#line 45 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\Ben Code\findOne.nxc"
+13	47	55	#line 47 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\Ben Code\findOne.nxc"
+13	48	55		subret __open_gate_return
+14	48	0	#line 48 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\Ben Code\findOne.nxc"
+14	49	0		set __D0close_gate, 30
+14	49	3	#line 49 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\Ben Code\findOne.nxc"
+14	50	3	#pragma macro 10
+14	50	3		acquire __OnRevMutex
+14	50	4		neg __OnRev_Tmp, __D0close_gate
+14	50	7		setout __constVal1, 2, __OnRev_Tmp, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+14	50	30		release __OnRevMutex
+14	5197	31	#line 5197 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\Ben Code\findOne.nxc"
+14	49	31	#line 49 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\Ben Code\findOne.nxc"
+14	49	31	#line 49 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\Ben Code\findOne.nxc"
+14	50	31		set __Wait_7qG2_ms_7qG2_000_inline_close_gate, 700
+14	49	34	#line 49 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\Ben Code\findOne.nxc"
+14	8551	34	#line 8551 "NXCDefs.h"
+14	8552	34		wait2 NA, __Wait_7qG2_ms_7qG2_000_inline_close_gate
+14	8551	37	#line 8551 "NXCDefs.h"
+14	50	37	#line 50 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\Ben Code\findOne.nxc"
+14	52	37	#line 52 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\Ben Code\findOne.nxc"
+14	53	37	#pragma macro 7
+14	53	37		setout __constVal1, 2, __constVal0, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+14	5212	60	#line 5212 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\Ben Code\findOne.nxc"
+14	52	60	#line 52 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\Ben Code\findOne.nxc"
+14	53	60	#line 53 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\Ben Code\findOne.nxc"
+14	54	60		subret __close_gate_return
+15	58	0	#line 58 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\Ben Code\findOne.nxc"
+15	59	0		subcall open_gate, __open_gate_return
+15	58	2	#line 58 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\Ben Code\findOne.nxc"
+15	58	2	#line 58 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\Ben Code\findOne.nxc"
+15	59	2		set __fwd_timed_7qG2_time_7qG2_000, 1300
+15	58	5	#line 58 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\Ben Code\findOne.nxc"
+15	61	5	#line 61 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\Ben Code\findOne.nxc"
+15	62	5		subcall fwd_timed, __fwd_timed_return
+15	61	7	#line 61 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\Ben Code\findOne.nxc"
+15	62	7	#line 62 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\Ben Code\findOne.nxc"
+15	63	7		subcall close_gate, __close_gate_return
+15	62	9	#line 62 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\Ben Code\findOne.nxc"
+15	64	9	#line 64 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\Ben Code\findOne.nxc"
+15	65	9		subret __acquire_return
+16	67	0	#line 67 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\Ben Code\findOne.nxc"
+16	68	0		set __isEmpty_7qG2_left_empty_7qG2_000, 0
+16	67	3	#line 67 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\Ben Code\findOne.nxc"
+16	68	3	#line 68 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\Ben Code\findOne.nxc"
+16	69	3		set __isEmpty_7qG2_right_empty_7qG2_000, 0
+16	68	6	#line 68 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\Ben Code\findOne.nxc"
+16	70	6	#line 70 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\Ben Code\findOne.nxc"
+16	70	6	#line 70 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\Ben Code\findOne.nxc"
+16	70	6	#line 70 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\Ben Code\findOne.nxc"
+16	71	6		set __zp_turn_timed_7qG2_time_7qG2_000, 800
+16	70	9	#line 70 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\Ben Code\findOne.nxc"
+16	70	9	#line 70 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\Ben Code\findOne.nxc"
+16	71	9		mov __zp_turn_timed_7qG2_direction_7qG2_000, RIGHT
+16	70	11	#line 70 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\Ben Code\findOne.nxc"
+16	71	11	#line 71 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\Ben Code\findOne.nxc"
+16	72	11		subcall zp_turn_timed, __zp_turn_timed_return
+16	71	13	#line 71 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\Ben Code\findOne.nxc"
+16	71	13	#line 71 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\Ben Code\findOne.nxc"
+16	72	13		set __Wait_7qG2_ms_7qG2_000_inline_isEmpty, 500
+16	71	16	#line 71 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\Ben Code\findOne.nxc"
+16	8551	16	#line 8551 "NXCDefs.h"
+16	8552	16		wait2 NA, __Wait_7qG2_ms_7qG2_000_inline_isEmpty
+16	8551	19	#line 8551 "NXCDefs.h"
+16	72	19	#line 72 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\Ben Code\findOne.nxc"
+16	72	19	#line 72 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\Ben Code\findOne.nxc"
+16	73	19	#pragma macro 26
+16	73	19		acquire __RLSBmutex0
+16	73	20		mov __RLSReadBuf0, __RLSBbufLSWrite1
+16	73	22		set __RLSBytesCount0, 1
+16	73	25		wait2 NA, __constVal15
+16	73	28		subcall __ReadLSBytes0, ____ReadLSBytes0_return
+16	73	30		index __D0isEmpty, __RLSReadBuf0, 65535
+16	73	34		release __RLSBmutex0
+16	5287	35	#line 5287 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\Ben Code\findOne.nxc"
+16	72	35	#line 72 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\Ben Code\findOne.nxc"
+16	73	35		mov __signed_stack_001isEmpty, __D0isEmpty
+16	72	37	#line 72 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\Ben Code\findOne.nxc"
+16	73	37		set __D0isEmpty, 45
+16	72	40	#line 72 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\Ben Code\findOne.nxc"
+16	73	40		cmp 1, __D0isEmpty, __signed_stack_001isEmpty, __D0isEmpty
+16	73	44	#line 73 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\Ben Code\findOne.nxc"
+16	74	44		brtst 4, __ASM_Label_596, __D0isEmpty
+16	74	47	#line 74 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\Ben Code\findOne.nxc"
+16	75	47		set __isEmpty_7qG2_right_empty_7qG2_000, 1
+16	74	50	#line 74 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\Ben Code\findOne.nxc"
+16	74	50	#line 74 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\Ben Code\findOne.nxc"
+16	77	50	#line 77 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\Ben Code\findOne.nxc"
+16	77	50	#line 77 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\Ben Code\findOne.nxc"
+16	78	50		set __zp_turn_timed_7qG2_time_7qG2_000, 1400
+16	77	53	#line 77 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\Ben Code\findOne.nxc"
+16	77	53	#line 77 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\Ben Code\findOne.nxc"
+16	78	53		mov __zp_turn_timed_7qG2_direction_7qG2_000, LEFT
+16	77	55	#line 77 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\Ben Code\findOne.nxc"
+16	78	55	#line 78 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\Ben Code\findOne.nxc"
+16	79	55		subcall zp_turn_timed, __zp_turn_timed_return
+16	78	57	#line 78 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\Ben Code\findOne.nxc"
+16	78	57	#line 78 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\Ben Code\findOne.nxc"
+16	79	57		set __Wait_7qG2_ms_7qG2_000_inline_isEmpty, 500
+16	78	60	#line 78 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\Ben Code\findOne.nxc"
+16	8551	60	#line 8551 "NXCDefs.h"
+16	8552	60		wait2 NA, __Wait_7qG2_ms_7qG2_000_inline_isEmpty
+16	8551	63	#line 8551 "NXCDefs.h"
+16	79	63	#line 79 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\Ben Code\findOne.nxc"
+16	79	63	#line 79 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\Ben Code\findOne.nxc"
+16	80	63	#pragma macro 26
+16	80	63		acquire __RLSBmutex0
+16	80	64		mov __RLSReadBuf0, __RLSBbufLSWrite1
+16	80	66		set __RLSBytesCount0, 1
+16	80	69		wait2 NA, __constVal15
+16	80	72		subcall __ReadLSBytes0, ____ReadLSBytes0_return
+16	80	74		index __D0isEmpty, __RLSReadBuf0, 65535
+16	80	78		release __RLSBmutex0
+16	5329	79	#line 5329 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\Ben Code\findOne.nxc"
+16	79	79	#line 79 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\Ben Code\findOne.nxc"
+16	80	79		mov __signed_stack_001isEmpty, __D0isEmpty
+16	79	81	#line 79 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\Ben Code\findOne.nxc"
+16	80	81		set __D0isEmpty, 45
+16	79	84	#line 79 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\Ben Code\findOne.nxc"
+16	80	84		cmp 1, __D0isEmpty, __signed_stack_001isEmpty, __D0isEmpty
+16	80	88	#line 80 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\Ben Code\findOne.nxc"
+16	81	88		brtst 4, __ASM_Label_607, __D0isEmpty
+16	81	91	#line 81 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\Ben Code\findOne.nxc"
+16	82	91		set __isEmpty_7qG2_left_empty_7qG2_000, 1
+16	81	94	#line 81 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\Ben Code\findOne.nxc"
+16	81	94	#line 81 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\Ben Code\findOne.nxc"
+16	84	94	#line 84 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\Ben Code\findOne.nxc"
+16	84	94	#line 84 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\Ben Code\findOne.nxc"
+16	85	94		mov __signed_stack_001isEmpty, __isEmpty_7qG2_left_empty_7qG2_000
+16	84	96	#line 84 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\Ben Code\findOne.nxc"
+16	84	96	#line 84 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\Ben Code\findOne.nxc"
+16	85	96		set __D0isEmpty, 1
+16	84	99	#line 84 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\Ben Code\findOne.nxc"
+16	85	99		cmp 4, __D0isEmpty, __signed_stack_001isEmpty, __D0isEmpty
+16	84	103	#line 84 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\Ben Code\findOne.nxc"
+16	85	103		brtst 4, __ASM_Label_611, __D0isEmpty
+16	84	106	#line 84 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\Ben Code\findOne.nxc"
+16	85	106		mov __signed_stack_001isEmpty, __isEmpty_7qG2_right_empty_7qG2_000
+16	84	108	#line 84 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\Ben Code\findOne.nxc"
+16	84	108	#line 84 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\Ben Code\findOne.nxc"
+16	85	108		set __D0isEmpty, 1
+16	84	111	#line 84 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\Ben Code\findOne.nxc"
+16	85	111		cmp 4, __D0isEmpty, __signed_stack_001isEmpty, __D0isEmpty
+16	85	115	#line 85 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\Ben Code\findOne.nxc"
+16	86	115		brtst 4, __ASM_Label_612, __D0isEmpty
+16	86	118	#line 86 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\Ben Code\findOne.nxc"
+16	87	118		set __DU0isEmpty, 1
+16	86	121	#line 86 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\Ben Code\findOne.nxc"
+16	86	121	#line 86 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\Ben Code\findOne.nxc"
+16	87	121		subret __isEmpty_return
+16	86	123	#line 86 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\Ben Code\findOne.nxc"
+16	87	123	#line 87 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\Ben Code\findOne.nxc"
+16	88	123		jmp __ASM_Label_615
+16	87	125	#line 87 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\Ben Code\findOne.nxc"
+16	88	125		set __DU0isEmpty, 0
+16	87	128	#line 87 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\Ben Code\findOne.nxc"
+16	87	128	#line 87 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\Ben Code\findOne.nxc"
+16	88	128		subret __isEmpty_return
+16	87	130	#line 87 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\Ben Code\findOne.nxc"
+16	91	130	#line 91 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\Ben Code\findOne.nxc"
+16	91	130	#line 91 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\Ben Code\findOne.nxc"
+16	92	130		subret __isEmpty_return
+17	93	0	#line 93 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\Ben Code\findOne.nxc"
+17	94	0		getin __signed_stack_001find_light, __constVal3, 4
+17	93	4	#line 93 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\Ben Code\findOne.nxc"
+17	93	4	#line 93 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\Ben Code\findOne.nxc"
+17	94	4		set __D0find_light, 50
+17	93	7	#line 93 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\Ben Code\findOne.nxc"
+17	94	7		cmp 0, __D0find_light, __signed_stack_001find_light, __D0find_light
+17	94	11	#line 94 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\Ben Code\findOne.nxc"
+17	95	11		brtst 4, __ASM_Label_619, __D0find_light
+17	94	14	#line 94 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\Ben Code\findOne.nxc"
+17	95	14		set __D0find_light, 60
+17	94	17	#line 94 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\Ben Code\findOne.nxc"
+17	95	17	#pragma macro 7
+17	95	17		setout __constVal2, 2, __D0find_light, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+17	5419	40	#line 5419 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\Ben Code\findOne.nxc"
+17	94	40	#line 94 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\Ben Code\findOne.nxc"
+17	94	40	#line 94 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\Ben Code\findOne.nxc"
+17	95	40		set __signed_stack_001find_light, 0
+17	94	43	#line 94 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\Ben Code\findOne.nxc"
+17	94	43	#line 94 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\Ben Code\findOne.nxc"
+17	95	43		set __D0find_light, 60
+17	94	46	#line 94 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\Ben Code\findOne.nxc"
+17	95	46		sub __D0find_light, __signed_stack_001find_light, __D0find_light
+17	94	50	#line 94 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\Ben Code\findOne.nxc"
+17	95	50	#pragma macro 7
+17	95	50		setout __constVal0, 2, __D0find_light, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+17	5434	73	#line 5434 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\Ben Code\findOne.nxc"
+17	94	73	#line 94 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\Ben Code\findOne.nxc"
+17	94	73	#line 94 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\Ben Code\findOne.nxc"
+17	95	73	#line 95 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\Ben Code\findOne.nxc"
+17	96	73	#line 96 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\Ben Code\findOne.nxc"
+17	97	73		jmp __ASM_Label_618
+17	96	75	#line 96 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\Ben Code\findOne.nxc"
+17	97	75	#line 97 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\Ben Code\findOne.nxc"
+17	98	75	#pragma macro 7
+17	98	75		setout __OUT_AC, 2, __constVal0, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+17	5443	98	#line 5443 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\Ben Code\findOne.nxc"
+17	97	98	#line 97 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\Ben Code\findOne.nxc"
+17	99	98	#line 99 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\Ben Code\findOne.nxc"
+17	100	98		subret __find_light_return
+18	234	0	#line 234 "C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\Ben Code\findOne.nxc"
+18	235	0		subret ____initialize_global_data_return
 #CLUMPS
 Clump	Name	Offset	File
-0	main	0	C:\ENGR102\Lab Code\findOne.nxc
-1	__ResetSensorSubroutine	190	NXTDefs.h
-2	__ReadLSBytes0	203	NXTDefs.h
-3	PlaySound	288	NXCDefs.h
-4	init_sensors	687	C:\ENGR102\Lab Code\.\includes.nxc
-5	task_test_color	759	C:\ENGR102\Lab Code\.\includes.nxc
-6	test_color	800	C:\ENGR102\Lab Code\.\includes.nxc
-7	__task_test_color_Returner	804	C:\ENGR102\Lab Code\.\includes.nxc
-8	__task_test_color_Spawner	806	C:\ENGR102\Lab Code\.\includes.nxc
-9	fwd_timed	809	C:\ENGR102\Lab Code\findOne.nxc
-10	rev_timed	870	C:\ENGR102\Lab Code\findOne.nxc
-11	search	936	C:\ENGR102\Lab Code\findOne.nxc
-12	open_gate	1128	C:\ENGR102\Lab Code\findOne.nxc
-13	close_gate	1185	C:\ENGR102\Lab Code\findOne.nxc
-14	acquire	1247	C:\ENGR102\Lab Code\findOne.nxc
-15	isEmpty	1258	C:\ENGR102\Lab Code\findOne.nxc
-16	find_light	1554	C:\ENGR102\Lab Code\findOne.nxc
-17	__initialize_global_data	1648	C:\ENGR102\Lab Code\findOne.nxc
+0	main	0	C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\Ben Code\findOne.nxc
+1	__ResetSensorSubroutine	337	NXTDefs.h
+2	__ReadLSBytes0	350	NXTDefs.h
+3	PlaySound	436	NXCDefs.h
+4	init_sensors	841	C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\Ben Code\.\includes.nxc
+5	task_test_color	913	C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\Ben Code\.\includes.nxc
+6	test_color	954	C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\Ben Code\.\includes.nxc
+7	__task_test_color_Returner	958	C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\Ben Code\.\includes.nxc
+8	__task_test_color_Spawner	960	C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\Ben Code\.\includes.nxc
+9	fwd_timed	963	C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\Ben Code\findOne.nxc
+10	rev_timed	1024	C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\Ben Code\findOne.nxc
+11	zp_turn_timed	1090	C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\Ben Code\findOne.nxc
+12	search	1251	C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\Ben Code\findOne.nxc
+13	open_gate	1445	C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\Ben Code\findOne.nxc
+14	close_gate	1502	C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\Ben Code\findOne.nxc
+15	acquire	1564	C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\Ben Code\findOne.nxc
+16	isEmpty	1575	C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\Ben Code\findOne.nxc
+17	find_light	1707	C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\Ben Code\findOne.nxc
+18	__initialize_global_data	1807	C:\Users\HarryKatz\Documents\DREXEL\Freshman\Winter\ENGR 102\Ben Code\findOne.nxc
