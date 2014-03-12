@@ -1,0 +1,13 @@
+#ifndef __TIMER__
+#define __TIMER__
+
+#include "includes.nxc"
+
+bool timer_running=false;
+unsigned long timer_period=0;
+unsigned int timer_reps=0;
+task timer(){
+
+}
+
+#endif

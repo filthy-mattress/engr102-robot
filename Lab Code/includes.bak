@@ -18,7 +18,7 @@
 #define LIGHT IN_4
 
 //Sensor read macros
-#define READ_ULTRASONIC (Sensor(ULTRASONIC))
+#define READ_ULTRASONIC (SensorUS(ULTRASONIC))
 #define READ_COLOR (Sensor(COLOR))
 #define READ_MAGNETIC (Sensor(MAGNETIC))
 #define READ_LIGHT (Sensor(LIGHT))
@@ -33,8 +33,12 @@
 #define NEAR2 (8)
 #define NEARWALL (15)
 #define MAGNETISM (500)
-#define LIGHT_THRESHOLD (40)
+#define LIGHT_THRESHOLD (50)
 #define MAGNET_TURN_STRENGTH (60)
+
+enum ZPTurnDir{
+    LEFT, RIGHT
+};
 
 void init_sensors(){
    SetSensorType(ULTRASONIC, SENSOR_TYPE_LOWSPEED);
