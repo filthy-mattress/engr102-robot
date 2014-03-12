@@ -31,7 +31,7 @@
 #define zp_turn_r(spd) motors(spd,-(spd));
 
 //Define constants
-#define NEAR (45)
+#define NEAR (35)
 #define NEAR2 (8)
 #define NEARWALL (15)
 #define MAGNETISM (500)
